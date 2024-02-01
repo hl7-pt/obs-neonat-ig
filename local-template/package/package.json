@@ -1,0 +1,12 @@
+{
+    "name": "hl7.fhir.affiliate.custom.template",
+    "version": "0.0.1",
+    "type": "fhir.template",
+    "license": "CC0-1.0",
+    "description": "Local template extension for FHIR IG",
+    "author": "http://hl7.org",
+      "base":  "hl7.fhir.affiliate.template",
+    "dependencies": {
+      "hl7.fhir.affiliate.template": "current"
+    }
+  }
