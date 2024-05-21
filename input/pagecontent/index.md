@@ -6,13 +6,12 @@
 
 ### Scope
 
-This publication contains the full set of specifications...
-
-There is also an overview of the projects and motivation for the specifications.
+The goal of this Implementation Guide is to specify how to represent in HL7 FHIR the "Notícia Nascimento" or Newborn Communication.
 
 ### Introduction
 
-so and so...
+The Project "Notícia Nascimento" allows to register immediatly all newborn babies and the communication of a newborn in the proper form, becoming itself to be a communication tool between Hospitals and Primary Healthcare Institutions. This tool allows to a greater and faster care of newborn, as to communicate allerts. 
+This project was developed and carried on the XXI Constitutional Government of Portugal, in the healthcare program with the purpose to expand and improve the network capacity of primary healthcare.
 
 ### Dependencies
 
@@ -34,35 +33,9 @@ so and so...
 
 ### Authors and Contributors
 
-<table>
-<thead>
-<tr class="header">
-<th>Roles</th>
-<th>Name</th>
-<th>Organization</th>
-<th>Contact</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Author</td>
-<td>zzz</td>
-<td>xxxx</td>
-<td>yyyy</td>
-</tr><tr class="even">
-<td>Author</td>
-<td>xxx</td>
-<td></td>
-<td>dssd</td>
-</tr><tr class="odd">
-<td>Author</td>
-<td>asdasd</td>
-<td>asdasd</td>
-<td>asdas</td>
-</tr><tr class="even">
-<td>Author</td>
-<td>asdasd</td>
-<td></td>
-<td>dasda</td>
-</tr></tbody>
-</table>
+| Role  | Name | Organization | Contact |
+| --- | --- | --- | --- |
+| **Primary Editor** | Andre Oliveira | ProChild CoLAB | andre.oliveira@prochildcolab.pt |
+| **Primary Editor** | Samuel Frade | Virtual Care | samuel.frade@virtualcare.pt |
+| **Primary Editor** | Tiago Costa | Virtual Care | tcosta@virtualcare.pt 
+| **Contributor** | João Almeida | President, HL7 Portugal | joaofilipe90@gmail.com |
