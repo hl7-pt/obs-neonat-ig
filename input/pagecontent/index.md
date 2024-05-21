@@ -52,7 +52,7 @@ Details on the development of the webAPI are available in the <a href="https://s
 
 | Role  | Name | Organization | Contact |
 | --- | --- | --- | --- |
-| **Primary Editor** | Andre Oliveira | ProChild CoLAB | andre.oliveira@prochildcolab.pt |
+| **Primary Editor** | André Oliveira | ProChild CoLAB | andre.oliveira@prochildcolab.pt |
 | **Primary Editor** | Samuel Frade | Virtual Care | samuel.frade@virtualcare.pt |
 | **Primary Editor** | Tiago Costa | Virtual Care | tcosta@virtualcare.pt 
 | **Contributor** | João Almeida | President, HL7 Portugal | joaofilipe90@gmail.com |
