@@ -1,6 +1,6 @@
 Logical: noticia
 Title: "Notícia de Nascimento (model)"
-Description: "Logical model -  Notícia de Nascimento"
+Description: "Logical model - Notícia de Nascimento"
 Characteristics: #can-be-target
 
 * contact 1..1 contactLM "Estrutura do episódio da notícia de nascimento"
@@ -11,8 +11,8 @@ Characteristics: #can-be-target
 
 
 Logical: contactLM
-Title: "Notícia de Nascimento (model)"
-Description: "Logical model -  Notícia de Nascimento"
+Title: "Contact (model)"
+Description: "Logical model - Contact"
 Characteristics: #can-be-target
 
 * id 1..1 string "Identificador do episódio"
@@ -20,8 +20,8 @@ Characteristics: #can-be-target
 
 
 Logical: ProfessionalLM
-Title: "Notícia de Nascimento (model)"
-Description: "Logical model -  Notícia de Nascimento"
+Title: "Professional (model)"
+Description: "Logical model - Professional"
 Characteristics: #can-be-target
 
 * functionalgroup 1..1 CodeableConcept "Grupo funcional do profissional (5 – Médico; 4 -Enfermeiro)"
@@ -30,8 +30,8 @@ Characteristics: #can-be-target
 
 
 Logical: VaccineLM
-Title: "Notícia de Nascimento (model)"
-Description: "Logical model -  Notícia de Nascimento"
+Title: "Vaccine (model)"
+Description: "Logical model - Vaccine"
 Characteristics: #can-be-target
 
 * taken 1..1 boolean "Confirmação de toma da vacina"
@@ -40,8 +40,8 @@ Characteristics: #can-be-target
 * reason 1..1 string "Motivo de não toma da vacina"
 
 Logical: birthNoticeLM
-Title: "Notícia de Nascimento (model)"
-Description: "Logical model -  Notícia de Nascimento"
+Title: "BirthNotice (model)"
+Description: "Logical model - BirthNotice"
 Characteristics: #can-be-target
 
 * owner 1..1 CodeableConcept "Identifica se a notícia de nascimento é associada ao bebé ou à mãe (“descendant” – Caso o SNS do bébé seja enviado; “self” – No caso de só possuir SNS da mãe)"
@@ -79,8 +79,8 @@ Characteristics: #can-be-target
 
 
 Logical: PregnancyLM
-Title: "Notícia de Nascimento (model)"
-Description: "Logical model -  Notícia de Nascimento"
+Title: "Gravidez (model)"
+Description: "Logical model - Gravidez"
 Characteristics: #can-be-target
 
 * days 0..1 integer "Dias de gravidez"
@@ -172,8 +172,8 @@ Characteristics: #can-be-target
 
 
 Logical: motherDemographicsLM
-Title: "Notícia de Nascimento (model)"
-Description: "Logical model -  Notícia de Nascimento"
+Title: "Dados demográficos da mãe (model)"
+Description: "Logical model - Dados demográficos da mãe"
 Characteristics: #can-be-target
 
 
