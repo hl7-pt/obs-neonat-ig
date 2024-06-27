@@ -46,12 +46,23 @@ Description: "birth Notice"
 * section.text 1.. MS
 * section.section ..0
 * section contains
+maternity 1..1 MS and
     destination 1..1 MS and
     pregnancy 1..1 MS and
     birth 1..1 MS and
     newborn 0..1 MS and
     exams 0..1 MS and
     vaccination 0..1
+
+* section[maternity].title 1.. MS
+* section[maternity].code = $loinc#10160-0
+* section[maternity].entry only Reference(Organization)
+* section[maternity].entry MS
+* section[maternity].entry ^slicing.discriminator[0].type = #profile
+* section[maternity].entry ^slicing.discriminator[=].path = "resolve()"
+* section[maternity].entry ^slicing.rules = #open
+
+
 * section[destination].title 1.. MS
 * section[destination].code = $loinc#10160-0
 * section[destination].entry only Reference(Organization or Practitioner)
@@ -98,20 +109,48 @@ Description: "birth Notice"
 * section[newborn].entry ^slicing.discriminator[=].path = "resolve()"
 * section[newborn].entry ^slicing.rules = #open
 
+* section[exams].title 1.. MS
+* section[exams].code = $loinc#10160-0
+* section[exams].entry only Reference(newBornExams or Observation)
+* section[exams].entry MS
+* section[exams].entry ^slicing.discriminator[0].type = #profile
+* section[exams].entry ^slicing.discriminator[=].path = "resolve()"
+* section[exams].entry ^slicing.rules = #open
+* section[exams].entry contains
+    newbornExams 0..1 and
+    apgar 0..1 and
+        screenings 0..* and
+        puerperium 0..1 and 
+        puerperiumreview 0..1 and
+        childhealthsurveilance 0..1 and 
+        letter 0..1 
+
+* section[exams].entry[newbornExams] only Reference(newBornExams)
+* section[exams].entry[apgar] only Reference(Observation)
+* section[exams].entry[screenings] only Reference(Observation)
+* section[exams].entry[puerperium] only Reference(Observation)
+* section[exams].entry[puerperiumreview] only Reference(Observation)
+* section[exams].entry[childhealthsurveilance] only Reference(Observation)
+* section[exams].entry[letter] only Reference(Observation)
+
+
+
 
 Profile: Mother
 Parent: Patient
 Title: "Mother"
 Description: ""
 
-* identifier MS
-* name 1..* MS
-
-* telecom MS
-* gender MS
-* birthDate 1.. MS
-* address MS
-* generalPractitioner MS
+* identifier 1..1 MS
+* name 1..1 MS
+* birthDate 1..1 MS
+* address 0..1 MS
+* contact 0..1 MS
+//birthplace
+//nationality
+* extension contains 
+http://hl7.org/fhir/StructureDefinition/patient-birthPlace  named birthPlace 0..1 and
+http://hl7.org/fhir/StructureDefinition/patient-nationality named nationality 0..1
 
 
 Profile: Child
@@ -233,3 +272,55 @@ Description: ""
 * occurrence[x] MS
 * lotNumber MS
 //add constraint
+
+
+
+Profile: newBornExams
+Parent: Observation
+Title: "newBornExams"
+Description: ""
+
+
+* status = #registered
+* code = $loinc#10160-0 //change
+* effective[x] 1..1
+* effective[x] only dateTime
+* component MS
+* component ^slicing.discriminator.type = #type
+* component ^slicing.discriminator.path = "value"
+* component ^slicing.description = "Slicing based on value[x] type."
+* component ^slicing.rules = #closed
+* component ^requirements = "Required if not(exists(Observation.valueString))"
+* component ^min = 0
+* component contains
+    length 0..1 and
+    reanimated 0..1 and
+    cephalicPerimeter 0..1 and 
+    weight 0..1 and 
+    malformations 0..1 and
+    phototherapy 0..1 and
+    AdmissionNeonatology 0..1 and
+    AdmissionNeonatologyReason 0..1 and
+AdmissionNeonatologyLocal 0..1 and
+feedingUntilDischarge 0..1 and
+feedingFirstHour 0..1 and
+individualHealthBulletinDelivered 0..1 and
+childYoungHealthBulletinDelivered 0..1 and
+bulletinDeliveryType 0..1 
+
+
+
+* component[length].value[x] only Quantity
+* component[reanimated].value[x] only boolean
+* component[cephalicPerimeter].value[x] only Quantity
+* component[weight].value[x] only Quantity
+* component[malformations].value[x] only CodeableConcept
+* component[phototherapy].value[x] only boolean
+* component[AdmissionNeonatology].value[x] only boolean
+* component[AdmissionNeonatologyReason].value[x] only string
+* component[AdmissionNeonatologyLocal].value[x] only string
+* component[feedingUntilDischarge].value[x] only CodeableConcept
+* component[feedingFirstHour].value[x] only boolean
+* component[individualHealthBulletinDelivered].value[x] only dateTime
+* component[childYoungHealthBulletinDelivered].value[x] only dateTime
+* component[bulletinDeliveryType].value[x] only integer
