@@ -1,7 +1,7 @@
 Profile:     NoticiaNascimento
 Parent:      Bundle
-Title:       ""
-Description: ""
+Title:       "Documento Para noticia de Nascimento"
+Description: "Documento Para noticia de Nascimento"
 
 
 * type = #document (exactly)
@@ -32,8 +32,8 @@ Description: ""
 
 Profile: CompositionNoticia
 Parent: $clinicaldocument
-Title: "birth Notice"
-Description: "birth Notice"
+Title: "Composition que cria as secções da noticia nascimento"
+Description: "Composition que cria as secções da noticia nascimento"
 
 
 * section ^slicing.discriminator[0].type = #pattern
@@ -126,7 +126,7 @@ maternity 1..1 MS and
         letter 0..1 
 
 * section[exams].entry[newbornExams] only Reference(newBornExams)
-* section[exams].entry[apgar] only Reference(Observation)
+* section[exams].entry[apgar] only Reference(apgarScore)
 * section[exams].entry[screenings] only Reference(Observation)
 * section[exams].entry[puerperium] only Reference(Observation)
 * section[exams].entry[puerperiumreview] only Reference(Observation)
@@ -138,8 +138,8 @@ maternity 1..1 MS and
 
 Profile: Mother
 Parent: Patient
-Title: "Mother"
-Description: ""
+Title: "Perfil da mãe"
+Description: "Perfil da mãe"
 
 * identifier 1..1 MS
 * name 1..1 MS
@@ -155,8 +155,8 @@ http://hl7.org/fhir/StructureDefinition/patient-nationality named nationality 0.
 
 Profile: Child
 Parent: Patient
-Title: "Child"
-Description: ""
+Title: "Perfil do recém-nascido"
+Description: "Perfil do recém-nascido"
 
 * identifier MS
 * deceased[x] only dateTime
@@ -165,8 +165,8 @@ Description: ""
 
 Profile: Professional
 Parent: Practitioner
-Title: "Professional"
-Description: ""
+Title: "Perfil para o profissional de saúde"
+Description: "Perfil para o profissional de saúde"
 
 Profile: Contact
 Parent: Encounter
@@ -176,8 +176,8 @@ Description: ""
 
 Profile: Pregnancy
 Parent: Observation
-Title: "Pregnancy"
-Description: ""
+Title: "Perfil de Informação de gravidez"
+Description: "Perfil de Informação de gravidez"
 
 
 * status = #registered
@@ -231,8 +231,8 @@ twinNumber 0..1
 
 Profile: Birth
 Parent: Observation
-Title: "Birth"
-Description: ""
+Title: "Perfil de Informação do Parto"
+Description: "Perfil de Informação do Parto"
 
 
 * status = #registered
@@ -262,8 +262,8 @@ Description: ""
 
 Profile: Vaccination
 Parent: Immunization
-Title: "Vaccination"
-Description: ""
+Title: "Informação sobre vacinação"
+Description: "Informação sobre vacinação"
 
 * status MS
 * patient MS  
@@ -277,8 +277,8 @@ Description: ""
 
 Profile: newBornExams
 Parent: Observation
-Title: "newBornExams"
-Description: ""
+Title: "Perfil de informação clinicas recem-nascido"
+Description: "Perfil de informação clinicas recem-nascido"
 
 
 * status = #registered
@@ -324,3 +324,34 @@ bulletinDeliveryType 0..1
 * component[individualHealthBulletinDelivered].value[x] only dateTime
 * component[childYoungHealthBulletinDelivered].value[x] only dateTime
 * component[bulletinDeliveryType].value[x] only integer
+
+
+
+
+
+Profile: apgarScore
+Parent: Observation
+Title: "Perfil de informação clinicas - apgarScore"
+Description: "Perfil de informação clinicas - apgarScore"
+
+
+* status = #registered
+* code = $loinc#10160-0 //change
+
+* component MS
+* component ^slicing.discriminator.type = #type
+* component ^slicing.discriminator.path = "value"
+* component ^slicing.description = "Slicing based on value[x] type."
+* component ^slicing.rules = #closed
+* component ^requirements = "Required if not(exists(Observation.valueString))"
+* component ^min = 0
+* component contains
+    first 1..1 and
+    fifth 1..1 and
+    tenth 1..1 
+
+
+* component[first].value[x] only integer
+* component[fifth].value[x] only integer
+* component[tenth].value[x] only integer
+
