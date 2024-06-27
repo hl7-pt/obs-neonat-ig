@@ -106,8 +106,8 @@ Characteristics: #can-be-target
 * twinNumber 1..1 string "Corresponde ao Número da criança / total de crianças. Exemplo: “1/2”"
 
 Logical: NewBornLM
-Title: "Notícia de Nascimento (model)"
-Description: "Logical model -  Notícia de Nascimento"
+Title: "Recem-nascido (model)"
+Description: "Logical model - Recem-nascido"
 Characteristics: #can-be-target
 
 
