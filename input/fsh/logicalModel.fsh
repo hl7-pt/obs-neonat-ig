@@ -53,7 +53,7 @@ Characteristics: #can-be-target
   * headquarters 1..1 Identifier "Dados da unidade de saúde de inscrição"
   * ACES 0..1 string "Agrupamento do centro de saúde"
   * healthcardNumber 0..1 integer "Nº de SNS do recém-nascido"
-  * extension 0..1 string "Extensão de saúde"
+  * healthextension 0..1 string "Extensão de saúde"
   * familyDoctor 0..1 string "Nome clinico do médico de família"
   * familyNurse 0..1 string "Nome clinico do enfermeiro de família"
 * motherDemographics 1..1 motherDemographicsLM "Dados demográficos da mãe"
