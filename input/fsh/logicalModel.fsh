@@ -35,9 +35,9 @@ Description: "Logical model - Vaccine"
 Characteristics: #can-be-target
 
 * taken 1..1 boolean "Confirmação de toma da vacina"
-* date 1..1 dateTime "Data da toma (YYYY-MM-DD)"
-* lot 1..1 string "Lote da vacina"
-* reason 1..1 string "Motivo de não toma da vacina"
+* date 0..1 dateTime "Data da toma (YYYY-MM-DD)"
+* lot 0..1 string "Lote da vacina"
+* reason 0..1 string "Motivo de não toma da vacina"
 
 Logical: birthNoticeLM
 Title: "BirthNotice (model)"

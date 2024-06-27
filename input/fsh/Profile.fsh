@@ -50,7 +50,8 @@ Description: "birth Notice"
     pregnancy 1..1 MS and
     birth 1..1 MS and
     newborn 0..1 MS and
-    otherInfo 0..1 MS 
+    exams 0..1 MS and
+    vaccination 0..1
 * section[destination].title 1.. MS
 * section[destination].code = $loinc#10160-0
 * section[destination].entry only Reference(Organization or Practitioner)
@@ -81,6 +82,23 @@ Description: "birth Notice"
 * section[birth].entry ^slicing.discriminator[=].path = "resolve()"
 * section[birth].entry ^slicing.rules = #open
 
+* section[vaccination].title 1.. MS
+* section[vaccination].code = $loinc#10160-0
+* section[vaccination].entry only Reference(Vaccination)
+* section[vaccination].entry MS
+* section[vaccination].entry ^slicing.discriminator[0].type = #profile
+* section[vaccination].entry ^slicing.discriminator[=].path = "resolve()"
+* section[vaccination].entry ^slicing.rules = #open
+
+* section[newborn].title 1.. MS
+* section[newborn].code = $loinc#10160-0
+* section[newborn].entry only Reference(Child)
+* section[newborn].entry MS
+* section[newborn].entry ^slicing.discriminator[0].type = #profile
+* section[newborn].entry ^slicing.discriminator[=].path = "resolve()"
+* section[newborn].entry ^slicing.rules = #open
+
+
 Profile: Mother
 Parent: Patient
 Title: "Mother"
@@ -102,13 +120,10 @@ Title: "Child"
 Description: ""
 
 * identifier MS
-* name 1..* MS
+* deceased[x] only dateTime
+* gender 1..1
 
-* telecom MS
-* gender MS
-* birthDate 1.. MS
-* address MS
-* generalPractitioner MS
+
 Profile: Professional
 Parent: Practitioner
 Title: "Professional"
@@ -204,3 +219,17 @@ Description: ""
 * component[reason].value[x] only string
 * component[assist].value[x] only CodeableConcept
 * component[assistDescription].value[x] only string
+
+
+Profile: Vaccination
+Parent: Immunization
+Title: "Vaccination"
+Description: ""
+
+* status MS
+* patient MS  
+* patient only Reference(Child) 
+* occurrence[x]  only dateTime 
+* occurrence[x] MS
+* lotNumber MS
+//add constraint
