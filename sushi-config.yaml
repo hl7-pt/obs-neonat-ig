@@ -168,20 +168,18 @@ pages:
     title: Home Page   
   background.md:
     title: "Processo Funcional da “Notícia de Nascimento”"
-
-  spec.md:
-    title: Specification
   downloads.html:
     title: Downloads
   changes.html:
     title: IG Change History
-		
+	mapping.html:
+    title: Mapeamento
 menu:
-  IG Home: index.html
-  Background: background.html
-  Specification: spec.html
-  Table of Contents: toc.html
-  Artifact Index: artifacts.html			
+  Índice: toc.html
+  Introdução: 
+    Funcional: background.html
+    Mapeamentos: mapping.html
+  Artefactos: artifacts.html			
   Downloads: downloads.html
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide

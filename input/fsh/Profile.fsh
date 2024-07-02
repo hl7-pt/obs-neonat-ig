@@ -170,8 +170,8 @@ Description: "Perfil para o profissional de saúde"
 
 Profile: Contact
 Parent: Encounter
-Title: "Contact "
-Description: ""
+Title: "Contacto "
+Description: "Perfil de contacto"
 
 
 Profile: Pregnancy
