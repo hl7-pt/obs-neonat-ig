@@ -1,4 +1,3 @@
-## Processo Funcional da “Notícia de Nascimento”
 
 Ao abrigo do projeto de inovação digital e simplificação dos processos de saúde em Portugal,
 “Simplex Saúde Infantil e Juvenil”, foram implementados dois projetos auxiliares que incidem
