@@ -7,11 +7,11 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
+id: birth-notice-ig
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example
-name: ExampleIG
-title: "HL7 PT FHIR Implementation Guide: Example IG Release 1 | STU1"
+name: BirthNoticeIG
+title: "HL7 PT FHIR Implementation Guide: Noticia de Nascimento IG Release 1 | STU1"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
@@ -172,15 +172,18 @@ pages:
     title: Downloads
   changes.html:
     title: IG Change History
-	mapping.html:
-    title: Mapeamento
+  mapping.md:
+    title: Mapeamentos
+
+
 menu:
   Índice: toc.html
-  Introdução: 
+  Introdução:
     Funcional: background.html
     Mapeamentos: mapping.html
   Artefactos: artifacts.html			
   Downloads: downloads.html
+  
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
 # resource), the code is the YAML key. If a parameter allows repeating
