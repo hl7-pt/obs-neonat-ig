@@ -39,4 +39,7 @@ Detalhes sobre o desenvolvimento da WebAPI poderão ser consultados em <a href="
 | **Contributor** | João Almeida | President, HL7 Portugal | joaofilipe90@gmail.com |
 
 ### Acknowledgements & Agradecimentos
-HfPT 
+
+Aviso 2022-C05i0101-02 Agendas/Alianças mobilizadoras para a reindustrialização,  Projeto nº C630926586-00465198. 
+
+This work was financed by the project Health from Portugal (“Aviso 2022-C05i0101-02 Agendas/Alianças mobilizadoras para a reindustrialização,  Projeto nº C630926586-00465198”). 
