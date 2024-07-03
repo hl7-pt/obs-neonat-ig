@@ -36,10 +36,10 @@ Detalhes sobre o desenvolvimento da WebAPI poderão ser consultados em <a href="
 
 | Role  | Name | Organization | Contact |
 | --- | --- | --- | --- |
-| **Primary Editor** | André Oliveira | ProChild CoLAB | andre.oliveira@prochildcolab.pt |
-| **Primary Editor** | Samuel Frade | Virtual Care | samuel.frade@virtualcare.pt |
-| **Primary Editor** | Tiago Costa | Virtual Care | tcosta@virtualcare.pt 
-| **Contributor** | João Almeida | President, HL7 Portugal | joaofilipe90@gmail.com |
+| **Primary Editor** | André Oliveira | ProChild CoLAB | andre.oliveira __at__ prochildcolab.pt |
+| **Primary Editor** | Samuel Frade | Virtual Care | samuel.frade __at__ virtualcare.pt |
+| **Primary Editor** | Tiago Costa | Virtual Care | tcosta __at__ virtualcare.pt 
+| **Contributor** | João Almeida | President, HL7 Portugal | joaofilipe90 __at__ gmail.com |
 
 ### Acknowledgements & Agradecimentos
 
