@@ -43,3 +43,6 @@ Detalhes sobre o desenvolvimento da WebAPI poderão ser consultados em <a href="
 Aviso 2022-C05i0101-02 Agendas/Alianças mobilizadoras para a reindustrialização,  Projeto nº C630926586-00465198. 
 
 This work was financed by the project Health from Portugal (“Aviso 2022-C05i0101-02 Agendas/Alianças mobilizadoras para a reindustrialização,  Projeto nº C630926586-00465198”). 
+
+<img src="funding.png" alt="An overview of access to resources"/>
+<br clear="all"/>
