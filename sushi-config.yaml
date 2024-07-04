@@ -7,7 +7,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: birth-notice-ig
+id: hl7.fhir.pt.obs-neonat
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example
 name: BirthNoticeIG
@@ -177,6 +177,7 @@ pages:
 
 
 menu:
+  Home: index.html
   Índice: toc.html
   Introdução:
     Funcional: background.html
