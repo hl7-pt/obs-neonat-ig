@@ -195,8 +195,8 @@ Description: "Perfil de Informação de gravidez"
     weeks 0..1 and
     risk 0..1 and
     riskreason 0..1 and
-    immunoglobulinAdministration 0..1 and
-     immunoglobulinAdministrationDate	 0..1 and 
+   // immunoglobulinAdministration 0..1 and
+   //  immunoglobulinAdministrationDate	 0..1 and 
  firstQuarterEco		0..1	and
 firstQuarterBio		0..1	and 
 secondQuarterEco		0..1	and
@@ -211,10 +211,14 @@ twinNumber 0..1
 
 * component[days].value[x] only integer
 * component[weeks].value[x] only integer
+
 * component[risk].value[x] only CodeableConcept
+* component[risk].valueCodeableConcept from RiscoGravidezVS (required)
+
+
 * component[riskreason].value[x] only string
-* component[immunoglobulinAdministration].value[x] only boolean
-* component[immunoglobulinAdministrationDate].value[x] only dateTime
+//* component[immunoglobulinAdministration].value[x] only boolean
+//* component[immunoglobulinAdministrationDate].value[x] only dateTime
 * component[firstQuarterEco].value[x] only boolean
 * component[firstQuarterBio].value[x] only boolean
 * component[secondQuarterEco].value[x] only boolean
@@ -224,6 +228,7 @@ twinNumber 0..1
 * component[visits].value[x] only integer
 * component[intercurrences].value[x] only string
 * component[pregancyType].value[x] only CodeableConcept
+* component[pregancyType].valueCodeableConcept from TipoGravidezVS (required)
 * component[twinNumber].value[x] only integer
 
 
@@ -254,6 +259,9 @@ Description: "Perfil de Informação do Parto"
     assistDescription 0..1
 
 * component[type].value[x] only CodeableConcept
+* component[type].value[x] only CodeableConcept
+* component[type].valueCodeableConcept from TipoPartoVS (required)
+
 * component[participation].value[x] only CodeableConcept
 * component[reason].value[x] only string
 * component[assist].value[x] only CodeableConcept
@@ -267,10 +275,11 @@ Description: "Informação sobre vacinação"
 
 * status MS
 * patient MS  
-* patient only Reference(Child) 
+* patient only Reference(Child or Mother) 
 * occurrence[x]  only dateTime 
 * occurrence[x] MS
 * lotNumber MS
+* vaccineCode from vacinas-infancia-vs (required)
 //add constraint
 
 
@@ -336,7 +345,7 @@ Description: "Perfil de informação clinicas - apgarScore"
 
 
 * status = #registered
-* code = $loinc#10160-0 //change
+* code = $sct#1287344004 "Apgar score (assessment scale)"
 
 * component MS
 * component ^slicing.discriminator.type = #type
@@ -352,6 +361,10 @@ Description: "Perfil de informação clinicas - apgarScore"
 
 
 * component[first].value[x] only integer
+* component[first].code  = $sct#169895004 "Apgar score at 1 minute (observable entity)"
 * component[fifth].value[x] only integer
+* component[fifth].code  = $sct#169909004 "Apgar score at 5 minutes (observable entity)"
 * component[tenth].value[x] only integer
+* component[tenth].code  = $sct#169922007 "Apgar score at 10 minutes (observable entity)"
+
 
