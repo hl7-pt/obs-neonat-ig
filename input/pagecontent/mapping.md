@@ -3,4 +3,8 @@ Tentámos usar terminologias internacionais sempre que possiveis, criando CodeSy
 
 Aqui deixamos uma visão geral do modelo lógico e de como este se transforma no documento FHIR.
 
-...
+
+
+<div>{% include mapping-overview.svg %}</div>
+<br clear="all"/>
+

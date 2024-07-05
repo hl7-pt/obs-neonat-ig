@@ -1,0 +1,30 @@
+@startuml
+
+class ClassA {
+  +outerAttributeA
+  +outerMethodA()
+}
+
+class InnerClassA {
+  +innerAttributeA
+  +innerMethodA()
+}
+
+ClassA *-- InnerClassA
+
+class ClassB {
+  +attributeB
+  +methodB()
+}
+
+class InnerClassB {
+  +innerAttributeB
+  +innerMethodB()
+}
+
+ClassB *-- InnerClassB
+
+InnerClassA::innerAttributeA --> InnerClassB::innerMethodB : InnerLink
+ClassA::outerMethodA --> ClassB::attributeB : OuterLink
+
+@enduml

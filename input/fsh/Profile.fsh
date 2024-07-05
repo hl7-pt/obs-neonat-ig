@@ -46,6 +46,7 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section.text 1.. MS
 * section.section ..0
 * section contains
+mother 1..1 MS and
 maternity 1..1 MS and
     destination 1..1 MS and
     pregnancy 1..1 MS and
@@ -54,16 +55,22 @@ maternity 1..1 MS and
     exams 0..1 MS and
     vaccination 0..1
 
-* section[maternity].title 1.. MS
+* section[mother].code = $loinc#10160-0
+* section[mother].entry only Reference(Mother)
+* section[mother].entry MS
+* section[mother].entry ^slicing.discriminator[0].type = #profile
+* section[mother].entry ^slicing.discriminator[=].path = "resolve()"
+* section[mother].entry ^slicing.rules = #open
+
+
 * section[maternity].code = $loinc#10160-0
-* section[maternity].entry only Reference(Organization)
+* section[maternity].entry only Reference(Organization or Contact)
 * section[maternity].entry MS
 * section[maternity].entry ^slicing.discriminator[0].type = #profile
 * section[maternity].entry ^slicing.discriminator[=].path = "resolve()"
 * section[maternity].entry ^slicing.rules = #open
 
 
-* section[destination].title 1.. MS
 * section[destination].code = $loinc#10160-0
 * section[destination].entry only Reference(Organization or Practitioner)
 * section[destination].entry MS
@@ -77,7 +84,6 @@ maternity 1..1 MS and
 * section[destination].entry[familyHCP] only Reference(Practitioner)
 
 
-* section[pregnancy].title 1.. MS
 * section[pregnancy].code = $loinc#10160-0
 * section[pregnancy].entry only Reference(Pregnancy)
 * section[pregnancy].entry MS
@@ -85,7 +91,6 @@ maternity 1..1 MS and
 * section[pregnancy].entry ^slicing.discriminator[=].path = "resolve()"
 * section[pregnancy].entry ^slicing.rules = #open
 
-* section[birth].title 1.. MS
 * section[birth].code = $loinc#10160-0
 * section[birth].entry only Reference(Birth)
 * section[birth].entry MS
@@ -93,7 +98,6 @@ maternity 1..1 MS and
 * section[birth].entry ^slicing.discriminator[=].path = "resolve()"
 * section[birth].entry ^slicing.rules = #open
 
-* section[vaccination].title 1.. MS
 * section[vaccination].code = $loinc#10160-0
 * section[vaccination].entry only Reference(Vaccination)
 * section[vaccination].entry MS
@@ -101,7 +105,6 @@ maternity 1..1 MS and
 * section[vaccination].entry ^slicing.discriminator[=].path = "resolve()"
 * section[vaccination].entry ^slicing.rules = #open
 
-* section[newborn].title 1.. MS
 * section[newborn].code = $loinc#10160-0
 * section[newborn].entry only Reference(Child)
 * section[newborn].entry MS
@@ -109,7 +112,6 @@ maternity 1..1 MS and
 * section[newborn].entry ^slicing.discriminator[=].path = "resolve()"
 * section[newborn].entry ^slicing.rules = #open
 
-* section[exams].title 1.. MS
 * section[exams].code = $loinc#10160-0
 * section[exams].entry only Reference(newBornExams or Observation)
 * section[exams].entry MS
@@ -146,8 +148,7 @@ Description: "Perfil da mãe"
 * birthDate 1..1 MS
 * address 0..1 MS
 * contact 0..1 MS
-//birthplace
-//nationality
+
 * extension contains 
 http://hl7.org/fhir/StructureDefinition/patient-birthPlace  named birthPlace 0..1 and
 http://hl7.org/fhir/StructureDefinition/patient-nationality named nationality 0..1
@@ -173,6 +174,9 @@ Parent: Encounter
 Title: "Contacto "
 Description: "Perfil de contacto"
 
+* identifier 1..1 MS
+* status = #completed
+* class from episode-type-vs (required)
 
 Profile: Pregnancy
 Parent: Observation
@@ -181,7 +185,7 @@ Description: "Perfil de Informação de gravidez"
 
 
 * status = #registered
-* code = $loinc#10160-0 //change
+* code = $sct#77386006 "Pregnancy (finding)"
 
 * component MS
 * component ^slicing.discriminator.type = #type

@@ -1,0 +1,67 @@
+@startuml
+hide stereotype
+hide circle
+skinparam linetype polyline
+skinparam shadowing false
+
+
+'!pragma graphviz_dot smetana
+
+
+
+skinparam class<<Modelo>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+
+skinparam class<<FHIR>> {
+ BorderColor DarkRed
+ BackgroundColor MistyRose
+ HeaderBackgroundColor #f09090
+}
+
+
+class "Noticia" as N<<Modelo>> {
+  +Contact
+  +Professional
+  +birthNotice
+  +birthNotice.maternity
+  +birthNotice.destination
+  +birthNotice.motherdemographics
+  +birthNotice.pregnancy
+  +birthNotice.birth
+  +birthNotice.puerperium
+  +birthNotice.newborn
+  +birthNotice.puerperiumreview
+  +birthNotice.childHealthSurveillance		
+  +birthNotice.letterWithClinicalInformation
+  +birthNotice.professionals
+}
+
+
+
+
+class "Document" as D<<FHIR>> {
+  +Mother
+  +Maternity
+  +maternity.contact
+  +destination
+  +pregnancy
+  +birth
+  +newborn
+  +exams
+  +vaccination
+}
+
+
+N::birthNotice.motherdemographics -r-> D::Mother
+N::maternity -r-> D::Maternity
+N::birthNotice.destination -r-> D::destination
+N::contact -r-> D::maternity.contact
+
+
+
+
+@enduml

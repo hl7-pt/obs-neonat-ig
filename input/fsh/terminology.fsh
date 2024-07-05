@@ -50,34 +50,15 @@ Description:  "Tipos de parto ValueSet"
 
 
 
-CodeSystem: RiscoGravidezCS
-Id:         risco-gravidez-cs
-Title:     "Risco de gravidez code system"
-Description: "Risco de gravidez code system"
-// For information about creating a code system in the `terminology.hl7.org` namespace, see
-// this documentation on the UTG process: https://confluence.hl7.org/display/VMAH/Vocabulary+Maintenance+at+HL7
-// You can also create a URL local to your Implementation Guide like `http://hl7.org/fhir/uv/your-ig/CodeSystem/lymphnodes`
-// The "Terminology" stream on chat.fhir.org (free registration required) is a good place to ask
-// questions about how to handle this for your specific use case (direct link: https://bit.ly/terminology-fhir-chat)
-* ^url =  "http://terminology.hl7.pt/CodeSystem/riscogravidez"
-// Spacing layout over three lines per term is optional, for clarity
-// The definition (second text string) is optional
-* #0
-    "Baixo"
-    "Baixo"
-* #1
-    "Médio"
-    "Médio"
-* #2
-    "Alto"
-    "Alto"
-
 ValueSet: RiscoGravidezVS
 Id: risco-gravidez-vs
 Title:  "Risco de gravidez ValueSet"
 Description:  "Risco de gravidez ValueSet"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* $sct#237239003  "Low risk pregnancy (finding)"
+* $sct#1303255001  "Medium risk pregnancy (finding)"
+* $sct#47200007  "High risk pregnancy (finding)"
 
-* include codes from system risco-gravidez-cs
 
 
 ValueSet: TipoGravidezVS
@@ -98,5 +79,9 @@ Description:  "Tipo de gravidez ValueSet"
 * $sct#769102002 "Human anti-D immunoglobulin (substance)"
 
 
+ValueSet: TipoepisodioVS
+Id: episode-type-vs
+Title:  "Tipos de episódio ValueSet"
+Description:  "Tipos de episódio ValueSet"
 
 
