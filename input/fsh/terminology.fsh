@@ -71,12 +71,49 @@ Description:  "Tipo de gravidez ValueSet"
 
 ValueSet: VacinasinfanciaVS
 Id: vacinas-infancia-vs
-Title:  "Tipo de gravidez ValueSet"
-Description:  "Tipo de gravidez ValueSet"
+Title:  "Vacinas ValueSet"
+Description:  "Vacinas ValueSet"
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#1861000221106  "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
 * $sct#871822003  "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
 * $sct#769102002 "Human anti-D immunoglobulin (substance)"
+
+
+
+CodeSystem: TipoepisodioCS
+Id:         tipo-episodio-cs
+Title:     "Tipos de episodio code system"
+Description: "Tipos de episodio code system"
+// For information about creating a code system in the `terminology.hl7.org` namespace, see
+// this documentation on the UTG process: https://confluence.hl7.org/display/VMAH/Vocabulary+Maintenance+at+HL7
+// You can also create a URL local to your Implementation Guide like `http://hl7.org/fhir/uv/your-ig/CodeSystem/lymphnodes`
+// The "Terminology" stream on chat.fhir.org (free registration required) is a good place to ask
+// questions about how to handle this for your specific use case (direct link: https://bit.ly/terminology-fhir-chat)
+* ^url =  "http://terminology.hl7.pt/CodeSystem/tipoepisodio"
+// Spacing layout over three lines per term is optional, for clarity
+// The definition (second text string) is optional
+* #CON
+    "Consulta"
+    "Consulta"
+* #INT
+    "Internamento"
+    "Internamento"
+* #URG
+    "Urgência"
+    "Urgência"
+* #BLO
+    "Bloco"
+    "Bloco"
+* #HDI
+    "Hospital de Dia"
+    "Hospital de Dia"
+* #RAD
+    "RAD" //faz sentido aqui?
+    "RAD"
+* #LAB
+    "LAB"  //faz sentido aqui?
+    "LAB"
+
 
 
 ValueSet: TipoepisodioVS
@@ -85,3 +122,4 @@ Title:  "Tipos de episódio ValueSet"
 Description:  "Tipos de episódio ValueSet"
 
 
+* include codes from system tipo-episodio-cs
