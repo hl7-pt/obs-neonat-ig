@@ -1,10 +1,133 @@
-O mapeamento não foi feito de forma direta, sendo que a estrutura foi alterada de forma a corresponder a um documento em FHIR. No entanto, tentou-se que a alteração fosse o menos profunda possivel, de forma a facilitar a implementação.
-Tentámos usar terminologias internacionais sempre que possiveis, criando CodeSystem quando não foi possivel. Tentámos também vincular campos codificados a estas terminologias. De igual forma, criámos constraints adicionais para facilitar a transformação.
+O mapeamento não foi feito de forma direta, sendo que a estrutura foi alterada de forma a corresponder a um documento em FHIR. No entanto, tentou-se que a alteração fosse o menos profunda possivel, de forma a facilitar a implementação
+Tentámos usar terminologias internacionais sempre que possiveis, criando CodeSystem quando não foi possivel. Tentámos também vincular campos codificados a estas terminologias. De igual forma, criámos constraints adicionais para facilitar a transformação
 
-Aqui deixamos uma visão geral do modelo lógico e de como este se transforma no documento FHIR.
+Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na especificação FHIR:  
 
 
 
-<div>{% include mapping-overview.svg %}</div>
-<br clear="all"/>
-
+|          Noticia                                                    | FHIR  |
+|----------------------------------------------------------------------------|---|
+|contact.id                                                                  |   |
+| contact.module                                                             |   |
+| professional.functionalgroup                                               |   |
+| professional.licence                                                       |   |
+| professional.name                                                          |   |
+| birthNotice.owner                                                          |   |
+| birthNotice.code                                                           |   |
+| birthNotice.maternity.institution                                          |   |
+| birthNotice.maternity.service                                              |   |
+| birthNotice.destination.headquarters                                       |   |
+| birthNotice.destination.ACES                                               |   |
+| birthNotice.destination.healthcardNumber                                   |   |
+| birthNotice.destination.healthextension                                    |   |
+| birthNotice.destination.familyDoctor                                       |   |
+| birthNotice.destination.familyNurse                                        |   |
+| birthNotice.motherDemographics.healthcardNumber                            |   |
+| birthNotice.motherDemographics.name                                        |   |
+| birthNotice.motherDemographics.birthdate                                   |   |
+| birthNotice.motherDemographics.Age                                         |   |
+| birthNotice.motherDemographics.address                                     |   |
+| birthNotice.motherDemographics.placeOfBirth                                |   |
+| birthNotice.motherDemographics.nationality                                 |   |
+| birthNotice.motherDemographics.phone                                       |   |
+| birthNotice.motherDemographics.postalCode                                  |   |
+| birthNotice.motherDemographics.countryOfBirth                              |   |
+| birthNotice.motherDemographics.districtOfBirth                             |   |
+| birthNotice.motherDemographics.countyOfBirth                               |   |
+| birthNotice.motherDemographics.parishOfBirth                               |   |
+| birthNotice.motherDemographics.districtAddress                             |   |
+| birthNotice.motherDemographics.countyAddress                               |   |
+| birthNotice.motherDemographics.parishAddress                               |   |
+| birthNotice.pregnancy.days                                                 |   |
+| birthNotice.pregnancy.weeks                                                |   |
+| birthNotice.pregnancy.risk                                                 |   |
+| birthNotice.pregnancy.riskReason                                           |   |
+| birthNotice.pregnancy.immunoglobulinAdministration                         |   |
+| birthNotice.pregnancy.immunoglobulinAdministrationDate                     |   |
+| birthNotice.pregnancy.prenatalMonitorizationFulfillment.firstQuarterEco    |   |
+| birthNotice.pregnancy.prenatalMonitorizationFulfillment.firstQuarterBio    |   |
+| birthNotice.pregnancy.prenatalMonitorizationFulfillment.secondQuarterEco   |   |
+| birthNotice.pregnancy.prenatalMonitorizationFulfillment.secondQuarterBio   |   |
+| birthNotice.pregnancy.prenatalMonitorizationFulfillment.thirdQuarterEco    |   |
+| birthNotice.pregnancy.prenatalMonitorizationFulfillment.thirdQuarterBio    |   |
+| birthNotice.pregnancy.prenatalMonitorizationFulfillment.visits             |   |
+| birthNotice.pregnancy.prenatalMonitorizationFulfillment.intercurrences     |   |
+| birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.type        |   |
+| birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.value       |   |
+| birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.reason      |   |
+| birthNotice.pregnancy.PregnancyType                                        |   |
+| birthNotice.pregnancy.twinNumber                                           |   |
+| birthNotice.birth.date                                                     |   |
+| birthNotice.birth.type                                                     |   |
+| birthNotice.birth.participation                                            |   |
+| birthNotice.birth.reason                                                   |   |
+| birthNotice.birth.assist                                                   |   |
+| birthNotice.birth.assistDescription                                        |   |
+| birthNotice.puerperium.type                                                |   |
+| birthNotice.puerperium.observations                                        |   |
+| birthNotice.newborn.liveBirth                                              |   |
+| birthNotice.newborn.gender                                                 |   |
+| birthNotice.newborn.length                                                 |   |
+| birthNotice.newborn.deceased                                               |   |
+| birthNotice.newborn.deathBirth                                             |   |
+| birthNotice.newborn.deathBirthDate                                         |   |
+| birthNotice.newborn.reanimated                                             |   |
+| birthNotice.newborn.cephalicPerimeter                                      |   |
+| birthNotice.newborn.weight                                                 |   |
+| birthNotice.newborn.apgarIndexFirstMinute                                  |   |
+| birthNotice.newborn.apgarIndexFifthMinute                                  |   |
+| birthNotice.newborn.apgarIndexTenthMinute                                  |   |
+| birthNotice.newborn.phototherapy                                           |   |
+| birthNotice.newborn.malformations.code                                     |   |
+| birthNotice.newborn.malformations.description                              |   |
+| birthNotice.newborn.AdmissionNeonatology                                   |   |
+| birthNotice.newborn.AdmissionNeonatologyReason                             |   |
+| birthNotice.newborn.AdmissionNeonatologyLocal                              |   |
+| birthNotice.newborn.transport.Neonatal                                     |   |
+| birthNotice.newborn.transport.NeonatalDestination                          |   |
+| birthNotice.newborn.transport.NeonatalReason                               |   |
+| birthNotice.newborn.transport.InUtero                                      |   |
+| birthNotice.newborn.transport.InUteroProvanance                            |   |
+| birthNotice.newborn.transport.InUteroReason                                |   |
+| birthNotice.newborn.screeningMetabolicDiseasesTaken                        |   |
+| birthNotice.newborn.screeningMetabolicReason                               |   |
+| birthNotice.newborn.screeningMetabolicDiseasesDate                         |   |
+| birthNotice.newborn.screeningCongenitalDiseases                            |   |
+| birthNotice.newborn.screeningCongenitalDiseasesChange                      |   |
+| birthNotice.newborn.screeningCongenitalDiseasesObservations                |   |
+| birthNotice.newborn.screeningpupillaryReflection                           |   |
+| birthNotice.newborn.screeningpupillaryReflectionChange                     |   |
+| birthNotice.newborn.screeningpupillaryReflectionObservations               |   |
+| birthNotice.newborn.screeningHearing.type                                  |   |
+| birthNotice.newborn.screeningHearing.date                                  |   |
+| birthNotice.newborn.screeningHearing.rightEar                              |   |
+| birthNotice.newborn.screeningHearing.leftEar                               |   |
+| birthNotice.newborn.screeningHearing.repeatDate                            |   |
+| birthNotice.newborn.VHB.taken                                              |   |
+| birthNotice.newborn.VHB.date                                               |   |
+| birthNotice.newborn.VHB.lot                                                |   |
+| birthNotice.newborn.VHB.reason                                             |   |
+| birthNotice.newborn.BCG.taken                                              |   |
+| birthNotice.newborn.BCG.date                                               |   |
+| birthNotice.newborn.BCG.lot                                                |   |
+| birthNotice.newborn.BCG.reason                                             |   |
+| birthNotice.newborn.immunoglobulin.taken                                   |   |
+| birthNotice.newborn.immunoglobulin.date                                    |   |
+| birthNotice.newborn.immunoglobulin.lot                                     |   |
+| birthNotice.newborn.immunoglobulin.reason                                  |   |
+| birthNotice.newborn.feedingUntilDischarge                                  |   |
+| birthNotice.newborn.feedingFirstHour                                       |   |
+| birthNotice.newborn.individualHealthBulletinDelivered                      |   |
+| birthNotice.newborn.childYoungHealthBulletinDelivered                      |   |
+| birthNotice.newborn.bulletinDeliveryType                                   |   |
+| birthNotice.newborn.riskAssessment.riskFactorsIdentified                   |   |
+| birthNotice.newborn.riskAssessment.reference                               |   |
+| birthNotice.newborn.riskAssessment.observations                            |   |
+| birthNotice.newborn.Outpatient.institution                                 |   |
+| birthNotice.newborn.Outpatient.date                                        |   |
+| birthNotice.newborn.confirmedDeceased                                      |   |
+| birthNotice.puerperiumReview                                               |   |
+| birthNotice.childHealthSurveillance                                        |   |
+| birthNotice.letterWithClinicalInformation.hasLetterWithClinicalInformation |   |
+| birthNotice.letterWithClinicalInformation.date                             |   |
+| birthNotice.professionals                                                  |   |
