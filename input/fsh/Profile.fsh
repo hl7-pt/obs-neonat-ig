@@ -84,14 +84,14 @@ maternity 1..1 MS and
 * section[destination].entry[familyHCP] only Reference(Practitioner)
 
 
-* section[pregnancy].code = $loinc#10160-0
+* section[pregnancy].code = $loinc#56833-7 "Pregnancy related history Narrative"
 * section[pregnancy].entry only Reference(Pregnancy)
 * section[pregnancy].entry MS
 * section[pregnancy].entry ^slicing.discriminator[0].type = #profile
 * section[pregnancy].entry ^slicing.discriminator[=].path = "resolve()"
 * section[pregnancy].entry ^slicing.rules = #open
 
-* section[birth].code = $loinc#10160-0
+* section[birth].code = $loinc#57074-7 "Labor and delivery process Narrative"
 * section[birth].entry only Reference(Birth)
 * section[birth].entry MS
 * section[birth].entry ^slicing.discriminator[0].type = #profile
@@ -105,7 +105,7 @@ maternity 1..1 MS and
 * section[vaccination].entry ^slicing.discriminator[=].path = "resolve()"
 * section[vaccination].entry ^slicing.rules = #open
 
-* section[newborn].code = $loinc#10160-0
+* section[newborn].code = $loinc#57075-4 "Newborn delivery information from newborn Narrative"
 * section[newborn].entry only Reference(Child)
 * section[newborn].entry MS
 * section[newborn].entry ^slicing.discriminator[0].type = #profile

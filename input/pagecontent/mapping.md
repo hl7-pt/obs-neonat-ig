@@ -5,7 +5,7 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 
 
 
-|          Noticia                                                    | FHIR  |
+|          Modelo Lógico                                                    | FHIR  |
 |----------------------------------------------------------------------------|---|
 |contact.id                                                                  |   |
 | contact.module                                                             |   |
