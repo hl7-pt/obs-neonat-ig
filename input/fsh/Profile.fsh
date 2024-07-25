@@ -35,6 +35,9 @@ Parent: $clinicaldocument
 Title: "Composition que cria as secções da noticia nascimento"
 Description: "Composition que cria as secções da noticia nascimento"
 
+* status = #final
+* type = http://loinc.org/#71230-7 "Birth certificate"
+* encounter 1..1 MS
 
 * section ^slicing.discriminator[0].type = #pattern
 * section ^slicing.discriminator[=].path = "code"
@@ -43,11 +46,9 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section ^short = "Sections composing the IPS"
 * section ^definition = "The root of the sections that make up the IPS composition."
 * section.code 1.. MS
-* section.text 1.. MS
 * section.section ..0
 * section contains
     mother 1..1 MS and
-    maternity 1..1 MS and
     destination 1..1 MS and
     pregnancy 1..1 MS and
     birth 1..1 MS and
@@ -63,25 +64,13 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[mother].entry ^slicing.rules = #open
 
 
-* section[maternity].code = $loinc#10160-0
-* section[maternity].entry only Reference(Organization or Contact)
-* section[maternity].entry MS
-* section[maternity].entry ^slicing.discriminator[0].type = #profile
-* section[maternity].entry ^slicing.discriminator[=].path = "resolve()"
-* section[maternity].entry ^slicing.rules = #open
-
-
 * section[destination].code = $loinc#10160-0
-* section[destination].entry only Reference(Organization or Practitioner)
+* section[destination].entry only Reference(Organization )
 * section[destination].entry MS
 * section[destination].entry ^slicing.discriminator[0].type = #profile
 * section[destination].entry ^slicing.discriminator[=].path = "resolve()"
 * section[destination].entry ^slicing.rules = #open
-* section[destination].entry contains
-    organization 1..* and
-    familyHCP 0..*
-* section[destination].entry[organization] only Reference(Organization)
-* section[destination].entry[familyHCP] only Reference(Practitioner)
+
 
 
 * section[pregnancy].code = $loinc#56833-7 "Pregnancy related history Narrative"
@@ -177,6 +166,8 @@ Description: "Perfil de contacto"
 * identifier 1..1 MS
 * status = #completed
 * class from episode-type-vs (required)
+* serviceProvider 1..1
+* serviceType 1..1
 
 Profile: Pregnancy
 Parent: Observation

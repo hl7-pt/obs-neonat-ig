@@ -7,15 +7,15 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 
 |          Modelo Lógico                                                    | FHIR  |
 |----------------------------------------------------------------------------|---|
-| contact.id                                                                  |   |
-| contact.module                                                             |   |
-| professional.functionalgroup                                               |   |
-| professional.licence                                                       |   |
-| professional.name                                                          |   |
+| contact.id                                                                 | Encounter\[Contact].identifier  |
+| contact.module                                                             | Encounter\[Contact].class  |
+| professional.functionalgroup                                               | Practitioner |
+| professional.licence                                                       | Practitioner  |
+| professional.name                                                          | Practitioner |
 | birthNotice.owner                                                          |   |
 | birthNotice.code                                                           |   |
-| birthNotice.maternity.institution                                          |   |
-| birthNotice.maternity.service                                              |   |
+| birthNotice.maternity.institution                                          | Encounter\[Contact].serviceProvider |
+| birthNotice.maternity.service                                              | Encounter\[Contact].serviceProvider  |
 | birthNotice.destination.headquarters                                       | Organization.  |
 | birthNotice.destination.ACES                                               | Organization.   |
 | birthNotice.destination.healthcardNumber                                   | Organization.   |
