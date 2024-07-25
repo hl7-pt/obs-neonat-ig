@@ -46,8 +46,8 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section.text 1.. MS
 * section.section ..0
 * section contains
-mother 1..1 MS and
-maternity 1..1 MS and
+    mother 1..1 MS and
+    maternity 1..1 MS and
     destination 1..1 MS and
     pregnancy 1..1 MS and
     birth 1..1 MS and
@@ -119,8 +119,8 @@ maternity 1..1 MS and
 * section[exams].entry ^slicing.discriminator[=].path = "resolve()"
 * section[exams].entry ^slicing.rules = #open
 * section[exams].entry contains
-    newbornExams 0..1 and
-    apgar 0..1 and
+        newbornExams 0..1 and
+        apgar 0..1 and
         screenings 0..* and
         puerperium 0..1 and 
         puerperiumreview 0..1 and
@@ -201,16 +201,16 @@ Description: "Perfil de Informação de gravidez"
     riskreason 0..1 and
    // immunoglobulinAdministration 0..1 and
    //  immunoglobulinAdministrationDate	 0..1 and 
- firstQuarterEco		0..1	and
-firstQuarterBio		0..1	and 
-secondQuarterEco		0..1	and
-secondQuarterBio		0..1	and
-thirdQuarterEco		0..1 and 
-thirdQuarterBio		0..1	and
-visits		0..1	and 
-intercurrences 0..1  and
-pregancyType 0..1 and
-twinNumber 0..1
+    firstQuarterEco		0..1	and
+    firstQuarterBio		0..1	and 
+    secondQuarterEco		0..1	and
+    secondQuarterBio		0..1	and
+    thirdQuarterEco		0..1 and 
+    thirdQuarterBio		0..1	and
+    visits		0..1	and 
+    intercurrences 0..1  and
+    pregancyType 0..1 and
+    twinNumber 0..1
 
 
 * component[days].value[x] only integer
@@ -259,8 +259,8 @@ Description: "Perfil de Informação do Parto"
     type 0..1 and
     participation 0..1 and
     reason 0..1 and 
-    assist 0..1 and 
-    assistDescription 0..1
+    assist 0..1
+  //  assistDescription 0..1
 
 * component[type].value[x] only CodeableConcept
 * component[type].value[x] only CodeableConcept
@@ -269,7 +269,7 @@ Description: "Perfil de Informação do Parto"
 * component[participation].value[x] only CodeableConcept
 * component[reason].value[x] only string
 * component[assist].value[x] only CodeableConcept
-* component[assistDescription].value[x] only string
+//* component[assistDescription].value[x] only string //colocar no CS de assist
 
 
 Profile: Vaccination
@@ -314,12 +314,12 @@ Description: "Perfil de informação clinicas recem-nascido"
     phototherapy 0..1 and
     AdmissionNeonatology 0..1 and
     AdmissionNeonatologyReason 0..1 and
-AdmissionNeonatologyLocal 0..1 and
-feedingUntilDischarge 0..1 and
-feedingFirstHour 0..1 and
-individualHealthBulletinDelivered 0..1 and
-childYoungHealthBulletinDelivered 0..1 and
-bulletinDeliveryType 0..1 
+    AdmissionNeonatologyLocal 0..1 and
+    feedingUntilDischarge 0..1 and
+    feedingFirstHour 0..1 and
+    individualHealthBulletinDelivered 0..1 and
+    childYoungHealthBulletinDelivered 0..1 and
+    bulletinDeliveryType 0..1 
 
 
 

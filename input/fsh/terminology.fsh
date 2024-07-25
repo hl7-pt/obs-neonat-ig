@@ -1,52 +1,18 @@
-CodeSystem: TipoPartoCS
-Id:         tipo-parto-cs
-Title:     "Tipos de parto code system"
-Description: "Tipos de parto code system"
-// For information about creating a code system in the `terminology.hl7.org` namespace, see
-// this documentation on the UTG process: https://confluence.hl7.org/display/VMAH/Vocabulary+Maintenance+at+HL7
-// You can also create a URL local to your Implementation Guide like `http://hl7.org/fhir/uv/your-ig/CodeSystem/lymphnodes`
-// The "Terminology" stream on chat.fhir.org (free registration required) is a good place to ask
-// questions about how to handle this for your specific use case (direct link: https://bit.ly/terminology-fhir-chat)
-* ^url =  "http://terminology.hl7.pt/CodeSystem/tipoparto"
-// Spacing layout over three lines per term is optional, for clarity
-// The definition (second text string) is optional
-* #1
-    "Eutócico Cefálico"
-    "Eutócico Cefálico"
-* #2
-    "Distócico-Forceps"
-    "Distócico-Forceps"
-* #3
-    "Distócico-Ventosa"
-    "Distócico-Ventosa"
-* #4
-    "Distócico-Cesariana"
-    "Distócico-Cesariana"
-* #5
-    "Eutócico-Gemelar"
-    "Eutócico-Gemelar"
-* #6
-    "Eutócico-Pélvico"
-    "Eutócico-Pélvico"
-* #7
-    "Distócico Gemelar"
-    "Distócico Gemelar"
-* #8
-    "Distócico- Pélvico"
-    "Distócico- Pélvico"
-* #9
-    "Desconhecido"
-    "Desconhecido"
-* #10
-    "Distócico-Espátulas de Thierry"
-    "Distócico-Espátulas de Thierry"
-
 ValueSet: TipoPartoVS
 Id: tipo-parto-vs
 Title:  "Tipos de parto ValueSet"
 Description:  "Tipos de parto ValueSet"
 
-* include codes from system tipo-parto-cs
+* $sct#384729004 "Delivery of vertex presentation (procedure)" // "Eutócico Cefálico"
+* $sct#302383004 "Forceps delivery (procedure)" //    "Distócico-Forceps"
+* $sct#61586001 "Delivery by vacuum extraction (procedure)" //    "Distócico-Ventosa"
+* $sct#11466000 "Cesarean section (procedure)" //    "Distócico-Cesariana"
+* $sct#151441000119105 "Twin live born in hospital by vaginal delivery (finding)" //    "Eutócico-Gemelar"
+* $sct#177157003 "Spontaneous breech delivery (procedure)" //    "Eutócico-Pélvico"
+//    "Distócico Gemelar"
+* $sct#417121007 "Breech extraction (procedure)" //        "Distócico- Pélvico"
+   // "Desconhecido"
+* $sct#177157003 "Spontaneous breech delivery (procedure)" //        "Distócico-Espátulas de Thierry"
 
 
 
