@@ -1,5 +1,3 @@
-### Processo funcional
-
 A gravidez tem um conjunto de etapas funcionais associadas como descrita na imagem abaixo:
 
 <img src="gravidez1.png" alt="An overview of access to resources"/>
