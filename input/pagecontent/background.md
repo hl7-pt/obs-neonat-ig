@@ -1,11 +1,11 @@
-## Processo funcional
+### Processo funcional
 
 A gravidez tem um conjunto de etapas funcionais associadas como descrita na imagem abaixo:
 
-<img src="gravidez1." alt="An overview of access to resources"/>
+<img src="gravidez1.png" alt="An overview of access to resources"/>
 <br clear="all"/>
 
-### Etapa 1 - Preconceção
+#### Etapa 1 - Preconceção
 Consulta pré-concecional realizada em centro de saúde habitualmente (depende dos fatores de risco da grávida). Esta consulta deve ser realizada antes de parar a contraceção e deve ser programada uma consulta subsequente para avaliação dos resultados dos exames realizados e das intervenções propostas.
 
 1.	História clínica: determinar estado geral de saúde da mulher/casal e respetivos antecedentes pessoais e familiares; 
@@ -20,7 +20,7 @@ Consulta pré-concecional realizada em centro de saúde habitualmente (depende d
 10.	Avaliação de fatores de risco familiares / contextos de vida; 
 11.	Preenchimento do BSR/PF – Boletim de Saúde Reprodutiva/Planeamento Familiar. 
 
-### Etapa 2 – Gravidez
+#### Etapa 2 – Gravidez
 O esquema de vigilância e conduta durante a gravidez dependem da existência ou não de patologia. Por isso pode ser estabelecido um esquema comum para todas as grávidas numa gravidez de baixo risco. A identificação de um factor de risco ou de uma situação anómala determina a atuação subsequente. Considera-se gravidez de baixo risco aquela em que não é possível identificar, após avaliação clínica de acordo com a avaliação do risco pré-natal baseada na escala de Goodwin modificada, nenhum fator acrescido de morbilidade materna, fetal e/ou neonatal. O risco, sendo dinâmico ao longo da gravidez, deve ser reavaliado em todas as consultas.
 
 **Idade gestacional**  
@@ -66,11 +66,11 @@ O esquema e periodicidade das consultas pré-natais assim definidos podem ser ac
   * Detetar o tipo de MGF e as suas repercussões para a grávida;
   * Orientar a grávida com mutilação e a sua família, no sentido de prevenir a sua realização na criança que vai nascer (sexo feminino) e de outras raparigas da família.
 
-###  Etapa 3 – Parto
+####  Etapa 3 – Parto
 
-### Etapa 4.1 – Berçário
+#### Etapa 4.1 – Berçário
 
-###  Etapa 4.2 – Puerpério
+####  Etapa 4.2 – Puerpério
 
 Puerpério é o período de recuperação física e psicológica da mãe que começa imediatamente a seguir ao nascimento do(s) recém-nascido(s) e se prolonga por 6 semanas pós-parto (42 dias). 
 
@@ -83,7 +83,7 @@ Necessitem de avaliação de ferida cirúrgica e eventual remoção de material 
 Dificuldades no estabelecimento e manutenção do aleitamento materno; 
 Sinalizadas pelo hospital e/ou no âmbito dos protocolos da UCF.
 
-### Noticia de nascimento e alta
+#### Noticia de nascimento e alta
 
 O processo de preenchimento do formulário eletrónico referente à “Notícia de Nascimento” é desempenhado por diversos profissionais de saúde e só após o seu completo preenchimento é possível a progenitora e o recém-nascido terem alta hospitalar. O preenchimento do formulário referente à “Notícia de Nascimento”
 abrange sobretudo dados de duas secções distintas, nomeadamente “Dados do Parto” e “Dados do Recém-Nascido”. Dentro destas secções existem diversos campos de
@@ -96,7 +96,7 @@ Todas estas informações são essenciais para o acompanhamento do recém-nascid
 Os dados são preenchidos pelos obstetras responsáveis pela realização do parto, enfermeiros destacados e pessoal administrativo auxiliar da instituição onde foi realizado o parto. Para a atribuição da alta hospitalar tanto ao progenitor como ao recém-nascido é essencial que toda
 a informação obrigatório do processo da “Notícia de Nascimento” esteja preenchida corretamente.
 
-## Noticia Nascimento - enquadramento legal
+### Noticia Nascimento - enquadramento legal
 
 Ao abrigo do projeto de inovação digital e simplificação dos processos de saúde em Portugal,
 “Simplex Saúde Infantil e Juvenil”, foram implementados dois projetos auxiliares que incidem

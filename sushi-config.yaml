@@ -167,7 +167,7 @@ pages:
   index.md:
     title: Home Page   
   background.md:
-    title: "Processo Funcional da “Notícia de Nascimento”"
+    title: "Análise Funcional"
   downloads.html:
     title: Downloads
   changes.html:
