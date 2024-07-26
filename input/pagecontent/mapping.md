@@ -9,9 +9,9 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |----------------------------------------------------------------------------|---|
 | contact.id                                                                 | Encounter\[Contact].identifier  |
 | contact.module                                                             | Encounter\[Contact].class  |
-| professional.functionalgroup                                               | Practitioner |
-| professional.licence                                                       | Practitioner  |
-| professional.name                                                          | Practitioner |
+| professional.functionalgroup                                               | Patient\[Mother\].generalPractitioner |
+| professional.licence                                                       | Patient\[Mother\].generalPractitioner  |
+| professional.name                                                          | Patient\[Mother\].generalPractitioner |
 | birthNotice.owner                                                          |   |
 | birthNotice.code                                                           |   |
 | birthNotice.maternity.institution                                          | Encounter\[Contact].serviceProvider |
@@ -20,8 +20,8 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 | birthNotice.destination.ACES                                               | Organization.   |
 | birthNotice.destination.healthcardNumber                                   | Organization.   |
 | birthNotice.destination.healthextension                                    | Organization.   |
-| birthNotice.destination.familyDoctor                                       | Practitioner.   |
-| birthNotice.destination.familyNurse                                        | Practitioner.   |
+| birthNotice.destination.familyDoctor                                       | Patient\[Mother\].generalPractitioner   |
+| birthNotice.destination.familyNurse                                        | Patient\[Mother\].generalPractitioner  |
 | birthNotice.motherDemographics.healthcardNumber                            | Patient.identifier  |
 | birthNotice.motherDemographics.name                                        | Patient.name |
 | birthNotice.motherDemographics.birthdate                                   | Patient.birthDate |

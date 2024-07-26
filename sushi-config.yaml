@@ -174,7 +174,8 @@ pages:
     title: IG Change History
   mapping.md:
     title: Mapeamentos
-  Tutorial: usage.html
+  usage.md:
+    title: Tutorial
 
 
 menu:
