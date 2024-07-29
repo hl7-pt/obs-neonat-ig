@@ -66,7 +66,42 @@ O esquema e periodicidade das consultas pré-natais assim definidos podem ser ac
 
 ####  Etapa 3 – Parto
 
+
+O momento do parto é um processo complexo e muito significativo tanto para a mãe quanto para o bebé. Durante este período, são recolhidos dados e realizadas avaliações relativas ao bem-estar materno e fetal:
+- Parto/Expulsão: Tipo de parto, apresentação do feto, início do trabalho de parto, aceleração ocitócica, antibioterapia intraparto, febre materna.
+- Monitorização fetal: Cardiotocografia
+- Trabalho de parto: Estratégias não farmacológicas para controlo da dor, posições adotadas durante o trabalho de parto, duração do período expulsivo, avaliação rotura da bolsa amniótica e líquido amniótico.
+- Recém nascido e amamentação: Estado, sexo, peso, comprimento, perímetro cefálico, índice Apgar, Utilização de suporte de O2 e reanimação, malformações visíveis no recém-nascido, eliminação urinária e intestinal, contacto pele a pele, amamentação na 1ª hora de vida, resposta adequada à amamentação, avaliação física das mamas e mamilos, avaliação da dor.
+- Dequitadura: Tipo de dequitadura, mecanismo de descolamento, peso da placenta, alterações da placenta.
+- Cordão umbilical: Tempo até à laqueação do cordão, comprimento do cordão, número de vasos, número de circulares, inserção do cordão, colheita do cordão umbilical.
+- Analgesia: Tipo de analgesia, complicações da analgesia.
+- Intervenções: Episiotomia, laceração, distócia de ombros, entre outros procedimentos.
+ 
 #### Etapa 4.1 – Berçário
+
+Após o nascimento, o recém-nascido é encaminhado para o berçário, onde são realizados os primeiros cuidados essenciais. Este espaço é preparado para garantir um ambiente seguro e higiénico, adequado às necessidades do bebé.
+No berçário, o pediatra realiza uma série de exames e avaliações para assegurar a saúde e o bem-estar do recém-nascido. Estas incluem:
+- Análise das medidas antropométricas:
+  * Peso
+  * Comprimento
+  * Perímetro cefálico
+- Exame Físico Completo:
+  - Auscultação Cardíaca e Pulmonar: Verificação dos sons cardíacos e pulmonares para identificar murmúrios cardíacos, ritmo respiratório e outros sinais.
+  - Avaliação Abdominal: Palpação do abdómen para identificar anomalias.
+  - Inspeção da Pele: Avaliação da cor da pele (icterícia, cianose) e identificação de manchas ou sinais de infeções.
+  - Avaliação Neurológica: Testes de reflexos primitivos (reflexo de Moro, de sucção, de preensão palmar e plantar).
+
+**Exame dos Olhos: Verificação de reflexos pupilares e anomalias oculares.**
+- Testes Preventivos e Profiláticos:
+  - Administração de Vitamina K: Para prevenir a doença hemorrágica do recém-nascido.
+  - Profilaxia Ocular: Aplicação de colírio antibiótico para prevenir infeções oculares.
+  - Vacinação, de acordo com Plano Nacional de Vacinação
+  - Avaliação da Alimentação e do Estado de Hidratação:
+    - Observação das primeiras tentativas de amamentação.
+    - Verificação da sucção e da deglutição.
+- Triagem Neonatal:
+  - Colheita de sangue para o teste do pezinho, que rastreia várias doenças metabólicas, genéticas e endócrinas.
+
 
 ####  Etapa 4.2 – Puerpério
 
@@ -83,16 +118,56 @@ Sinalizadas pelo hospital e/ou no âmbito dos protocolos da UCF.
 
 #### Noticia de nascimento e alta
 
-O processo de preenchimento do formulário eletrónico referente à “Notícia de Nascimento” é desempenhado por diversos profissionais de saúde e só após o seu completo preenchimento é possível a progenitora e o recém-nascido terem alta hospitalar. O preenchimento do formulário referente à “Notícia de Nascimento”
-abrange sobretudo dados de duas secções distintas, nomeadamente “Dados do Parto” e “Dados do Recém-Nascido”. Dentro destas secções existem diversos campos de
-preenchimento obrigatório e com diferente cardinalidade. Os “Dados do Parto” agregam informações sobre o evento em questão e informações da progenitora, tal como dados da
-mãe, informações da gravidez e informações sobre o esquema de vigilância pré-natal. Os “Dados do Recém-Nascido” estão relacionados com informações sobre o recém-nascido
-relativas a medições tiradas essenciais à avaliação da condição física do bebé, contendo também informações sobre rastreios realizados, anomalias e malformações, administração de vacinas, avaliação de risco e transporte neonatal.
+O processo de preenchimento do formulário eletrónico referente à "Notícia de Nascimento" é desempenhado por diversos profissionais de saúde e só após o seu completo preenchimento é possível a progenitora e o recém-nascido terem alta hospitalar. 
+De acordo com a Norma nº 013/2015 de 01/07/2015 da Direção-Geral da Saúde, são necessárias as seguintes informações sobre a Mãe, sobre o Parto e o Recém-nascido e informações administrativas:
+Informações sobre a Mãe:
+1.	Nome completo
+2.	Data de nascimento
+3.	Morada
+4.	Naturalidade e nacionalidade
+5.	Número de telefone
+6.	Detalhes da gravidez:
+  * Tipo (simples ou múltipla)
+  * Número de gémeos (se aplicável)
+  * Idade gestacional (em semanas e dias)
+  * Risco da gravidez e motivo
+  * Administração de imunoglobulina anti-D e data (se aplicável)
+  * Cumprimento do esquema de vigilância pré-natal (ecografias e análises realizadas)
+  * Intercorrências durante a gravidez
+7.	Tipo de seguimento após o nascimento (Cuidados de Saúde Primários, hospital, obstetra privado, etc.)
+
+**Informações sobre o Parto:**
+1.	Data do parto
+2.	Tipo de parto (vaginal, cesariana, etc.)
+3.	Motivo em caso de distocia (complicações no parto)
+4.	Profissional que assistiu o parto (médico, enfermeira obstetra, etc.)
+5.	Estado do puerpério até à alta (normal ou patológico)
 
 
-Todas estas informações são essenciais para o acompanhamento do recém-nascido e são essenciais para um acompanhamento de proximidade por parte das unidades de saúde locais.
-Os dados são preenchidos pelos obstetras responsáveis pela realização do parto, enfermeiros destacados e pessoal administrativo auxiliar da instituição onde foi realizado o parto. Para a atribuição da alta hospitalar tanto ao progenitor como ao recém-nascido é essencial que toda
-a informação obrigatório do processo da “Notícia de Nascimento” esteja preenchida corretamente.
+**Informações sobre o Recém-Nascido:**
+1.	Estado ao nascer (nado vivo, feto morto, falecido, etc.)
+2.	Sexo
+3.	Comprimento (em cm)
+4.	Peso ao nascer (em gramas)
+5.	Perímetro cefálico (em cm)
+6.	Índice de Apgar ao 1º, 5º e 10º minuto
+7.	Necessidade de reanimação (sim ou não)
+8.	Internamento em unidades de cuidados intensivos ou intermédios (motivo)
+9.	Fototerapia (se realizada)
+10.	Presença de malformações
+11.	Resultados de rastreios (doenças metabólicas, auditivo neonatal)
+12.	Vacinas administradas (BCG, Hepatite B, etc.)
+13.	Aleitamento até à alta hospitalar
+14.	Avaliação de risco (fatores de risco individual, familiar, socioeconómico)
+15.	Consulta de seguimento hospitalar marcada (se aplicável)
+
+**Informações Administrativas:**
+1.	Identificação da Unidade de Saúde dos Cuidados de Saúde Primários (UCSP/USF) e Agrupamento de Centros de Saúde (ACES)
+2.	Número de utente
+3.	Nome do médico e enfermeiro de família
+4.	Data de preenchimento da notícia de nascimento
+
+Todas estas informações são essenciais para o acompanhamento do recém-nascido e são essenciais para um acompanhamento de proximidade por parte das unidades de saúde locais. Os dados são preenchidos pelos obstetras responsáveis pela realização do parto, enfermeiros destacados e pessoal administrativo auxiliar da instituição onde foi realizado o parto. Para a atribuição da alta hospitalar tanto ao progenitor como ao recém-nascido é essencial que toda a informação obrigatório do processo da "Notícia de Nascimento" esteja preenchida corretamente.
 
 ### Noticia Nascimento - enquadramento legal
 
@@ -109,3 +184,6 @@ de Utentes (RNU), procedendo-se à atribuição do respetivo número de utente, 
 Cartão de Cidadão, e de médico de família.
 
 
+### WebAPI Manual
+
+Detalhes sobre o desenvolvimento da WebAPI poderão ser consultados em <a href="https://spms.min-saude.pt/wp-content/uploads/2017/01/ET-PDS-WebAPI_v1.3.pdf">SPMS Website</a>.

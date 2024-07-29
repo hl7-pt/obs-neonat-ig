@@ -168,15 +168,14 @@ pages:
     title: Home Page   
   background.md:
     title: "Análise Funcional"
-  downloads.html:
-    title: Downloads
-  changes.html:
-    title: IG Change History
   mapping.md:
     title: Mapeamentos
   usage.md:
     title: Tutorial
-
+  downloads.html:
+    title: Downloads
+  changes.html:
+    title: IG Change History
 
 menu:
   Home: index.html

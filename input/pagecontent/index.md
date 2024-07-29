@@ -1,6 +1,6 @@
-  <blockquote class="stu-note">
-    <p>The specification herewith documented is for the time being a proof of concept specification, and may not be used for any implementation purposes. 
-    No liability can be inferred from the use or misuse of this specification, or its consequences.</p>
+<blockquote class="stu-note">
+    <p>A especificação aqui documentada é, por enquanto, uma especificação de prova de conceito e não pode ser usada para fins de implementação. 
+    Nenhuma responsabilidade pode ser inferida do uso ou mau uso desta especificação, ou de suas consequências.</p>
   </blockquote>
 
 
@@ -10,7 +10,7 @@ saúde em Portugal. Este portal centralizará todos os guias de implementação 
 sistemas de saúde no país. A iniciativa visa promover a adoção de padrões internacionais, garantindo a troca eficiente e segura de
 informações de saúde.
 
-**Objetivos do Portal?**
+**Objetivos do Portal**
 1. Centralização da Informação: Reunir todos os guias de implementação FHIR utilizados em Portugal num único local,
 facilitando o acesso e consulta por profissionais de saúde, desenvolvedores e instituições.
 2. Promoção de Padrões: Incentivar a adoção dos padrões FHIR em Portugal, promovendo a interoperabilidade e a
@@ -61,9 +61,6 @@ O desenvolvimento deste projeto e da "Notícia de Nascimento" tem como principal
 Após a partilha da notícia de nascimento, o registo pode ser consultado na área restrita a profissionais de saúde na Plataforma de Dados de Saúde (PDS), através do perfil da mãe ou através do perfil do recém-nascido (no caso de o recém-nascido já ter associado ao seu perfil um número de utente do Serviço Nacional de Saúde).
 
 
-### WebAPI Manual
-
-Detalhes sobre o desenvolvimento da WebAPI poderão ser consultados em <a href="https://spms.min-saude.pt/wp-content/uploads/2017/01/ET-PDS-WebAPI_v1.3.pdf">SPMS Website</a>.
 
 ### Authors and Contributors
 
@@ -72,7 +69,9 @@ Detalhes sobre o desenvolvimento da WebAPI poderão ser consultados em <a href="
 | **Primary Editor** | André Oliveira | ProChild CoLAB | andre.oliveira __at__ prochildcolab.pt |
 | **Primary Editor** | Samuel Frade | Virtual Care | samuel.frade __at__ virtualcare.pt |
 | **Primary Editor** | Tiago Costa | Virtual Care | tcosta __at__ virtualcare.pt 
-| **Contributor** | João Almeida |  HL7 Portugal | joaofilipe90 __at__ gmail.com |
+| **Primay Editor** | João Almeida |  HL7 Portugal | joaofilipe90 __at__ gmail.com |
+| **Primay Editor** | Joana Cunha |  HL7 Portugal |  |
+| **Primay Editor** | Daniel Rodrigues |  Virtual Care | daniel __at__ virtualcare.pt|
 
 ### Acknowledgements & Agradecimentos
 
