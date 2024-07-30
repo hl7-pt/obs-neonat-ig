@@ -102,27 +102,45 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[newborn].entry ^slicing.rules = #open
 
 * section[exams].code = $loinc#10160-0
-* section[exams].entry only Reference(newBornExams or Observation)
 * section[exams].entry MS
 * section[exams].entry ^slicing.discriminator[0].type = #profile
 * section[exams].entry ^slicing.discriminator[=].path = "resolve()"
 * section[exams].entry ^slicing.rules = #open
 * section[exams].entry contains
-        newbornExams 0..1 and
+        length 0..1 and
+        bodyweigth 0..1 and
+        cephalicPerimeter 0..1 and
         apgar 0..1 and
-        screenings 0..* and
         puerperium 0..1 and 
         puerperiumreview 0..1 and
         childhealthsurveilance 0..1 and 
-        letter 0..1 
+        letter 0..1 and
+        malformation 0..1 and
+        Phototherapy 0..1 and 
+        hearingscreen 0..1 and 
+        Congenital 0..1 and 
+        Metabolic 0..1 and 
+        Pupillary 0..1
 
-* section[exams].entry[newbornExams] only Reference(newBornExams)
+* section[exams].entry[length] only Reference(http://hl7.org/fhir/StructureDefinition/bodyheight)
+* section[exams].entry[bodyweigth] only Reference(http://hl7.org/fhir/StructureDefinition/bodyweight)
+* section[exams].entry[cephalicPerimeter] only Reference(http://hl7.org/fhir/StructureDefinition/headcircum)
+* section[exams].entry[malformation] only Reference(malformation)
+* section[exams].entry[hearingscreen] only Reference(hearingscreen)
+
+* section[exams].entry[Phototherapy] only Reference(Phototherapy)
+* section[exams].entry[Congenital] only Reference(Congenital)
+* section[exams].entry[Metabolic] only Reference(Metabolic)
+* section[exams].entry[Pupillary] only Reference(Pupillary)
 * section[exams].entry[apgar] only Reference(apgarScore)
-* section[exams].entry[screenings] only Reference(Observation)
+
+
 * section[exams].entry[puerperium] only Reference(Observation)
 * section[exams].entry[puerperiumreview] only Reference(Observation)
 * section[exams].entry[childhealthsurveilance] only Reference(Observation)
 * section[exams].entry[letter] only Reference(Observation)
+
+
 
 
 
@@ -205,7 +223,11 @@ Description: "Perfil de Informação de gravidez"
 
 
 * component[days].value[x] only integer
+* component[days].code = http://loinc.org/#11449-6 "Pregnancy status [Interpretation] - Reported"
+
+
 * component[weeks].value[x] only integer
+* component[weeks].code = http://loinc.org/#11449-6 "Pregnancy status [Interpretation] - Reported"
 
 * component[risk].value[x] only CodeableConcept
 * component[risk].valueCodeableConcept from RiscoGravidezVS (required)
@@ -254,7 +276,6 @@ Description: "Perfil de Informação do Parto"
   //  assistDescription 0..1
 
 * component[type].value[x] only CodeableConcept
-* component[type].value[x] only CodeableConcept
 * component[type].valueCodeableConcept from TipoPartoVS (required)
 
 * component[participation].value[x] only CodeableConcept
@@ -279,6 +300,7 @@ Description: "Informação sobre vacinação"
 
 
 
+
 Profile: newBornExams
 Parent: Observation
 Title: "Perfil de informação clinicas recem-nascido"
@@ -297,12 +319,7 @@ Description: "Perfil de informação clinicas recem-nascido"
 * component ^requirements = "Required if not(exists(Observation.valueString))"
 * component ^min = 0
 * component contains
-    length 0..1 and
     reanimated 0..1 and
-    cephalicPerimeter 0..1 and 
-    weight 0..1 and 
-    malformations 0..1 and
-    phototherapy 0..1 and
     AdmissionNeonatology 0..1 and
     AdmissionNeonatologyReason 0..1 and
     AdmissionNeonatologyLocal 0..1 and
@@ -312,14 +329,8 @@ Description: "Perfil de informação clinicas recem-nascido"
     childYoungHealthBulletinDelivered 0..1 and
     bulletinDeliveryType 0..1 
 
-
-
-* component[length].value[x] only Quantity
 * component[reanimated].value[x] only boolean
-* component[cephalicPerimeter].value[x] only Quantity
-* component[weight].value[x] only Quantity
-* component[malformations].value[x] only CodeableConcept
-* component[phototherapy].value[x] only boolean
+
 * component[AdmissionNeonatology].value[x] only boolean
 * component[AdmissionNeonatologyReason].value[x] only string
 * component[AdmissionNeonatologyLocal].value[x] only string
@@ -328,38 +339,4 @@ Description: "Perfil de informação clinicas recem-nascido"
 * component[individualHealthBulletinDelivered].value[x] only dateTime
 * component[childYoungHealthBulletinDelivered].value[x] only dateTime
 * component[bulletinDeliveryType].value[x] only integer
-
-
-
-
-
-Profile: apgarScore
-Parent: Observation
-Title: "Perfil de informação clinicas - apgarScore"
-Description: "Perfil de informação clinicas - apgarScore"
-
-
-* status = #registered
-* code = $sct#1287344004 "Apgar score (assessment scale)"
-
-* component MS
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "value"
-* component ^slicing.description = "Slicing based on value[x] type."
-* component ^slicing.rules = #closed
-* component ^requirements = "Required if not(exists(Observation.valueString))"
-* component ^min = 0
-* component contains
-    first 1..1 and
-    fifth 1..1 and
-    tenth 1..1 
-
-
-* component[first].value[x] only integer
-* component[first].code  = $sct#169895004 "Apgar score at 1 minute (observable entity)"
-* component[fifth].value[x] only integer
-* component[fifth].code  = $sct#169909004 "Apgar score at 5 minutes (observable entity)"
-* component[tenth].value[x] only integer
-* component[tenth].code  = $sct#169922007 "Apgar score at 10 minutes (observable entity)"
-
 

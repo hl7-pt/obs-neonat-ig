@@ -11,8 +11,8 @@ Description:  "Tipos de parto ValueSet"
 * $sct#177157003 "Spontaneous breech delivery (procedure)" //    "Eutócico-Pélvico"
 //    "Distócico Gemelar"
 * $sct#417121007 "Breech extraction (procedure)" //        "Distócico- Pélvico"
-   // "Desconhecido"
-* $sct#177157003 "Spontaneous breech delivery (procedure)" //        "Distócico-Espátulas de Thierry"
+// "Desconhecido"
+// "Distócico-Espátulas de Thierry"
 
 
 
