@@ -54,7 +54,8 @@ Description: "Composition que cria as secções da noticia nascimento"
     birth 1..1 MS and
     newborn 0..1 MS and
     exams 0..1 MS and
-    vaccination 0..1
+    vaccination 0..1 and 
+    followup 0..1
 
 * section[mother].code = $loinc#10160-0
 * section[mother].entry only Reference(Mother)
@@ -87,7 +88,7 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[birth].entry ^slicing.discriminator[=].path = "resolve()"
 * section[birth].entry ^slicing.rules = #open
 
-* section[vaccination].code = $loinc#10160-0
+* section[vaccination].code = $loinc#11369-6 "History of Immunization Narrative"
 * section[vaccination].entry only Reference(Vaccination)
 * section[vaccination].entry MS
 * section[vaccination].entry ^slicing.discriminator[0].type = #profile
@@ -101,7 +102,7 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[newborn].entry ^slicing.discriminator[=].path = "resolve()"
 * section[newborn].entry ^slicing.rules = #open
 
-* section[exams].code = $loinc#10160-0
+* section[exams].code = $loinc#73738-7 "Newborn screening test results panel - Point of Care"
 * section[exams].entry MS
 * section[exams].entry ^slicing.discriminator[0].type = #profile
 * section[exams].entry ^slicing.discriminator[=].path = "resolve()"
@@ -111,10 +112,6 @@ Description: "Composition que cria as secções da noticia nascimento"
         bodyweigth 0..1 and
         cephalicPerimeter 0..1 and
         apgar 0..1 and
-        puerperium 0..1 and 
-        puerperiumreview 0..1 and
-        childhealthsurveilance 0..1 and 
-        letter 0..1 and
         malformation 0..1 and
         Phototherapy 0..1 and 
         hearingscreen 0..1 and 
@@ -135,10 +132,23 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[exams].entry[apgar] only Reference(apgarScore)
 
 
-* section[exams].entry[puerperium] only Reference(Observation)
-* section[exams].entry[puerperiumreview] only Reference(Observation)
-* section[exams].entry[childhealthsurveilance] only Reference(Observation)
-* section[exams].entry[letter] only Reference(Observation)
+
+* section[followup].code = $loinc#11544-4 "Hospital discharge follow-up Narrative"
+* section[followup].entry MS
+* section[followup].entry ^slicing.discriminator[0].type = #profile
+* section[followup].entry ^slicing.discriminator[=].path = "resolve()"
+* section[followup].entry ^slicing.rules = #open
+* section[followup].entry contains
+        puerperium 0..1 and 
+        puerperiumreview 0..1 and
+        childhealthsurveilance 0..1 and 
+        letter 0..1 
+
+
+* section[followup].entry[puerperium] only Reference(Observation)
+* section[followup].entry[puerperiumreview] only Reference(Observation)
+* section[followup].entry[childhealthsurveilance] only Reference(Observation)
+* section[followup].entry[letter] only Reference(Observation)
 
 
 
