@@ -6,7 +6,7 @@ Title: "Perfil de informação clinicas - apgarScore"
 Description: "Perfil de informação clinicas - apgarScore"
 
 
-* status = #registered
+* status = #final
 * code = $sct#1287344004 "Apgar score (assessment scale)"
 
 * component MS
@@ -36,7 +36,6 @@ Title: "Perfil de informação clinicas - apgarScore"
 Description: "Perfil de informação clinicas - apgarScore"
 
 
-* status = #registered
 * code = $sct#417491009 "Neonatal hearing test"
 
 * component MS
@@ -60,14 +59,15 @@ Profile: malformation
 Parent: Observation
 Title: "Perfil de malformation"
 Description: "Perfil de malformation"
-* status = #registered
+* status = #final
 * code = $sct#21390004 "Malformation"
+
 
 Profile: Phototherapy
 Parent: Observation
 Title: "Perfil de Phototherapy"
 Description: "Perfil de Phototherapy"
-* status = #registered
+* status = #final
 * code = $sct#35683002 "Phototherapy of newborn"
 
 
@@ -76,16 +76,18 @@ Profile: Congenital
 Parent: Observation
 Title: "Perfil de Congenital"
 Description: "Perfil de Congenital"
-* status = #registered
+* status = #final
 * code = $loinc#73780-9 "Congenital anomalies of the newborn"
 
+* value[x] only CodeableConcept
+* valueCodeableConcept from http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies (required)
 
 
 Profile: Metabolic
 Parent: Observation
 Title: "Perfil de Metabolic"
 Description: "Perfil de Metabolic"
-* status = #registered
+* status = #final
 * code = $sct#275977009 "Guthrie test"
 
 
@@ -93,9 +95,9 @@ Profile: Pupillary
 Parent: Observation
 Title: "Perfil de informação clinicas - Pupillary"
 Description: "Perfil de informação clinicas - Pupillary"
+* status = #final
 
 
-* status = #registered
 * code = $sct#271733001 "Pupil reaction"
 
 * component MS
@@ -109,17 +111,36 @@ Description: "Perfil de informação clinicas - Pupillary"
     left 1..1 
 
 
-* component[right].value[x] only integer
+* component[right].value[x] only CodeableConcept
 * component[right].code  = $loinc#79815-7 "Pupillary response Right pupil"
-//* component[right].valueCodeableConcept  only from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3
+* component[right].valueCodeableConcept  from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3 (example)
 
 
-* component[left].value[x] only integer
+* component[left].value[x] only CodeableConcept
 * component[left].code  = $loinc#79899-1 "Pupillary response Left pupil"
-//* component[left].valueCodeableConcept  only from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3
+* component[left].valueCodeableConcept  from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3 (example)
 
 
+Profile: puerperium
+Parent: Observation
+Title: "Perfil de puerperium"
+Description: "Perfil de puerperium"
+* status = #final
+
+* code = $sct#597951000005108  "Puerperium observable (observable entity)"
+* value[x] only CodeableConcept
+* valueCodeableConcept from puerperiumVS (required)
+* note MS
 
 
-//
-//
+Profile: letter
+Parent: Observation
+Title: "Perfil de letter"
+Description: "Perfil de letter"
+* status = #final
+
+* code = $sct#699842004  "Provision of written information about maternity care (procedure)"
+* value[x] only boolean
+* effective[x] only dateTime
+
+

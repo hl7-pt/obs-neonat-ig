@@ -51,17 +51,13 @@ Usage: #inline
 * section[mother].entry = Reference(mother)
 
 
-
-* section[destination].entry  = Reference(destino)
-//* section[destination][=].entry[familyHCP] = Reference(mother)
-
-
 * section[pregnancy] 
 * section[birth] 
 * section[newborn] 
 * section[newborn] 
 * section[exams]
 * section[vaccination]
+* section[followup].entry[destination]  = Reference(destino)
 
 
 Instance: exemploNN

@@ -45,19 +45,33 @@ Description:  "Vacinas ValueSet"
 * $sct#769102002 "Human anti-D immunoglobulin (substance)"
 
 
+ValueSet: puerperiumVS
+Id: puerperium-vs
+Title:  "puerpério ValueSet"
+Description:  "puerpério ValueSet"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* $sct#597961000005105  "Normal puerperium (finding)"
+* $sct#362973001  "Disorder of puerperium (disorder)"
+
+
+ValueSet: newbornriskassessmentVS
+Id: newbornriskassessment-vs
+Title:  "newbornriskassessment ValueSet"
+Description:  "newbornriskassessment ValueSet"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+
+
+* $sct#102486008 "Familial risk factor (observable entity)"
+* $sct#102485007 "Personal risk factor (observable entity)"
+* $sct#102487004 "Environmental risk factor (observable entity)"
+
 
 CodeSystem: TipoepisodioCS
 Id:         tipo-episodio-cs
 Title:     "Tipos de episodio code system"
 Description: "Tipos de episodio code system"
-// For information about creating a code system in the `terminology.hl7.org` namespace, see
-// this documentation on the UTG process: https://confluence.hl7.org/display/VMAH/Vocabulary+Maintenance+at+HL7
-// You can also create a URL local to your Implementation Guide like `http://hl7.org/fhir/uv/your-ig/CodeSystem/lymphnodes`
-// The "Terminology" stream on chat.fhir.org (free registration required) is a good place to ask
-// questions about how to handle this for your specific use case (direct link: https://bit.ly/terminology-fhir-chat)
+
 * ^url =  "http://terminology.hl7.pt/CodeSystem/tipoepisodio"
-// Spacing layout over three lines per term is optional, for clarity
-// The definition (second text string) is optional
 * #CON
     "Consulta"
     "Consulta"
@@ -89,3 +103,42 @@ Description:  "Tipos de episódio ValueSet"
 
 
 * include codes from system tipo-episodio-cs
+
+
+CodeSystem: documentclassificationCS
+Id:         documentclassificationCS
+Title:     "Document Classification code system"
+Description: "Document Classification code system"
+
+* ^url =  "http://terminology.hl7.pt/CodeSystem/documentClassificaiton"
+* #BISC
+    "Boletim Individual de saúde da criança"
+    "Boletim Individual de saúde da criança"
+* #BSIJ
+    "Boletim de saúde infantil e juvenil"
+    "Boletim de saúde infantil e juvenil"
+
+
+
+
+ValueSet: bulletindeliveryVS
+Id: bulletin-delivery-vs
+Title:  "bulletindeliveryVS ValueSet"
+Description:  "bulletindeliveryVSValueSet"
+
+
+
+* documentclassificationCS#BISC  "Boletim Individual de saúde da criança"
+* documentclassificationCS#BSIJ "Boletim de saúde infantil e juvenil"
+
+
+ValueSet: documenttypeVS
+Id: document-type-vs
+Title:  "documenttypeVS ValueSet"
+Description:  "documenttypeVS"
+
+* $sct#22131000087102 "Electronic report (record artifact)"
+* $sct#22151000087106 "Paper report (record artifact)"
+
+
+

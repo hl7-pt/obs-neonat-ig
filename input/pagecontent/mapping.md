@@ -16,10 +16,10 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  | birthNotice.code                                                           |   |
 |  | birthNotice.maternity.institution                                          | Encounter\[Contact].serviceProvider |
 |  | birthNotice.maternity.service                                              | Encounter\[Contact].serviceProvider  |
-|  | birthNotice.destination.headquarters                                       | Organization.  |
-|  | birthNotice.destination.ACES                                               | Organization.   |
-|  | birthNotice.destination.healthcardNumber                                   | Organization.   |
-|  | birthNotice.destination.healthextension                                    | Organization.   |
+|  | birthNotice.destination.headquarters                                       | Organization  |
+|  | birthNotice.destination.ACES                                               | Organization   |
+|  | birthNotice.destination.healthcardNumber                                   | Organization   |
+|  | birthNotice.destination.healthextension                                    | Organization   |
 |  | birthNotice.destination.familyDoctor                                       | Patient\[Mother\].generalPractitioner   |
 |  | birthNotice.destination.familyNurse                                        | Patient\[Mother\].generalPractitioner  |
 |  | birthNotice.motherDemographics.healthcardNumber                            | Patient.identifier  |
@@ -42,7 +42,7 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  | birthNotice.pregnancy.weeks                                                | Observation\[Pregancy\].component  |
 |  | birthNotice.pregnancy.risk                                                 | Observation\[Pregancy\].component  |
 |  | birthNotice.pregnancy.riskReason                                           | Observation\[Pregancy\].component  |
-|  | birthNotice.pregnancy.immunoglobulinAdministration                         |  Vaccination.status  |
+|  | birthNotice.pregnancy.immunoglobulinAdministration                         | Vaccination.status  |
 |  | birthNotice.pregnancy.immunoglobulinAdministrationDate                     | Vaccination.effectiveDateTime   |
 |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.firstQuarterEco    | Observation\[Pregancy\].component  |
 |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.firstQuarterBio    | Observation\[Pregancy\].component  |
@@ -50,8 +50,8 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.secondQuarterBio   | Observation\[Pregancy\].component  |
 |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.thirdQuarterEco    | Observation\[Pregancy\].component  |
 |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.thirdQuarterBio    | Observation\[Pregancy\].component  |
-|  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.visits             |  Observation\[Pregancy\].component |
-|  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.intercurrences     |  Observation\[Pregancy\].component |
+|  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.visits             | Observation\[Pregancy\].component |
+|  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.intercurrences     | Observation\[Pregancy\].component |
 |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.type        |   |
 |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.value       |   |
 |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.reason      |   |
@@ -63,71 +63,71 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  | birthNotice.birth.reason                                                   | Observation\[Birth\].component  |
 |  | birthNotice.birth.assist                                                   | Observation\[Birth\].component  |
 |  | birthNotice.birth.assistDescription                                        | Observation\[Birth\].component  |
-|  | birthNotice.puerperium.type                                                | Observation.  |
-|  | birthNotice.puerperium.observations                                        | Observation. |
+|  | birthNotice.puerperium.type                                                | Observation\[puerperium\]  |
+|  | birthNotice.puerperium.observations                                        | Observation\[puerperium\] |
 |  | birthNotice.newborn.liveBirth                                              | Patient\[Child\].deceased  |
 |  | birthNotice.newborn.gender                                                 | Patient\[Child\].gender |
-|  | birthNotice.newborn.length                                                 | Observation\[newBornExams\].component   |
+|  | birthNotice.newborn.length                                                 | Observation\[length\]   |
 |  | birthNotice.newborn.deceased                                               | Patient\[Child\].deceased  |
 |  | birthNotice.newborn.deathBirth                                             | Patient\[Child\].deceased  |
 |  | birthNotice.newborn.deathBirthDate                                         | Patient\[Child\].deceased  |
-|  | birthNotice.newborn.reanimated                                             | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.cephalicPerimeter                                      | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.weight                                                 | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.apgarIndexFirstMinute                                  | Observation\[newBornExams\].component |
-|  | birthNotice.newborn.apgarIndexFifthMinute                                  | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.apgarIndexTenthMinute                                  | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.phototherapy                                           | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.malformations.code                                     | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.malformations.description                              | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.AdmissionNeonatology                                   | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.AdmissionNeonatologyReason                             | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.AdmissionNeonatologyLocal                              | Observation\[newBornExams\].component  |
+|  | birthNotice.newborn.reanimated                                             |   |
+|  | birthNotice.newborn.cephalicPerimeter                                      | Observation\[cephalicPerimeter\]  |
+|  | birthNotice.newborn.weight                                                 | Observation\[weight\]  |
+|  | birthNotice.newborn.apgarIndexFirstMinute                                  | Observation\[apgarScore\] |
+|  | birthNotice.newborn.apgarIndexFifthMinute                                  | Observation\[apgarScore\]  |
+|  | birthNotice.newborn.apgarIndexTenthMinute                                  | Observation\[apgarScore\]  |
+|  | birthNotice.newborn.phototherapy                                           | Observation\[phototherapy\]  |
+|  | birthNotice.newborn.malformations.code                                     | Observation\[malformation\]  |
+|  | birthNotice.newborn.malformations.description                              | Observation\[malformation\]  |
+|  | birthNotice.newborn.AdmissionNeonatology                                   |   |
+|  | birthNotice.newborn.AdmissionNeonatologyReason                             |   |
+|  | birthNotice.newborn.AdmissionNeonatologyLocal                              |   |
 |  | birthNotice.newborn.transport.Neonatal                                     |   |
 |  | birthNotice.newborn.transport.NeonatalDestination                          |   |
 |  | birthNotice.newborn.transport.NeonatalReason                               |   |
 |  | birthNotice.newborn.transport.InUtero                                      |   |
 |  | birthNotice.newborn.transport.InUteroProvanance                            |   |
 |  | birthNotice.newborn.transport.InUteroReason                                |   |
-|  | birthNotice.newborn.screeningMetabolicDiseasesTaken                        | Observation.  |
-|  | birthNotice.newborn.screeningMetabolicReason                               | Observation.  |
-|  | birthNotice.newborn.screeningMetabolicDiseasesDate                         | Observation.  |
-|  | birthNotice.newborn.screeningCongenitalDiseases                            | Observation.  |
-|  | birthNotice.newborn.screeningCongenitalDiseasesChange                      | Observation.  |
-|  | birthNotice.newborn.screeningCongenitalDiseasesObservations                | Observation.  |
-|  | birthNotice.newborn.screeningpupillaryReflection                           | Observation.  |
-|  | birthNotice.newborn.screeningpupillaryReflectionChange                     | Observation.  |
-|  | birthNotice.newborn.screeningpupillaryReflectionObservations               | Observation.  |
-|  | birthNotice.newborn.screeningHearing.type                                  | Observation.  |
-|  | birthNotice.newborn.screeningHearing.date                                  | Observation.  |
-|  | birthNotice.newborn.screeningHearing.rightEar                              | Observation.  |
-|  | birthNotice.newborn.screeningHearing.leftEar                               | Observation.  |
-|  | birthNotice.newborn.screeningHearing.repeatDate                            | Observation.  |
+|  | birthNotice.newborn.screeningMetabolicDiseasesTaken                        | Observation\[metabolic\]  |
+|  | birthNotice.newborn.screeningMetabolicReason                               | Observation\[metabolic\]  |
+|  | birthNotice.newborn.screeningMetabolicDiseasesDate                         | Observation\[metabolic\]  |
+|  | birthNotice.newborn.screeningCongenitalDiseases                            | Observation\[congenital\]  |
+|  | birthNotice.newborn.screeningCongenitalDiseasesChange                      | Observation\[congenital\]  |
+|  | birthNotice.newborn.screeningCongenitalDiseasesObservations                | Observation\[congenital\]  |
+|  | birthNotice.newborn.screeningpupillaryReflection                           | Observation\[pupillary\] |
+|  | birthNotice.newborn.screeningpupillaryReflectionChange                     | Observation\[pupillary\] |
+|  | birthNotice.newborn.screeningpupillaryReflectionObservations               | Observation\[pupillary\] |
+|  | birthNotice.newborn.screeningHearing.type                                  | Observation\[hearingscreen\]  |
+|  | birthNotice.newborn.screeningHearing.date                                  | Observation\[hearingscreen\]  |
+|  | birthNotice.newborn.screeningHearing.rightEar                              | Observation\[hearingscreen\]  |
+|  | birthNotice.newborn.screeningHearing.leftEar                               | Observation\[hearingscreen\]  |
+|  | birthNotice.newborn.screeningHearing.repeatDate                            |   |
 |  | birthNotice.newborn.VHB.taken                                              | Vaccination.status  |
 |  | birthNotice.newborn.VHB.date                                               | Vaccination.occurrenceDateTime  |
 |  | birthNotice.newborn.VHB.lot                                                | Vaccination.lotNumber  |
-|  | birthNotice.newborn.VHB.reason                                             |   |
+|  | birthNotice.newborn.VHB.reason                                             | Vaccination.statusReason |
 |  | birthNotice.newborn.BCG.taken                                              | Vaccination.status  |
-|  | birthNotice.newborn.BCG.date                                               |  Vaccination.occurrenceDateTime |
-|  | birthNotice.newborn.BCG.lot                                                |  Vaccination.lotNumber |
-|  | birthNotice.newborn.BCG.reason                                             |   |
+|  | birthNotice.newborn.BCG.date                                               | Vaccination.occurrenceDateTime |
+|  | birthNotice.newborn.BCG.lot                                                | Vaccination.lotNumber |
+|  | birthNotice.newborn.BCG.reason                                             | Vaccination.statusReason |
 |  | birthNotice.newborn.immunoglobulin.taken                                   | Vaccination.status  |
 |  | birthNotice.newborn.immunoglobulin.date                                    | Vaccination.occurrenceDateTime  |
 |  | birthNotice.newborn.immunoglobulin.lot                                     | Vaccination.lotNumber  |
-|  | birthNotice.newborn.immunoglobulin.reason                                  |   |
-|  | birthNotice.newborn.feedingUntilDischarge                                  | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.feedingFirstHour                                       | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.individualHealthBulletinDelivered                      | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.childYoungHealthBulletinDelivered                      | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.bulletinDeliveryType                                   | Observation\[newBornExams\].component  |
-|  | birthNotice.newborn.riskAssessment.riskFactorsIdentified                   |   |
-|  | birthNotice.newborn.riskAssessment.reference                               |   |
-|  | birthNotice.newborn.riskAssessment.observations                            |   |
+|  | birthNotice.newborn.immunoglobulin.reason                                  | Vaccination.statusReason  |
+|  | birthNotice.newborn.feedingUntilDischarge                                  |   |
+|  | birthNotice.newborn.feedingFirstHour                                       |   |
+|  | birthNotice.newborn.individualHealthBulletinDelivered                      |   |
+|  | birthNotice.newborn.childYoungHealthBulletinDelivered                      |   |
+|  | birthNotice.newborn.bulletinDeliveryType                                   |   |
+|  | birthNotice.newborn.riskAssessment.riskFactorsIdentified                   | Observation\[newbornriskassessment\].code |
+|  | birthNotice.newborn.riskAssessment.reference                               | Observation\[newbornriskassessment\].extension |
+|  | birthNotice.newborn.riskAssessment.observations                            | Observation\[newbornriskassessment\].note |
 |  | birthNotice.newborn.Outpatient.institution                                 |   |
 |  | birthNotice.newborn.Outpatient.date                                        |   |
-|  | birthNotice.newborn.confirmedDeceased                                      |   |
-|  | birthNotice.puerperiumReview                                               | Observation.  |
-|  | birthNotice.childHealthSurveillance                                        | Observation.  |
-|  | birthNotice.letterWithClinicalInformation.hasLetterWithClinicalInformation | Observation. |
-|  | birthNotice.letterWithClinicalInformation.date                             | Observation.  |
-|  | birthNotice.professionals                                                  |   |
+|  | birthNotice.newborn.confirmedDeceased                                      | Patient\[child\]  |
+|  | birthNotice.puerperiumReview                                               | Organization  |
+|  | birthNotice.childHealthSurveillance                                        | Organization  |
+|  | birthNotice.letterWithClinicalInformation.hasLetterWithClinicalInformation | Observation.\[letter\]  |
+|  | birthNotice.letterWithClinicalInformation.date                             | Observation.\[letter\]  |
+|  | birthNotice.professionals                                                  | Practitioner |

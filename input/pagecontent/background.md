@@ -7,8 +7,21 @@ A gravidez tem um conjunto de etapas funcionais associadas como descrita na imag
 Consulta pré-concecional realizada em centro de saúde habitualmente (depende dos fatores de risco da grávida). Esta consulta deve ser realizada antes de parar a contraceção e deve ser programada uma consulta subsequente para avaliação dos resultados dos exames realizados e das intervenções propostas.
 
 1.	História clínica: determinar estado geral de saúde da mulher/casal e respetivos antecedentes pessoais e familiares; 
-2.	Avaliação física: peso e altura |índice de massa corporal / pressão arterial (PA) / exame mamário / exame ginecológico (atenção à genitália externa para deteção de situações de mutilação genital feminina); 
-3.	Avaliação laboratorial: determinar grupo sanguíneo e fator RhD / hemograma / glicémia jejum / rastreio das hemoglobinopatias / rastreio da sífilis, hepatite B (vacinação, se aplicável), VIH / Serologias da Rubéola (com respetiva vacinação, se aplicável), Toxoplamose e Citomegalovirus (se aplicável); 
+2.	Avaliação física: 
+
+  * peso e altura |índice de massa corporal
+  * pressão arterial (PA)
+  * exame mamário
+  * exame ginecológico (atenção à genitália externa para deteção de situações de mutilação genital feminina);
+   
+3.	Avaliação laboratorial: 
+  * determinar grupo sanguíneo e fator RhD
+  * hemograma 
+  * glicémia jejum
+  * rastreio das hemoglobinopatias
+  * rastreio da sífilis, hepatite B (vacinação, se aplicável), VIH
+  * Serologias da Rubéola (com respetiva vacinação, se aplicável), Toxoplamose e Citomegalovirus (se aplicável);
+   
 4.	Rastreio do cancro do colo do útero, se não foi efetuado há menos de 3 anos; 
 5.	Avaliação do estado vacinal e atualização do PNV (prioridade na vacinação contra o tétano, a difteria, a rubéola e o sarampo); 
 6.	Avaliação do estado nutricional, peso adequado e distúrbios do comportamento alimentar; 
@@ -120,7 +133,8 @@ Sinalizadas pelo hospital e/ou no âmbito dos protocolos da UCF.
 
 O processo de preenchimento do formulário eletrónico referente à "Notícia de Nascimento" é desempenhado por diversos profissionais de saúde e só após o seu completo preenchimento é possível a progenitora e o recém-nascido terem alta hospitalar. 
 De acordo com a Norma nº 013/2015 de 01/07/2015 da Direção-Geral da Saúde, são necessárias as seguintes informações sobre a Mãe, sobre o Parto e o Recém-nascido e informações administrativas:
-Informações sobre a Mãe:
+
+**Informações sobre a Mãe:**
 1.	Nome completo
 2.	Data de nascimento
 3.	Morada
@@ -183,7 +197,3 @@ família associado. A inscrição do recém-nascido é automática e imediata no
 de Utentes (RNU), procedendo-se à atribuição do respetivo número de utente, a constar do
 Cartão de Cidadão, e de médico de família.
 
-
-### WebAPI Manual
-
-Detalhes sobre o desenvolvimento da WebAPI poderão ser consultados em <a href="https://spms.min-saude.pt/wp-content/uploads/2017/01/ET-PDS-WebAPI_v1.3.pdf">SPMS Website</a>.

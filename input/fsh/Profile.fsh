@@ -49,7 +49,6 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section.section ..0
 * section contains
     mother 1..1 MS and
-    destination 1..1 MS and
     pregnancy 1..1 MS and
     birth 1..1 MS and
     newborn 0..1 MS and
@@ -63,15 +62,6 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[mother].entry ^slicing.discriminator[0].type = #profile
 * section[mother].entry ^slicing.discriminator[=].path = "resolve()"
 * section[mother].entry ^slicing.rules = #open
-
-
-* section[destination].code = $loinc#10160-0
-* section[destination].entry only Reference(Organization )
-* section[destination].entry MS
-* section[destination].entry ^slicing.discriminator[0].type = #profile
-* section[destination].entry ^slicing.discriminator[=].path = "resolve()"
-* section[destination].entry ^slicing.rules = #open
-
 
 
 * section[pregnancy].code = $loinc#56833-7 "Pregnancy related history Narrative"
@@ -117,7 +107,8 @@ Description: "Composition que cria as secções da noticia nascimento"
         hearingscreen 0..1 and 
         Congenital 0..1 and 
         Metabolic 0..1 and 
-        Pupillary 0..1
+        Pupillary 0..1 and
+        newbornriskassessment 0..1
 
 * section[exams].entry[length] only Reference(http://hl7.org/fhir/StructureDefinition/bodyheight)
 * section[exams].entry[bodyweigth] only Reference(http://hl7.org/fhir/StructureDefinition/bodyweight)
@@ -130,6 +121,8 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[exams].entry[Metabolic] only Reference(Metabolic)
 * section[exams].entry[Pupillary] only Reference(Pupillary)
 * section[exams].entry[apgar] only Reference(apgarScore)
+* section[exams].entry[newbornriskassessment] only Reference(newbornriskassessment)
+
 
 
 
@@ -142,14 +135,17 @@ Description: "Composition que cria as secções da noticia nascimento"
         puerperium 0..1 and 
         puerperiumreview 0..1 and
         childhealthsurveilance 0..1 and 
-        letter 0..1 
+        bulletindelivery 0..1 and
+        letter 0..1 and
+        destination 0..1 
 
 
-* section[followup].entry[puerperium] only Reference(Observation)
+* section[followup].entry[puerperium] only Reference(puerperium)
 * section[followup].entry[puerperiumreview] only Reference(Observation)
-* section[followup].entry[childhealthsurveilance] only Reference(Observation)
-* section[followup].entry[letter] only Reference(Observation)
-
+* section[followup].entry[childhealthsurveilance] only Reference(Organization)
+* section[followup].entry[letter] only Reference(letter)
+* section[followup].entry[destination] only Reference(Organization)
+* section[followup].entry[bulletindelivery] only Reference(bulletindelivery)
 
 
 
@@ -203,7 +199,7 @@ Title: "Perfil de Informação de gravidez"
 Description: "Perfil de Informação de gravidez"
 
 
-* status = #registered
+* status = #final
 * code = $sct#77386006 "Pregnancy (finding)"
 
 * component MS
@@ -244,8 +240,7 @@ Description: "Perfil de Informação de gravidez"
 
 
 * component[riskreason].value[x] only string
-//* component[immunoglobulinAdministration].value[x] only boolean
-//* component[immunoglobulinAdministrationDate].value[x] only dateTime
+
 * component[firstQuarterEco].value[x] only boolean
 * component[firstQuarterBio].value[x] only boolean
 * component[secondQuarterEco].value[x] only boolean
@@ -267,7 +262,7 @@ Title: "Perfil de Informação do Parto"
 Description: "Perfil de Informação do Parto"
 
 
-* status = #registered
+* status = #final
 * code = $loinc#10160-0 //change
 * effective[x] 1..1
 * effective[x] only dateTime
@@ -283,7 +278,6 @@ Description: "Perfil de Informação do Parto"
     participation 0..1 and
     reason 0..1 and 
     assist 0..1
-  //  assistDescription 0..1
 
 * component[type].value[x] only CodeableConcept
 * component[type].valueCodeableConcept from TipoPartoVS (required)
@@ -291,7 +285,6 @@ Description: "Perfil de Informação do Parto"
 * component[participation].value[x] only CodeableConcept
 * component[reason].value[x] only string
 * component[assist].value[x] only CodeableConcept
-//* component[assistDescription].value[x] only string //colocar no CS de assist
 
 
 Profile: Vaccination
@@ -301,52 +294,42 @@ Description: "Informação sobre vacinação"
 
 * status MS
 * patient MS  
-* patient only Reference(Child or Mother) 
+* patient only Reference(Child) 
 * occurrence[x]  only dateTime 
 * occurrence[x] MS
 * lotNumber MS
-* vaccineCode from vacinas-infancia-vs (required)
+* vaccineCode from vacinas-infancia-vs (preferred)
 //add constraint
 
 
-
-
-Profile: newBornExams
+Profile: newbornriskassessment
 Parent: Observation
-Title: "Perfil de informação clinicas recem-nascido"
-Description: "Perfil de informação clinicas recem-nascido"
+Title: "Informação sobre RiskAssessment"
+Description: "Informação sobre RiskAssessment"
+
+* extension contains referencia-NHACJR named nhacjr 0..1
+* status = #final
+* subject only Reference(Mother)
+* note MS
+* code from newbornriskassessmentVS
+* category = $sct#407647007 "Risk assessment status (finding)"
 
 
-* status = #registered
-* code = $loinc#10160-0 //change
-* effective[x] 1..1
-* effective[x] only dateTime
-* component MS
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "value"
-* component ^slicing.description = "Slicing based on value[x] type."
-* component ^slicing.rules = #closed
-* component ^requirements = "Required if not(exists(Observation.valueString))"
-* component ^min = 0
-* component contains
-    reanimated 0..1 and
-    AdmissionNeonatology 0..1 and
-    AdmissionNeonatologyReason 0..1 and
-    AdmissionNeonatologyLocal 0..1 and
-    feedingUntilDischarge 0..1 and
-    feedingFirstHour 0..1 and
-    individualHealthBulletinDelivered 0..1 and
-    childYoungHealthBulletinDelivered 0..1 and
-    bulletinDeliveryType 0..1 
 
-* component[reanimated].value[x] only boolean
+Extension: referencia-NHACJR
+Description: "Referenciação ao Núcleo Hospitalar de Apoio Criança e Jovens em risco (NHACJR)"
+* value[x] only boolean
 
-* component[AdmissionNeonatology].value[x] only boolean
-* component[AdmissionNeonatologyReason].value[x] only string
-* component[AdmissionNeonatologyLocal].value[x] only string
-* component[feedingUntilDischarge].value[x] only CodeableConcept
-* component[feedingFirstHour].value[x] only boolean
-* component[individualHealthBulletinDelivered].value[x] only dateTime
-* component[childYoungHealthBulletinDelivered].value[x] only dateTime
-* component[bulletinDeliveryType].value[x] only integer
+
+Profile: bulletindelivery
+Parent: Procedure
+Title: "Informação sobre bulletindelivery"
+Description: "Informação sobre bulletindelivery"
+
+
+* code from bulletindeliveryVS (required)
+* subject only Reference(Mother)
+* performed[x] only dateTime
+* performedDateTime 1..1 
+
 
