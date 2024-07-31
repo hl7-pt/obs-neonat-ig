@@ -115,16 +115,16 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  | birthNotice.newborn.immunoglobulin.date                                    | Vaccination.occurrenceDateTime  |
 |  | birthNotice.newborn.immunoglobulin.lot                                     | Vaccination.lotNumber  |
 |  | birthNotice.newborn.immunoglobulin.reason                                  | Vaccination.statusReason  |
-|  | birthNotice.newborn.feedingUntilDischarge                                  |   |
-|  | birthNotice.newborn.feedingFirstHour                                       |   |
-|  | birthNotice.newborn.individualHealthBulletinDelivered                      |   |
-|  | birthNotice.newborn.childYoungHealthBulletinDelivered                      |   |
-|  | birthNotice.newborn.bulletinDeliveryType                                   |   |
+|  | birthNotice.newborn.feedingUntilDischarge                                  | Observation\[Birth\].component |
+|  | birthNotice.newborn.feedingFirstHour                                       | Observation\[Birth\].component  |
+|  | birthNotice.newborn.individualHealthBulletinDelivered                      | bulletindelivery  |
+|  | birthNotice.newborn.childYoungHealthBulletinDelivered                      | bulletindelivery  |
+|  | birthNotice.newborn.bulletinDeliveryType                                   | bulletindelivery |
 |  | birthNotice.newborn.riskAssessment.riskFactorsIdentified                   | Observation\[newbornriskassessment\].code |
 |  | birthNotice.newborn.riskAssessment.reference                               | Observation\[newbornriskassessment\].extension |
 |  | birthNotice.newborn.riskAssessment.observations                            | Observation\[newbornriskassessment\].note |
-|  | birthNotice.newborn.Outpatient.institution                                 |   |
-|  | birthNotice.newborn.Outpatient.date                                        |   |
+|  | birthNotice.newborn.Outpatient.institution                                 | Encounter |
+|  | birthNotice.newborn.Outpatient.date                                        | Encounter |
 |  | birthNotice.newborn.confirmedDeceased                                      | Patient\[child\]  |
 |  | birthNotice.puerperiumReview                                               | Organization  |
 |  | birthNotice.childHealthSurveillance                                        | Organization  |

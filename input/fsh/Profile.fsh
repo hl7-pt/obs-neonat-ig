@@ -137,7 +137,8 @@ Description: "Composition que cria as secções da noticia nascimento"
         childhealthsurveilance 0..1 and 
         bulletindelivery 0..1 and
         letter 0..1 and
-        destination 0..1 
+        destination 0..1 and
+        nextappointment 0..1
 
 
 * section[followup].entry[puerperium] only Reference(puerperium)
@@ -146,6 +147,7 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[followup].entry[letter] only Reference(letter)
 * section[followup].entry[destination] only Reference(Organization)
 * section[followup].entry[bulletindelivery] only Reference(bulletindelivery)
+* section[followup].entry[nextappointment] only Reference(Encounter)
 
 
 
@@ -296,11 +298,16 @@ Description: "Informação sobre vacinação"
 * patient MS  
 * patient only Reference(Child) 
 * occurrence[x]  only dateTime 
-* occurrence[x] MS
+* occurrencedateTime MS
 * lotNumber MS
 * vaccineCode from vacinas-infancia-vs (preferred)
-//add constraint
+* statusReason
+* obeys reason-required-not-completed
 
+Invariant:  reason-required-not-completed
+Description: "Either status is completed with date or a reason for the status is required"
+Expression: "(status = 'completed' and occurrencedateTime.exists()) or statusReason.exists()"
+Severity:   #error
 
 Profile: newbornriskassessment
 Parent: Observation
@@ -331,5 +338,5 @@ Description: "Informação sobre bulletindelivery"
 * subject only Reference(Mother)
 * performed[x] only dateTime
 * performedDateTime 1..1 
-
+* category  from document-type-vs (required)
 
