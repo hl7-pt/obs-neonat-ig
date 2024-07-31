@@ -70,7 +70,7 @@ Após a partilha da notícia de nascimento, o registo pode ser consultado na ár
 | **Primary Editor** | Samuel Frade | Virtual Care | samuel.frade __at__ virtualcare.pt |
 | **Primary Editor** | Tiago Costa | Virtual Care | tcosta __at__ virtualcare.pt 
 | **Primay Editor** | João Almeida |  HL7 Portugal | joaofilipe90 __at__ gmail.com |
-| **Primay Editor** | Joana Cunha |  HL7 Portugal |  |
+| **Primay Editor** | Joana Cunha |  HL7 Portugal | [joana](https://chat.fhir.org/#user/664024) |
 | **Primay Editor** | Daniel Rodrigues |  Virtual Care | daniel __at__ virtualcare.pt|
 
 ### Acknowledgements & Agradecimentos
