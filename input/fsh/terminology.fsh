@@ -7,10 +7,11 @@ Description:  "Tipos de parto ValueSet"
 * $sct#302383004 "Forceps delivery (procedure)" //    "Distócico-Forceps"
 * $sct#61586001 "Delivery by vacuum extraction (procedure)" //    "Distócico-Ventosa"
 * $sct#11466000 "Cesarean section (procedure)" //    "Distócico-Cesariana"
-* $sct#151441000119105 "Twin live born in hospital by vaginal delivery (finding)" //    "Eutócico-Gemelar"
 * $sct#177157003 "Spontaneous breech delivery (procedure)" //    "Eutócico-Pélvico"
-//    "Distócico Gemelar"
 * $sct#417121007 "Breech extraction (procedure)" //        "Distócico- Pélvico"
+
+// * $sct#151441000119105 "Twin live born in hospital by vaginal delivery (finding)" //    "Eutócico-Gemelar"
+//    "Distócico Gemelar"
 // "Desconhecido"
 // "Distócico-Espátulas de Thierry"
 

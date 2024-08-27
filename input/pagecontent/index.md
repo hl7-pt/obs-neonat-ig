@@ -4,39 +4,6 @@
   </blockquote>
 
 
-### Visão Geral
-Guias de Implementação FHIR - HL7 Portugal será um centro de referência para a padronização e interoperabilidade de dados de
-saúde em Portugal. Este portal centralizará todos os guias de implementação FHIR, oferecendo orientação e suporte aos diferentes
-sistemas de saúde no país. A iniciativa visa promover a adoção de padrões internacionais, garantindo a troca eficiente e segura de
-informações de saúde.
-
-**Objetivos do Portal**
-1. Centralização da Informação: Reunir todos os guias de implementação FHIR utilizados em Portugal num único local,
-facilitando o acesso e consulta por profissionais de saúde, desenvolvedores e instituições.
-2. Promoção de Padrões: Incentivar a adoção dos padrões FHIR em Portugal, promovendo a interoperabilidade e a
-comunicação eficiente entre diferentes sistemas de saúde.
-3. Suporte e Orientação: Oferecer orientação técnica e suporte prático para a implementação dos guias FHIR, ajudando as
-instituições a adaptar-se aos padrões.
-4. Atualização Contínua: Manter os guias atualizados conforme as evoluções do padrão FHIR e as necessidades do sistema
-de saúde português
-
-
-  
-**Funcionalidades do Portal**
-1. Biblioteca de Guias de Implementação: Acesso organizado e fácil aos diversos guias de implementação FHIR,
-categorizados por área e tipo de dado clínico.
-2. Documentação Técnica: Informações detalhadas sobre cada guia, incluindo perfis de recursos, extensões, exemplos de
-uso e cenários de implementação.
-3. Recursos Educativos: Tutoriais, webinars e materiais de formação para capacitar profissionais e desenvolvedores na
-utilização dos guias FHIR.
-4. Fórum de Suporte: Espaço para discussão e troca de experiências entre utilizadores, com moderação de especialistas em
-FHIR.
-5. Notícias e Atualizações: Informações sobre novas versões dos guias, eventos, e outras novidades relevantes para a
-comunidade de saúde e TI em Portugal.
-6. Área de Downloads: Disponibilização de arquivos e ferramentas que facilitam a implementação dos guias, como exemplos
-de código e esquemas de dados.
-7. Conformidade Perfis: Capacidade de validar a conformidade dos desenvolvimentos de acordo com os Perfis FHIR.
-
 ### Âmbito
 
 O objetivo deste Guia de Implementação é especificar para todos os utilizadores a representação concretamente a "Notícia de Nascimento" em HL7 FHIR.
@@ -69,9 +36,10 @@ Após a partilha da notícia de nascimento, o registo pode ser consultado na ár
 | **Primary Editor** | André Oliveira | ProChild CoLAB | andre.oliveira __at__ prochildcolab.pt |
 | **Primary Editor** | Samuel Frade | Virtual Care | samuel.frade __at__ virtualcare.pt |
 | **Primary Editor** | Tiago Costa | Virtual Care | tcosta __at__ virtualcare.pt 
-| **Primay Editor** | João Almeida |  HL7 Portugal | joaofilipe90 __at__ gmail.com |
-| **Primay Editor** | Joana Cunha |  HL7 Portugal | [joana](https://chat.fhir.org/#user/664024) |
-| **Primay Editor** | Daniel Rodrigues |  Virtual Care | daniel __at__ virtualcare.pt|
+| **Primary Editor** | João Almeida |  HL7 Portugal | joaofilipe90 __at__ gmail.com |
+| **Primary Editor** | Joana Cunha |  HL7 Portugal | [joana](https://chat.fhir.org/#user/664024) |
+| **Primary Editor** | Daniel Rodrigues |  Virtual Care | daniel __at__ virtualcare.pt|
+tashed changes
 
 ### Acknowledgements & Agradecimentos
 
