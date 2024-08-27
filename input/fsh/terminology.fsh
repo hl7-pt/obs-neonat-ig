@@ -42,7 +42,7 @@ Description:  "Vacinas ValueSet"
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#1861000221106  "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
 * $sct#871822003  "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
-* $sct#769102002 "Human anti-D immunoglobulin (substance)"
+* $sct#786768001 "Product containing only human anti-D immunoglobulin (medicinal product)"
 
 
 ValueSet: puerperiumVS
