@@ -41,3 +41,24 @@
 
 }
 
+table {
+  border-collapse: collapse; /* Ensures borders are combined into a single line */
+  width: 100%; /* Optional: Make the table take up the full width */
+}
+
+table, th, td {
+  border: 1px solid #ddd; /* Thin border for table and cells */
+}
+
+th, td {
+  padding: 8px; /* Optional: Padding inside table cells */
+  text-align: left; /* Optional: Align text to the left */
+}
+
+th {
+  background-color: #f2f2f2; /* Optional: Background color for table headers */
+}
+
+table {
+  border-spacing: 0; /* Ensure there are no gaps between the borders */
+}
