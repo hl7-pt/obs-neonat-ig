@@ -94,6 +94,8 @@ Description: "Tipos de episodio code system"
 * #LAB
     "LAB"  //faz sentido aqui?
     "LAB"
+ 
+//neonatalogia?
 
 
 
@@ -142,4 +144,12 @@ Description:  "documenttypeVS"
 * $sct#22151000087106 "Paper report (record artifact)"
 
 
+
+ValueSet: transport-type-vs
+Id: transport-type-vs
+Title:  "Tipos de transporte de recem-nascido ValueSet"
+Description:  "Tipos de transporte de recem-nascido ValueSet"
+
+* $sct#255407002 "Neonatal (qualifier value)"
+* $sct#1156684004 "Fetal antepartum and/or intrapartum and/or early neonatal period (qualifier value)"
 

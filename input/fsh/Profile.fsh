@@ -72,11 +72,18 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[pregnancy].entry ^slicing.rules = #open
 
 * section[birth].code = $loinc#57074-7 "Labor and delivery process Narrative"
-* section[birth].entry only Reference(Birth)
+//* section[birth].entry only Reference(Birth)
 * section[birth].entry MS
 * section[birth].entry ^slicing.discriminator[0].type = #profile
 * section[birth].entry ^slicing.discriminator[=].path = "resolve()"
 * section[birth].entry ^slicing.rules = #open
+* section[birth].entry contains
+        birthInfo 1..1 and
+        episode 1..* 
+
+
+* section[birth].entry[birthInfo] only Reference(Birth)
+* section[birth].entry[episode] only Reference(Encounter or Contact)
 
 * section[vaccination].code = $loinc#11369-6 "History of Immunization Narrative"
 * section[vaccination].entry only Reference(Vaccination)
@@ -298,7 +305,7 @@ Description: "Informação sobre vacinação"
 * patient MS  
 * patient only Reference(Child) 
 * occurrence[x]  only dateTime 
-* occurrencedateTime MS
+* occurrenceDateTime MS
 * lotNumber MS
 * vaccineCode from vacinas-infancia-vs (preferred)
 * statusReason
@@ -339,4 +346,37 @@ Description: "Informação sobre bulletindelivery"
 * performed[x] only dateTime
 * performedDateTime 1..1 
 * category  from document-type-vs (required)
+
+
+
+
+
+Extension: transport-information
+Id:        transport-information
+Title:     "Transport information"
+Description: "Transport information"
+* extension contains
+    transporttype 1..1 MS ?! and
+    reason 0..1 MS and
+    location 0..1 MS
+* extension[transporttype].value[x] only CodeableConcept
+* extension[transporttype].valueCodeableConcept from transport-type-vs
+
+* extension[reason].value[x] only string
+* extension[location].value[x] only string
+
+* extension[location] ^short = "If InUtero, provenance, if Neonatal,destination"
+* extension[location] ^definition = "Location is dependent on transporttype"
+
+
+
+Profile: transport
+Parent: Basic
+Title: "Informação sobre Transportes"
+Description: "Informação sobre Transportes"
+
+* extension contains transport-information  named transport-information 1..2 
+* code = $sct#424483007 "Transportation details (observable entity)"
+* subject only Reference(Mother)
+
 

@@ -37,6 +37,18 @@ Usage: #inline
 
 * serviceType.text = "Obstetricia"
 
+Instance: episodioInt
+InstanceOf: Encounter
+Description: "Exemplo NN"
+
+* class = tipo-episodio-cs#INT
+* status = #finished
+
+Instance: BirthNN
+InstanceOf: Birth
+Description: "Exemplo NN"
+
+* effectiveDateTime = "2024-08-01T10:00:00.000Z"
 
 Instance: compNN
 InstanceOf: CompositionNoticia
@@ -52,7 +64,9 @@ Usage: #inline
 
 
 * section[pregnancy] 
-* section[birth] 
+* section[birth].entry[birthInfo]  = Reference(BirthNN)
+* section[birth].entry[episode]  = Reference(episodioInt)
+
 * section[newborn] 
 * section[newborn] 
 * section[exams]
@@ -66,4 +80,5 @@ Description: "Exemplo NN"
 
 * entry[0].resource = compNN
 * type = #document
+
 

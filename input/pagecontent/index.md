@@ -19,6 +19,12 @@ A Legislação referente a este projeto pode ser consultada em:
 
 * <a href="https://www.acss.min-saude.pt//wp-content/uploads/2016/12/Lei_79_2015.pdf">Legislação sobre associação de médico de família a todos os Recém-Nascidos, nascidos em Portugal - Despacho n.º 79/2015, de 29 de Julho</a>.
 
+* <a href="https://www.spp.pt/UserFiles/file/EVIDENCIAS%20EM%20PEDIATRIA/013_2015_JULHO2015.pdf">Noticia de Nascimento Digital</a>
+  
+* <a href="https://diariodarepublica.pt/dr/detalhe/despacho/1774-a-2017-106531278">Despacho n.º 1774-A/2017, de 24 de fevereiro
+[Define regras de organização e mecanismos de gestão referentes ao Registo Nacional de Utentes (RNU), bem como estabelece os critérios e os procedimentos de organização e atualização das listas de utentes nos Agrupamentos de Centros de Saúde (ACeS) e nas suas unidades funcionais]</a>
+
+
 ### Descrição
 
 O projeto "Notícia Nascimento" oferece a possibilidade de registar imediatamente todos os recém-nascidos e as informações referentes ao parto dos mesmos, comunicando e partilhando estas informações através de um formulário digital. Esta comunicação apresenta-se como uma ferramenta essencial na partilha de informações deste cariz, entre unidades de saúde hospitalar e unidades locais de cuidados de saúde. Esta ferramenta permite a maior e mais rápida prestação de cuidados de saúde ao recém-nascido, assim como comunicar alertas sobre o mesmo.
