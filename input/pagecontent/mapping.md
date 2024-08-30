@@ -6,7 +6,7 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 
 
 
-Origem | Descrição |          Modelo Lógico                                                    | FHIR  |
+| Origem | Descrição |          Modelo Lógico      | FHIR  |
 |--|--|----------------------------------------------------------------------------|---|
 |  |  | contact.id                                                                 | Encounter\[Contact].identifier  |
 |  |  | contact.module                                                             | Encounter\[Contact].class  |
@@ -122,7 +122,7 @@ Origem | Descrição |          Modelo Lógico                                  
 |  |  | birthNotice.newborn.childYoungHealthBulletinDelivered                      | bulletindelivery  |
 |  |  | birthNotice.newborn.bulletinDeliveryType                                   | bulletindelivery |
 |  |  | birthNotice.newborn.riskAssessment.riskFactorsIdentified                   | Observation\[newbornriskassessment\].code |
-|  |  | birthNotice.newborn.riskAssessment.reference                               | Observation\[newbornriskassessment\].|  extension |
+|  |  | birthNotice.newborn.riskAssessment.reference                               | Observation\[newbornriskassessment\].extension |
 |  |  | birthNotice.newborn.riskAssessment.observations                            | Observation\[newbornriskassessment\].note |
 |  |  | birthNotice.newborn.Outpatient.institution                                 | Encounter |
 |  |  | birthNotice.newborn.Outpatient.date                                        | Encounter |
