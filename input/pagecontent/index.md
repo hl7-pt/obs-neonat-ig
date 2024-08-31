@@ -45,7 +45,6 @@ Após a partilha da notícia de nascimento, o registo pode ser consultado na ár
 | **Primary Editor** | João Almeida |  HL7 Portugal | joaofilipe90 __at__ gmail.com |
 | **Primary Editor** | Joana Cunha |  HL7 Portugal | [joana](https://chat.fhir.org/#user/664024) |
 | **Primary Editor** | Daniel Rodrigues |  Virtual Care | daniel __at__ virtualcare.pt|
-tashed changes
 
 ### Acknowledgements & Agradecimentos
 

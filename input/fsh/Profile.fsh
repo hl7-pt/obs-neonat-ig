@@ -118,17 +118,29 @@ Description: "Composition que cria as secções da noticia nascimento"
         newbornriskassessment 0..1
 
 * section[exams].entry[length] only Reference(http://hl7.org/fhir/StructureDefinition/bodyheight)
+* section[exams].entry[length] ^short = "Comprimento (cm)"
 * section[exams].entry[bodyweigth] only Reference(http://hl7.org/fhir/StructureDefinition/bodyweight)
+* section[exams].entry[bodyweigth] ^short = "Peso (gr)"
+
 * section[exams].entry[cephalicPerimeter] only Reference(http://hl7.org/fhir/StructureDefinition/headcircum)
+* section[exams].entry[cephalicPerimeter] ^short = "Perímetro cefálico (cm)"
+
 * section[exams].entry[malformation] only Reference(Malformation)
+//* section[exams].entry[malformation] ^short = "Perímetro cefálico (cm)"
+
 * section[exams].entry[hearingscreen] only Reference(Hearingscreen)
 
 * section[exams].entry[Phototherapy] only Reference(Phototherapy)
 * section[exams].entry[Congenital] only Reference(Congenital)
 * section[exams].entry[Metabolic] only Reference(Metabolic)
 * section[exams].entry[Pupillary] only Reference(Pupillary)
+* section[exams].entry[Pupillary] ^short = "Teste Reflexo pupilar"
+
 * section[exams].entry[apgar] only Reference(ApgarScore)
+* section[exams].entry[apgar] ^short = "Índice(s) apgar"
+
 * section[exams].entry[newbornriskassessment] only Reference(Newbornriskassessment)
+* section[exams].entry[newbornriskassessment] ^short = "Avaliação de risco e referenciação ao NHACJR"
 
 
 
