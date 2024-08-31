@@ -46,7 +46,7 @@ Description:  "Vacinas ValueSet"
 * $sct#786768001 "Product containing only human anti-D immunoglobulin (medicinal product)"
 
 
-ValueSet: puerperiumVS
+ValueSet: PuerperiumVS
 Id: puerperium-vs
 Title:  "puerpério ValueSet"
 Description:  "puerpério ValueSet"
@@ -55,7 +55,7 @@ Description:  "puerpério ValueSet"
 * $sct#362973001  "Disorder of puerperium (disorder)"
 
 
-ValueSet: newbornriskassessmentVS
+ValueSet: NewbornriskassessmentVS
 Id: newbornriskassessment-vs
 Title:  "newbornriskassessment ValueSet"
 Description:  "newbornriskassessment ValueSet"
@@ -108,7 +108,7 @@ Description:  "Tipos de episódio ValueSet"
 * include codes from system tipo-episodio-cs
 
 
-CodeSystem: documentclassificationCS
+CodeSystem: DocumentclassificationCS
 Id:         documentclassificationCS
 Title:     "Document Classification code system"
 Description: "Document Classification code system"
@@ -124,7 +124,7 @@ Description: "Document Classification code system"
 
 
 
-ValueSet: bulletindeliveryVS
+ValueSet: BulletindeliveryVS
 Id: bulletin-delivery-vs
 Title:  "bulletindeliveryVS ValueSet"
 Description:  "bulletindeliveryVSValueSet"
@@ -135,7 +135,7 @@ Description:  "bulletindeliveryVSValueSet"
 * documentclassificationCS#BSIJ "Boletim de saúde infantil e juvenil"
 
 
-ValueSet: documenttypeVS
+ValueSet: DocumenttypeVS
 Id: document-type-vs
 Title:  "documenttypeVS ValueSet"
 Description:  "documenttypeVS"
@@ -145,7 +145,7 @@ Description:  "documenttypeVS"
 
 
 
-ValueSet: transport-type-vs
+ValueSet: TransportTypeVS
 Id: transport-type-vs
 Title:  "Tipos de transporte de recem-nascido ValueSet"
 Description:  "Tipos de transporte de recem-nascido ValueSet"

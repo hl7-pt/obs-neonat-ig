@@ -129,8 +129,8 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | birthNotice.newborn.confirmedDeceased                                      | Patient\[child\]  |
 |  |  | birthNotice.puerperiumReview                                               | Organization  |
 |  |  | birthNotice.childHealthSurveillance                                        | Organization  |
-|  |  | birthNotice.letterWithClinicalInformation.hasLetterWithClinicalInformation | Observation.\[letter\]  |
-|  |  | birthNotice.letterWithClinicalInformation.date                             | Observation.\[letter\]  |
+|  |  | birthNotice.letterWithClinicalInformation.hasLetterWithClinicalInformation | Observation\[letter\]  |
+|  |  | birthNotice.letterWithClinicalInformation.date                             | Observation\[letter\]  |
 |  |  | birthNotice.professionals                                                  | Practitioner |
 
 

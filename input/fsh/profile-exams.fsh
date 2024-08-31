@@ -1,6 +1,6 @@
 
 
-Profile: apgarScore
+Profile: ApgarScore
 Parent: Observation
 Title: "Perfil de informação clinicas - apgarScore"
 Description: "Perfil de informação clinicas - apgarScore"
@@ -30,11 +30,10 @@ Description: "Perfil de informação clinicas - apgarScore"
 * component[tenth].code  = $sct#169922007 "Apgar score at 10 minutes (observable entity)"
 
 
-Profile: hearingscreen
+Profile: Hearingscreen
 Parent: Observation
-Title: "Perfil de informação clinicas - apgarScore"
-Description: "Perfil de informação clinicas - apgarScore"
-
+Title: "Perfil de informação clinicas - Rastreio auditivo neonatal universal"
+Description: "Perfil de informação clinicas - Rastreio auditivo neonatal universal"
 
 * code = $sct#417491009 "Neonatal hearing test"
 
@@ -55,46 +54,57 @@ Description: "Perfil de informação clinicas - apgarScore"
 * component[left].code  = $sct#89644007 "Left ear structure (body structure)"
 
 
-Profile: malformation
+Profile: Malformation
 Parent: Observation
-Title: "Perfil de malformation"
-Description: "Perfil de malformation"
+Title: "Perfil de informação clinicas - Dados de malformações"
+Description: "Perfil de informação clinicas - Dados de malformações"
 * status = #final
 * code = $sct#21390004 "Malformation"
 
+* value[x] only CodeableConcept
+* valueCodeableConcept ^short = "Código para a malformação"
 
 Profile: Phototherapy
 Parent: Observation
-Title: "Perfil de Phototherapy"
-Description: "Perfil de Phototherapy"
+Title: "Perfil de informação clinicas - Fototerapia"
+Description: "Perfil de informação clinicas - Fototerapia"
 * status = #final
 * code = $sct#35683002 "Phototherapy of newborn"
 
+* value[x] only boolean
+* valueBoolean ^short = "Se existiu fototerapia"
 
 
 Profile: Congenital
 Parent: Observation
-Title: "Perfil de Congenital"
-Description: "Perfil de Congenital"
+Title: "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas"
+Description: "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas"
 * status = #final
 * code = $loinc#73780-9 "Congenital anomalies of the newborn"
 
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies (required)
-
+* valueCodeableConcept ^short = "Código da anomalia congénita"
+* note MS
+* note ^short = "Observações"
 
 Profile: Metabolic
 Parent: Observation
-Title: "Perfil de Metabolic"
-Description: "Perfil de Metabolic"
+Title: "Perfil de informação clinicas - Rastreio de doenças metabólicas"
+Description: "Perfil de informação clinicas - Rastreio de doenças metabólicas"
 * status = #final
 * code = $sct#275977009 "Guthrie test"
 
+* note MS
+* note ^short = "Observações"
+* effective[x] only dateTime
+* effectiveDateTime ^short = "Data do rastreio"
+* dataAbsentReason MS
 
 Profile: Pupillary
 Parent: Observation
-Title: "Perfil de informação clinicas - Pupillary"
-Description: "Perfil de informação clinicas - Pupillary"
+Title: "Perfil de informação clinicas - Teste Reflexo pupilar"
+Description: "Perfil de informação clinicas - Teste Reflexo pupilar"
 * status = #final
 
 
@@ -114,33 +124,38 @@ Description: "Perfil de informação clinicas - Pupillary"
 * component[right].value[x] only CodeableConcept
 * component[right].code  = $loinc#79815-7 "Pupillary response Right pupil"
 * component[right].valueCodeableConcept  from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3 (example)
+* component[right] ^short = "Ouvido direito examinado"
 
 
 * component[left].value[x] only CodeableConcept
 * component[left].code  = $loinc#79899-1 "Pupillary response Left pupil"
 * component[left].valueCodeableConcept  from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3 (example)
+* component[left] ^short = "Ouvido esquerdo examinado"
 
 
-Profile: puerperium
+Profile: Puerperium
 Parent: Observation
-Title: "Perfil de puerperium"
-Description: "Perfil de puerperium"
+Title: "Perfil para registar dados do puerpério até à alta"
+Description: "Perfil para registar dados do puerpério até à alta"
 * status = #final
 
 * code = $sct#597951000005108  "Puerperium observable (observable entity)"
 * value[x] only CodeableConcept
-* valueCodeableConcept from puerperiumVS (required)
+* valueCodeableConcept from PuerperiumVS (required)
+* valueCodeableConcept ^short = "Tipo de puerpério"
 * note MS
+* note ^short = "Observações"
 
 
-Profile: letter
+Profile: Letter
 Parent: Observation
-Title: "Perfil de letter"
-Description: "Perfil de letter"
+Title: "Perfil sobre Elaboração de carta com informação clínica suplementar"
+Description: "Perfil sobre Elaboração de carta com informação clínica suplementar"
 * status = #final
 
 * code = $sct#699842004  "Provision of written information about maternity care (procedure)"
 * value[x] only boolean
+* valueBoolean ^short = "Se for elavborada a carta com informação clinica suplementar"
 * effective[x] only dateTime
-
+* effectiveDateTime ^short = "Data da elaboração"
 

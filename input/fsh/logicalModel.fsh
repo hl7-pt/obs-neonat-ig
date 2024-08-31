@@ -1,16 +1,16 @@
-Logical: noticia
+Logical: NoticiaLM
 Title: "Notícia de Nascimento (modelo)"
 Description: "Modelo Lógico - Notícia de Nascimento"
 Characteristics: #can-be-target
 
-* contact 1..1 contactLM "Estrutura do episódio da notícia de nascimento"
+* contact 1..1 ContactLM "Estrutura do episódio da notícia de nascimento"
 * professional 1..1 ProfessionalLM "Estrutura do profissional envolvido na submissão da informação"
-* birthNotice 1..1 birthNoticeLM "Estrutura da notícia de nascimento"
+* birthNotice 1..1 BirthNoticeLM "Estrutura da notícia de nascimento"
 
 
 
 
-Logical: contactLM
+Logical: ContactLM
 Title: "Contacto (modelo)"
 Description: "Modelo Lógico - Contacto"
 Characteristics: #can-be-target
@@ -39,7 +39,7 @@ Characteristics: #can-be-target
 * lot 0..1 string "Lote da vacina"
 * reason 0..1 string "Motivo de não toma da vacina"
 
-Logical: birthNoticeLM
+Logical: BirthNoticeLM
 Title: "BirthNotice (modelo)"
 Description: "Modelo Lógico - BirthNotice"
 Characteristics: #can-be-target
@@ -56,7 +56,7 @@ Characteristics: #can-be-target
   * healthextension 0..1 string "Extensão de saúde"
   * familyDoctor 0..1 string "Nome clinico do médico de família"
   * familyNurse 0..1 string "Nome clinico do enfermeiro de família"
-* motherDemographics 1..1 motherDemographicsLM "Dados demográficos da mãe"
+* motherDemographics 1..1 MotherDemographicsLM "Dados demográficos da mãe"
 * pregnancy 1..1 PregnancyLM "Dados da gravidez e cumprimento do esquema de vigilância pré-natal"
 * birth 1..1 BackboneElement "Dados do parto"
   * date 1..1 dateTime "Data e hora do nascimento (YYYY-MM-DD HH:MI:SS)"
@@ -171,7 +171,7 @@ Characteristics: #can-be-target
 
 
 
-Logical: motherDemographicsLM
+Logical: MotherDemographicsLM
 Title: "Dados demográficos da mãe (modelo)"
 Description: "Modelo Lógico - Dados demográficos da mãe"
 Characteristics: #can-be-target

@@ -120,15 +120,15 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[exams].entry[length] only Reference(http://hl7.org/fhir/StructureDefinition/bodyheight)
 * section[exams].entry[bodyweigth] only Reference(http://hl7.org/fhir/StructureDefinition/bodyweight)
 * section[exams].entry[cephalicPerimeter] only Reference(http://hl7.org/fhir/StructureDefinition/headcircum)
-* section[exams].entry[malformation] only Reference(malformation)
-* section[exams].entry[hearingscreen] only Reference(hearingscreen)
+* section[exams].entry[malformation] only Reference(Malformation)
+* section[exams].entry[hearingscreen] only Reference(Hearingscreen)
 
 * section[exams].entry[Phototherapy] only Reference(Phototherapy)
 * section[exams].entry[Congenital] only Reference(Congenital)
 * section[exams].entry[Metabolic] only Reference(Metabolic)
 * section[exams].entry[Pupillary] only Reference(Pupillary)
-* section[exams].entry[apgar] only Reference(apgarScore)
-* section[exams].entry[newbornriskassessment] only Reference(newbornriskassessment)
+* section[exams].entry[apgar] only Reference(ApgarScore)
+* section[exams].entry[newbornriskassessment] only Reference(Newbornriskassessment)
 
 
 
@@ -148,12 +148,12 @@ Description: "Composition que cria as secções da noticia nascimento"
         nextappointment 0..1
 
 
-* section[followup].entry[puerperium] only Reference(puerperium)
+* section[followup].entry[puerperium] only Reference(Puerperium)
 * section[followup].entry[puerperiumreview] only Reference(Observation)
 * section[followup].entry[childhealthsurveilance] only Reference(Organization)
-* section[followup].entry[letter] only Reference(letter)
+* section[followup].entry[letter] only Reference(Letter)
 * section[followup].entry[destination] only Reference(Organization)
-* section[followup].entry[bulletindelivery] only Reference(bulletindelivery)
+* section[followup].entry[bulletindelivery] only Reference(Bulletindelivery)
 * section[followup].entry[nextappointment] only Reference(Encounter)
 
 
@@ -193,7 +193,7 @@ Description: "Perfil para o profissional de saúde"
 
 Profile: Contact
 Parent: Encounter
-Title: "Contacto "
+Title: "Contacto"
 Description: "Perfil de contacto"
 
 * identifier 1..1 MS
@@ -233,34 +233,47 @@ Description: "Perfil de Informação de gravidez"
     thirdQuarterBio		0..1	and
     visits		0..1	and 
     intercurrences 0..1  and
-    pregancyType 0..1 and
-    twinNumber 0..1
+    pregancyType 0..1
+   // twinNumber 0..1
 
 
 * component[days].value[x] only integer
-* component[days].code = http://loinc.org/#11449-6 "Pregnancy status [Interpretation] - Reported"
+* component[days].code = $sct#258703001 "day (qualifier value)"
 
 
 * component[weeks].value[x] only integer
-* component[weeks].code = http://loinc.org/#11449-6 "Pregnancy status [Interpretation] - Reported"
+* component[weeks].code = $sct#258705008 "week (qualifier value)"
 
 * component[risk].value[x] only CodeableConcept
 * component[risk].valueCodeableConcept from RiscoGravidezVS (required)
-
+* component[risk].code = $sct#1303221004 "Pregnancy risk level (observable entity)"
 
 * component[riskreason].value[x] only string
 
 * component[firstQuarterEco].value[x] only boolean
+* component[firstQuarterEco].code = $sct#446522006 "Ultrasonography in first trimester (procedure)"
+
+
 * component[firstQuarterBio].value[x] only boolean
+
 * component[secondQuarterEco].value[x] only boolean
+* component[secondQuarterEco].code = $sct#446208007 "Ultrasonography in second trimester (procedure)"
+
 * component[secondQuarterBio].value[x] only boolean
+
 * component[thirdQuarterEco].value[x] only boolean
+* component[thirdQuarterEco].code = $sct#446353007 "Ultrasonography in third trimester (procedure)"
+
 * component[thirdQuarterBio].value[x] only boolean
+
 * component[visits].value[x] only integer
+* component[visits].code = $sct#3401000175105  "Total number of prenatal care visits (observable entity)"
+
 * component[intercurrences].value[x] only string
 * component[pregancyType].value[x] only CodeableConcept
 * component[pregancyType].valueCodeableConcept from TipoGravidezVS (required)
-* component[twinNumber].value[x] only integer
+* component[pregancyType].code = $sct#3950001 "Birth (finding)"
+
 
 
 
@@ -290,6 +303,9 @@ Description: "Perfil de Informação do Parto"
 
 * component[type].value[x] only CodeableConcept
 * component[type].valueCodeableConcept from TipoPartoVS (required)
+* component[type].code = $sct#386216000 "Human parturition, function (observable entity)"
+
+
 
 * component[participation].value[x] only CodeableConcept
 * component[reason].value[x] only string
@@ -316,32 +332,32 @@ Description: "Either status is completed with date or a reason for the status is
 Expression: "(status = 'completed' and occurrencedateTime.exists()) or statusReason.exists()"
 Severity:   #error
 
-Profile: newbornriskassessment
+Profile: Newbornriskassessment
 Parent: Observation
 Title: "Informação sobre RiskAssessment"
 Description: "Informação sobre RiskAssessment"
 
-* extension contains referencia-NHACJR named nhacjr 0..1
+* extension contains ReferenciaNHACJR named nhacjr 0..1
 * status = #final
 * subject only Reference(Mother)
 * note MS
-* code from newbornriskassessmentVS
+* code from NewbornriskassessmentVS
 * category = $sct#407647007 "Risk assessment status (finding)"
 
 
 
-Extension: referencia-NHACJR
+Extension: ReferenciaNHACJR
 Description: "Referenciação ao Núcleo Hospitalar de Apoio Criança e Jovens em risco (NHACJR)"
 * value[x] only boolean
 
 
-Profile: bulletindelivery
+Profile: Bulletindelivery
 Parent: Procedure
 Title: "Informação sobre bulletindelivery"
 Description: "Informação sobre bulletindelivery"
 
 
-* code from bulletindeliveryVS (required)
+* code from BulletindeliveryVS (required)
 * subject only Reference(Mother)
 * performed[x] only dateTime
 * performedDateTime 1..1 
@@ -351,7 +367,7 @@ Description: "Informação sobre bulletindelivery"
 
 
 
-Extension: transport-information
+Extension: TransportInformation
 Id:        transport-information
 Title:     "Transport information"
 Description: "Transport information"
@@ -370,7 +386,7 @@ Description: "Transport information"
 
 
 
-Profile: transport
+Profile: Transport
 Parent: Basic
 Title: "Informação sobre Transportes"
 Description: "Informação sobre Transportes"
