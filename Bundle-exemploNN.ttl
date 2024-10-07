@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Bundle/exemploNN> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exemploNN"] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:entry ( [
+     fhir:resource ( [
+       a fhir:Composition ;
+       fhir:id [ fhir:v "compNN" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://example.com/fhir/example/StructureDefinition/CompositionNoticia"^^xsd:anyURI ;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/CompositionNoticia>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_compNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition compNN</b></p><a name=\"compNN\"> </a><a name=\"hccompNN\"> </a><a name=\"compNN-en-US\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org/ 71230-7}\">Birth certificate</span></p><p><b>encounter</b>: <a href=\"Encounter/episodio\">Encounter/episodio</a></p><p><b>date</b>: 2021-09-01</p><p><b>author</b>: ee</p><p><b>title</b>: ssss</p></div>"
+       ] ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://loinc.org/"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "71230-7" ] ;
+           fhir:display [ fhir:v "Birth certificate" ]
+         ] )
+       ] ;
+       fhir:encounter [
+         fhir:link <http://example.com/fhir/example/Encounter/episodio> ;
+         fhir:reference [ fhir:v "Encounter/episodio" ]
+       ] ;
+       fhir:date [ fhir:v "2021-09-01"^^xsd:date ] ;
+       fhir:author ( [
+         fhir:display [ fhir:v "ee" ]
+       ] ) ;
+       fhir:title [ fhir:v "ssss" ] ;
+       fhir:section ( [
+         fhir:code [
+           fhir:coding ( [
+             a loinc:10160-0 ;
+             fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "10160-0" ]
+           ] )
+         ] ;
+         fhir:entry ( [
+           fhir:link <http://example.com/fhir/example/Patient/mother> ;
+           fhir:reference [ fhir:v "Patient/mother" ]
+         ] )
+       ] [
+         fhir:code [
+           fhir:coding ( [
+             a loinc:56833-7 ;
+             fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "56833-7" ] ;
+             fhir:display [ fhir:v "Pregnancy related history Narrative" ]
+           ] )
+         ]
+       ] [
+         fhir:code [
+           fhir:coding ( [
+             a loinc:57074-7 ;
+             fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "57074-7" ] ;
+             fhir:display [ fhir:v "Labor and delivery process Narrative" ]
+           ] )
+         ] ;
+         fhir:entry ( [
+           fhir:link <http://example.com/fhir/example/Observation/BirthNN> ;
+           fhir:reference [ fhir:v "Observation/BirthNN" ]
+         ] [
+           fhir:link <http://example.com/fhir/example/Encounter/episodioInt> ;
+           fhir:reference [ fhir:v "Encounter/episodioInt" ]
+         ] )
+       ] [
+         fhir:code [
+           fhir:coding ( [
+             a loinc:57075-4 ;
+             fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "57075-4" ] ;
+             fhir:display [ fhir:v "Newborn delivery information from newborn Narrative" ]
+           ] )
+         ]
+       ] [
+         fhir:code [
+           fhir:coding ( [
+             a loinc:73738-7 ;
+             fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "73738-7" ] ;
+             fhir:display [ fhir:v "Newborn screening test results panel - Point of Care" ]
+           ] )
+         ]
+       ] [
+         fhir:code [
+           fhir:coding ( [
+             a loinc:11369-6 ;
+             fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "11369-6" ] ;
+             fhir:display [ fhir:v "History of Immunization Narrative" ]
+           ] )
+         ]
+       ] [
+         fhir:code [
+           fhir:coding ( [
+             a loinc:11544-4 ;
+             fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "11544-4" ] ;
+             fhir:display [ fhir:v "Hospital discharge follow-up Narrative" ]
+           ] )
+         ] ;
+         fhir:entry ( [
+           fhir:link <http://example.com/fhir/example/Organization/destino> ;
+           fhir:reference [ fhir:v "Organization/destino" ]
+         ] )
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

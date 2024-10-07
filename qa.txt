@@ -1,0 +1,285 @@
+BirthNoticeIG : Validation Results
+=========================================
+
+err = 73, warn = 96, info = 12
+IG Publisher Version: 1.6.28
+Generated Mon Oct 07 08:53:35 UTC 2024. FHIR version 4.0.1 for hl7.fhir.pt.obs-neonat#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 1 / 5 / 0
+ /github/workspace/fsh-generated/resources/Bundle-exemploNN : 19 / 1 / 7
+ /github/workspace/fsh-generated/resources/CodeSystem-documentclassificationCS : 4 / 1 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tipo-episodio-cs : 4 / 1 / 2
+ /github/workspace/fsh-generated/resources/Encounter-episodioInt : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.obs-neonat : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-BirthNN : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ApgarScore : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Birth : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BirthNoticeLM : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Bulletindelivery : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Child : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CompositionNoticia : 3 / 2 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-Congenital : 5 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Contact : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ContactLM : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Hearingscreen : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Letter : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Malformation : 1 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-Metabolic : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Mother : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MotherDemographicsLM : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-NewBornLM : 1 / 33 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Newbornriskassessment : 1 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-NoticiaLM : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-NoticiaNascimento : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Phototherapy : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Pregnancy : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PregnancyLM : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Professional : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ProfessionalLM : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Puerperium : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Pupillary : 5 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ReferenciaNHACJR : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Transport : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Vaccination : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-VaccineLM : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-transport-information : 3 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-bulletin-delivery-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-document-type-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-episode-type-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-newbornriskassessment-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-puerperium-vs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-risco-gravidez-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tipo-gravidez-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tipo-parto-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-transport-type-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vacinas-infancia-vs : 0 / 2 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+ERROR: /github/workspace/output/Bundle-exemploNN.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 205, column 1734: The link 'Encounter/episodio' for "Encounter/episodio" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-exemploNN.json ==
+WARNING: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.type.coding[0]: A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org/#71230-7)
+ERROR: Bundle/exemploNN: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.encounter: Unable to resolve resource with reference 'Encounter/episodio'
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[0].entry[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[0].entry[0]: Unable to resolve resource with reference 'Patient/mother'
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[1]: Constraint failed: cmp-1: 'A section must contain at least one of text, entries, or sub-sections'
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[2].entry[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[2].entry[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[3]: Constraint failed: cmp-1: 'A section must contain at least one of text, entries, or sub-sections'
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[3].code.coding[0].display: Wrong Display Name 'Newborn delivery information from newborn Narrative' for http://loinc.org#57075-4. There are no valid display names found for language(s) 'en'. Default display is 'Newborn delivery information'
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[4]: Constraint failed: cmp-1: 'A section must contain at least one of text, entries, or sub-sections'
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[5]: Constraint failed: cmp-1: 'A section must contain at least one of text, entries, or sub-sections'
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[6].entry[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[6].entry[0]: Unable to resolve resource with reference 'Organization/destino'
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[2].entry[0]: This element does not match any known slice defined in the profile http://example.com/fhir/example/StructureDefinition/CompositionNoticia|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[2].entry[1]: This element does not match any known slice defined in the profile http://example.com/fhir/example/StructureDefinition/CompositionNoticia|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[2]: Slice 'Composition.section:birth.entry:birthInfo': a matching slice is required, but not found (from http://example.com/fhir/example/StructureDefinition/CompositionNoticia|1.0.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[2]: Slice 'Composition.section:birth.entry:episode': a matching slice is required, but not found (from http://example.com/fhir/example/StructureDefinition/CompositionNoticia|1.0.0). Note that other slices are allowed in addition to this required slice
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[6].entry[0]: This element does not match any known slice defined in the profile http://example.com/fhir/example/StructureDefinition/CompositionNoticia|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Bundle/exemploNN: Bundle: Constraint failed: bdl-9: 'A document must have an identifier with a system and a value'
+ERROR: Bundle/exemploNN: Bundle: Constraint failed: bdl-10: 'A document must have a date'
+ERROR: Bundle/exemploNN: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+== fsh-generated/resources/CodeSystem-documentclassificationCS.json ==
+ERROR: CodeSystem.where(url = 'http://terminology.hl7.pt/CodeSystem/documentClassificaiton'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-documentclassificationCS.json - the canonical URL (http://example.com/fhir/example/CodeSystem/documentclassificationCS) does not match the URL (http://terminology.hl7.pt/CodeSystem/documentClassificaiton)
+INFORMATION: CodeSystem/documentclassificationCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/documentclassificationCS: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/documentclassificationCS: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-documentclassificationCS: URL Mismatch http://example.com/fhir/example/CodeSystem/documentclassificationCS vs http://terminology.hl7.pt/CodeSystem/documentClassificaiton
+== fsh-generated/resources/CodeSystem-tipo-episodio-cs.json ==
+ERROR: CodeSystem.where(url = 'http://terminology.hl7.pt/CodeSystem/tipoepisodio'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-tipo-episodio-cs.json - the canonical URL (http://example.com/fhir/example/CodeSystem/tipo-episodio-cs) does not match the URL (http://terminology.hl7.pt/CodeSystem/tipoepisodio)
+INFORMATION: CodeSystem/tipo-episodio-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/tipo-episodio-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/tipo-episodio-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-tipo-episodio-cs: URL Mismatch http://example.com/fhir/example/CodeSystem/tipo-episodio-cs vs http://terminology.hl7.pt/CodeSystem/tipoepisodio
+== fsh-generated/resources/Encounter-episodioInt.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.obs-neonat.json ==
+WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/Observation-BirthNN.json ==
+WARNING: Observation/BirthNN: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/BirthNN: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/StructureDefinition-ApgarScore.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/ApgarScore'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Birth.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/StructureDefinition-BirthNoticeLM.json ==
+WARNING: StructureDefinition/BirthNoticeLM: StructureDefinition.snapshot.element[14]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/BirthNoticeLM: StructureDefinition.differential.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/StructureDefinition-Bulletindelivery.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Bulletindelivery'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Child.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Child'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-CompositionNoticia.json ==
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated
+ERROR: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[104].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Newborn delivery information from newborn Narrative' for http://loinc.org#57075-4. There are no valid display names found for language(s) 'en'. Default display is 'Newborn delivery information'
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated
+ERROR: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[19].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Newborn delivery information from newborn Narrative' for http://loinc.org#57075-4. There are no valid display names found for language(s) 'en'. Default display is 'Newborn delivery information'
+INFORMATION: StructureDefinition/CompositionNoticia: Composition.extension: The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.1.0 is deprecated
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+INFORMATION: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/CompositionNoticia'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-Congenital.json ==
+ERROR: StructureDefinition/Congenital: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Congenital anomalies of the newborn' for http://loinc.org#73780-9. There are no valid display names found for language(s) 'en'. Default display is 'Congenital anomalies of the newborn [US Standard Certificate of Live Birth]'
+ERROR: StructureDefinition/Congenital: StructureDefinition.snapshot.element[21].binding.valueSet: Canonical URL 'http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies' does not resolve
+ERROR: StructureDefinition/Congenital: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Congenital anomalies of the newborn' for http://loinc.org#73780-9. There are no valid display names found for language(s) 'en'. Default display is 'Congenital anomalies of the newborn [US Standard Certificate of Live Birth]'
+ERROR: StructureDefinition/Congenital: StructureDefinition.differential.element[2].binding.valueSet: Canonical URL 'http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies' does not resolve
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Congenital'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Contact.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Contact'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ContactLM.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/StructureDefinition-Hearingscreen.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Hearingscreen'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Letter.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Letter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Malformation.json ==
+INFORMATION: StructureDefinition/Malformation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: The code '21390004' is valid but is not active
+INFORMATION: StructureDefinition/Malformation: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].code: The code '21390004' is valid but is not active
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Malformation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Metabolic.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Metabolic'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Mother.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Mother'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MotherDemographicsLM.json ==
+WARNING: StructureDefinition/MotherDemographicsLM: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/MotherDemographicsLM: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/StructureDefinition-NewBornLM.json ==
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[3].short: value should not start or finish with whitespace 'Comprimento (cm) '
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[20]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[21]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[22]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[27]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[28]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[29]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[30]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[32]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[51]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[52]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[66]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[67]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[68]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[69]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[70]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[71]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace 'Comprimento (cm) '
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[17]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[18]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[19]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[21]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[22]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[23]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[24]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[25]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[26]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[42]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[43]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[54]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[55]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[56]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/StructureDefinition-Newbornriskassessment.json ==
+INFORMATION: StructureDefinition/Newbornriskassessment: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Newbornriskassessment'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-NoticiaLM.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/StructureDefinition-NoticiaNascimento.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/NoticiaNascimento'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Phototherapy.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Phototherapy'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Pregnancy.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Pregnancy'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PregnancyLM.json ==
+WARNING: StructureDefinition/PregnancyLM: StructureDefinition.snapshot.element[26]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/PregnancyLM: StructureDefinition.differential.element[20]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/StructureDefinition-Professional.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Professional'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ProfessionalLM.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/StructureDefinition-Puerperium.json ==
+ERROR: StructureDefinition/Puerperium: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '597951000005108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240201'
+ERROR: StructureDefinition/Puerperium: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '597951000005108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240201'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Puerperium'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Pupillary.json ==
+ERROR: StructureDefinition/Pupillary: StructureDefinition.snapshot.element[54].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Pupillary response Right pupil' for http://loinc.org#79815-7. There are no valid display names found for language(s) 'en'. Default display is 'Right pupil Pupillary response'
+ERROR: StructureDefinition/Pupillary: StructureDefinition.snapshot.element[63].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Pupillary response Left pupil' for http://loinc.org#79899-1. There are no valid display names found for language(s) 'en'. Default display is 'Left pupil Pupillary response'
+ERROR: StructureDefinition/Pupillary: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Pupillary response Right pupil' for http://loinc.org#79815-7. There are no valid display names found for language(s) 'en'. Default display is 'Right pupil Pupillary response'
+ERROR: StructureDefinition/Pupillary: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Pupillary response Left pupil' for http://loinc.org#79899-1. There are no valid display names found for language(s) 'en'. Default display is 'Left pupil Pupillary response'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Pupillary'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ReferenciaNHACJR.json ==
+WARNING: StructureDefinition/ReferenciaNHACJR: StructureDefinition.context[0]: Review the extension type for ReferenciaNHACJR: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/ReferenciaNHACJR'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Transport.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Transport'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Vaccination.json ==
+ERROR: StructureDefinition/Vaccination: StructureDefinition.snapshot.element[0].constraint[5]: Error in constraint 'reason-required-not-completed' with expression '(status = 'completed' and occurrencedateTime.exists()) or statusReason.exists()': Error evaluating FHIRPath expression: The name 'occurrencedateTime' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Immunization] (@char 7)
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/Vaccination'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-VaccineLM.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/StructureDefinition-transport-information.json ==
+ERROR: StructureDefinition/transport-information: StructureDefinition.snapshot.element[3]: Constraint failed: eld-18: 'Must have a modifier reason if isModifier = true'
+ERROR: StructureDefinition/transport-information: StructureDefinition.differential.element[2]: Constraint failed: eld-18: 'Must have a modifier reason if isModifier = true'
+WARNING: StructureDefinition/transport-information: StructureDefinition.context[0]: Review the extension type for transport-information: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/transport-information'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/ValueSet-bulletin-delivery-vs.json ==
+WARNING: ValueSet/bulletin-delivery-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/ValueSet-document-type-vs.json ==
+WARNING: ValueSet/document-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/ValueSet-episode-type-vs.json ==
+WARNING: ValueSet/episode-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/ValueSet-newbornriskassessment-vs.json ==
+WARNING: ValueSet/newbornriskassessment-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/ValueSet-puerperium-vs.json ==
+WARNING: ValueSet/puerperium-vs: ValueSet.compose.include[0].concept[0]: The code '597961000005105' is not valid in the system http://snomed.info/sct (Unknown code '597961000005105' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240201')
+INFORMATION: ValueSet/puerperium-vs: ValueSet.compose.include[0].concept[0]: Unknown code '597961000005105' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240201'
+WARNING: ValueSet/puerperium-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/ValueSet-risco-gravidez-vs.json ==
+WARNING: ValueSet/risco-gravidez-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/ValueSet-tipo-gravidez-vs.json ==
+WARNING: ValueSet/tipo-gravidez-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/ValueSet-tipo-parto-vs.json ==
+WARNING: ValueSet/tipo-parto-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/ValueSet-transport-type-vs.json ==
+WARNING: ValueSet/transport-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/ValueSet-vacinas-infancia-vs.json ==
+WARNING: ValueSet/vacinas-infancia-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.obs-neonat, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')

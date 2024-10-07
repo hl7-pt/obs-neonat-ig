@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="BirthNN"/>
+  <meta>
+    <profile value="http://example.com/fhir/example/StructureDefinition/Birth"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation BirthNN</b></p><a name="BirthNN"> </a><a name="hcBirthNN"> </a><a name="BirthNN-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 10160-0}">History of Medication use Narrative</span></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="10160-0"/>
+    </coding>
+  </code>
+  <effectiveDateTime value="2024-08-01T10:00:00.000Z"/>
+</Observation>

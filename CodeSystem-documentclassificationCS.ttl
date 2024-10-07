@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/CodeSystem/documentclassificationCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "documentclassificationCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem documentclassificationCS</b></p><a name=\"documentclassificationCS\"> </a><a name=\"hcdocumentclassificationCS\"> </a><a name=\"documentclassificationCS-en-US\"> </a><p>This  code system <code>http://terminology.hl7.pt/CodeSystem/documentClassificaiton</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">BISC<a name=\"documentclassificationCS-BISC\"> </a></td><td>Boletim Individual de saúde da criança</td><td>Boletim Individual de saúde da criança</td></tr><tr><td style=\"white-space:nowrap\">BSIJ<a name=\"documentclassificationCS-BSIJ\"> </a></td><td>Boletim de saúde infantil e juvenil</td><td>Boletim de saúde infantil e juvenil</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.pt/CodeSystem/documentClassificaiton"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "DocumentclassificationCS"] ; # 
+  fhir:title [ fhir:v "Document Classification code system"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-10-07T08:52:25+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Document Classification code system"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "BISC" ] ;
+     fhir:display [ fhir:v "Boletim Individual de saúde da criança" ] ;
+     fhir:definition [ fhir:v "Boletim Individual de saúde da criança" ]
+  ] [
+     fhir:code [ fhir:v "BSIJ" ] ;
+     fhir:display [ fhir:v "Boletim de saúde infantil e juvenil" ] ;
+     fhir:definition [ fhir:v "Boletim de saúde infantil e juvenil" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

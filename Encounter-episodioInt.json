@@ -1,0 +1,13 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "episodioInt",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter episodioInt</b></p><a name=\"episodioInt\"> </a><a name=\"hcepisodioInt\"> </a><a name=\"episodioInt-en-US\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT\">Tipos de episodio code system</a> INT: Internamento</p></div>"
+  },
+  "status" : "finished",
+  "class" : {
+    "system" : "http://terminology.hl7.pt/CodeSystem/tipoepisodio",
+    "code" : "INT"
+  }
+}

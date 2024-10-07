@@ -1,0 +1,108 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "exemploNN",
+  "type" : "document",
+  "entry" : [{
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "compNN",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CompositionNoticia"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_compNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition compNN</b></p><a name=\"compNN\"> </a><a name=\"hccompNN\"> </a><a name=\"compNN-en-US\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org/ 71230-7}\">Birth certificate</span></p><p><b>encounter</b>: <a href=\"Encounter/episodio\">Encounter/episodio</a></p><p><b>date</b>: 2021-09-01</p><p><b>author</b>: ee</p><p><b>title</b>: ssss</p></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org/",
+          "code" : "71230-7",
+          "display" : "Birth certificate"
+        }]
+      },
+      "encounter" : {
+        "reference" : "Encounter/episodio"
+      },
+      "date" : "2021-09-01",
+      "author" : [{
+        "display" : "ee"
+      }],
+      "title" : "ssss",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10160-0"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Patient/mother"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "56833-7",
+            "display" : "Pregnancy related history Narrative"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "57074-7",
+            "display" : "Labor and delivery process Narrative"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/BirthNN"
+        },
+        {
+          "reference" : "Encounter/episodioInt"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "57075-4",
+            "display" : "Newborn delivery information from newborn Narrative"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "73738-7",
+            "display" : "Newborn screening test results panel - Point of Care"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11369-6",
+            "display" : "History of Immunization Narrative"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11544-4",
+            "display" : "Hospital discharge follow-up Narrative"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Organization/destino"
+        }]
+      }]
+    }
+  }]
+}

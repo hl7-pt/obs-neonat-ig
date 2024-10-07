@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "documentclassificationCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem documentclassificationCS</b></p><a name=\"documentclassificationCS\"> </a><a name=\"hcdocumentclassificationCS\"> </a><a name=\"documentclassificationCS-en-US\"> </a><p>This  code system <code>http://terminology.hl7.pt/CodeSystem/documentClassificaiton</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">BISC<a name=\"documentclassificationCS-BISC\"> </a></td><td>Boletim Individual de saúde da criança</td><td>Boletim Individual de saúde da criança</td></tr><tr><td style=\"white-space:nowrap\">BSIJ<a name=\"documentclassificationCS-BSIJ\"> </a></td><td>Boletim de saúde infantil e juvenil</td><td>Boletim de saúde infantil e juvenil</td></tr></table></div>"
+  },
+  "url" : "http://terminology.hl7.pt/CodeSystem/documentClassificaiton",
+  "version" : "1.0.0",
+  "name" : "DocumentclassificationCS",
+  "title" : "Document Classification code system",
+  "status" : "active",
+  "date" : "2024-10-07T08:52:25+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Document Classification code system",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "BISC",
+    "display" : "Boletim Individual de saúde da criança",
+    "definition" : "Boletim Individual de saúde da criança"
+  },
+  {
+    "code" : "BSIJ",
+    "display" : "Boletim de saúde infantil e juvenil",
+    "definition" : "Boletim de saúde infantil e juvenil"
+  }]
+}

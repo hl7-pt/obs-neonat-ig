@@ -1,0 +1,19 @@
+{
+  "resourceType" : "Observation",
+  "id" : "BirthNN",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/Birth"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation BirthNN</b></p><a name=\"BirthNN\"> </a><a name=\"hcBirthNN\"> </a><a name=\"BirthNN-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 10160-0}\">History of Medication use Narrative</span></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "10160-0"
+    }]
+  },
+  "effectiveDateTime" : "2024-08-01T10:00:00.000Z"
+}
