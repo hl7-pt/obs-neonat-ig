@@ -40,6 +40,7 @@ Usage: #inline
 Instance: episodioInt
 InstanceOf: Encounter
 Description: "Exemplo NN"
+Usage: #inline
 
 * class = tipo-episodio-cs#INT
 * status = #finished
@@ -47,6 +48,7 @@ Description: "Exemplo NN"
 Instance: BirthNN
 InstanceOf: Birth
 Description: "Exemplo NN"
+Usage: #inline
 
 * effectiveDateTime = "2024-08-01T10:00:00.000Z"
 
@@ -77,8 +79,13 @@ Usage: #inline
 Instance: exemploNN
 InstanceOf: Bundle
 Description: "Exemplo NN"
+Usage: #usage
 
-* entry[0].resource = compNN
 * type = #document
-
+* entry[0].resource = compNN
+* entry[+].resource = BirthNN
+* entry[+].resource = episodioInt
+* entry[+].resource = destino
+* entry[+].resource = mother
+* entry[+].resource = episodio
 

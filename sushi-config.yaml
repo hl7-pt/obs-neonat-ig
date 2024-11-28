@@ -171,7 +171,7 @@ pages:
   mapping.md:
     title: Mapeamentos
   usage.md:
-    title: Tutorial
+    title: "Usar Este IG"
   downloads.html:
     title: Downloads
   changes.html:
@@ -180,12 +180,14 @@ pages:
 menu:
   Home: index.html
   Índice: toc.html
-  Tutorial: usage.html
 
   Introdução:
-    Funcional: background.html
+    "Análise Funcional": background.html
     Mapeamentos: mapping.html
   Artefactos: artifacts.html			
+
+  "Usar Este IG": usage.html
+
   Downloads: downloads.html
   
 # The parameters property represents IG.definition.parameter. Rather
