@@ -56,7 +56,7 @@ contact:
 # code syntax can be used here.
 
 #jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+jurisdiction: urn:iso:std:iso:3166#PT "Portugal"
 #dependencies:
 #  ihe.domain.logical-datatypes: current
 
