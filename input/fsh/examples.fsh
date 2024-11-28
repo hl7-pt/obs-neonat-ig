@@ -79,7 +79,7 @@ Usage: #inline
 Instance: exemploNN
 InstanceOf: Bundle
 Description: "Exemplo NN"
-Usage: #usage
+Usage: #example
 
 * type = #document
 * entry[0].resource = compNN
