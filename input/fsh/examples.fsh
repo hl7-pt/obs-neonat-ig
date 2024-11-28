@@ -71,7 +71,7 @@ Usage: #inline
 
 Instance: vaccNN
 InstanceOf: Vaccination
-Description: "Exemplo NN"
+Description: "Exemplo vaccinaction NN"
 Usage: #inline
 
 * status = #completed
