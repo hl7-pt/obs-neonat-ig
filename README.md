@@ -6,7 +6,7 @@ NEONAT
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __[http://build.fhir.org/ig/<handle>/<repo>/branches/main/index.html](https://build.fhir.org/ig/hl7-pt/obs-neonat-ig/)__  
+Continuous Build: __[https://build.fhir.org/ig/hl7-pt/obs-neonat-ig/](https://build.fhir.org/ig/hl7-pt/obs-neonat-ig/)__  
 Canonical / permanent URL: 
 <br> </br>
 
