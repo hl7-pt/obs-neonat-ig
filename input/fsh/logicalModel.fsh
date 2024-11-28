@@ -113,7 +113,7 @@ Characteristics: #can-be-target
 
 * liveBirth 1..1 boolean "Identificação de nado vivo"
 * gender 1..1 Coding "Sexo do recém- nascido (0 - Masculino; 1 - Feminino; 2 - Indeterminado)"
-* length 1..1 decimal "Comprimento (cm) "
+* length 1..1 decimal "Comprimento (cm)"
 * deceased 0..1 dateTime "Data de falecimento (YYYY-MM-DD HH:MI:SS)"
 * deathBirth 1..1 boolean "Identificação de nado morto"
 * deathBirthDate 0..1 dateTime "Data da consulta de Alto Risco/Medicina Materno-Fetal (YYYY- MM-DD HH:MI:SS)"

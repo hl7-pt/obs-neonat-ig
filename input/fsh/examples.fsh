@@ -105,3 +105,7 @@ Usage: #example
 * entry[+].resource = episodio
 * entry[=].fullUrl = "http://example.org/Encounter/episodio"
 
+* entry[+].resource = inst
+* entry[=].fullUrl = "http://example.org/Organization/inst"
+
+
