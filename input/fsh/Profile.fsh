@@ -341,7 +341,7 @@ Description: "Informação sobre vacinação"
 
 Invariant:  reason-required-not-completed
 Description: "Either status is completed with date or a reason for the status is required"
-Expression: "(status = 'completed' and occurrence[x].exists()) or statusReason.exists()"
+Expression: "(status = 'completed' and occurrence.exists()) or statusReason.exists()"
 Severity:   #error
 
 Profile: Newbornriskassessment
