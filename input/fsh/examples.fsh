@@ -137,3 +137,11 @@ Usage: #example
 * entry[=].fullUrl = "http://example.org/Organization/inst"
 
 
+* entry[+].fullUrl = "http://example.org/Observation/pregnancyNN"
+* entry[=].resource = pregnancyNN
+
+* entry[+].fullUrl = "http://example.org/Patient/newBornNN"
+* entry[=].resource = newBornNN
+
+* entry[+].fullUrl = "http://example.org/Immunization/vaccNN"
+* entry[=].resource = vaccNN
