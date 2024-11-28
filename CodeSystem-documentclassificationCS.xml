@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="documentclassificationCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem documentclassificationCS</b></p><a name="documentclassificationCS"> </a><a name="hcdocumentclassificationCS"> </a><a name="documentclassificationCS-pt-PT"> </a><p>This  code system <code>http://example.com/fhir/example/CodeSystem/documentclassificationCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">BISC<a name="documentclassificationCS-BISC"> </a></td><td>Boletim Individual de saúde da criança</td><td>Boletim Individual de saúde da criança</td></tr><tr><td style="white-space:nowrap">BSIJ<a name="documentclassificationCS-BSIJ"> </a></td><td>Boletim de saúde infantil e juvenil</td><td>Boletim de saúde infantil e juvenil</td></tr></table></div>
+  </text>
+  <url value="http://example.com/fhir/example/CodeSystem/documentclassificationCS"/>
+  <version value="1.0.0"/>
+  <name value="DocumentclassificationCS"/>
+  <title value="Document Classification code system"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-11-28T17:51:35+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Document Classification code system"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="BISC"/>
+    <display value="Boletim Individual de saúde da criança"/>
+    <definition value="Boletim Individual de saúde da criança"/>
+  </concept>
+  <concept>
+    <code value="BSIJ"/>
+    <display value="Boletim de saúde infantil e juvenil"/>
+    <definition value="Boletim de saúde infantil e juvenil"/>
+  </concept>
+</CodeSystem>

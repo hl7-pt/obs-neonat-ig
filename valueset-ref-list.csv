@@ -1,0 +1,11 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://example.com/fhir/example/ValueSet/bulletin-delivery-vs,1.0.0,active,,BulletindeliveryVS,bulletindeliveryVS ValueSet,"bulletindeliveryVSValueSet","StructureDefinition/Bulletindelivery","Internal"
+http://example.com/fhir/example/ValueSet/document-type-vs,1.0.0,active,,DocumenttypeVS,documenttypeVS ValueSet,"documenttypeVS","StructureDefinition/Bulletindelivery","SCT"
+http://example.com/fhir/example/ValueSet/episode-type-vs,1.0.0,active,,TipoepisodioVS,Tipos de episódio ValueSet,"Tipos de episódio ValueSet","StructureDefinition/Contact","Internal"
+http://example.com/fhir/example/ValueSet/newbornriskassessment-vs,1.0.0,active,,NewbornriskassessmentVS,newbornriskassessment ValueSet,"newbornriskassessment ValueSet","StructureDefinition/Newbornriskassessment","SCT"
+http://example.com/fhir/example/ValueSet/puerperium-vs,1.0.0,active,,PuerperiumVS,puerpério ValueSet,"puerpério ValueSet","StructureDefinition/Puerperium","SCT"
+http://example.com/fhir/example/ValueSet/risco-gravidez-vs,1.0.0,active,,RiscoGravidezVS,Risco de gravidez ValueSet,"Risco de gravidez ValueSet","StructureDefinition/Pregnancy","SCT"
+http://example.com/fhir/example/ValueSet/tipo-gravidez-vs,1.0.0,active,,TipoGravidezVS,Tipo de gravidez ValueSet,"Tipo de gravidez ValueSet","StructureDefinition/Pregnancy","SCT"
+http://example.com/fhir/example/ValueSet/tipo-parto-vs,1.0.0,active,,TipoPartoVS,Tipos de parto ValueSet,"Tipos de parto ValueSet","StructureDefinition/Birth","SCT"
+http://example.com/fhir/example/ValueSet/transport-type-vs,1.0.0,active,,TransportTypeVS,Tipos de transporte de recem-nascido ValueSet,"Tipos de transporte de recem-nascido ValueSet","StructureDefinition/transport-information","SCT"
+http://example.com/fhir/example/ValueSet/vacinas-infancia-vs,1.0.0,active,,VacinasinfanciaVS,Vacinas ValueSet,"Vacinas ValueSet","StructureDefinition/Vaccination","SCT"

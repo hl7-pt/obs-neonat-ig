@@ -1,0 +1,310 @@
+[
+  {
+    "id" : "documentclassificationCS",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/example/CodeSystem/documentclassificationCS",
+    "version" : "1.0.0",
+    "name" : "DocumentclassificationCS"
+  },
+  {
+    "id" : "tipo-episodio-cs",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/example/CodeSystem/tipo-episodio-cs",
+    "version" : "1.0.0",
+    "name" : "TipoepisodioCS"
+  },
+  {
+    "id" : "hl7.fhir.pt.obs-neonat",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.com/fhir/example/ImplementationGuide/hl7.fhir.pt.obs-neonat",
+    "version" : "1.0.0",
+    "name" : "BirthNoticeIG"
+  },
+  {
+    "id" : "ApgarScore",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/ApgarScore",
+    "version" : "1.0.0",
+    "name" : "ApgarScore"
+  },
+  {
+    "id" : "Birth",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Birth",
+    "version" : "1.0.0",
+    "name" : "Birth"
+  },
+  {
+    "id" : "BirthNoticeLM",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/BirthNoticeLM",
+    "version" : "1.0.0",
+    "name" : "BirthNoticeLM"
+  },
+  {
+    "id" : "Bulletindelivery",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Bulletindelivery",
+    "version" : "1.0.0",
+    "name" : "Bulletindelivery"
+  },
+  {
+    "id" : "Child",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Child",
+    "version" : "1.0.0",
+    "name" : "Child"
+  },
+  {
+    "id" : "CompositionNoticia",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/CompositionNoticia",
+    "version" : "1.0.0",
+    "name" : "CompositionNoticia"
+  },
+  {
+    "id" : "Congenital",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Congenital",
+    "version" : "1.0.0",
+    "name" : "Congenital"
+  },
+  {
+    "id" : "Contact",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Contact",
+    "version" : "1.0.0",
+    "name" : "Contact"
+  },
+  {
+    "id" : "ContactLM",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/ContactLM",
+    "version" : "1.0.0",
+    "name" : "ContactLM"
+  },
+  {
+    "id" : "Hearingscreen",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Hearingscreen",
+    "version" : "1.0.0",
+    "name" : "Hearingscreen"
+  },
+  {
+    "id" : "Letter",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Letter",
+    "version" : "1.0.0",
+    "name" : "Letter"
+  },
+  {
+    "id" : "Malformation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Malformation",
+    "version" : "1.0.0",
+    "name" : "Malformation"
+  },
+  {
+    "id" : "Metabolic",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Metabolic",
+    "version" : "1.0.0",
+    "name" : "Metabolic"
+  },
+  {
+    "id" : "Mother",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Mother",
+    "version" : "1.0.0",
+    "name" : "Mother"
+  },
+  {
+    "id" : "MotherDemographicsLM",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/MotherDemographicsLM",
+    "version" : "1.0.0",
+    "name" : "MotherDemographicsLM"
+  },
+  {
+    "id" : "NewBornLM",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/NewBornLM",
+    "version" : "1.0.0",
+    "name" : "NewBornLM"
+  },
+  {
+    "id" : "Newbornriskassessment",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Newbornriskassessment",
+    "version" : "1.0.0",
+    "name" : "Newbornriskassessment"
+  },
+  {
+    "id" : "NoticiaLM",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/NoticiaLM",
+    "version" : "1.0.0",
+    "name" : "NoticiaLM"
+  },
+  {
+    "id" : "NoticiaNascimento",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/NoticiaNascimento",
+    "version" : "1.0.0",
+    "name" : "NoticiaNascimento"
+  },
+  {
+    "id" : "Phototherapy",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Phototherapy",
+    "version" : "1.0.0",
+    "name" : "Phototherapy"
+  },
+  {
+    "id" : "Pregnancy",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Pregnancy",
+    "version" : "1.0.0",
+    "name" : "Pregnancy"
+  },
+  {
+    "id" : "PregnancyLM",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/PregnancyLM",
+    "version" : "1.0.0",
+    "name" : "PregnancyLM"
+  },
+  {
+    "id" : "Professional",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Professional",
+    "version" : "1.0.0",
+    "name" : "Professional"
+  },
+  {
+    "id" : "ProfessionalLM",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/ProfessionalLM",
+    "version" : "1.0.0",
+    "name" : "ProfessionalLM"
+  },
+  {
+    "id" : "Puerperium",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Puerperium",
+    "version" : "1.0.0",
+    "name" : "Puerperium"
+  },
+  {
+    "id" : "Pupillary",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Pupillary",
+    "version" : "1.0.0",
+    "name" : "Pupillary"
+  },
+  {
+    "id" : "ReferenciaNHACJR",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/ReferenciaNHACJR",
+    "version" : "1.0.0",
+    "name" : "ReferenciaNHACJR"
+  },
+  {
+    "id" : "Transport",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Transport",
+    "version" : "1.0.0",
+    "name" : "Transport"
+  },
+  {
+    "id" : "Vaccination",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Vaccination",
+    "version" : "1.0.0",
+    "name" : "Vaccination"
+  },
+  {
+    "id" : "VaccineLM",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/VaccineLM",
+    "version" : "1.0.0",
+    "name" : "VaccineLM"
+  },
+  {
+    "id" : "transport-information",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/transport-information",
+    "version" : "1.0.0",
+    "name" : "TransportInformation"
+  },
+  {
+    "id" : "bulletin-delivery-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/bulletin-delivery-vs",
+    "version" : "1.0.0",
+    "name" : "BulletindeliveryVS"
+  },
+  {
+    "id" : "document-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/document-type-vs",
+    "version" : "1.0.0",
+    "name" : "DocumenttypeVS"
+  },
+  {
+    "id" : "episode-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/episode-type-vs",
+    "version" : "1.0.0",
+    "name" : "TipoepisodioVS"
+  },
+  {
+    "id" : "newbornriskassessment-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/newbornriskassessment-vs",
+    "version" : "1.0.0",
+    "name" : "NewbornriskassessmentVS"
+  },
+  {
+    "id" : "puerperium-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/puerperium-vs",
+    "version" : "1.0.0",
+    "name" : "PuerperiumVS"
+  },
+  {
+    "id" : "risco-gravidez-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/risco-gravidez-vs",
+    "version" : "1.0.0",
+    "name" : "RiscoGravidezVS"
+  },
+  {
+    "id" : "tipo-gravidez-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/tipo-gravidez-vs",
+    "version" : "1.0.0",
+    "name" : "TipoGravidezVS"
+  },
+  {
+    "id" : "tipo-parto-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/tipo-parto-vs",
+    "version" : "1.0.0",
+    "name" : "TipoPartoVS"
+  },
+  {
+    "id" : "transport-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/transport-type-vs",
+    "version" : "1.0.0",
+    "name" : "TransportTypeVS"
+  },
+  {
+    "id" : "vacinas-infancia-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/vacinas-infancia-vs",
+    "version" : "1.0.0",
+    "name" : "VacinasinfanciaVS"
+  }
+]
