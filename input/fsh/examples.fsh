@@ -85,7 +85,7 @@ Usage: #example
 * identifier.value = "2"
 
 
-* date = "2024-11-28"
+* timestamp = "2024-11-28T22:00:00Z"
 * type = #document
 * entry[0].resource = compNN
 * entry[0].fullUrl = "http://example.org/Composition/compNN"
