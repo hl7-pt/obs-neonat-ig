@@ -71,7 +71,7 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[pregnancy].entry ^slicing.discriminator[=].path = "resolve()"
 * section[pregnancy].entry ^slicing.rules = #open
 
-* section[birth].code = $loinc#57074-7 "Labor and delivery process Narrative"
+* section[birth].code = $loinc#57074-7 "Newborn delivery information"
 //* section[birth].entry only Reference(Birth)
 * section[birth].entry MS
 * section[birth].entry ^slicing.discriminator[0].type = #profile
@@ -92,7 +92,7 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[vaccination].entry ^slicing.discriminator[=].path = "resolve()"
 * section[vaccination].entry ^slicing.rules = #open
 
-* section[newborn].code = $loinc#57075-4 "Newborn delivery information from newborn Narrative"
+* section[newborn].code = $loinc#57075-4 "Newborn delivery information"
 * section[newborn].entry only Reference(Child)
 * section[newborn].entry MS
 * section[newborn].entry ^slicing.discriminator[0].type = #profile

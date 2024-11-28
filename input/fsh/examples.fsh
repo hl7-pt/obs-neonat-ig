@@ -83,9 +83,20 @@ Usage: #example
 
 * type = #document
 * entry[0].resource = compNN
+* entry[0].fullUrl = "http://example.org/compNN"
+
 * entry[+].resource = BirthNN
+* entry[=].fullUrl = "http://example.org/BirthNN"
+
 * entry[+].resource = episodioInt
+* entry[=].fullUrl = "http://example.org/episodioInt"
+
 * entry[+].resource = destino
+* entry[=].fullUrl = "http://example.org/destino"
+
 * entry[+].resource = mother
+* entry[=].fullUrl = "http://example.org/mother"
+
 * entry[+].resource = episodio
+* entry[=].fullUrl = "http://example.org/episodio"
 

@@ -80,7 +80,7 @@ Parent: Observation
 Title: "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas"
 Description: "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas"
 * status = #final
-* code = $loinc#73780-9 "Congenital anomalies of the newborn"
+* code = $loinc#73780-9 "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
 
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies (required)
@@ -122,13 +122,13 @@ Description: "Perfil de informação clinicas - Teste Reflexo pupilar"
 
 
 * component[right].value[x] only CodeableConcept
-* component[right].code  = $loinc#79815-7 "Pupillary response Right pupil"
+* component[right].code  = $loinc#79815-7 "Right pupil Pupillary response"
 * component[right].valueCodeableConcept  from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3 (example)
 * component[right] ^short = "Ouvido direito examinado"
 
 
 * component[left].value[x] only CodeableConcept
-* component[left].code  = $loinc#79899-1 "Pupillary response Left pupil"
+* component[left].code  = $loinc#79899-1 "Left pupil Pupillary responses"
 * component[left].valueCodeableConcept  from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3 (example)
 * component[left] ^short = "Ouvido esquerdo examinado"
 
