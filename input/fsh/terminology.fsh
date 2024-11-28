@@ -71,8 +71,9 @@ CodeSystem: TipoepisodioCS
 Id:         tipo-episodio-cs
 Title:     "Tipos de episodio code system"
 Description: "Tipos de episodio code system"
+* ^experimental = true
 
-* ^url =  "http://terminology.hl7.pt/CodeSystem/tipoepisodio"
+//* ^url =  "http://terminology.hl7.pt/CodeSystem/tipoepisodio"
 * #CON
     "Consulta"
     "Consulta"
@@ -113,7 +114,8 @@ Id:         documentclassificationCS
 Title:     "Document Classification code system"
 Description: "Document Classification code system"
 
-* ^url =  "http://terminology.hl7.pt/CodeSystem/documentClassificaiton"
+* ^experimental = true
+//* ^url =  "http://terminology.hl7.pt/CodeSystem/documentClassificaiton"
 * #BISC
     "Boletim Individual de saúde da criança"
     "Boletim Individual de saúde da criança"

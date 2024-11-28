@@ -81,6 +81,11 @@ InstanceOf: Bundle
 Description: "Exemplo NN"
 Usage: #example
 
+* identifier.system = "http:/example.org"
+* identifier.value = "2"
+
+
+* date = "2024-11-28"
 * type = #document
 * entry[0].resource = compNN
 * entry[0].fullUrl = "http://example.org/Composition/compNN"

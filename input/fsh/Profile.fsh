@@ -71,7 +71,7 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[pregnancy].entry ^slicing.discriminator[=].path = "resolve()"
 * section[pregnancy].entry ^slicing.rules = #open
 
-* section[birth].code = $loinc#57074-7 "Newborn delivery information"
+* section[birth].code = $loinc#57074-7 "Labor and delivery process Narrative"
 //* section[birth].entry only Reference(Birth)
 * section[birth].entry MS
 * section[birth].entry ^slicing.discriminator[0].type = #profile
@@ -209,7 +209,7 @@ Title: "Contacto"
 Description: "Perfil de contacto"
 
 * identifier 1..1 MS
-* status = #completed
+* status = #finished
 * class from episode-type-vs (required)
 * serviceProvider 1..1
 * serviceType 1..1
