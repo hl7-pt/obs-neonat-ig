@@ -52,6 +52,35 @@ Usage: #inline
 
 * effectiveDateTime = "2024-08-01T10:00:00.000Z"
 
+Instance: pregnancyNN
+InstanceOf: Birth
+Description: "Exemplo Pregnancy"
+Usage: #inline
+
+* effectiveDateTime = "2024-08-01T10:00:00.000Z"
+
+
+Instance: newBornNN
+InstanceOf: Child
+Description: "Exemplo New born"
+Usage: #inline
+
+* gender = #female
+
+
+
+Instance: vaccNN
+InstanceOf: Vaccination
+Description: "Exemplo NN"
+Usage: #inline
+
+* status = #completed
+* vaccineCode = http://example#1 "xx"
+* patient = Reference(newBornNN)
+* occurrenceDateTime = "2024-08-01T10:00:00.000Z"
+
+
+
 Instance: compNN
 InstanceOf: CompositionNoticia
 Description: "Exemplo NN"
@@ -65,14 +94,13 @@ Usage: #inline
 * section[mother].entry = Reference(mother)
 
 
-* section[pregnancy] 
+* section[pregnancy].entry = Reference(pregnancyNN)
 * section[birth].entry[birthInfo]  = Reference(BirthNN)
 * section[birth].entry[episode]  = Reference(episodioInt)
 
-* section[newborn] 
-* section[newborn] 
-* section[exams]
-* section[vaccination]
+* section[newborn].entry = Reference(newBornNN)
+//* section[exams].entry = Reference(pregnancyNN)
+* section[vaccination].entry = Reference(vaccNN)
 * section[followup].entry[destination]  = Reference(destino)
 
 
