@@ -83,20 +83,20 @@ Usage: #example
 
 * type = #document
 * entry[0].resource = compNN
-* entry[0].fullUrl = "http://example.org/compNN"
+* entry[0].fullUrl = "http://example.org/Composition/compNN"
 
 * entry[+].resource = BirthNN
-* entry[=].fullUrl = "http://example.org/BirthNN"
+* entry[=].fullUrl = "http://example.org/Observation/BirthNN"
 
 * entry[+].resource = episodioInt
-* entry[=].fullUrl = "http://example.org/episodioInt"
+* entry[=].fullUrl = "http://example.org/Encounter/episodioInt"
 
 * entry[+].resource = destino
-* entry[=].fullUrl = "http://example.org/destino"
+* entry[=].fullUrl = "http://example.org/Organization/destino"
 
 * entry[+].resource = mother
-* entry[=].fullUrl = "http://example.org/mother"
+* entry[=].fullUrl = "http://example.org/Patient/mother"
 
 * entry[+].resource = episodio
-* entry[=].fullUrl = "http://example.org/episodio"
+* entry[=].fullUrl = "http://example.org/Encounter/episodio"
 
