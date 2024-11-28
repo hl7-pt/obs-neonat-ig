@@ -1,12 +1,14 @@
 @startuml
 map Composition {
- Section mother => Informação sobre a mãe
+Section mother => Informação sobre a mãe
  Section mother => Informação sobre a gravidez
  Section birth => Informação sobre o parto, assim como episódios
  Section newborn => Informação sobre o(s) recém-nascido(s)
  Section exams => Informação sobre exames, análises laboratoriais e avaliações
  Section vaccination => Informação sobre vacinação
- Section followup => Informação sobre followup, destino alta, próximos passos
+ Section followup => Informação sobre follow-up, destino alta, próximos passos
+
+
 
 }
 @enduml

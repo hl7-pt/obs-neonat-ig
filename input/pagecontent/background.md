@@ -1,19 +1,20 @@
 A gravidez tem um conjunto de etapas funcionais associadas como descrita na imagem abaixo:
 
-<img src="gravidez1.png" alt="An overview of access to resources"/>
+<img src="gravidez1.png" alt="Lógica gravidez"/>
 <br clear="all"/>
 
 #### Etapa 1 - Preconceção
 Consulta pré-concecional realizada em centro de saúde habitualmente (depende dos fatores de risco da grávida). Esta consulta deve ser realizada antes de parar a contraceção e deve ser programada uma consulta subsequente para avaliação dos resultados dos exames realizados e das intervenções propostas.
 
 1.	História clínica: determinar estado geral de saúde da mulher/casal e respetivos antecedentes pessoais e familiares; 
+
 2.	Avaliação física: 
 
-  * peso e altura |índice de massa corporal
+  * peso e altura / índice de massa corporal
   * pressão arterial (PA)
   * exame mamário
   * exame ginecológico (atenção à genitália externa para deteção de situações de mutilação genital feminina);
-   
+  
 3.	Avaliação laboratorial: 
   * determinar grupo sanguíneo e fator RhD
   * hemograma 
@@ -21,7 +22,6 @@ Consulta pré-concecional realizada em centro de saúde habitualmente (depende d
   * rastreio das hemoglobinopatias
   * rastreio da sífilis, hepatite B (vacinação, se aplicável), VIH
   * Serologias da Rubéola (com respetiva vacinação, se aplicável), Toxoplamose e Citomegalovirus (se aplicável);
-   
 4.	Rastreio do cancro do colo do útero, se não foi efetuado há menos de 3 anos; 
 5.	Avaliação do estado vacinal e atualização do PNV (prioridade na vacinação contra o tétano, a difteria, a rubéola e o sarampo); 
 6.	Avaliação do estado nutricional, peso adequado e distúrbios do comportamento alimentar; 

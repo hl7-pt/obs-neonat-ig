@@ -1,5 +1,5 @@
-O mapeamento não foi feito de forma direta, sendo que a estrutura foi alterada de forma a corresponder a um documento em FHIR. No entanto, tentou-se que a alteração fosse o menos profunda possivel, de forma a facilitar a implementação
-Tentámos usar terminologias internacionais sempre que possiveis, criando CodeSystem quando não foi possivel. Tentámos também vincular campos codificados a estas terminologias. De igual forma, criámos constraints adicionais para facilitar a transformação.
+O mapeamento não foi feito de forma direta, sendo que a estrutura foi alterada de forma a corresponder a um documento em FHIR. No entanto, tentou-se que a alteração fosse o menos profunda possível, de forma a facilitar a implementação
+Tentámos usar terminologias internacionais sempre que possíveis, criando CodeSystem quando não foi possível. Tentámos também vincular campos codificados a estas terminologias. De igual forma, criámos constraints adicionais para facilitar a transformação.
 
 
 Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na especificação FHIR:  
@@ -13,8 +13,8 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | professional.functionalgroup                                               | Patient\[Mother\].generalPractitioner |
 |  |  | professional.licence                                                       | Patient\[Mother\].generalPractitioner  |
 |  |  | professional.name                                                          | Patient\[Mother\].generalPractitioner |
-|  |  | birthNotice.owner                                                          |   |
-|  |  | birthNotice.code                                                           |   |
+|  |  | birthNotice.owner                                                          |  - |
+|  |  | birthNotice.code                                                           |  - |
 |  |  | birthNotice.maternity.institution                                          | Encounter\[Contact].serviceProvider |
 |  |  | birthNotice.maternity.service                                              | Encounter\[Contact].serviceProvider  |
 |  |  | birthNotice.destination.headquarters                                       | Organization  |
@@ -32,10 +32,10 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | birthNotice.motherDemographics.nationality                                 | Patient.extension.nationality   |
 |  |  | birthNotice.motherDemographics.phone                                       | Patient.contact  |
 |  |  | birthNotice.motherDemographics.postalCode                                  | Patient.address |
-|  |  | birthNotice.motherDemographics.countryOfBirth                              | Patient.extension.birthPlace  | |
-|  |  | birthNotice.motherDemographics.districtOfBirth                             | Patient.extension.birthPlace  |  |
-|  |  | birthNotice.motherDemographics.countyOfBirth                               | Patient.extension.birthPlace  | |
-|  |  | birthNotice.motherDemographics.parishOfBirth                               | Patient.extension.birthPlace  | |
+|  |  | birthNotice.motherDemographics.countryOfBirth                              | Patient.extension.birthPlace   |
+|  |  | birthNotice.motherDemographics.districtOfBirth                             | Patient.extension.birthPlace    |
+|  |  | birthNotice.motherDemographics.countyOfBirth                               | Patient.extension.birthPlace   |
+|  |  | birthNotice.motherDemographics.parishOfBirth                               | Patient.extension.birthPlace   |
 |  |  | birthNotice.motherDemographics.districtAddress                             | Patient.address |
 |  |  | birthNotice.motherDemographics.countyAddress                               | Patient.address |
 |  |  | birthNotice.motherDemographics.parishAddress                               | Patient.address |
@@ -53,9 +53,9 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.thirdQuarterBio    | Observation\[Pregancy\].component  |
 |  |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.visits             | Observation\[Pregancy\].component |
 |  |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.intercurrences     | Observation\[Pregancy\].component |
-|  |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.type        |   |
-|  |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.value       |   |
-|  |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.reason      |   |
+|  |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.type        |  - |
+|  |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.value       |  - |
+|  |  | birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.reason      |  - |
 |  |  | birthNotice.pregnancy.PregnancyType                                        | Observation\[Pregancy\].component  |
 |  |  | birthNotice.pregnancy.twinNumber                                           | Observation\[Pregancy\].component  |
 |  |  | birthNotice.birth.date                                                     | Observation\[Birth\].effectiveDatetime  |
@@ -72,7 +72,7 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | birthNotice.newborn.deceased                                               | Patient\[Child\].deceased  |
 |  |  | birthNotice.newborn.deathBirth                                             | Patient\[Child\].deceased  |
 |  |  | birthNotice.newborn.deathBirthDate                                         | Patient\[Child\].deceased  |
-|  |  | birthNotice.newborn.reanimated                                             |   |
+|  |  | birthNotice.newborn.reanimated                                             |  - |
 |  |  | birthNotice.newborn.cephalicPerimeter                                      | Observation\[cephalicPerimeter\]  |
 |  |  | birthNotice.newborn.weight                                                 | Observation\[weight\]  |
 |  |  | birthNotice.newborn.apgarIndexFirstMinute                                  | Observation\[apgarScore\] |
@@ -81,9 +81,9 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | birthNotice.newborn.phototherapy                                           | Observation\[phototherapy\]  |
 |  |  | birthNotice.newborn.malformations.code                                     | Observation\[malformation\]  |
 |  |  | birthNotice.newborn.malformations.description                              | Observation\[malformation\]  |
-|  |  | birthNotice.newborn.AdmissionNeonatology                                   |  Encounter.class |
-|  |  | birthNotice.newborn.AdmissionNeonatologyReason                             |  Encounter.reasonCode |
-|  |  | birthNotice.newborn.AdmissionNeonatologyLocal                              |  Encounter.location |
+|  |  | birthNotice.newborn.AdmissionNeonatology                                   | Encounter.class |
+|  |  | birthNotice.newborn.AdmissionNeonatologyReason                             | Encounter.reasonCode |
+|  |  | birthNotice.newborn.AdmissionNeonatologyLocal                              | Encounter.location |
 |  |  | birthNotice.newborn.transport.Neonatal                                     | Basic  |
 |  |  | birthNotice.newborn.transport.NeonatalDestination                          | Basic  |
 |  |  | birthNotice.newborn.transport.NeonatalReason                               | Basic  |
@@ -103,7 +103,7 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | birthNotice.newborn.screeningHearing.date                                  | Observation\[hearingscreen\]  |
 |  |  | birthNotice.newborn.screeningHearing.rightEar                              | Observation\[hearingscreen\]  |
 |  |  | birthNotice.newborn.screeningHearing.leftEar                               | Observation\[hearingscreen\]  |
-|  |  | birthNotice.newborn.screeningHearing.repeatDate                            |   |
+|  |  | birthNotice.newborn.screeningHearing.repeatDate                            |  - |
 |  |  | birthNotice.newborn.VHB.taken                                              | Vaccination.status  |
 |  |  | birthNotice.newborn.VHB.date                                               | Vaccination.occurrenceDateTime  |
 |  |  | birthNotice.newborn.VHB.lot                                                | Vaccination.lotNumber  |
@@ -133,12 +133,12 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | birthNotice.letterWithClinicalInformation.date                             | Observation\[letter\]  |
 |  |  | birthNotice.professionals                                                  | Practitioner |
 
-
 ### Estrutura FHIR
 
 Sendo um documento, os recursos estão organizados de maneira a tentar estar agrupados de maneira lógica.
-O recursos Bundle atua como o envelope do documento todo. O recursos Composition é o principal ponte para conseguir entender a organização lógica.
+O recurso Bundle atua como o envelope do documento todo. O recurso Composition é o principal ponte para conseguir entender a organização lógica.
 O perfil está aqui e visualmente poderá ser entendido como:
+
 
 <div>{% include composition.svg %}</div>
 <br clear="all"/>

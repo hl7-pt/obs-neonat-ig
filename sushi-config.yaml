@@ -11,7 +11,7 @@ id: hl7.fhir.pt.obs-neonat
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example
 name: BirthNoticeIG
-title: "HL7 PT FHIR Implementation Guide: Noticia de Nascimento IG Release 1 | STU1"
+title: "HL7 PT FHIR Implementation Guide: Noticia de Nascimento"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
