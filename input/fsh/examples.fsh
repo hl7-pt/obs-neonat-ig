@@ -204,3 +204,13 @@ Usage: #example
 
 * entry[+].fullUrl = "http://example.org/Observation/length-example"
 * entry[=].resource = length-example
+
+
+* entry[+].fullUrl = "http://example.org/Organization/childhealthsurveilance-ex"
+* entry[=].resource = childhealthsurveilance-ex
+
+
+* entry[+].fullUrl = "http://example.org/Observation/puerperium-ex"
+* entry[=].resource = puerperium-ex
+
+
