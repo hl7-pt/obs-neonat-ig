@@ -1,0 +1,450 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "exemploNN",
+  "identifier" : {
+    "system" : "http:/example.org",
+    "value" : "2"
+  },
+  "type" : "document",
+  "timestamp" : "2024-11-28T22:00:00Z",
+  "entry" : [{
+    "fullUrl" : "http://example.org/Composition/compNN",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "compNN",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CompositionNoticia"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_compNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition compNN</b></p><a name=\"compNN\"> </a><a name=\"hccompNN\"> </a><a name=\"compNN-pt-PT\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org/ 71230-7}\">Birth certificate</span></p><p><b>encounter</b>: <a href=\"Bundle-exemploNN.html#Encounter_episodio\">Bundle: identifier = http:/example.org#2; type = document; timestamp = 2024-11-28 22:00:00+0000</a></p><p><b>date</b>: 2021-09-01</p><p><b>author</b>: ee</p><p><b>title</b>: ssss</p></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org/",
+          "code" : "71230-7",
+          "display" : "Birth certificate"
+        }]
+      },
+      "encounter" : {
+        "reference" : "Encounter/episodio"
+      },
+      "date" : "2021-09-01",
+      "author" : [{
+        "display" : "ee"
+      }],
+      "title" : "ssss",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10160-0"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Patient/mother"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "56833-7",
+            "display" : "Pregnancy related history Narrative"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/pregnancyNN"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "57074-7",
+            "display" : "Labor and delivery process Narrative"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/BirthNN"
+        },
+        {
+          "reference" : "Encounter/episodioInt"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "57075-4",
+            "display" : "Newborn delivery information"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Patient/newBornNN"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11544-4",
+            "display" : "Hospital discharge follow-up Narrative"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Organization/destino"
+        },
+        {
+          "reference" : "Organization/childhealthsurveilance-ex"
+        },
+        {
+          "reference" : "Observation/puerperium-ex"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "73738-7",
+            "display" : "Newborn screening test results panel - Point of Care"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/length-example"
+        },
+        {
+          "reference" : "Observation/body-weigth-example"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11369-6",
+            "display" : "History of Immunization Narrative"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Immunization/vaccNN"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/BirthNN",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "BirthNN",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/Birth"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_BirthNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation BirthNN</b></p><a name=\"BirthNN\"> </a><a name=\"hcBirthNN\"> </a><a name=\"BirthNN-pt-PT\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 10160-0}\">History of Medication use Narrative</span></p><p><b>subject</b>: <a href=\"Bundle-exemploNN.html#Patient_newBornNN\">Bundle: identifier = http:/example.org#2; type = document; timestamp = 2024-11-28 22:00:00+0000</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "10160-0"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/newBornNN"
+      },
+      "effectiveDateTime" : "2024-08-01T10:00:00.000Z"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Encounter/episodioInt",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "episodioInt",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_episodioInt\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter episodioInt</b></p><a name=\"episodioInt\"> </a><a name=\"hcepisodioInt\"> </a><a name=\"episodioInt-pt-PT\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT\">Tipos de episodio code system INT</a>: Internamento</p></div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://example.com/fhir/example/CodeSystem/tipo-episodio-cs",
+        "code" : "INT"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Organization/destino",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "destino",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_destino\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization destino</b></p><a name=\"destino\"> </a><a name=\"hcdestino\"> </a><a name=\"destino-pt-PT\"> </a><p><b>identifier</b>: 2010491</p><p><b>name</b>: USF ESCARIZ</p></div>"
+      },
+      "identifier" : [{
+        "value" : "2010491"
+      }],
+      "name" : "USF ESCARIZ"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Patient/mother",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mother",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/Mother"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_mother\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient mother</b></p><a name=\"mother\"> </a><a name=\"hcmother\"> </a><a name=\"mother-pt-PT\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">NOME DE TESTE (no stated gender), DoB: 1989-07-30 ( http://example#1234567)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">MORADA DE TESTE </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nationality of the patient.\">Patient Nationality:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes:\">Portugal</span></li></ul></td></tr></table></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCodeableConcept" : {
+            "text" : "Portugal"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+      }],
+      "identifier" : [{
+        "system" : "http://example",
+        "value" : "1234567"
+      }],
+      "name" : [{
+        "text" : "NOME DE TESTE"
+      }],
+      "birthDate" : "1989-07-30",
+      "address" : [{
+        "line" : ["MORADA DE TESTE"]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Encounter/episodio",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "episodio",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/Contact"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_episodio\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter episodio</b></p><a name=\"episodio\"> </a><a name=\"hcepisodio\"> </a><a name=\"episodio-pt-PT\"> </a><p><b>identifier</b>: 18001555</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT\">Tipos de episodio code system INT</a>: Internamento</p><p><b>serviceType</b>: <span title=\"Codes:\">Obstetricia</span></p><p><b>serviceProvider</b>: <a href=\"Bundle-exemploNN.html#Organization_inst\">Bundle: identifier = http:/example.org#2; type = document; timestamp = 2024-11-28 22:00:00+0000</a></p></div>"
+      },
+      "identifier" : [{
+        "value" : "18001555"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "http://example.com/fhir/example/CodeSystem/tipo-episodio-cs",
+        "code" : "INT"
+      },
+      "serviceType" : {
+        "text" : "Obstetricia"
+      },
+      "serviceProvider" : {
+        "reference" : "Organization/inst"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Organization/inst",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "inst",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_inst\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization inst</b></p><a name=\"inst\"> </a><a name=\"hcinst\"> </a><a name=\"inst-pt-PT\"> </a><p><b>name</b>: CH ENTRE DOURO E VOUGA</p></div>"
+      },
+      "name" : "CH ENTRE DOURO E VOUGA"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/pregnancyNN",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "pregnancyNN",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/Pregnancy"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_pregnancyNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation pregnancyNN</b></p><a name=\"pregnancyNN\"> </a><a name=\"hcpregnancyNN\"> </a><a name=\"pregnancyNN-pt-PT\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 77386006}\">Pregnancy (finding)</span></p><p><b>subject</b>: <a href=\"Bundle-exemploNN.html#Patient_newBornNN\">Bundle: identifier = http:/example.org#2; type = document; timestamp = 2024-11-28 22:00:00+0000</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "77386006",
+          "display" : "Pregnancy (finding)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/newBornNN"
+      },
+      "effectiveDateTime" : "2024-08-01T10:00:00.000Z"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Patient/newBornNN",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "newBornNN",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/Child"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_newBornNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient newBornNN</b></p><a name=\"newBornNN\"> </a><a name=\"hcnewBornNN\"> </a><a name=\"newBornNN-pt-PT\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB Unknown</p><hr/></div>"
+      },
+      "gender" : "female"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Immunization/vaccNN",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "vaccNN",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/Vaccination"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_vaccNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization vaccNN</b></p><a name=\"vaccNN\"> </a><a name=\"hcvaccNN\"> </a><a name=\"vaccNN-pt-PT\"> </a><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://example 1}\">xx</span></p><p><b>patient</b>: <a href=\"Bundle-exemploNN.html#Patient_newBornNN\">Bundle: identifier = http:/example.org#2; type = document; timestamp = 2024-11-28 22:00:00+0000</a></p><p><b>occurrence</b>: 2024-08-01 10:00:00+0000</p></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://example",
+          "code" : "1",
+          "display" : "xx"
+        }]
+      },
+      "patient" : {
+        "reference" : "Patient/newBornNN"
+      },
+      "occurrenceDateTime" : "2024-08-01T10:00:00.000Z"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/body-weigth-example",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "body-weigth-example",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/bodyweight"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_body-weigth-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation body-weigth-example</b></p><a name=\"body-weigth-example\"> </a><a name=\"hcbody-weigth-example\"> </a><a name=\"body-weigth-example-pt-PT\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"Bundle-exemploNN.html#Patient_newBornNN\">Bundle: identifier = http:/example.org#2; type = document; timestamp = 2024-11-28 22:00:00+0000</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p><p><b>value</b>: 3250 gram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "29463-7"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/newBornNN"
+      },
+      "effectiveDateTime" : "2024-08-01T10:00:00.000Z",
+      "valueQuantity" : {
+        "value" : 3250,
+        "unit" : "gram(s)",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/length-example",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "length-example",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/bodyheight"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_length-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation length-example</b></p><a name=\"length-example\"> </a><a name=\"hclength-example\"> </a><a name=\"length-example-pt-PT\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8302-2}\">Body height</span></p><p><b>subject</b>: <a href=\"Bundle-exemploNN.html#Patient_newBornNN\">Bundle: identifier = http:/example.org#2; type = document; timestamp = 2024-11-28 22:00:00+0000</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p><p><b>value</b>: 50 cm(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8302-2"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/newBornNN"
+      },
+      "effectiveDateTime" : "2024-08-01T10:00:00.000Z",
+      "valueQuantity" : {
+        "value" : 50,
+        "unit" : "cm(s)",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cm"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Organization/childhealthsurveilance-ex",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "childhealthsurveilance-ex",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/childhealthsurveilance"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_childhealthsurveilance-ex\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization childhealthsurveilance-ex</b></p><a name=\"childhealthsurveilance-ex\"> </a><a name=\"hcchildhealthsurveilance-ex\"> </a><a name=\"childhealthsurveilance-ex-pt-PT\"> </a><p><b>identifier</b>: <code>http:/example.org</code>/4</p></div>"
+      },
+      "identifier" : [{
+        "system" : "http:/example.org",
+        "value" : "4"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/puerperium-ex",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "puerperium-ex",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/Puerperium"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_puerperium-ex\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation puerperium-ex</b></p><a name=\"puerperium-ex\"> </a><a name=\"hcpuerperium-ex\"> </a><a name=\"puerperium-ex-pt-PT\"> </a><p><b>identifier</b>: <code>http:/example.org</code>/4</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 597951000005108}\">Puerperium observable (observable entity)</span></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http:/example.org",
+        "value" : "4"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "597951000005108",
+          "display" : "Puerperium observable (observable entity)"
+        }]
+      }
+    }
+  }]
+}

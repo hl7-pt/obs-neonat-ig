@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Organization/childhealthsurveilance-ex> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "childhealthsurveilance-ex"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/childhealthsurveilance"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/childhealthsurveilance>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization childhealthsurveilance-ex</b></p><a name=\"childhealthsurveilance-ex\"> </a><a name=\"hcchildhealthsurveilance-ex\"> </a><a name=\"childhealthsurveilance-ex-pt-PT\"> </a><p><b>identifier</b>: <code>http:/example.org</code>/4</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http:/example.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "4" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://example.com/fhir/example/CodeSystem/documentclassificationCS,1.0.0,active,,DocumentclassificationCS,Document Classification code system,"Document Classification code system",
+http://example.com/fhir/example/CodeSystem/tipo-episodio-cs,1.0.0,active,,TipoepisodioCS,Tipos de episodio code system,"Tipos de episodio code system",

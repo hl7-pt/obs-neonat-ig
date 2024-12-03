@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="bulletin-delivery-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet bulletin-delivery-vs</b></p><a name="bulletin-delivery-vs"> </a><a name="hcbulletin-delivery-vs"> </a><a name="bulletin-delivery-vs-pt-PT"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-documentclassificationCS.html"><code>http://example.com/fhir/example/CodeSystem/documentclassificationCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-documentclassificationCS.html#documentclassificationCS-BISC">BISC</a></td><td>Boletim Individual de saúde da criança</td><td>Boletim Individual de saúde da criança</td></tr><tr><td><a href="CodeSystem-documentclassificationCS.html#documentclassificationCS-BSIJ">BSIJ</a></td><td>Boletim de saúde infantil e juvenil</td><td>Boletim de saúde infantil e juvenil</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.com/fhir/example/ValueSet/bulletin-delivery-vs"/>
+  <version value="1.0.0"/>
+  <name value="BulletindeliveryVS"/>
+  <title value="bulletindeliveryVS ValueSet"/>
+  <status value="active"/>
+  <date value="2024-12-03T19:19:46+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="bulletindeliveryVSValueSet"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://example.com/fhir/example/CodeSystem/documentclassificationCS"/>
+      <concept>
+        <code value="BISC"/>
+        <display value="Boletim Individual de saúde da criança"/>
+      </concept>
+      <concept>
+        <code value="BSIJ"/>
+        <display value="Boletim de saúde infantil e juvenil"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
