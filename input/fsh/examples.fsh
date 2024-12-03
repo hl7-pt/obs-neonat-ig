@@ -51,13 +51,15 @@ Description: "Exemplo NN"
 Usage: #inline
 
 * effectiveDateTime = "2024-08-01T10:00:00.000Z"
+* subject = Reference(newBornNN)
 
 Instance: pregnancyNN
-InstanceOf: Birth
+InstanceOf: Pregnancy
 Description: "Exemplo Pregnancy"
 Usage: #inline
 
 * effectiveDateTime = "2024-08-01T10:00:00.000Z"
+* subject = Reference(newBornNN)
 
 
 Instance: newBornNN
@@ -80,11 +82,35 @@ Usage: #inline
 * occurrenceDateTime = "2024-08-01T10:00:00.000Z"
 
 
+Instance: length-example
+InstanceOf: http://hl7.org/fhir/StructureDefinition/bodyheight
+Description: "Exemplo altura recem-nascido"
+Usage: #inline
+
+* subject = Reference(newBornNN)
+* effectiveDateTime = "2024-08-01T10:00:00.000Z"
+* status = #final
+* valueQuantity.value = 50
+* valueQuantity.code = #cm
+
+
+Instance: body-weigth-example
+InstanceOf: http://hl7.org/fhir/StructureDefinition/bodyweight
+Description: "Exemplo peso recem-nascido"
+Usage: #inline
+
+
+* subject = Reference(newBornNN)
+* effectiveDateTime = "2024-08-01T10:00:00.000Z"
+* status = #final
+* valueQuantity.value = 3250
+* valueQuantity.code = #g
 
 Instance: compNN
 InstanceOf: CompositionNoticia
 Description: "Exemplo NN"
 Usage: #inline
+
 * date = "2021-09-01"
 
 * author.display = "ee"
@@ -99,14 +125,17 @@ Usage: #inline
 * section[birth].entry[episode]  = Reference(episodioInt)
 
 * section[newborn].entry = Reference(newBornNN)
-//* section[exams].entry = Reference(pregnancyNN)
+* section[exams].entry[length] = Reference(length-example)
+* section[exams].entry[bodyweigth] = Reference(body-weigth-example)
+
+
 * section[vaccination].entry = Reference(vaccNN)
 * section[followup].entry[destination]  = Reference(destino)
 
 
 Instance: exemploNN
 InstanceOf: Bundle
-Description: "Exemplo NN"
+Description: "Exemplo Noticia Nascimento (NN)"
 Usage: #example
 
 * identifier.system = "http:/example.org"
@@ -145,3 +174,9 @@ Usage: #example
 
 * entry[+].fullUrl = "http://example.org/Immunization/vaccNN"
 * entry[=].resource = vaccNN
+
+* entry[+].fullUrl = "http://example.org/Observation/body-weigth-example"
+* entry[=].resource = body-weigth-example
+
+* entry[+].fullUrl = "http://example.org/Observation/length-example"
+* entry[=].resource = length-example

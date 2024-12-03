@@ -1,35 +1,3 @@
-Profile:     NoticiaNascimento
-Parent:      Bundle
-Title:       "Documento Para noticia de Nascimento"
-Description: "Documento Para noticia de Nascimento"
-
-
-* type = #document (exactly)
-* timestamp 1.. MS
-
-* entry MS
-* entry ^slicing.discriminator[0].type = #type
-* entry ^slicing.discriminator[=].path = "resource"
-* entry ^slicing.discriminator[+].type = #profile
-* entry ^slicing.discriminator[=].path = "resource"
-* entry ^slicing.rules = #open
-* entry ^short = "Entry resource in the patient summary bundle"
-* entry ^definition = "An entry resource included in the patient summary document bundle resource."
-* entry ^comment = "Must contain the IPS Composition as the first entry (only a single Composition resource instance may be included) and a Patient resource.  Additional constraints are specified in the IPS Composition profile."
-* entry.fullUrl 1.. MS
-* entry.search ..0
-* entry.request ..0
-* entry.response ..0
-* entry contains
-    composition 1..1 and
-    patient 1..1 and
-    children 1..* and
-    professional 1..1 and
-    contact 1..1
-* entry[composition].resource 1..
-* entry[composition].resource only CompositionNoticia
-
-
 Profile: CompositionNoticia
 Parent: $clinicaldocument
 Title: "Composition que cria as secções da noticia nascimento"
@@ -78,8 +46,8 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[birth].entry ^slicing.discriminator[=].path = "resolve()"
 * section[birth].entry ^slicing.rules = #open
 * section[birth].entry contains
-        birthInfo 1..1 and
-        episode 1..* 
+    birthInfo 1..1 and
+    episode 1..* 
 
 
 * section[birth].entry[birthInfo] only Reference(Birth)
@@ -105,17 +73,17 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[exams].entry ^slicing.discriminator[=].path = "resolve()"
 * section[exams].entry ^slicing.rules = #open
 * section[exams].entry contains
-        length 0..1 and
-        bodyweigth 0..1 and
-        cephalicPerimeter 0..1 and
-        apgar 0..1 and
-        malformation 0..1 and
-        Phototherapy 0..1 and 
-        hearingscreen 0..1 and 
-        Congenital 0..1 and 
-        Metabolic 0..1 and 
-        Pupillary 0..1 and
-        newbornriskassessment 0..1
+    length 0..1 and
+    bodyweigth 0..1 and
+    cephalicPerimeter 0..1 and
+    apgar 0..1 and
+    malformation 0..1 and
+    Phototherapy 0..1 and 
+    hearingscreen 0..1 and 
+    Congenital 0..1 and 
+    Metabolic 0..1 and 
+    Pupillary 0..1 and
+    newbornriskassessment 0..1
 
 * section[exams].entry[length] only Reference(http://hl7.org/fhir/StructureDefinition/bodyheight)
 * section[exams].entry[length] ^short = "Comprimento (cm)"
@@ -151,13 +119,13 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[followup].entry ^slicing.discriminator[=].path = "resolve()"
 * section[followup].entry ^slicing.rules = #open
 * section[followup].entry contains
-        puerperium 0..1 and 
-        puerperiumreview 0..1 and
-        childhealthsurveilance 0..1 and 
-        bulletindelivery 0..1 and
-        letter 0..1 and
-        destination 0..1 and
-        nextappointment 0..1
+    puerperium 0..1 and 
+    puerperiumreview 0..1 and
+    childhealthsurveilance 0..1 and 
+    bulletindelivery 0..1 and
+    letter 0..1 and
+    destination 0..1 and
+    nextappointment 0..1
 
 
 * section[followup].entry[puerperium] only Reference(Puerperium)
@@ -167,8 +135,6 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[followup].entry[destination] only Reference(Organization)
 * section[followup].entry[bulletindelivery] only Reference(Bulletindelivery)
 * section[followup].entry[nextappointment] only Reference(Encounter)
-
-
 
 
 
@@ -222,6 +188,7 @@ Description: "Perfil de Informação de gravidez"
 
 * status = #final
 * code = $sct#77386006 "Pregnancy (finding)"
+* subject 1..1
 
 * component MS
 * component ^slicing.discriminator.type = #type
@@ -300,6 +267,8 @@ Description: "Perfil de Informação do Parto"
 * code = $loinc#10160-0 //change
 * effective[x] 1..1
 * effective[x] only dateTime
+* subject 1..1
+
 * component MS
 * component ^slicing.discriminator.type = #type
 * component ^slicing.discriminator.path = "value"
@@ -332,6 +301,7 @@ Description: "Informação sobre vacinação"
 * status MS
 * patient MS  
 * patient only Reference(Child) 
+* patient 1..1
 * occurrence[x]  only dateTime 
 * occurrenceDateTime MS
 * lotNumber MS
@@ -352,6 +322,7 @@ Description: "Informação sobre RiskAssessment"
 * extension contains ReferenciaNHACJR named nhacjr 0..1
 * status = #final
 * subject only Reference(Mother)
+* subject 1..1
 * note MS
 * code from NewbornriskassessmentVS
 * category = $sct#407647007 "Risk assessment status (finding)"
@@ -371,6 +342,7 @@ Description: "Informação sobre bulletindelivery"
 
 * code from BulletindeliveryVS (required)
 * subject only Reference(Mother)
+* subject 1..1
 * performed[x] only dateTime
 * performedDateTime 1..1 
 * category  from document-type-vs (required)
@@ -380,8 +352,8 @@ Description: "Informação sobre bulletindelivery"
 
 
 Extension: TransportInformation
-Id:        transport-information
-Title:     "Transport information"
+Id:    transport-information
+Title: "Transport information"
 Description: "Transport information"
 * extension contains
     transporttype 1..1 MS ?! and
@@ -406,5 +378,6 @@ Description: "Informação sobre Transportes"
 * extension contains transport-information  named transport-information 1..2 
 * code = $sct#424483007 "Transportation details (observable entity)"
 * subject only Reference(Mother)
+* subject 1..1
 
 
