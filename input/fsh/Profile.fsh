@@ -125,18 +125,26 @@ Description: "Composition que cria as secções da noticia nascimento"
     bulletindelivery 0..1 and
     letter 0..1 and
     destination 0..1 and
-    nextappointment 0..1
+    nextappointment 0..1 and
+    transport 0..1
 
 
 * section[followup].entry[puerperium] only Reference(Puerperium)
 * section[followup].entry[puerperiumreview] only Reference(Observation)
-* section[followup].entry[childhealthsurveilance] only Reference(Organization)
+* section[followup].entry[childhealthsurveilance] only Reference(childhealthsurveilance)
 * section[followup].entry[letter] only Reference(Letter)
 * section[followup].entry[destination] only Reference(Organization)
 * section[followup].entry[bulletindelivery] only Reference(Bulletindelivery)
 * section[followup].entry[nextappointment] only Reference(Encounter)
+* section[followup].entry[transport] only Reference(Transport)
 
 
+Profile: childhealthsurveilance
+Parent: Organization
+Title: "Perfil da vigilância de saúde infantil "
+Description: "Perfil da vigilância de saúde infantil"
+
+* identifier 1..*
 
 Profile: Mother
 Parent: Patient

@@ -102,7 +102,7 @@ Characteristics: #can-be-target
     * type  0..1 Coding "Local do seguimento (0- Centro de saúde; 1- Hospital; 2- Obstetra privado; 3- Vigilância partilhado; 4-Outro)"
     * value  0..1 boolean "Indicação de seguimento"
     * reason 0..1 string "Motivo do seguimento"
-* PregnancyType 1..1 Coding "Tipo de gravidez (“Simple”- Gravidez de um bebé; “Multiple”- Gravidez de gémeos)"
+* PregnancyType 1..1 Coding "Tipo de gravidez ( 'Simple'- Gravidez de um bebé; 'Multiple'- Gravidez de gémeos)"
 * twinNumber 1..1 string "Corresponde ao Número da criança / total de crianças. Exemplo: “1/2”"
 
 Logical: NewBornLM

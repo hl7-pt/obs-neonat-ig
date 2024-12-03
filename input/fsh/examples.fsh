@@ -92,6 +92,7 @@ Usage: #inline
 * status = #final
 * valueQuantity.value = 50
 * valueQuantity.code = #cm
+* valueQuantity.unit = "cm(s)"
 
 
 Instance: body-weigth-example
@@ -105,6 +106,8 @@ Usage: #inline
 * status = #final
 * valueQuantity.value = 3250
 * valueQuantity.code = #g
+* valueQuantity.unit = "gram(s)"
+
 
 Instance: compNN
 InstanceOf: CompositionNoticia
@@ -131,6 +134,17 @@ Usage: #inline
 
 * section[vaccination].entry = Reference(vaccNN)
 * section[followup].entry[destination]  = Reference(destino)
+* section[followup].entry[childhealthsurveilance]  = Reference(childhealthsurveilance-ex)
+
+
+
+Instance: childhealthsurveilance-ex
+InstanceOf: childhealthsurveilance
+Description: "Exemplo da vigilância de saúde infantil (NN)"
+Usage: #example
+
+* identifier.system = "http:/example.org"
+* identifier.value = "4"
 
 
 Instance: exemploNN

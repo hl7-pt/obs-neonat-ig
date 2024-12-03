@@ -49,9 +49,9 @@ Description: "Perfil de informação clinicas - Rastreio auditivo neonatal unive
 
 
 * component[right].value[x] only integer
-* component[right].code  = $sct#25577004 "Right ear structure (body structure)"
+* component[right].code  = $sct#1268789008 "Structure of right auditory system"
 * component[left].value[x] only integer
-* component[left].code  = $sct#89644007 "Left ear structure (body structure)"
+* component[left].code  = $sct#1268788000 "Structure of left auditory system (body structure)"
 
 
 Profile: Malformation
@@ -59,7 +59,7 @@ Parent: Observation
 Title: "Perfil de informação clinicas - Dados de malformações"
 Description: "Perfil de informação clinicas - Dados de malformações"
 * status = #final
-* code = $sct#21390004 "Malformation"
+* code = $sct#276654001 "Congenital malformation (disorder)"
 
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Código para a malformação"
