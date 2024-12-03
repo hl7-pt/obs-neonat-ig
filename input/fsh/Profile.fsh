@@ -22,7 +22,8 @@ Description: "Composition que cria as secções da noticia nascimento"
     newborn 1..1 MS and
     exams 0..1 MS and
     vaccination 0..1 and 
-    followup 1..1
+    followup 1..1 and
+    destination 1..1
 
 * section[mother].code = $loinc#10160-0
 * section[mother].entry only Reference(Mother)
@@ -125,7 +126,7 @@ Description: "Composition que cria as secções da noticia nascimento"
     childhealthsurveilance 0..1 and 
     bulletindelivery 0..1 and
     letter 0..1 and
-    destination 0..1 and
+    //destination 0..1 and
     nextappointment 0..1 and
     transport 0..1
 
