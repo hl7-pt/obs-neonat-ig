@@ -115,12 +115,13 @@ Description: "Composition que cria as secções da noticia nascimento"
 
 * section[followup].code = $loinc#11544-4 "Hospital discharge follow-up Narrative"
 * section[followup].entry MS
+
 * section[followup].entry ^slicing.discriminator[0].type = #profile
 * section[followup].entry ^slicing.discriminator[=].path = "resolve()"
 * section[followup].entry ^slicing.rules = #open
 * section[followup].entry contains
     puerperium 1..1 and 
-    puerperiumreview 0..1 and
+   // puerperiumreview 0..1 and
     childhealthsurveilance 0..1 and 
     bulletindelivery 0..1 and
     letter 0..1 and
@@ -130,7 +131,7 @@ Description: "Composition que cria as secções da noticia nascimento"
 
 
 * section[followup].entry[puerperium] only Reference(Puerperium)
-* section[followup].entry[puerperiumreview] only Reference(Observation)
+//* section[followup].entry[puerperiumreview] only Reference(Organization)
 * section[followup].entry[childhealthsurveilance] only Reference(childhealthsurveilance)
 * section[followup].entry[letter] only Reference(Letter)
 * section[followup].entry[destination] only Reference(Organization)

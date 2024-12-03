@@ -69,7 +69,10 @@ Characteristics: #can-be-target
   * type 1..1 string "Tipo de puerpério (0- Normal; 1- Patológico)"
   * observations  0..1 string "Observações"
 * newborn 1..1 NewBornLM "Dados do recém-nascido"
-* puerperiumReview 1..1 Identifier "Dados da revisão do puerpério"
+* puerperiumReview 1..1 BackboneElement "Dados da revisão do puerpério"
+  * local 0..1 integer "Tipo de local (0- USF; 1- Hospital; 2- Privado; 3- Desconhecido)"
+  * description 0..1 string "Descrição do local selecionado"
+
 * childHealthSurveillance 1..1 BackboneElement "Dados da vigilância de saúde infantil"
   * local 0..1 integer "Tipo de local (0- USF; 1- Hospital; 2- Privado; 3- Desconhecido)"
   * description 0..1 string "Descrição do local selecionado"

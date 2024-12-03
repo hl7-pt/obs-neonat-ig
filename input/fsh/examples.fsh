@@ -116,27 +116,28 @@ Usage: #inline
 
 * date = "2021-09-01"
 
-* author.display = "ee"
-* title = "ssss"
+* author.display = "HCP"
+* title = "Noticia de Nascimento de recém-nascido"
 
 * encounter = Reference(episodio)
 * section[mother].entry = Reference(mother)
 
-
 * section[pregnancy].entry = Reference(pregnancyNN)
+
 * section[birth].entry[birthInfo]  = Reference(BirthNN)
 * section[birth].entry[episode]  = Reference(episodioInt)
 
 * section[newborn].entry = Reference(newBornNN)
+
 * section[exams].entry[length] = Reference(length-example)
 * section[exams].entry[bodyweigth] = Reference(body-weigth-example)
 
 
 * section[vaccination].entry = Reference(vaccNN)
+
 * section[followup].entry[destination]  = Reference(destino)
 * section[followup].entry[childhealthsurveilance]  = Reference(childhealthsurveilance-ex)
 * section[followup].entry[puerperium]  = Reference(puerperium-ex)
-
 
 
 Instance: puerperium-ex

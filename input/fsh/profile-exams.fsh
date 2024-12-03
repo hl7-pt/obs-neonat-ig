@@ -145,6 +145,8 @@ Description: "Perfil para registar dados do puerpério até à alta"
 * valueCodeableConcept ^short = "Tipo de puerpério"
 * note MS
 * note ^short = "Observações"
+* performer MS
+* performer ^short = "Local onde foi feito a revisão e/ou profissional que o fez"
 
 
 Profile: Letter

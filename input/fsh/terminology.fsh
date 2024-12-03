@@ -155,3 +155,37 @@ Description:  "Tipos de transporte de recem-nascido ValueSet"
 * $sct#255407002 "Neonatal (qualifier value)"
 * $sct#1156684004 "Fetal antepartum and/or intrapartum and/or early neonatal period (qualifier value)"
 
+
+
+
+CodeSystem: NoticiaNascimentoSeccoesCS
+Id:         NoticiaNascimentoSeccoesCS
+Title:     "Secções de noticias de nascimento CodeSystem"
+Description:  "Secções de noticias de nascimento CodeSystem"
+
+* ^experimental = true
+//* ^url =  "http://terminology.hl7.pt/CodeSystem/documentClassificaiton"
+* #PURP
+    "Secção sobre purpério"
+    "Secção sobre purpério"
+* #PURPR
+    "Secção sobre Dados da revisão do puerpério"
+    "Secção sobre Dados da revisão do puerpério"
+* #CHS
+    "Secção sobre Dados da vigilância de saúde infantil"
+    "Secção sobre Dados da vigilância de saúde infantil"
+* #LETT
+    "Secção sobre entrega de carta Dados da informação clinica suplementar"
+    "Secção sobre entrega de carta Dados da informação clinica suplementar"
+* #DEST
+    "Secção sobre destino"
+    "Secção sobre destino"
+* #BD
+    "Secção sobre entrega boletim"
+    "Secção sobre entrega boletim"
+* #NXTAPT
+    "Secção sobre próxima consulta"
+    "Secção sobre próxima consulta"
+* #TRANSP
+    "Secção sobre Transporte"
+    "Secção sobre Transporte"
