@@ -70,7 +70,10 @@ Characteristics: #can-be-target
   * observations  0..1 string "Observações"
 * newborn 1..1 NewBornLM "Dados do recém-nascido"
 * puerperiumReview 1..1 Identifier "Dados da revisão do puerpério"
-* childHealthSurveillance 1..1 Identifier "Dados da vigilância de saúde infantil"
+* childHealthSurveillance 1..1 BackboneElement "Dados da vigilância de saúde infantil"
+  * local 0..1 integer "Tipo de local (0- USF; 1- Hospital; 2- Privado; 3- Desconhecido)"
+  * description 0..1 string "Descrição do local selecionado"
+
 * letterWithClinicalInformation 1..1 BackboneElement "Dados da informação clinica suplementar"
   * hasLetterWithClinicalInformation 0..1 boolean "Elaboração de carta com informação clínica suplementar"
   * date 0..1 dateTime "Data da elaboração (YYYY-MM-DD)"

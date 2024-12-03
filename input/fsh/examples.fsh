@@ -135,7 +135,17 @@ Usage: #inline
 * section[vaccination].entry = Reference(vaccNN)
 * section[followup].entry[destination]  = Reference(destino)
 * section[followup].entry[childhealthsurveilance]  = Reference(childhealthsurveilance-ex)
+* section[followup].entry[puerperium]  = Reference(puerperium-ex)
 
+
+
+Instance: puerperium-ex
+InstanceOf: Puerperium
+Description: "Exemplo de puerpério (NN)"
+Usage: #example
+
+* identifier.system = "http:/example.org"
+* identifier.value = "4"
 
 
 Instance: childhealthsurveilance-ex

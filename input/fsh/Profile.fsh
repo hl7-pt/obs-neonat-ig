@@ -19,10 +19,10 @@ Description: "Composition que cria as secções da noticia nascimento"
     mother 1..1 MS and
     pregnancy 1..1 MS and
     birth 1..1 MS and
-    newborn 0..1 MS and
+    newborn 1..1 MS and
     exams 0..1 MS and
     vaccination 0..1 and 
-    followup 0..1
+    followup 1..1
 
 * section[mother].code = $loinc#10160-0
 * section[mother].entry only Reference(Mother)
@@ -119,7 +119,7 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[followup].entry ^slicing.discriminator[=].path = "resolve()"
 * section[followup].entry ^slicing.rules = #open
 * section[followup].entry contains
-    puerperium 0..1 and 
+    puerperium 1..1 and 
     puerperiumreview 0..1 and
     childhealthsurveilance 0..1 and 
     bulletindelivery 0..1 and
