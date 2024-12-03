@@ -128,7 +128,7 @@ Description: "Perfil de informação clinicas - Teste Reflexo pupilar"
 
 
 * component[left].value[x] only CodeableConcept
-* component[left].code  = $loinc#79899-1 "Left pupil Pupillary responses"
+* component[left].code  = $loinc#79899-1 "Left pupil Pupillary response"
 * component[left].valueCodeableConcept  from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3 (example)
 * component[left] ^short = "Ouvido esquerdo examinado"
 

@@ -363,17 +363,21 @@ Extension: TransportInformation
 Id:    transport-information
 Title: "Transport information"
 Description: "Transport information"
+
 * extension contains
     transporttype 1..1 MS ?! and
     reason 0..1 MS and
     location 0..1 MS
 * extension[transporttype].value[x] only CodeableConcept
+* extension[transporttype] ^isModifierReason = "Changes concept: If InUtero, provenance, if Neonatal, destination"
+
+
 * extension[transporttype].valueCodeableConcept from transport-type-vs
 
 * extension[reason].value[x] only string
 * extension[location].value[x] only string
 
-* extension[location] ^short = "If InUtero, provenance, if Neonatal,destination"
+* extension[location] ^short = "If InUtero, provenance, if Neonatal, destination"
 * extension[location] ^definition = "Location is dependent on transporttype"
 
 
