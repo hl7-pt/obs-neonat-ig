@@ -134,10 +134,15 @@ Description: "Composition que cria as secções da noticia nascimento"
 //* section[followup].entry[puerperiumreview] only Reference(Organization)
 * section[followup].entry[childhealthsurveilance] only Reference(childhealthsurveilance)
 * section[followup].entry[letter] only Reference(Letter)
-* section[followup].entry[destination] only Reference(Organization)
 * section[followup].entry[bulletindelivery] only Reference(Bulletindelivery)
 * section[followup].entry[nextappointment] only Reference(Encounter)
 * section[followup].entry[transport] only Reference(Transport)
+
+
+* section[destination].code = $sct#45131006 "Primary care hospital (environment)"
+* section[destination].entry only Reference(Organization)
+* section[destination].entry MS
+
 
 
 Profile: childhealthsurveilance

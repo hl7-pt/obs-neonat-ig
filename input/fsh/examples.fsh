@@ -135,9 +135,11 @@ Usage: #inline
 
 * section[vaccination].entry = Reference(vaccNN)
 
-* section[followup].entry[destination]  = Reference(destino)
+//* section[followup].entry[destination]  = Reference(destino)
 * section[followup].entry[childhealthsurveilance]  = Reference(childhealthsurveilance-ex)
 * section[followup].entry[puerperium]  = Reference(puerperium-ex)
+
+* section[destination].entry = Reference(destino)
 
 
 Instance: puerperium-ex
