@@ -172,7 +172,7 @@ Usage: #example
 
 * component[first].valueInteger = 7
 * component[fifth].valueInteger = 9
-* component[tenth].valueInteger = 11
+* component[tenth].valueInteger = 10
 
 Instance: congenital-example
 InstanceOf: Congenital
