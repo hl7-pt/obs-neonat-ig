@@ -189,3 +189,25 @@ Description:  "Secções de noticias de nascimento CodeSystem"
 * #TRANSP
     "Secção sobre Transporte"
     "Secção sobre Transporte"
+
+
+
+ValueSet: NewbornCongenitalAnomaliesVS
+Id: newborn-congenital-anomalies-vs
+Title:  "Tipos de doença congénita ValueSet"
+Description:  "Tipos de doença congénita ValueSet"
+
+//http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies 
+
+* $sct#89369001	"Anencephalus"
+* $sct#67531005	"Meningomyelocele/Spina bifida"
+* $sct#12770006	"Cyanotic congenital heart disease"
+* $sct#17190001	"Congenital diaphragmatic hernia"
+* $sct#18735004	"Congenital omphalocele"
+* $sct#72951007	"Gastroschisis"
+* $sct#67341007	"Longitudinal deficiency of limb - Limb reduction defect (excluding congenital amputation and dwarfing syndromes)"
+* $sct#80281008	"Cleft Lip with or without Cleft Palate"
+* $sct#87979003	"Cleft palate"
+* $sct#70156005	"Anomaly of chromosome pair 21"
+* $sct#409709004 "Chromosomal disorder"
+* $sct#416010008 "Hypospadias"

@@ -1,10 +1,7 @@
-
-
 Profile: ApgarScore
 Parent: Observation
 Title: "Perfil de informação clinicas - apgarScore"
 Description: "Perfil de informação clinicas - apgarScore"
-
 
 * status = #final
 * code = $sct#1287344004 "Apgar score (assessment scale)"
@@ -58,6 +55,8 @@ Profile: Malformation
 Parent: Observation
 Title: "Perfil de informação clinicas - Dados de malformações"
 Description: "Perfil de informação clinicas - Dados de malformações"
+
+
 * status = #final
 * code = $sct#276654001 "Congenital malformation (disorder)"
 
@@ -79,12 +78,14 @@ Profile: Congenital
 Parent: Observation
 Title: "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas"
 Description: "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas"
+
 * status = #final
 * code = $loinc#73780-9 "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
 
 * value[x] only CodeableConcept
-* valueCodeableConcept from http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies (required)
+* valueCodeableConcept from NewbornCongenitalAnomaliesVS (required)
 * valueCodeableConcept ^short = "Código da anomalia congénita"
+
 * note MS
 * note ^short = "Observações"
 
@@ -97,6 +98,7 @@ Description: "Perfil de informação clinicas - Rastreio de doenças metabólica
 
 * note MS
 * note ^short = "Observações"
+
 * effective[x] only dateTime
 * effectiveDateTime ^short = "Data do rastreio"
 * dataAbsentReason MS
@@ -105,9 +107,8 @@ Profile: Pupillary
 Parent: Observation
 Title: "Perfil de informação clinicas - Teste Reflexo pupilar"
 Description: "Perfil de informação clinicas - Teste Reflexo pupilar"
+
 * status = #final
-
-
 * code = $sct#271733001 "Pupil reaction"
 
 * component MS
