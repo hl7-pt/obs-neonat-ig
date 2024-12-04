@@ -51,10 +51,20 @@ InstanceOf: Birth
 Description: "Exemplo nascimento"
 Usage: #example
 
-* effectiveDateTime = "2024-08-01T10:00:00.000Z"
-* subject = Reference(newBornNN)
+* performedDateTime = "2024-08-01T10:00:00.000Z"
+* subject = Reference(mother)
+* code = $sct#384729004 "Delivery of vertex presentation (procedure)"
+* encounter = Reference(episodioInt)
+* status = #completed
+* performer.actor = Reference(ObsRole)
 
 
+
+Instance: ObsRole
+InstanceOf: PractitionerRole
+Usage: #inline
+
+* code = $sct#11935004 "Obstetrician"
 
 Instance: cephalic-perimeter-example
 InstanceOf: http://hl7.org/fhir/StructureDefinition/headcircum
@@ -243,7 +253,7 @@ Usage: #example
 * entry[0].fullUrl = "http://example.org/Composition/compNN"
 
 * entry[+].resource = BirthNN
-* entry[=].fullUrl = "http://example.org/Observation/BirthNN"
+* entry[=].fullUrl = "http://example.org/Procedure/BirthNN"
 
 * entry[+].resource = episodioInt
 * entry[=].fullUrl = "http://example.org/Encounter/episodioInt"

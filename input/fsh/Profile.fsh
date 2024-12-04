@@ -251,27 +251,33 @@ Description: "Perfil de Informação de gravidez"
 * component[risk].code = $sct#1303221004 "Pregnancy risk level (observable entity)"
 
 * component[riskreason].value[x] only string
+* component[riskreason].code = InfosGravidezCS#PREGRISKREASON "Motivo do risco"
 
 * component[firstQuarterEco].value[x] only boolean
 * component[firstQuarterEco].code = $sct#446522006 "Ultrasonography in first trimester (procedure)"
 
 
 * component[firstQuarterBio].value[x] only boolean
+* component[firstQuarterBio].code = InfosGravidezCS#BIO1T "Analítico 1º Trimestre"
 
 * component[secondQuarterEco].value[x] only boolean
 * component[secondQuarterEco].code = $sct#446208007 "Ultrasonography in second trimester (procedure)"
 
 * component[secondQuarterBio].value[x] only boolean
+* component[secondQuarterBio].code = InfosGravidezCS#BIO2T "Analítico 2º Trimestre"
 
 * component[thirdQuarterEco].value[x] only boolean
 * component[thirdQuarterEco].code = $sct#446353007 "Ultrasonography in third trimester (procedure)"
 
 * component[thirdQuarterBio].value[x] only boolean
+* component[thirdQuarterBio].code = InfosGravidezCS#BIO3T "Analítico 3º Trimestre"
 
 * component[visits].value[x] only integer
 * component[visits].code = $sct#3401000175105  "Total number of prenatal care visits (observable entity)"
 
 * component[intercurrences].value[x] only string
+* component[intercurrences].code = InfosGravidezCS#BIO3T "Analítico 3º Trimestre"
+
 * component[pregancyType].value[x] only CodeableConcept
 * component[pregancyType].valueCodeableConcept from TipoGravidezVS (required)
 * component[pregancyType].code = $sct#3950001 "Birth (finding)"
@@ -281,38 +287,23 @@ Description: "Perfil de Informação de gravidez"
 
 
 Profile: Birth
-Parent: Observation
+Parent: Procedure
 Title: "Perfil de Informação do Parto"
 Description: "Perfil de Informação do Parto"
 
 
-* status = #final
-* code = $loinc#10160-0 //change
-* effective[x] 1..1
-* effective[x] only dateTime
+* category = $sct#386216000 "Human parturition, function (observable entity)"
+* performed[x] 1..1
+* performed[x] only dateTime
 * subject 1..1
+* subject MS
+* encounter MS
+* encounter 1..1
+* performer 1..*
 
-* component MS
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "value"
-* component ^slicing.description = "Slicing based on value[x] type."
-* component ^slicing.rules = #closed
-* component ^min = 1
-* component contains
-    type 1..1 and
-  //  participation 0..1 and
-    reason 0..1 and 
-    assist 0..1
+* code from TipoPartoVS (required)
+* note MS
 
-* component[type].value[x] only CodeableConcept
-* component[type].valueCodeableConcept from TipoPartoVS (required)
-* component[type].code = $sct#386216000 "Human parturition, function (observable entity)"
-
-
-
-//* component[participation].value[x] only CodeableConcept
-* component[reason].value[x] only string
-* component[assist].value[x] only CodeableConcept
 
 
 Profile: Vaccination

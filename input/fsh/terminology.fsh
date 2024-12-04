@@ -9,10 +9,10 @@ Description:  "Tipos de parto ValueSet"
 * $sct#11466000 "Cesarean section (procedure)" //    "Distócico-Cesariana"
 * $sct#177157003 "Spontaneous breech delivery (procedure)" //    "Eutócico-Pélvico"
 * $sct#417121007 "Breech extraction (procedure)" //        "Distócico- Pélvico"
+* $sct#69466000 "Unknown procedure (finding)" // "Desconhecido"
 
 // * $sct#151441000119105 "Twin live born in hospital by vaginal delivery (finding)" //    "Eutócico-Gemelar"
 //    "Distócico Gemelar"
-// "Desconhecido"
 // "Distócico-Espátulas de Thierry"
 
 
@@ -158,40 +158,34 @@ Description:  "Tipos de transporte de recém-nascido ValueSet"
 
 
 
-CodeSystem: NoticiaNascimentoSeccoesCS
-Id:         NoticiaNascimentoSeccoesCS
-Title:     "Secções de noticias de nascimento CodeSystem"
-Description:  "Secções de noticias de nascimento CodeSystem"
+CodeSystem: InfosGravidezCS
+Id:         InfosGravidezCS
+Title:     "Elementos adicionais de informação gravidez CodeSystem"
+Description:   "Elementos adicionais de informação gravidez CodeSystem - Criado por falta de um código internacional ideal"
 
 * ^experimental = true
 //* ^url =  "http://terminology.hl7.pt/CodeSystem/documentClassificaiton"
-* #PURP
-    "Secção sobre purpério"
-    "Secção sobre purpério"
-* #PURPR
-    "Secção sobre Dados da revisão do puerpério"
-    "Secção sobre Dados da revisão do puerpério"
-* #CHS
-    "Secção sobre Dados da vigilância de saúde infantil"
-    "Secção sobre Dados da vigilância de saúde infantil"
-* #LETT
-    "Secção sobre entrega de carta Dados da informação clinica suplementar"
-    "Secção sobre entrega de carta Dados da informação clinica suplementar"
-* #DEST
-    "Secção sobre destino"
-    "Secção sobre destino"
-* #BD
-    "Secção sobre entrega boletim"
-    "Secção sobre entrega boletim"
-* #NXTAPT
-    "Secção sobre próxima consulta"
-    "Secção sobre próxima consulta"
-* #TRANSP
-    "Secção sobre Transporte"
-    "Secção sobre Transporte"
+* #BIO1T
+    "Analítico 1º Trimestre"
+    "Analítico 1º Trimestre"
 
+* #BIO2T
+    "Analítico 2º Trimestre"
+    "Analítico 2º Trimestre"
 
+* #BIO3T
+    "Analítico 3º Trimestre"
+    "Analítico 3º Trimestre"
 
+* #PREGRISKREASON
+    "Motivo do risco"
+    "Motivo do risco"
+
+* #INTEROC
+    "Intercorrências"
+    "Intercorrências"
+
+    
 ValueSet: NewbornCongenitalAnomaliesVS
 Id: newborn-congenital-anomalies-vs
 Title:  "Tipos de doença congénita ValueSet"
