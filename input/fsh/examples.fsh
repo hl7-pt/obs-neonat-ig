@@ -62,7 +62,7 @@ Usage: #example
 
 Instance: ObsRole
 InstanceOf: PractitionerRole
-Usage: #inline
+Usage: #example
 
 * code = $sct#11935004 "Obstetrician"
 

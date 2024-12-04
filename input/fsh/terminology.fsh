@@ -2,6 +2,7 @@ ValueSet: TipoPartoVS
 Id: tipo-parto-vs
 Title:  "Tipos de parto ValueSet"
 Description:  "Tipos de parto ValueSet"
+* ^experimental = false
 
 * $sct#384729004 "Delivery of vertex presentation (procedure)" // "Eutócico Cefálico"
 * $sct#302383004 "Forceps delivery (procedure)" //    "Distócico-Forceps"
@@ -25,6 +26,7 @@ Description:  "Risco de gravidez ValueSet"
 * $sct#237239003  "Low risk pregnancy (finding)"
 * $sct#1303255001  "Medium risk pregnancy (finding)"
 * $sct#47200007  "High risk pregnancy (finding)"
+* ^experimental = false
 
 
 
@@ -35,6 +37,7 @@ Description:  "Tipo de gravidez ValueSet"
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#169826009  "Single live birth (finding)"
 * $sct#45384004  "Multiple birth (finding)"
+* ^experimental = false
 
 ValueSet: VacinasinfanciaVS
 Id: vacinas-infancia-vs
@@ -44,6 +47,7 @@ Description:  "Vacinas ValueSet"
 * $sct#1861000221106  "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
 * $sct#871822003  "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
 * $sct#786768001 "Product containing only human anti-D immunoglobulin (medicinal product)"
+* ^experimental = false
 
 
 ValueSet: PuerperiumVS
@@ -53,6 +57,7 @@ Description:  "Tipos de outcome de puerpério ValueSet"
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#597961000005105  "Normal puerperium (finding)"
 * $sct#362973001  "Disorder of puerperium (disorder)"
+* ^experimental = false
 
 
 ValueSet: NewbornriskassessmentVS
@@ -60,6 +65,7 @@ Id: newbornriskassessment-vs
 Title:  "Tipos de risco para avaliação de recém-nascidos ValueSet"
 Description:  "Tipos de risco para avaliação de recém-nascidos ValueSet"
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* ^experimental = false
 
 
 * $sct#102486008 "Familial risk factor (observable entity)"
@@ -72,6 +78,7 @@ Id:         tipo-episodio-cs
 Title:     "Tipos de episódio CodeSystem"
 Description: "Tipos de episódio CodeSystem"
 * ^experimental = true
+* ^caseSensitive = false
 
 //* ^url =  "http://terminology.hl7.pt/CodeSystem/tipoepisodio"
 * #CON
@@ -104,6 +111,7 @@ ValueSet: TipoepisodioVS
 Id: episode-type-vs
 Title:  "Tipos de episódio ValueSet"
 Description:  "Tipos de episódio ValueSet"
+* ^experimental = true
 
 
 * include codes from system tipo-episodio-cs
@@ -115,6 +123,7 @@ Title:     "Classficação de documentos CodeSystem"
 Description: "Classficação de documentos CodeSystem"
 
 * ^experimental = true
+* ^caseSensitive = false
 //* ^url =  "http://terminology.hl7.pt/CodeSystem/documentClassificaiton"
 * #BISC
     "Boletim Individual de saúde da criança"
@@ -131,6 +140,7 @@ Id: bulletin-delivery-vs
 Title:  "Envio de boletim ValueSet"
 Description:  "Envio de boletim ValueSet"
 
+* ^experimental = false
 
 
 * documentclassificationCS#BISC  "Boletim Individual de saúde da criança"
@@ -141,6 +151,7 @@ ValueSet: DocumenttypeVS
 Id: document-type-vs
 Title:  "Tipo de documento ValueSet"
 Description:  "Tipo de documento ValueSet"
+* ^experimental = false
 
 * $sct#22131000087102 "Electronic report (record artifact)"
 * $sct#22151000087106 "Paper report (record artifact)"
@@ -151,6 +162,7 @@ ValueSet: TransportTypeVS
 Id: transport-type-vs
 Title:  "Tipos de transporte de recém-nascido ValueSet"
 Description:  "Tipos de transporte de recém-nascido ValueSet"
+* ^experimental = false
 
 * $sct#255407002 "Neonatal (qualifier value)"
 * $sct#1156684004 "Fetal antepartum and/or intrapartum and/or early neonatal period (qualifier value)"
@@ -164,6 +176,7 @@ Title:     "Elementos adicionais de informação gravidez CodeSystem"
 Description:   "Elementos adicionais de informação gravidez CodeSystem - Criado por falta de um código internacional ideal"
 
 * ^experimental = true
+* ^caseSensitive = false
 //* ^url =  "http://terminology.hl7.pt/CodeSystem/documentClassificaiton"
 * #BIO1T
     "Analítico 1º Trimestre"
@@ -190,6 +203,7 @@ ValueSet: NewbornCongenitalAnomaliesVS
 Id: newborn-congenital-anomalies-vs
 Title:  "Tipos de doença congénita ValueSet"
 Description:  "Tipos de doença congénita ValueSet"
+* ^experimental = false
 
 //http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies 
 
