@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="destino"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization destino</b></p><a name="destino"> </a><a name="hcdestino"> </a><a name="destino-pt-PT"> </a><p><b>identifier</b>: 2010491</p><p><b>name</b>: USF ESCARIZ</p></div>
+  </text>
+  <identifier>
+    <value value="2010491"/>
+  </identifier>
+  <name value="USF ESCARIZ"/>
+</Organization>

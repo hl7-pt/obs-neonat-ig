@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS,0.0.1,active,,InfosGravidezCS,Elementos adicionais de informação gravidez CodeSystem,"Elementos adicionais de informação gravidez CodeSystem - Criado por falta de um código internacional ideal",
+https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS,0.0.1,active,,DocumentclassificationCS,Classficação de documentos CodeSystem,"Classficação de documentos CodeSystem",
+https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs,0.0.1,active,,TipoepisodioCS,Tipos de episódio CodeSystem,"Tipos de episódio CodeSystem",

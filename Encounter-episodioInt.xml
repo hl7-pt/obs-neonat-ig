@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="episodioInt"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter episodioInt</b></p><a name="episodioInt"> </a><a name="hcepisodioInt"> </a><a name="episodioInt-pt-PT"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href="CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT">Tipos de episódio CodeSystem INT</a>: Internamento</p></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <system value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"/>
+    <code value="INT"/>
+  </class>
+</Encounter>

@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Observation",
+  "id" : "congenital-example",
+  "meta" : {
+    "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Congenital"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation congenital-example</b></p><a name=\"congenital-example\"> </a><a name=\"hccongenital-example\"> </a><a name=\"congenital-example-pt-PT\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 73780-9}\">Congenital anomalies of the newborn [US Standard Certificate of Live Birth]</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 282332003}\">No abnormality detected - examination result</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "73780-9",
+      "display" : "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
+    }]
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "282332003",
+      "display" : "No abnormality detected - examination result"
+    }]
+  }
+}

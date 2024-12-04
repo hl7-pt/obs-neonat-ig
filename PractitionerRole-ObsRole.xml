@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="ObsRole"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole ObsRole</b></p><a name="ObsRole"> </a><a name="hcObsRole"> </a><a name="ObsRole-pt-PT"> </a><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 11935004}">Obstetrician</span></p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="11935004"/>
+      <display value="Obstetrician"/>
+    </coding>
+  </code>
+</PractitionerRole>

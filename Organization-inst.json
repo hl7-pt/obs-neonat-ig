@@ -1,0 +1,9 @@
+{
+  "resourceType" : "Organization",
+  "id" : "inst",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization inst</b></p><a name=\"inst\"> </a><a name=\"hcinst\"> </a><a name=\"inst-pt-PT\"> </a><p><b>name</b>: CH ENTRE DOURO E VOUGA</p></div>"
+  },
+  "name" : "CH ENTRE DOURO E VOUGA"
+}

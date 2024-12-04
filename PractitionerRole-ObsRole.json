@@ -1,0 +1,15 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "ObsRole",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole ObsRole</b></p><a name=\"ObsRole\"> </a><a name=\"hcObsRole\"> </a><a name=\"ObsRole-pt-PT\"> </a><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 11935004}\">Obstetrician</span></p></div>"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "11935004",
+      "display" : "Obstetrician"
+    }]
+  }]
+}

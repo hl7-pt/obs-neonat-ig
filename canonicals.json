@@ -1,0 +1,352 @@
+[
+  {
+    "id" : "InfosGravidezCS",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS",
+    "version" : "0.0.1",
+    "name" : "InfosGravidezCS"
+  },
+  {
+    "id" : "documentclassificationCS",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS",
+    "version" : "0.0.1",
+    "name" : "DocumentclassificationCS"
+  },
+  {
+    "id" : "tipo-episodio-cs",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs",
+    "version" : "0.0.1",
+    "name" : "TipoepisodioCS"
+  },
+  {
+    "id" : "hl7.fhir.pt.obs-neonat",
+    "type" : "ImplementationGuide",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ImplementationGuide/hl7.fhir.pt.obs-neonat",
+    "version" : "0.0.1",
+    "name" : "NoticiaNascimentoIG"
+  },
+  {
+    "id" : "Antid",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Antid",
+    "version" : "0.0.1",
+    "name" : "Antid"
+  },
+  {
+    "id" : "ApgarScore",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ApgarScore",
+    "version" : "0.0.1",
+    "name" : "ApgarScore"
+  },
+  {
+    "id" : "Bcg",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Bcg",
+    "version" : "0.0.1",
+    "name" : "Bcg"
+  },
+  {
+    "id" : "Birth",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Birth",
+    "version" : "0.0.1",
+    "name" : "Birth"
+  },
+  {
+    "id" : "Bulletindelivery",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Bulletindelivery",
+    "version" : "0.0.1",
+    "name" : "Bulletindelivery"
+  },
+  {
+    "id" : "Child",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Child",
+    "version" : "0.0.1",
+    "name" : "Child"
+  },
+  {
+    "id" : "Childhealthsurveilance",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Childhealthsurveilance",
+    "version" : "0.0.1",
+    "name" : "Childhealthsurveilance"
+  },
+  {
+    "id" : "CompositionNoticia",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/CompositionNoticia",
+    "version" : "0.0.1",
+    "name" : "CompositionNoticia"
+  },
+  {
+    "id" : "Congenital",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Congenital",
+    "version" : "0.0.1",
+    "name" : "Congenital"
+  },
+  {
+    "id" : "Contact",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Contact",
+    "version" : "0.0.1",
+    "name" : "Contact"
+  },
+  {
+    "id" : "ContactLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ContactLM",
+    "version" : "0.0.1",
+    "name" : "ContactLM"
+  },
+  {
+    "id" : "CoredaNoticiaLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/CoredaNoticiaLM",
+    "version" : "0.0.1",
+    "name" : "CoredaNoticiaLM"
+  },
+  {
+    "id" : "DestinationLN",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/DestinationLN",
+    "version" : "0.0.1",
+    "name" : "DestinationLN"
+  },
+  {
+    "id" : "Hearingscreen",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Hearingscreen",
+    "version" : "0.0.1",
+    "name" : "Hearingscreen"
+  },
+  {
+    "id" : "Hepb",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Hepb",
+    "version" : "0.0.1",
+    "name" : "Hepb"
+  },
+  {
+    "id" : "Letter",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Letter",
+    "version" : "0.0.1",
+    "name" : "Letter"
+  },
+  {
+    "id" : "Malformation",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Malformation",
+    "version" : "0.0.1",
+    "name" : "Malformation"
+  },
+  {
+    "id" : "Metabolic",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Metabolic",
+    "version" : "0.0.1",
+    "name" : "Metabolic"
+  },
+  {
+    "id" : "Mother",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Mother",
+    "version" : "0.0.1",
+    "name" : "Mother"
+  },
+  {
+    "id" : "MotherDemographicsLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/MotherDemographicsLM",
+    "version" : "0.0.1",
+    "name" : "MotherDemographicsLM"
+  },
+  {
+    "id" : "NewBornLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/NewBornLM",
+    "version" : "0.0.1",
+    "name" : "NewBornLM"
+  },
+  {
+    "id" : "Newbornriskassessment",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Newbornriskassessment",
+    "version" : "0.0.1",
+    "name" : "Newbornriskassessment"
+  },
+  {
+    "id" : "NoticiaLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/NoticiaLM",
+    "version" : "0.0.1",
+    "name" : "NoticiaLM"
+  },
+  {
+    "id" : "Phototherapy",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Phototherapy",
+    "version" : "0.0.1",
+    "name" : "Phototherapy"
+  },
+  {
+    "id" : "Pregnancy",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pregnancy",
+    "version" : "0.0.1",
+    "name" : "Pregnancy"
+  },
+  {
+    "id" : "PregnancyLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/PregnancyLM",
+    "version" : "0.0.1",
+    "name" : "PregnancyLM"
+  },
+  {
+    "id" : "Professional",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Professional",
+    "version" : "0.0.1",
+    "name" : "Professional"
+  },
+  {
+    "id" : "ProfessionalLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ProfessionalLM",
+    "version" : "0.0.1",
+    "name" : "ProfessionalLM"
+  },
+  {
+    "id" : "Puerperium",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Puerperium",
+    "version" : "0.0.1",
+    "name" : "Puerperium"
+  },
+  {
+    "id" : "Pupillary",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pupillary",
+    "version" : "0.0.1",
+    "name" : "Pupillary"
+  },
+  {
+    "id" : "ReferenciaNHACJR",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ReferenciaNHACJR",
+    "version" : "0.0.1",
+    "name" : "ReferenciaNHACJR"
+  },
+  {
+    "id" : "Transport",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Transport",
+    "version" : "0.0.1",
+    "name" : "Transport"
+  },
+  {
+    "id" : "Vaccination",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Vaccination",
+    "version" : "0.0.1",
+    "name" : "Vaccination"
+  },
+  {
+    "id" : "VaccineLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/VaccineLM",
+    "version" : "0.0.1",
+    "name" : "VaccineLM"
+  },
+  {
+    "id" : "transport-information",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/transport-information",
+    "version" : "0.0.1",
+    "name" : "TransportInformation"
+  },
+  {
+    "id" : "bulletin-delivery-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/bulletin-delivery-vs",
+    "version" : "0.0.1",
+    "name" : "BulletindeliveryVS"
+  },
+  {
+    "id" : "document-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/document-type-vs",
+    "version" : "0.0.1",
+    "name" : "DocumenttypeVS"
+  },
+  {
+    "id" : "episode-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs",
+    "version" : "0.0.1",
+    "name" : "TipoepisodioVS"
+  },
+  {
+    "id" : "newborn-congenital-anomalies-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newborn-congenital-anomalies-vs",
+    "version" : "0.0.1",
+    "name" : "NewbornCongenitalAnomaliesVS"
+  },
+  {
+    "id" : "newbornriskassessment-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newbornriskassessment-vs",
+    "version" : "0.0.1",
+    "name" : "NewbornriskassessmentVS"
+  },
+  {
+    "id" : "puerperium-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/puerperium-vs",
+    "version" : "0.0.1",
+    "name" : "PuerperiumVS"
+  },
+  {
+    "id" : "risco-gravidez-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/risco-gravidez-vs",
+    "version" : "0.0.1",
+    "name" : "RiscoGravidezVS"
+  },
+  {
+    "id" : "tipo-gravidez-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-gravidez-vs",
+    "version" : "0.0.1",
+    "name" : "TipoGravidezVS"
+  },
+  {
+    "id" : "tipo-parto-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-parto-vs",
+    "version" : "0.0.1",
+    "name" : "TipoPartoVS"
+  },
+  {
+    "id" : "transport-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/transport-type-vs",
+    "version" : "0.0.1",
+    "name" : "TransportTypeVS"
+  },
+  {
+    "id" : "vacinas-infancia-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/vacinas-infancia-vs",
+    "version" : "0.0.1",
+    "name" : "VacinasinfanciaVS"
+  }
+]

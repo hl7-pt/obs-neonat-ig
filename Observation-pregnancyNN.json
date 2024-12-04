@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Observation",
+  "id" : "pregnancyNN",
+  "meta" : {
+    "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pregnancy"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation pregnancyNN</b></p><a name=\"pregnancyNN\"> </a><a name=\"hcpregnancyNN\"> </a><a name=\"pregnancyNN-pt-PT\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 77386006}\">Pregnancy (finding)</span></p><p><b>subject</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "77386006",
+      "display" : "Pregnancy (finding)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/newBornNN"
+  },
+  "effectiveDateTime" : "2024-08-01T10:00:00.000Z"
+}

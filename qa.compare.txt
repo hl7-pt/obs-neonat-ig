@@ -1,0 +1,282 @@
+NoticiaNascimentoIG : Validation Results
+=========================================
+
+err = 0, warn = 108, info = 21
+$--
+Generated $--. FHIR version $-- for hl7.fhir.pt.obs-neonat#$-- (canonical = https://hl7.pt/fhir/NoticiaNascimento)
+ Build Errors : 0 / 5 / 0
+ /github/workspace/fsh-generated/resources/Bundle-exemploNN : 0 / 35 / 46
+ /github/workspace/fsh-generated/resources/CodeSystem-InfosGravidezCS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-documentclassificationCS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-tipo-episodio-cs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Composition-compNN : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Encounter-episodio : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-episodioInt : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Immunization-vaccNN-antid : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Immunization-vaccNN-bcg : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Immunization-vaccNN-hepb : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.obs-neonat : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-apgar-example : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/Observation-body-weigth-example : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-cephalic-perimeter-example : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-congenital-example : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/Observation-length-example : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-pregnancyNN : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-puerperium-ex : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/Observation-pupillary-example : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/Organization-childhealthsurveilance-ex : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-destino : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-inst : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-mother : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-newBornNN : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/PractitionerRole-ObsRole : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Procedure-BirthNN : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Antid : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ApgarScore : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Bcg : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Birth : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Bulletindelivery : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Child : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Childhealthsurveilance : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CompositionNoticia : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/StructureDefinition-Congenital : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Contact : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ContactLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CoredaNoticiaLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DestinationLN : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Hearingscreen : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Hepb : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Letter : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Malformation : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Metabolic : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Mother : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MotherDemographicsLM : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-NewBornLM : 0 / 31 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Newbornriskassessment : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-NoticiaLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Phototherapy : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Pregnancy : 0 / 0 / 11
+ /github/workspace/fsh-generated/resources/StructureDefinition-PregnancyLM : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Professional : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ProfessionalLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Puerperium : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Pupillary : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ReferenciaNHACJR : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Transport : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Vaccination : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-VaccineLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-transport-information : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-bulletin-delivery-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-document-type-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-episode-type-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-newborn-congenital-anomalies-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-newbornriskassessment-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-puerperium-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-risco-gravidez-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tipo-gravidez-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tipo-parto-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-transport-type-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vacinas-infancia-vs : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/ObsRole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-exemploNN.json ==
+WARNING: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.type.coding[0]: A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org/#71230-7)
+WARNING: Bundle/exemploNN: Bundle.entry[7].resource/*Observation/pregnancyNN*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[9].resource/*Observation/body-weigth-example*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[10].resource/*Observation/length-example*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[12].resource/*Observation/puerperium-ex*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[12].resource/*Observation/puerperium-ex*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[12].resource/*Observation/puerperium-ex*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/exemploNN: Bundle.entry[16].resource/*Observation/apgar-example*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[16].resource/*Observation/apgar-example*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[16].resource/*Observation/apgar-example*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/exemploNN: Bundle.entry[17].resource/*Observation/congenital-example*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[17].resource/*Observation/congenital-example*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[17].resource/*Observation/congenital-example*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource/*Observation/pupillary-example*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource/*Observation/pupillary-example*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource/*Observation/pupillary-example*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource.component[0].value.ofType(CodeableConcept): ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource.component[1].value.ofType(CodeableConcept): ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found
+WARNING: Bundle/exemploNN: Bundle.entry[19].resource/*Observation/cephalic-perimeter-example*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[12].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[12].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[12].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/exemploNN: Bundle.entry[16].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[16].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[16].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/exemploNN: Bundle.entry[17].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[17].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[17].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/exemploNN: Bundle.entry[19].resource: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/CodeSystem-InfosGravidezCS.json ==
+== fsh-generated/resources/CodeSystem-documentclassificationCS.json ==
+== fsh-generated/resources/CodeSystem-tipo-episodio-cs.json ==
+== fsh-generated/resources/Composition-compNN.json ==
+WARNING: Composition/compNN: Composition.type.coding[0]: A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated
+== fsh-generated/resources/Encounter-episodio.json ==
+== fsh-generated/resources/Encounter-episodioInt.json ==
+== fsh-generated/resources/Immunization-vaccNN-antid.json ==
+== fsh-generated/resources/Immunization-vaccNN-bcg.json ==
+== fsh-generated/resources/Immunization-vaccNN-hepb.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.obs-neonat.json ==
+== fsh-generated/resources/Observation-apgar-example.json ==
+WARNING: Observation/apgar-example: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/apgar-example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/apgar-example: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-body-weigth-example.json ==
+WARNING: Observation/body-weigth-example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-cephalic-perimeter-example.json ==
+WARNING: Observation/cephalic-perimeter-example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-congenital-example.json ==
+WARNING: Observation/congenital-example: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/congenital-example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/congenital-example: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-length-example.json ==
+WARNING: Observation/length-example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-pregnancyNN.json ==
+WARNING: Observation/pregnancyNN: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-puerperium-ex.json ==
+WARNING: Observation/puerperium-ex: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/puerperium-ex: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/puerperium-ex: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-pupillary-example.json ==
+WARNING: Observation/pupillary-example: Observation.component[0].value.ofType(CodeableConcept): ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found
+WARNING: Observation/pupillary-example: Observation.component[1].value.ofType(CodeableConcept): ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found
+WARNING: Observation/pupillary-example: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/pupillary-example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/pupillary-example: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Organization-childhealthsurveilance-ex.json ==
+== fsh-generated/resources/Organization-destino.json ==
+== fsh-generated/resources/Organization-inst.json ==
+== fsh-generated/resources/Patient-mother.json ==
+== fsh-generated/resources/Patient-newBornNN.json ==
+== fsh-generated/resources/PractitionerRole-ObsRole.json ==
+== fsh-generated/resources/Procedure-BirthNN.json ==
+== fsh-generated/resources/StructureDefinition-Antid.json ==
+== fsh-generated/resources/StructureDefinition-ApgarScore.json ==
+== fsh-generated/resources/StructureDefinition-Bcg.json ==
+== fsh-generated/resources/StructureDefinition-Birth.json ==
+== fsh-generated/resources/StructureDefinition-Bulletindelivery.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Bulletindelivery'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Child.json ==
+== fsh-generated/resources/StructureDefinition-Childhealthsurveilance.json ==
+== fsh-generated/resources/StructureDefinition-CompositionNoticia.json ==
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[4].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/CompositionNoticia: Composition.extension: The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.1.0 is deprecated
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[41].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-Congenital.json ==
+== fsh-generated/resources/StructureDefinition-Contact.json ==
+WARNING: StructureDefinition/Contact: StructureDefinition.differential.element[2].binding: The definition for the element 'Encounter.class' binds to the value set 'https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/Contact: StructureDefinition.snapshot.element[17].binding: The definition for the element 'Encounter.class' binds to the value set 'https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-ContactLM.json ==
+== fsh-generated/resources/StructureDefinition-CoredaNoticiaLM.json ==
+== fsh-generated/resources/StructureDefinition-DestinationLN.json ==
+WARNING: StructureDefinition/DestinationLN: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/DestinationLN: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+== fsh-generated/resources/StructureDefinition-Hearingscreen.json ==
+INFORMATION: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Hearingscreen'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-Hepb.json ==
+== fsh-generated/resources/StructureDefinition-Letter.json ==
+INFORMATION: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Letter'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-Malformation.json ==
+INFORMATION: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Malformation'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-Metabolic.json ==
+INFORMATION: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Metabolic'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-Mother.json ==
+== fsh-generated/resources/StructureDefinition-MotherDemographicsLM.json ==
+WARNING: StructureDefinition/MotherDemographicsLM: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/MotherDemographicsLM: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+== fsh-generated/resources/StructureDefinition-NewBornLM.json ==
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[20]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[21]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[22]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[27]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[28]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[29]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[30]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[32]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[51]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[52]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[66]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[67]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[68]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[69]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[70]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[71]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[17]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[18]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[19]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[21]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[22]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[23]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[24]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[25]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[26]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[42]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[43]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[54]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[55]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[56]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+== fsh-generated/resources/StructureDefinition-Newbornriskassessment.json ==
+INFORMATION: StructureDefinition/Newbornriskassessment: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Newbornriskassessment'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-NoticiaLM.json ==
+== fsh-generated/resources/StructureDefinition-Phototherapy.json ==
+INFORMATION: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Phototherapy'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-Pregnancy.json ==
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[81].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[99].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[117].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[135].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[153].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[20].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[26].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[32].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[38].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+== fsh-generated/resources/StructureDefinition-PregnancyLM.json ==
+WARNING: StructureDefinition/PregnancyLM: StructureDefinition.snapshot.element[26]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/PregnancyLM: StructureDefinition.differential.element[20]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+== fsh-generated/resources/StructureDefinition-Professional.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Professional'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ProfessionalLM.json ==
+== fsh-generated/resources/StructureDefinition-Puerperium.json ==
+== fsh-generated/resources/StructureDefinition-Pupillary.json ==
+== fsh-generated/resources/StructureDefinition-ReferenciaNHACJR.json ==
+WARNING: StructureDefinition/ReferenciaNHACJR: StructureDefinition.context[0]: Review the extension type for ReferenciaNHACJR: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ReferenciaNHACJR'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Transport.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Transport'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Vaccination.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Vaccination'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-VaccineLM.json ==
+== fsh-generated/resources/StructureDefinition-transport-information.json ==
+WARNING: StructureDefinition/transport-information: StructureDefinition.context[0]: Review the extension type for transport-information: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/transport-information'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/ValueSet-bulletin-delivery-vs.json ==
+== fsh-generated/resources/ValueSet-document-type-vs.json ==
+== fsh-generated/resources/ValueSet-episode-type-vs.json ==
+== fsh-generated/resources/ValueSet-newborn-congenital-anomalies-vs.json ==
+== fsh-generated/resources/ValueSet-newbornriskassessment-vs.json ==
+== fsh-generated/resources/ValueSet-puerperium-vs.json ==
+== fsh-generated/resources/ValueSet-risco-gravidez-vs.json ==
+== fsh-generated/resources/ValueSet-tipo-gravidez-vs.json ==
+== fsh-generated/resources/ValueSet-tipo-parto-vs.json ==
+== fsh-generated/resources/ValueSet-transport-type-vs.json ==
+== fsh-generated/resources/ValueSet-vacinas-infancia-vs.json ==

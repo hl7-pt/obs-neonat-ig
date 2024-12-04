@@ -1,0 +1,187 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"NewBornLM","NewBornLM","","","",0,*,"","","","null {[]} {[]}
+","Recem-nascido (modelo)","Modelo Lógico - Recem-nascido","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"NewBornLM.liveBirth","NewBornLM.liveBirth","","","",1,1,"","","","boolean {[]} {[]}
+","Identificação de nado vivo","Identificação de nado vivo","","","","","","","","","",,,,,"",,,,"NewBornLM.liveBirth",1,1,"",""
+"NewBornLM.gender","NewBornLM.gender","","","",1,1,"","","","Coding {[]} {[]}
+","Sexo do recém- nascido (0 - Masculino; 1 - Feminino; 2 - Indeterminado)","Sexo do recém- nascido (0 - Masculino; 1 - Feminino; 2 - Indeterminado)","","","","","","","","","",,,,,"",,,,"NewBornLM.gender",1,1,"",""
+"NewBornLM.length","NewBornLM.length","","","",1,1,"","","","decimal {[]} {[]}
+","Comprimento (cm)","Comprimento (cm)","","","","","","","","","",,,,,"",,,,"NewBornLM.length",1,1,"",""
+"NewBornLM.deceased","NewBornLM.deceased","","","",0,1,"","","","dateTime {[]} {[]}
+","Data de falecimento (YYYY-MM-DD HH:MI:SS)","Data de falecimento (YYYY-MM-DD HH:MI:SS)","","","","","","","","","",,,,,"",,,,"NewBornLM.deceased",0,1,"",""
+"NewBornLM.deathBirth","NewBornLM.deathBirth","","","",1,1,"","","","boolean {[]} {[]}
+","Identificação de nado morto","Identificação de nado morto","","","","","","","","","",,,,,"",,,,"NewBornLM.deathBirth",1,1,"",""
+"NewBornLM.deathBirthDate","NewBornLM.deathBirthDate","","","",0,1,"","","","dateTime {[]} {[]}
+","Data da consulta de Alto Risco/Medicina Materno-Fetal (YYYY- MM-DD HH:MI:SS)","Data da consulta de Alto Risco/Medicina Materno-Fetal (YYYY- MM-DD HH:MI:SS)","","","","","","","","","",,,,,"",,,,"NewBornLM.deathBirthDate",0,1,"",""
+"NewBornLM.reanimated","NewBornLM.reanimated","","","",1,1,"","","","boolean {[]} {[]}
+","Reanimação","Reanimação","","","","","","","","","",,,,,"",,,,"NewBornLM.reanimated",1,1,"",""
+"NewBornLM.cephalicPerimeter","NewBornLM.cephalicPerimeter","","","",1,1,"","","","decimal {[]} {[]}
+","Perímetro cefálico (cm)","Perímetro cefálico (cm)","","","","","","","","","",,,,,"",,,,"NewBornLM.cephalicPerimeter",1,1,"",""
+"NewBornLM.weight","NewBornLM.weight","","","",1,1,"","","","integer {[]} {[]}
+","Peso (gr)","Peso (gr)","","","","","","","","","",,,,,"",,,,"NewBornLM.weight",1,1,"",""
+"NewBornLM.apgarIndexFirstMinute","NewBornLM.apgarIndexFirstMinute","","","",1,1,"","","","integer {[]} {[]}
+","Índice apgar ao 1º minuto","Índice apgar ao 1º minuto","","","","","","","","","",,,,,"",,,,"NewBornLM.apgarIndexFirstMinute",1,1,"",""
+"NewBornLM.apgarIndexFifthMinute","NewBornLM.apgarIndexFifthMinute","","","",1,1,"","","","integer {[]} {[]}
+","Índice apgar ao 5º minuto","Índice apgar ao 5º minuto","","","","","","","","","",,,,,"",,,,"NewBornLM.apgarIndexFifthMinute",1,1,"",""
+"NewBornLM.apgarIndexTenthMinute","NewBornLM.apgarIndexTenthMinute","","","",1,1,"","","","integer {[]} {[]}
+","Índice apgar ao 10º minuto","Índice apgar ao 10º minuto","","","","","","","","","",,,,,"",,,,"NewBornLM.apgarIndexTenthMinute",1,1,"",""
+"NewBornLM.phototherapy","NewBornLM.phototherapy","","","",0,1,"","","","boolean {[]} {[]}
+","Fototerapia","Fototerapia","","","","","","","","","",,,,,"",,,,"NewBornLM.phototherapy",0,1,"",""
+"NewBornLM.malformations","NewBornLM.malformations","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Dados de malformações","Dados de malformações","","","","","","","","","",,,,,"",,,,"NewBornLM.malformations",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NewBornLM.malformations.id","NewBornLM.malformations.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NewBornLM.malformations.extension","NewBornLM.malformations.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NewBornLM.malformations.modifierExtension","NewBornLM.malformations.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NewBornLM.malformations.code","NewBornLM.malformations.code","","","",1,1,"","","","Coding {[]} {[]}
+","Codificação ICD9 da malformação","Codificação ICD9 da malformação","","","","","","","","","",,,,,"",,,,"NewBornLM.malformations.code",1,1,"",""
+"NewBornLM.malformations.description","NewBornLM.malformations.description","","","",0,1,"","","","string {[]} {[]}
+","Descrição da malformação","Descrição da malformação","","","","","","","","","",,,,,"",,,,"NewBornLM.malformations.description",0,1,"",""
+"NewBornLM.AdmissionNeonatology","NewBornLM.AdmissionNeonatology","","","",0,1,"","","","boolean {[]} {[]}
+","Internamento em neonatologia","Internamento em neonatologia","","","","","","","","","",,,,,"",,,,"NewBornLM.AdmissionNeonatology",0,1,"",""
+"NewBornLM.AdmissionNeonatologyReason","NewBornLM.AdmissionNeonatologyReason","","","",0,1,"","","","string {[]} {[]}
+","Motivo do internamento","Motivo do internamento","","","","","","","","","",,,,,"",,,,"NewBornLM.AdmissionNeonatologyReason",0,1,"",""
+"NewBornLM.AdmissionNeonatologyLocal","NewBornLM.AdmissionNeonatologyLocal","","","",0,1,"","","","string {[]} {[]}
+","Local de internamento","Local de internamento","","","","","","","","","",,,,,"",,,,"NewBornLM.AdmissionNeonatologyLocal",0,1,"",""
+"NewBornLM.transport","NewBornLM.transport","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Dados de transporte","Dados de transporte","","","","","","","","","",,,,,"",,,,"NewBornLM.transport",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NewBornLM.transport.id","NewBornLM.transport.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NewBornLM.transport.extension","NewBornLM.transport.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NewBornLM.transport.modifierExtension","NewBornLM.transport.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NewBornLM.transport.Neonatal","NewBornLM.transport.Neonatal","","","",0,1,"","","","boolean {[]} {[]}
+","Transporte neonatal","Transporte neonatal","","","","","","","","","",,,,,"",,,,"NewBornLM.transport.Neonatal",0,1,"",""
+"NewBornLM.transport.NeonatalDestination","NewBornLM.transport.NeonatalDestination","","","",0,1,"","","","string {[]} {[]}
+","Destino do transporte neonatal","Destino do transporte neonatal","","","","","","","","","",,,,,"",,,,"NewBornLM.transport.NeonatalDestination",0,1,"",""
+"NewBornLM.transport.NeonatalReason","NewBornLM.transport.NeonatalReason","","","",0,1,"","","","string {[]} {[]}
+","Motivo do não transporte neonatal","Motivo do não transporte neonatal","","","","","","","","","",,,,,"",,,,"NewBornLM.transport.NeonatalReason",0,1,"",""
+"NewBornLM.transport.InUtero","NewBornLM.transport.InUtero","","","",0,1,"","","","boolean {[]} {[]}
+","Transporte in útero","Transporte in útero","","","","","","","","","",,,,,"",,,,"NewBornLM.transport.InUtero",0,1,"",""
+"NewBornLM.transport.InUteroProvanance","NewBornLM.transport.InUteroProvanance","","","",0,1,"","","","string {[]} {[]}
+","Proveniência do transporte","Proveniência do transporte","","","","","","","","","",,,,,"",,,,"NewBornLM.transport.InUteroProvanance",0,1,"",""
+"NewBornLM.transport.InUteroReason","NewBornLM.transport.InUteroReason","","","",0,1,"","","","string {[]} {[]}
+","Motivo de não transporte in útero","Motivo de não transporte in útero","","","","","","","","","",,,,,"",,,,"NewBornLM.transport.InUteroReason",0,1,"",""
+"NewBornLM.screeningMetabolicDiseasesTaken","NewBornLM.screeningMetabolicDiseasesTaken","","","",0,1,"","","","Coding {[]} {[]}
+","Rastreio de doenças metabólicas (0- Realizado; 1- Não realizado; 2- Marcado)","Rastreio de doenças metabólicas (0- Realizado; 1- Não realizado; 2- Marcado)","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningMetabolicDiseasesTaken",0,1,"",""
+"NewBornLM.screeningMetabolicReason","NewBornLM.screeningMetabolicReason","","","",0,1,"","","","string {[]} {[]}
+","Motivo para não realização do rastreio","Motivo para não realização do rastreio","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningMetabolicReason",0,1,"",""
+"NewBornLM.screeningMetabolicDiseasesDate","NewBornLM.screeningMetabolicDiseasesDate","","","",0,1,"","","","dateTime {[]} {[]}
+","Data da marcação do rastreio","Data da marcação do rastreio","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningMetabolicDiseasesDate",0,1,"",""
+"NewBornLM.screeningCongenitalDiseases","NewBornLM.screeningCongenitalDiseases","","","",0,1,"","","","boolean {[]} {[]}
+","Rastreio Cardiopatias Congénitas (0- Realizado; 1- Não realizado)","Rastreio Cardiopatias Congénitas (0- Realizado; 1- Não realizado)","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningCongenitalDiseases",0,1,"",""
+"NewBornLM.screeningCongenitalDiseasesChange","NewBornLM.screeningCongenitalDiseasesChange","","","",0,1,"","","","boolean {[]} {[]}
+","Se foi realizado rastreio cardiopatias congénitas, então: (0 – Sem alteração; 1 – Com alteração)","Se foi realizado rastreio cardiopatias congénitas, então: (0 – Sem alteração; 1 – Com alteração)","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningCongenitalDiseasesChange",0,1,"",""
+"NewBornLM.screeningCongenitalDiseasesObservations","NewBornLM.screeningCongenitalDiseasesObservations","","","",0,1,"","","","string {[]} {[]}
+","Observações do rastreio de cardiopatias congénitas com alteração.","Observações do rastreio de cardiopatias congénitas com alteração.","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningCongenitalDiseasesObservations",0,1,"",""
+"NewBornLM.screeningpupillaryReflection","NewBornLM.screeningpupillaryReflection","","","",0,1,"","","","boolean {[]} {[]}
+","Teste Reflexo pupilar (0- Realizado; 1- Não realizado)","Teste Reflexo pupilar (0- Realizado; 1- Não realizado)","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningpupillaryReflection",0,1,"",""
+"NewBornLM.screeningpupillaryReflectionChange","NewBornLM.screeningpupillaryReflectionChange","","","",0,1,"","","","boolean {[]} {[]}
+","Se foi realizado rastreio Teste Reflexo pupilar, então: (0 – Sem alteração; 1 – Com alteração)","Se foi realizado rastreio Teste Reflexo pupilar, então: (0 – Sem alteração; 1 – Com alteração)","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningpupillaryReflectionChange",0,1,"",""
+"NewBornLM.screeningpupillaryReflectionObservations","NewBornLM.screeningpupillaryReflectionObservations","","","",0,1,"","","","string {[]} {[]}
+","Observações do rastreio de Teste Reflexo pupilar com alteração.","Observações do rastreio de Teste Reflexo pupilar com alteração.","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningpupillaryReflectionObservations",0,1,"",""
+"NewBornLM.screeningHearing","NewBornLM.screeningHearing","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Rastreio auditivo neonatal universal","Rastreio auditivo neonatal universal","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningHearing",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NewBornLM.screeningHearing.id","NewBornLM.screeningHearing.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NewBornLM.screeningHearing.extension","NewBornLM.screeningHearing.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NewBornLM.screeningHearing.modifierExtension","NewBornLM.screeningHearing.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NewBornLM.screeningHearing.type","NewBornLM.screeningHearing.type","","","",0,1,"","","","Coding {[]} {[]}
+","Tipo de rastreio (0- Potenciais evocados auditivos de tronco cerebral; 1- Otoemissões acústicas; 2- Não realizado; 3- Potenciais evocados auditivos automáticos; 4-Marcado para)","Tipo de rastreio (0- Potenciais evocados auditivos de tronco cerebral; 1- Otoemissões acústicas; 2- Não realizado; 3- Potenciais evocados auditivos automáticos; 4-Marcado para)","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningHearing.type",0,1,"",""
+"NewBornLM.screeningHearing.date","NewBornLM.screeningHearing.date","","","",0,1,"","","","dateTime {[]} {[]}
+","Data de realização/marcação (YYYY-MM-DD)","Data de realização/marcação (YYYY-MM-DD)","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningHearing.date",0,1,"",""
+"NewBornLM.screeningHearing.rightEar","NewBornLM.screeningHearing.rightEar","","","",0,1,"","","","boolean {[]} {[]}
+","Ouvido esquerdo examinado (0 – Com Alteração; 1 – Sem Alteração)","Ouvido esquerdo examinado (0 – Com Alteração; 1 – Sem Alteração)","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningHearing.rightEar",0,1,"",""
+"NewBornLM.screeningHearing.leftEar","NewBornLM.screeningHearing.leftEar","","","",0,1,"","","","boolean {[]} {[]}
+","Ouvido esquerdo examinado (0 – Com Alteração; 1 – Sem Alteração)","Ouvido esquerdo examinado (0 – Com Alteração; 1 – Sem Alteração)","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningHearing.leftEar",0,1,"",""
+"NewBornLM.screeningHearing.repeatDate","NewBornLM.screeningHearing.repeatDate","","","",1,1,"","","","dateTime {[]} {[]}
+","Data de repetição (YYYY-MM-DD)","Data de repetição (YYYY-MM-DD)","","","","","","","","","",,,,,"",,,,"NewBornLM.screeningHearing.repeatDate",1,1,"",""
+"NewBornLM.VHB","NewBornLM.VHB","","","",1,1,"","","","https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/VaccineLM {[]} {[]}
+","Administração da vacina VHB","Administração da vacina VHB","","","","","","","","","",,,,,"",,,,"NewBornLM.VHB",1,1,"",""
+"NewBornLM.BCG","NewBornLM.BCG","","","",1,1,"","","","https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/VaccineLM {[]} {[]}
+","Administração da vacina BCG","Administração da vacina BCG","","","","","","","","","",,,,,"",,,,"NewBornLM.BCG",1,1,"",""
+"NewBornLM.immunoglobulin","NewBornLM.immunoglobulin","","","",1,1,"","","","https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/VaccineLM {[]} {[]}
+","Administração de imunoglubina","Administração de imunoglubina","","","","","","","","","",,,,,"",,,,"NewBornLM.immunoglobulin",1,1,"",""
+"NewBornLM.feedingUntilDischarge","NewBornLM.feedingUntilDischarge","","","",0,1,"","","","Coding {[]} {[]}
+","Aleitamento até a alta hospitalar (0 - Materno; 1 - Misto; 2 - Artificial)","Aleitamento até a alta hospitalar (0 - Materno; 1 - Misto; 2 - Artificial)","","","","","","","","","",,,,,"",,,,"NewBornLM.feedingUntilDischarge",0,1,"",""
+"NewBornLM.feedingFirstHour","NewBornLM.feedingFirstHour","","","",0,1,"","","","boolean {[]} {[]}
+","Aleitamento materno na primeira hora de vida","Aleitamento materno na primeira hora de vida","","","","","","","","","",,,,,"",,,,"NewBornLM.feedingFirstHour",0,1,"",""
+"NewBornLM.individualHealthBulletinDelivered","NewBornLM.individualHealthBulletinDelivered","","","",0,1,"","","","dateTime {[]} {[]}
+","Data de entrega do boletim individual de saúde","Data de entrega do boletim individual de saúde","","","","","","","","","",,,,,"",,,,"NewBornLM.individualHealthBulletinDelivered",0,1,"",""
+"NewBornLM.childYoungHealthBulletinDelivered","NewBornLM.childYoungHealthBulletinDelivered","","","",0,1,"","","","dateTime {[]} {[]}
+","Data de entrega do boletim de saúde infantil e juvenil","Data de entrega do boletim de saúde infantil e juvenil","","","","","","","","","",,,,,"",,,,"NewBornLM.childYoungHealthBulletinDelivered",0,1,"",""
+"NewBornLM.bulletinDeliveryType","NewBornLM.bulletinDeliveryType","","","",1,1,"","","","integer {[]} {[]}
+","Tipo de boletim entregue (0- Papel; 1- Digital; 2- Transferido sem BSIJ; 3 - Não entregue devido a Nado Morto ou Falecido)","Tipo de boletim entregue (0- Papel; 1- Digital; 2- Transferido sem BSIJ; 3 - Não entregue devido a Nado Morto ou Falecido)","","","","","","","","","",,,,,"",,,,"NewBornLM.bulletinDeliveryType",1,1,"",""
+"NewBornLM.riskAssessment","NewBornLM.riskAssessment","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Avaliação de risco e referenciação ao NHACJR","Avaliação de risco e referenciação ao NHACJR","","","","","","","","","",,,,,"",,,,"NewBornLM.riskAssessment",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NewBornLM.riskAssessment.id","NewBornLM.riskAssessment.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NewBornLM.riskAssessment.extension","NewBornLM.riskAssessment.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NewBornLM.riskAssessment.modifierExtension","NewBornLM.riskAssessment.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NewBornLM.riskAssessment.riskFactorsIdentified","NewBornLM.riskAssessment.riskFactorsIdentified","","","",0,1,"","","","Coding {[]} {[]}
+","Fatores de risco (0- Individual; 1- Familiar; 2- Contexto social; 3- Inexistente)","Fatores de risco (0- Individual; 1- Familiar; 2- Contexto social; 3- Inexistente)","","","","","","","","","",,,,,"",,,,"NewBornLM.riskAssessment.riskFactorsIdentified",0,1,"",""
+"NewBornLM.riskAssessment.reference","NewBornLM.riskAssessment.reference","","","",0,1,"","","","boolean {[]} {[]}
+","Referenciação ao Núcleo Hospitalar de Apoio Criança e Jovens em risco (NHACJR)","Referenciação ao Núcleo Hospitalar de Apoio Criança e Jovens em risco (NHACJR)","","","","","","","","","",,,,,"",,,,"NewBornLM.riskAssessment.reference",0,1,"",""
+"NewBornLM.riskAssessment.observations","NewBornLM.riskAssessment.observations","","","",0,1,"","","","string {[]} {[]}
+","Observações","Observações","","","","","","","","","",,,,,"",,,,"NewBornLM.riskAssessment.observations",0,1,"",""
+"NewBornLM.Outpatient","NewBornLM.Outpatient","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Consultas","Consultas","","","","","","","","","",,,,,"",,,,"NewBornLM.Outpatient",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NewBornLM.Outpatient.id","NewBornLM.Outpatient.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NewBornLM.Outpatient.extension","NewBornLM.Outpatient.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NewBornLM.Outpatient.modifierExtension","NewBornLM.Outpatient.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NewBornLM.Outpatient.institution","NewBornLM.Outpatient.institution","","","",0,1,"","","","string {[]} {[]}
+","Unidade de saúde da consulta","Unidade de saúde da consulta","","","","","","","","","",,,,,"",,,,"NewBornLM.Outpatient.institution",0,1,"",""
+"NewBornLM.Outpatient.date","NewBornLM.Outpatient.date","","","",0,1,"","","","dateTime {[]} {[]}
+","Data da consulta (YYYY-MM-DD HH:MI:SS)","Data da consulta (YYYY-MM-DD HH:MI:SS)","","","","","","","","","",,,,,"",,,,"NewBornLM.Outpatient.date",0,1,"",""
+"NewBornLM.confirmedDeceased","NewBornLM.confirmedDeceased","","","",1,1,"","","","boolean {[]} {[]}
+","Identificação de falecimento","Identificação de falecimento","","","","","","","","","",,,,,"",,,,"NewBornLM.confirmedDeceased",1,1,"",""

@@ -1,0 +1,1068 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 0, warn = 108, info = 21-->
+<head>
+  <title>NoticiaNascimentoIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for NoticiaNascimentoIG</h1>
+ <p>Generated Wed Dec 04 15:25:17 UTC 2024, FHIR version 4.0.1 for hl7.fhir.pt.obs-neonat#0.0.1 (canonical = <a href="https://hl7.pt/fhir/NoticiaNascimento">https://hl7.pt/fhir/NoticiaNascimento</a> (<a href="https://hl7.pt/fhir/NoticiaNascimento/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.7.5</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.pt.obs-neonat, Canonical = https://hl7.pt/fhir/NoticiaNascimento</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">5 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.pt.obs-neonat</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://hl7.pt/fhir/NoticiaNascimento</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: hl7.fhir.affiliate.custom.template#0.0.1 -&gt; hl7.fhir.affiliate.template#current -&gt; fhir.base.template#current. Tools: 0.3.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html"><span style="background-color: #ffcccc">4 issues</span></a></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/bodyweight.html">observation-bodyweight</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/bodyheight.html">observation-bodyheight</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/headcircum.html">observation-headcircum</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (27 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-status.html">ImmunizationStatusCodes</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-status-reason.html">ImmunizationStatusReasonCodes</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (24 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-origin.html">ImmunizationOriginCodes</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (20 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (57 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-site.html">CodesForImmunizationSiteOfAdministration</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-route.html">ImmunizationRouteCodes</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-function.html">ImmunizationFunctionCodes</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (38 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (36 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-reason.html">ImmunizationReasonCodes</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-subpotent-reason.html">ImmunizationSubpotentReason</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-program-eligibility.html">ImmunizationProgramEligibility</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-funding-source.html">ImmunizationFundingSource</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-target-disease.html">ImmunizationTargetDiseaseCodes</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (12 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/nutritionorder.html">NutritionOrder</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (14 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (19 uses),     <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
+ (22 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>
+ (41 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (38 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (32 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/devicemetric.html">DeviceMetric</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>
+ (22 uses),     <a href="http://hl7.org/fhir/R4/molecularsequence.html">MolecularSequence</a>
+ (22 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/media.html">Media</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/activitydefinition.html">ActivityDefinition</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/measure.html">Measure</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-event-status.html">EventStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-category.html">ProcedureCategoryCodes(SNOMEDCT)</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-reason.html">ProcedureReasonCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-outcome.html">ProcedureOutcomeCodes(SNOMEDCT)</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+ (12 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-followup.html">ProcedureFollowUpCodes(SNOMEDCT)</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-device-action.html">ProcedureDeviceActionCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/substance.html">Substance</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-device-kind.html">FHIRDeviceTypes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-organization-type.html">OrganizationType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/clinicaldocument.html">Clinical Document</a>
+ (19 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-doc-typecodes.html">FHIRDocumentTypeCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html">CompositionAttestationMode</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-doc-section-codes.html">DocumentSectionCodes</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/valueset-list-mode.html">ListMode</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/valueset-list-order.html">ListOrderCodes</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/valueset-list-empty-reason.html">ListEmptyReasons</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-type.html">EncounterType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-type.html">ServiceType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-diagnosis-role.html">DiagnosisRole</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-admit-source.html">AdmitSource</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-diet.html">Diet</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html">SpecialCourtesy</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html">SpecialArrangements</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html">DischargeDisposition</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-location-status.html">EncounterLocationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-physical-type.html">LocationType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/basic.html">Basic</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-basic-resource-type.html">BasicResourceTypes</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.uv.extensions.r4#5.1.0:     <a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-structuredefinition-type-characteristics.html">SDTypeCharacteristics</a>
+ (9 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (71 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://hl7.pt/fhir/NoticiaNascimento (Problem #1 with package-list.json at https://hl7.pt/fhir/NoticiaNascimento: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 108, info = 21, broken links = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-exemploNN"><b>/github/workspace/fsh-generated/resources/Bundle-exemploNN</b></a></td><td><b>0</b></td><td><b>35</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Composition-compNN"><b>/github/workspace/fsh-generated/resources/Composition-compNN</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-apgar-example"><b>/github/workspace/fsh-generated/resources/Observation-apgar-example</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-body-weigth-example"><b>/github/workspace/fsh-generated/resources/Observation-body-weigth-example</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-cephalic-perimeter-example"><b>/github/workspace/fsh-generated/resources/Observation-cephalic-perimeter-example</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-congenital-example"><b>/github/workspace/fsh-generated/resources/Observation-congenital-example</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-length-example"><b>/github/workspace/fsh-generated/resources/Observation-length-example</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-pregnancyNN"><b>/github/workspace/fsh-generated/resources/Observation-pregnancyNN</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-puerperium-ex"><b>/github/workspace/fsh-generated/resources/Observation-puerperium-ex</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-pupillary-example"><b>/github/workspace/fsh-generated/resources/Observation-pupillary-example</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-Bulletindelivery"><b>/github/workspace/fsh-generated/resources/StructureDefinition-Bulletindelivery</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-CompositionNoticia"><b>/github/workspace/fsh-generated/resources/StructureDefinition-CompositionNoticia</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-Contact"><b>/github/workspace/fsh-generated/resources/StructureDefinition-Contact</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DestinationLN"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DestinationLN</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-MotherDemographicsLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-MotherDemographicsLM</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-NewBornLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-NewBornLM</b></a></td><td><b>0</b></td><td><b>31</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PregnancyLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PregnancyLM</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-Professional"><b>/github/workspace/fsh-generated/resources/StructureDefinition-Professional</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ReferenciaNHACJR"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ReferenciaNHACJR</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-Transport"><b>/github/workspace/fsh-generated/resources/StructureDefinition-Transport</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-Vaccination"><b>/github/workspace/fsh-generated/resources/StructureDefinition-Vaccination</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-transport-information"><b>/github/workspace/fsh-generated/resources/StructureDefinition-transport-information</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/ObsRole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-exemploNN"> </a>
+<h2><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(123)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-CompositionNoticia.html">Perfil do recurso Composition que cria as secções da noticia nascimento</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-Birth.html">Perfil de Informação do Parto</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a> and <i>this.</i><a href="StructureDefinition-Birth.html">Perfil de Informação do Parto</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a> and <i>this.</i><a href="StructureDefinition-Contact.html">Perfil sobre episódio da notícia de nascimento</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a></li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-Mother.html">Perfil da mãe</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-Mother.html">Perfil da mãe</a> (per meta)</li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a> and <i>this.</i><a href="StructureDefinition-Contact.html">Perfil sobre episódio da notícia de nascimento</a> (per meta)</li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a></li><li>Bundle.entry[7].resource: Validated against <i>this.</i><a href="StructureDefinition-Pregnancy.html">Perfil de Informação de gravidez</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-Pregnancy.html">Perfil de Informação de gravidez</a> (per meta)</li><li>Bundle.entry[8].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <i>this.</i><a href="StructureDefinition-Child.html">Perfil do recém-nascido</a> (per meta), <i>this.</i><a href="StructureDefinition-Child.html">Perfil do recém-nascido</a> and <i>this.</i><a href="StructureDefinition-Mother.html">Perfil da mãe</a></li><li>Bundle.entry[9].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a>, <i>this.</i><a href="StructureDefinition-Malformation.html">Perfil de informação clinicas - Dados de malformações</a>, <i>this.</i><a href="StructureDefinition-Phototherapy.html">Perfil de informação clinicas - Fototerapia</a>, <i>this.</i><a href="StructureDefinition-Hearingscreen.html">Perfil de informação clinicas - Rastreio auditivo neonatal universal</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a>, <i>this.</i><a href="StructureDefinition-Metabolic.html">Perfil de informação clinicas - Rastreio de doenças metabólicas</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a>, <i>this.</i><a href="StructureDefinition-Newbornriskassessment.html">Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[10].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a>, <i>this.</i><a href="StructureDefinition-Malformation.html">Perfil de informação clinicas - Dados de malformações</a>, <i>this.</i><a href="StructureDefinition-Phototherapy.html">Perfil de informação clinicas - Fototerapia</a>, <i>this.</i><a href="StructureDefinition-Hearingscreen.html">Perfil de informação clinicas - Rastreio auditivo neonatal universal</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a>, <i>this.</i><a href="StructureDefinition-Metabolic.html">Perfil de informação clinicas - Rastreio de doenças metabólicas</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a>, <i>this.</i><a href="StructureDefinition-Newbornriskassessment.html">Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[11].resource: Validated against <i>this.</i><a href="StructureDefinition-Childhealthsurveilance.html">Perfil da vigilância de saúde infantil</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-Childhealthsurveilance.html">Perfil da vigilância de saúde infantil</a> (per meta)</li><li>Bundle.entry[12].resource: Validated against <i>this.</i><a href="StructureDefinition-Puerperium.html">Perfil para registar dados do puerpério até à alta</a>, <i>this.</i><a href="StructureDefinition-Letter.html">Perfil sobre Elaboração de carta com informação clínica suplementar</a>, <i>this.</i><a href="StructureDefinition-Puerperium.html">Perfil para registar dados do puerpério até à alta</a> (per meta) and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[13].resource: Validated against <i>this.</i><a href="StructureDefinition-Hepb.html">Perfil de Informação sobre vacinação - hepb</a>, <i>this.</i><a href="StructureDefinition-Antid.html">Perfil de Informação sobre vacinação - antid</a> (per meta), <i>this.</i><a href="StructureDefinition-Bcg.html">Perfil de Informação sobre vacinação - BCG</a>, <i>this.</i><a href="StructureDefinition-Antid.html">Perfil de Informação sobre vacinação - antid</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></li><li>Bundle.entry[14].resource: Validated against <i>this.</i><a href="StructureDefinition-Hepb.html">Perfil de Informação sobre vacinação - hepb</a>, <i>this.</i><a href="StructureDefinition-Bcg.html">Perfil de Informação sobre vacinação - BCG</a>, <i>this.</i><a href="StructureDefinition-Hepb.html">Perfil de Informação sobre vacinação - hepb</a> (per meta), <i>this.</i><a href="StructureDefinition-Antid.html">Perfil de Informação sobre vacinação - antid</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></li><li>Bundle.entry[15].resource: Validated against <i>this.</i><a href="StructureDefinition-Hepb.html">Perfil de Informação sobre vacinação - hepb</a>, <i>this.</i><a href="StructureDefinition-Bcg.html">Perfil de Informação sobre vacinação - BCG</a> (per meta), <i>this.</i><a href="StructureDefinition-Bcg.html">Perfil de Informação sobre vacinação - BCG</a>, <i>this.</i><a href="StructureDefinition-Antid.html">Perfil de Informação sobre vacinação - antid</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></li><li>Bundle.entry[16].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a>, <i>this.</i><a href="StructureDefinition-Malformation.html">Perfil de informação clinicas - Dados de malformações</a>, <i>this.</i><a href="StructureDefinition-Phototherapy.html">Perfil de informação clinicas - Fototerapia</a>, <i>this.</i><a href="StructureDefinition-Hearingscreen.html">Perfil de informação clinicas - Rastreio auditivo neonatal universal</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a>, <i>this.</i><a href="StructureDefinition-Metabolic.html">Perfil de informação clinicas - Rastreio de doenças metabólicas</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a>, <i>this.</i><a href="StructureDefinition-Newbornriskassessment.html">Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[17].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a>, <i>this.</i><a href="StructureDefinition-Malformation.html">Perfil de informação clinicas - Dados de malformações</a>, <i>this.</i><a href="StructureDefinition-Phototherapy.html">Perfil de informação clinicas - Fototerapia</a>, <i>this.</i><a href="StructureDefinition-Hearingscreen.html">Perfil de informação clinicas - Rastreio auditivo neonatal universal</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a>, <i>this.</i><a href="StructureDefinition-Metabolic.html">Perfil de informação clinicas - Rastreio de doenças metabólicas</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a>, <i>this.</i><a href="StructureDefinition-Newbornriskassessment.html">Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[18].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a>, <i>this.</i><a href="StructureDefinition-Malformation.html">Perfil de informação clinicas - Dados de malformações</a>, <i>this.</i><a href="StructureDefinition-Phototherapy.html">Perfil de informação clinicas - Fototerapia</a>, <i>this.</i><a href="StructureDefinition-Hearingscreen.html">Perfil de informação clinicas - Rastreio auditivo neonatal universal</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a>, <i>this.</i><a href="StructureDefinition-Metabolic.html">Perfil de informação clinicas - Rastreio de doenças metabólicas</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a>, <i>this.</i><a href="StructureDefinition-Newbornriskassessment.html">Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[19].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a>, <i>this.</i><a href="StructureDefinition-Malformation.html">Perfil de informação clinicas - Dados de malformações</a>, <i>this.</i><a href="StructureDefinition-Phototherapy.html">Perfil de informação clinicas - Fototerapia</a>, <i>this.</i><a href="StructureDefinition-Hearingscreen.html">Perfil de informação clinicas - Rastreio auditivo neonatal universal</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a>, <i>this.</i><a href="StructureDefinition-Metabolic.html">Perfil de informação clinicas - Rastreio de doenças metabólicas</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a>, <i>this.</i><a href="StructureDefinition-Newbornriskassessment.html">Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[20].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Composition&#8203;/compNN*&#8203;/&#8203;.type&#8203;.coding[0] (l21&#8203;/c10)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Composition&#8203;/compNN*&#8203;/&#8203;.type (l21&#8203;/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org/#71230-7)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[7]&#8203;.resource&#8203;/*Observation&#8203;/pregnancyNN*&#8203;/ (l342&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[9]&#8203;.resource&#8203;/*Observation&#8203;/body-weigth-example*&#8203;/ (l381&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[10]&#8203;.resource&#8203;/*Observation&#8203;/length-example*&#8203;/ (l422&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[12]&#8203;.resource&#8203;/*Observation&#8203;/puerperium-ex*&#8203;/ (l481&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[12]&#8203;.resource&#8203;/*Observation&#8203;/puerperium-ex*&#8203;/ (l481&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[12]&#8203;.resource&#8203;/*Observation&#8203;/puerperium-ex*&#8203;/ (l481&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[16]&#8203;.resource&#8203;/*Observation&#8203;/apgar-example*&#8203;/ (l599&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[16]&#8203;.resource&#8203;/*Observation&#8203;/apgar-example*&#8203;/ (l599&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[16]&#8203;.resource&#8203;/*Observation&#8203;/apgar-example*&#8203;/ (l599&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[17]&#8203;.resource&#8203;/*Observation&#8203;/congenital-example*&#8203;/ (l659&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[17]&#8203;.resource&#8203;/*Observation&#8203;/congenital-example*&#8203;/ (l659&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[17]&#8203;.resource&#8203;/*Observation&#8203;/congenital-example*&#8203;/ (l659&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[18]&#8203;.resource&#8203;/*Observation&#8203;/pupillary-example*&#8203;/ (l690&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[18]&#8203;.resource&#8203;/*Observation&#8203;/pupillary-example*&#8203;/ (l690&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[18]&#8203;.resource&#8203;/*Observation&#8203;/pupillary-example*&#8203;/ (l690&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[18]&#8203;.resource&#8203;.component[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l719&#8203;/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[18]&#8203;.resource&#8203;.component[1]&#8203;.value&#8203;.ofType(CodeableConcept) (l739&#8203;/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[19]&#8203;.resource&#8203;/*Observation&#8203;/cephalic-perimeter-example*&#8203;/ (l754&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[7].resource (l342/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[9].resource (l381/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[10].resource (l422/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[12].resource (l481/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[12].resource (l481/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[12].resource (l481/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[16].resource (l599/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[16].resource (l599/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[16].resource (l599/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[17].resource (l659/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[17].resource (l659/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[17].resource (l659/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[18].resource (l690/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[18].resource (l690/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[18].resource (l690/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[19].resource (l754/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Composition-compNN"> </a>
+<h2><a href="Composition-compNN.html">fsh-generated/resources/Composition-compNN.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Composition: Validated against <i>this.</i><a href="StructureDefinition-CompositionNoticia.html">Perfil do recurso Composition que cria as secções da noticia nascimento</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition.type.coding[0] (l10/c4)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-apgar-example"> </a>
+<h2><a href="Observation-apgar-example.html">fsh-generated/resources/Observation-apgar-example.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(12)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a>, <i>this.</i><a href="StructureDefinition-Malformation.html">Perfil de informação clinicas - Dados de malformações</a>, <i>this.</i><a href="StructureDefinition-Phototherapy.html">Perfil de informação clinicas - Fototerapia</a>, <i>this.</i><a href="StructureDefinition-Hearingscreen.html">Perfil de informação clinicas - Rastreio auditivo neonatal universal</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a>, <i>this.</i><a href="StructureDefinition-Metabolic.html">Perfil de informação clinicas - Rastreio de doenças metabólicas</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a> and <i>this.</i><a href="StructureDefinition-Newbornriskassessment.html">Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-body-weigth-example"> </a>
+<h2><a href="Observation-body-weigth-example.html">fsh-generated/resources/Observation-body-weigth-example.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(12)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a>, <i>this.</i><a href="StructureDefinition-Malformation.html">Perfil de informação clinicas - Dados de malformações</a>, <i>this.</i><a href="StructureDefinition-Phototherapy.html">Perfil de informação clinicas - Fototerapia</a>, <i>this.</i><a href="StructureDefinition-Hearingscreen.html">Perfil de informação clinicas - Rastreio auditivo neonatal universal</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a>, <i>this.</i><a href="StructureDefinition-Metabolic.html">Perfil de informação clinicas - Rastreio de doenças metabólicas</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a> and <i>this.</i><a href="StructureDefinition-Newbornriskassessment.html">Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-cephalic-perimeter-example"> </a>
+<h2><a href="Observation-cephalic-perimeter-example.html">fsh-generated/resources/Observation-cephalic-perimeter-example.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(12)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a>, <i>this.</i><a href="StructureDefinition-Malformation.html">Perfil de informação clinicas - Dados de malformações</a>, <i>this.</i><a href="StructureDefinition-Phototherapy.html">Perfil de informação clinicas - Fototerapia</a>, <i>this.</i><a href="StructureDefinition-Hearingscreen.html">Perfil de informação clinicas - Rastreio auditivo neonatal universal</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a>, <i>this.</i><a href="StructureDefinition-Metabolic.html">Perfil de informação clinicas - Rastreio de doenças metabólicas</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a> and <i>this.</i><a href="StructureDefinition-Newbornriskassessment.html">Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-congenital-example"> </a>
+<h2><a href="Observation-congenital-example.html">fsh-generated/resources/Observation-congenital-example.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(12)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a>, <i>this.</i><a href="StructureDefinition-Malformation.html">Perfil de informação clinicas - Dados de malformações</a>, <i>this.</i><a href="StructureDefinition-Phototherapy.html">Perfil de informação clinicas - Fototerapia</a>, <i>this.</i><a href="StructureDefinition-Hearingscreen.html">Perfil de informação clinicas - Rastreio auditivo neonatal universal</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a>, <i>this.</i><a href="StructureDefinition-Metabolic.html">Perfil de informação clinicas - Rastreio de doenças metabólicas</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a> and <i>this.</i><a href="StructureDefinition-Newbornriskassessment.html">Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-length-example"> </a>
+<h2><a href="Observation-length-example.html">fsh-generated/resources/Observation-length-example.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(12)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a>, <i>this.</i><a href="StructureDefinition-Malformation.html">Perfil de informação clinicas - Dados de malformações</a>, <i>this.</i><a href="StructureDefinition-Phototherapy.html">Perfil de informação clinicas - Fototerapia</a>, <i>this.</i><a href="StructureDefinition-Hearingscreen.html">Perfil de informação clinicas - Rastreio auditivo neonatal universal</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a>, <i>this.</i><a href="StructureDefinition-Metabolic.html">Perfil de informação clinicas - Rastreio de doenças metabólicas</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a> and <i>this.</i><a href="StructureDefinition-Newbornriskassessment.html">Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-pregnancyNN"> </a>
+<h2><a href="Observation-pregnancyNN.html">fsh-generated/resources/Observation-pregnancyNN.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-Pregnancy.html">Perfil de Informação de gravidez</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-puerperium-ex"> </a>
+<h2><a href="Observation-puerperium-ex.html">fsh-generated/resources/Observation-puerperium-ex.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(3)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-Puerperium.html">Perfil para registar dados do puerpério até à alta</a>, <i>this.</i><a href="StructureDefinition-Letter.html">Perfil sobre Elaboração de carta com informação clínica suplementar</a> and <i>this.</i><a href="StructureDefinition-Puerperium.html">Perfil para registar dados do puerpério até à alta</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-pupillary-example"> </a>
+<h2><a href="Observation-pupillary-example.html">fsh-generated/resources/Observation-pupillary-example.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(12)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyheight.html">Observation Body Height Profile</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/headcircum.html">Observation Head Circumference Profile</a>, <i>this.</i><a href="StructureDefinition-ApgarScore.html">Perfil de informação clinicas - apgarScore</a>, <i>this.</i><a href="StructureDefinition-Malformation.html">Perfil de informação clinicas - Dados de malformações</a>, <i>this.</i><a href="StructureDefinition-Phototherapy.html">Perfil de informação clinicas - Fototerapia</a>, <i>this.</i><a href="StructureDefinition-Hearingscreen.html">Perfil de informação clinicas - Rastreio auditivo neonatal universal</a>, <i>this.</i><a href="StructureDefinition-Congenital.html">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a>, <i>this.</i><a href="StructureDefinition-Metabolic.html">Perfil de informação clinicas - Rastreio de doenças metabólicas</a>, <i>this.</i><a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a> and <i>this.</i><a href="StructureDefinition-Newbornriskassessment.html">Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.component[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l30&#8203;/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.component[1]&#8203;.value&#8203;.ofType(CodeableConcept) (l50&#8203;/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-Bulletindelivery"> </a>
+<h2><a href="StructureDefinition-Bulletindelivery.html">fsh-generated/resources/StructureDefinition-Bulletindelivery.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/NoticiaNascimento&#8203;/StructureDefinition&#8203;/Bulletindelivery')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-CompositionNoticia"> </a>
+<h2><a href="StructureDefinition-CompositionNoticia.html">fsh-generated/resources/StructureDefinition-CompositionNoticia.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l1&#8203;/c204599)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l1&#8203;/c446369)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c446577)</b></td><td><b>information</b></td><td title="SD_PATH_SLICING_DEPRECATED"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Composition.extension (l1/c196683)</b></td><td><b>information</b></td><td title="MSG_DEPENDS_ON_DEPRECATED"><b>The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.1.0 is deprecated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c243186)</b></td><td><b>information</b></td><td title="SD_PATH_SLICING_DEPRECATED"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-Contact"> </a>
+<h2><a href="StructureDefinition-Contact.html">fsh-generated/resources/StructureDefinition-Contact.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'Encounter.class' binds to the value set 'https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'Encounter.class' binds to the value set 'https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-DestinationLN"> </a>
+<h2><a href="StructureDefinition-DestinationLN.html">fsh-generated/resources/StructureDefinition-DestinationLN.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[6] (l1&#8203;/c26540)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4] (l1&#8203;/c28801)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-MotherDemographicsLM"> </a>
+<h2><a href="StructureDefinition-MotherDemographicsLM.html">fsh-generated/resources/StructureDefinition-MotherDemographicsLM.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4] (l1&#8203;/c33773)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4] (l1&#8203;/c37951)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-NewBornLM"> </a>
+<h2><a href="StructureDefinition-NewBornLM.html">fsh-generated/resources/StructureDefinition-NewBornLM.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[20] (l1&#8203;/c110804)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21] (l1&#8203;/c111085)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22] (l1&#8203;/c111361)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27] (l1&#8203;/c117124)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28] (l1&#8203;/c117430)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[29] (l1&#8203;/c117727)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30] (l1&#8203;/c117976)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[31] (l1&#8203;/c118268)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[32] (l1&#8203;/c118562)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51] (l1&#8203;/c129809)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[52] (l1&#8203;/c130092)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[66] (l1&#8203;/c139421)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[67] (l1&#8203;/c140028)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68] (l1&#8203;/c141779)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[69] (l1&#8203;/c144447)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[70] (l1&#8203;/c144728)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71] (l1&#8203;/c145010)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[17] (l1&#8203;/c148804)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[18] (l1&#8203;/c149012)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[19] (l1&#8203;/c149216)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[21] (l1&#8203;/c149580)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[22] (l1&#8203;/c149810)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23] (l1&#8203;/c150036)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24] (l1&#8203;/c150221)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[25] (l1&#8203;/c150439)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26] (l1&#8203;/c150663)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[42] (l1&#8203;/c155415)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[43] (l1&#8203;/c155648)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[54] (l1&#8203;/c158646)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[55] (l1&#8203;/c158858)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[56] (l1&#8203;/c159078)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PregnancyLM"> </a>
+<h2><a href="StructureDefinition-PregnancyLM.html">fsh-generated/resources/StructureDefinition-PregnancyLM.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[26] (l1&#8203;/c60605)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[20] (l1&#8203;/c66164)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-Professional"> </a>
+<h2><a href="StructureDefinition-Professional.html">fsh-generated/resources/StructureDefinition-Professional.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/NoticiaNascimento&#8203;/StructureDefinition&#8203;/Professional')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ReferenciaNHACJR"> </a>
+<h2><a href="StructureDefinition-ReferenciaNHACJR.html">fsh-generated/resources/StructureDefinition-ReferenciaNHACJR.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for ReferenciaNHACJR: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/NoticiaNascimento&#8203;/StructureDefinition&#8203;/ReferenciaNHACJR')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-Transport"> </a>
+<h2><a href="StructureDefinition-Transport.html">fsh-generated/resources/StructureDefinition-Transport.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/NoticiaNascimento&#8203;/StructureDefinition&#8203;/Transport')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-Vaccination"> </a>
+<h2><a href="StructureDefinition-Vaccination.html">fsh-generated/resources/StructureDefinition-Vaccination.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/NoticiaNascimento&#8203;/StructureDefinition&#8203;/Vaccination')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-transport-information"> </a>
+<h2><a href="StructureDefinition-transport-information.html">fsh-generated/resources/StructureDefinition-transport-information.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for transport-information: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/NoticiaNascimento&#8203;/StructureDefinition&#8203;/transport-information')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</b></p><ul>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>This is inherited from the base resource</b></p><ul>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</b></p><ul>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="All_observations_should_have_a_performer"> </a>
+<h2>All_observations_should_have_a_performer</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-apgar-example.html">fsh-generated/resources/Observation-apgar-example.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-body-weigth-example.html">fsh-generated/resources/Observation-body-weigth-example.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-cephalic-perimeter-example.html">fsh-generated/resources/Observation-cephalic-perimeter-example.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-congenital-example.html">fsh-generated/resources/Observation-congenital-example.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-length-example.html">fsh-generated/resources/Observation-length-example.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-pregnancyNN.html">fsh-generated/resources/Observation-pregnancyNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-puerperium-ex.html">fsh-generated/resources/Observation-puerperium-ex.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-pupillary-example.html">fsh-generated/resources/Observation-pupillary-example.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="All_observations_should_have_a_subject"> </a>
+<h2>All_observations_should_have_a_subject</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-apgar-example.html">fsh-generated/resources/Observation-apgar-example.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-congenital-example.html">fsh-generated/resources/Observation-congenital-example.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-puerperium-ex.html">fsh-generated/resources/Observation-puerperium-ex.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-pupillary-example.html">fsh-generated/resources/Observation-pupillary-example.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"> </a>
+<h2>All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-apgar-example.html">fsh-generated/resources/Observation-apgar-example.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-congenital-example.html">fsh-generated/resources/Observation-congenital-example.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-puerperium-ex.html">fsh-generated/resources/Observation-puerperium-ex.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-pupillary-example.html">fsh-generated/resources/Observation-pupillary-example.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-CompositionNoticia.html">fsh-generated/resources/StructureDefinition-CompositionNoticia.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.1.0 is deprecated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_EXPERIMENTAL"> </a>
+<h2>MSG_EXPERIMENTAL</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-Pregnancy.html">fsh-generated/resources/StructureDefinition-Pregnancy.json</a></td><td><b>Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-Pregnancy.html">fsh-generated/resources/StructureDefinition-Pregnancy.json</a></td><td><b>Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-Pregnancy.html">fsh-generated/resources/StructureDefinition-Pregnancy.json</a></td><td><b>Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-Pregnancy.html">fsh-generated/resources/StructureDefinition-Pregnancy.json</a></td><td><b>Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-Pregnancy.html">fsh-generated/resources/StructureDefinition-Pregnancy.json</a></td><td><b>Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-Pregnancy.html">fsh-generated/resources/StructureDefinition-Pregnancy.json</a></td><td><b>Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-Pregnancy.html">fsh-generated/resources/StructureDefinition-Pregnancy.json</a></td><td><b>Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-Pregnancy.html">fsh-generated/resources/StructureDefinition-Pregnancy.json</a></td><td><b>Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-Pregnancy.html">fsh-generated/resources/StructureDefinition-Pregnancy.json</a></td><td><b>Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-Pregnancy.html">fsh-generated/resources/StructureDefinition-Pregnancy.json</a></td><td><b>Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_PATH_SLICING_DEPRECATED"> </a>
+<h2>SD_PATH_SLICING_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-CompositionNoticia.html">fsh-generated/resources/StructureDefinition-CompositionNoticia.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-CompositionNoticia.html">fsh-generated/resources/StructureDefinition-CompositionNoticia.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_3_CC"> </a>
+<h2>Terminology_TX_NoValid_3_CC</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org/#71230-7)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_ValueSet_NotFound"> </a>
+<h2>Terminology_TX_ValueSet_NotFound</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-exemploNN.html">fsh-generated/resources/Bundle-exemploNN.json</a></td><td><b>ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-pupillary-example.html">fsh-generated/resources/Observation-pupillary-example.json</a></td><td><b>ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-pupillary-example.html">fsh-generated/resources/Observation-pupillary-example.json</a></td><td><b>ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found</b></td>
+   </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "InfosGravidezCS",
+      "title" : "Elementos adicionais de informação gravidez CodeSystem",
+      "description" : "Elementos adicionais de informação gravidez CodeSystem - Criado por falta de um código internacional ideal"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "DocumentclassificationCS",
+      "title" : "Classficação de documentos CodeSystem",
+      "description" : "Classficação de documentos CodeSystem"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "TipoepisodioCS",
+      "title" : "Tipos de episódio CodeSystem",
+      "description" : "Tipos de episódio CodeSystem"
+    }
+  ]
+}

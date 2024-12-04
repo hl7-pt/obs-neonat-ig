@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Immunization/vaccNN-antid> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vaccNN-antid"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Antid"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Antid>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization vaccNN-antid</b></p><a name=\"vaccNN-antid\"> </a><a name=\"hcvaccNN-antid\"> </a><a name=\"vaccNN-antid-pt-PT\"> </a><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 786768001}\">Product containing only human anti-D immunoglobulin (medicinal product)</span></p><p><b>patient</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>occurrence</b>: 2024-08-01 10:00:00+0000</p><p><b>lotNumber</b>: xyz-123</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       a sct:786768001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "786768001" ] ;
+       fhir:display [ fhir:v "Product containing only human anti-D immunoglobulin (medicinal product)" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/newBornNN> ;
+     fhir:reference [ fhir:v "Patient/newBornNN" ]
+  ] ; # 
+  fhir:occurrence [ fhir:v "2024-08-01T10:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:lotNumber [ fhir:v "xyz-123"] . # 
+
+# -------------------------------------------------------------------------------------
+

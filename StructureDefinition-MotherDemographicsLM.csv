@@ -1,0 +1,35 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"MotherDemographicsLM","MotherDemographicsLM","","","",0,*,"","","","null {[]} {[]}
+","Dados demográficos da mãe (modelo)","Modelo Lógico - Dados demográficos da mãe","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MotherDemographicsLM.healthcardNumber","MotherDemographicsLM.healthcardNumber","","","",1,1,"","","","integer {[]} {[]}
+","Nº de SNS da mãe","Nº de SNS da mãe","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.healthcardNumber",1,1,"",""
+"MotherDemographicsLM.name","MotherDemographicsLM.name","","","",0,1,"","","","string {[]} {[]}
+","Nome da mãe","Nome da mãe","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.name",0,1,"",""
+"MotherDemographicsLM.birthdate","MotherDemographicsLM.birthdate","","","",1,1,"","","","dateTime {[]} {[]}
+","Data de nascimento (YYYY-MM-DD)","Data de nascimento (YYYY-MM-DD)","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.birthdate",1,1,"",""
+"MotherDemographicsLM.Age","MotherDemographicsLM.Age","","","",1,1,"","","","integer {[]} {[]}
+","Idade da mãe","Idade da mãe","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.Age",1,1,"",""
+"MotherDemographicsLM.address","MotherDemographicsLM.address","","","",0,1,"","","","string {[]} {[]}
+","Morada","Morada","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.address",0,1,"",""
+"MotherDemographicsLM.placeOfBirth","MotherDemographicsLM.placeOfBirth","","","",0,1,"","","","string {[]} {[]}
+","Local de nascimento","Local de nascimento","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.placeOfBirth",0,1,"",""
+"MotherDemographicsLM.nationality","MotherDemographicsLM.nationality","","","",0,1,"","","","string {[]} {[]}
+","Nacionalidade","Nacionalidade","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.nationality",0,1,"",""
+"MotherDemographicsLM.phone","MotherDemographicsLM.phone","","","",0,1,"","","","string {[]} {[]}
+","Contacto(s) telefónico(s)","Contacto(s) telefónico(s)","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.phone",0,1,"",""
+"MotherDemographicsLM.postalCode","MotherDemographicsLM.postalCode","","","",0,1,"","","","string {[]} {[]}
+","Código postal da morada","Código postal da morada","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.postalCode",0,1,"",""
+"MotherDemographicsLM.countryOfBirth","MotherDemographicsLM.countryOfBirth","","","",0,1,"","","","string {[]} {[]}
+","País da naturalidade do utente","País da naturalidade do utente","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.countryOfBirth",0,1,"",""
+"MotherDemographicsLM.districtOfBirth","MotherDemographicsLM.districtOfBirth","","","",0,1,"","","","string {[]} {[]}
+","Distrito da naturalidade","Distrito da naturalidade","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.districtOfBirth",0,1,"",""
+"MotherDemographicsLM.countyOfBirth","MotherDemographicsLM.countyOfBirth","","","",0,1,"","","","string {[]} {[]}
+","Código concelho da naturalidade","Código concelho da naturalidade","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.countyOfBirth",0,1,"",""
+"MotherDemographicsLM.parishOfBirth","MotherDemographicsLM.parishOfBirth","","","",0,1,"","","","string {[]} {[]}
+","Freguesia da naturalidade","Freguesia da naturalidade","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.parishOfBirth",0,1,"",""
+"MotherDemographicsLM.districtAddress","MotherDemographicsLM.districtAddress","","","",0,1,"","","","string {[]} {[]}
+","Distrito da morada","Distrito da morada","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.districtAddress",0,1,"",""
+"MotherDemographicsLM.countyAddress","MotherDemographicsLM.countyAddress","","","",0,1,"","","","string {[]} {[]}
+","Código concelho da morada","Código concelho da morada","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.countyAddress",0,1,"",""
+"MotherDemographicsLM.parishAddress","MotherDemographicsLM.parishAddress","","","",0,1,"","","","string {[]} {[]}
+","Freguesia da morada","Freguesia da morada","","","","","","","","","",,,,,"",,,,"MotherDemographicsLM.parishAddress",0,1,"",""

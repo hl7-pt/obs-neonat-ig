@@ -1,0 +1,9 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"NoticiaLM","NoticiaLM","","","",0,*,"","","","null {[]} {[]}
+","Notícia de Nascimento (modelo)","Modelo Lógico - Notícia de Nascimento","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"NoticiaLM.contact","NoticiaLM.contact","","","",1,1,"","","","https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ContactLM {[]} {[]}
+","Estrutura do episódio da notícia de nascimento","Estrutura do episódio da notícia de nascimento","","","","","","","","","",,,,,"",,,,"NoticiaLM.contact",1,1,"",""
+"NoticiaLM.professional","NoticiaLM.professional","","","",1,1,"","","","https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ProfessionalLM {[]} {[]}
+","Estrutura do profissional envolvido na submissão da informação","Estrutura do profissional envolvido na submissão da informação","","","","","","","","","",,,,,"",,,,"NoticiaLM.professional",1,1,"",""
+"NoticiaLM.birthNotice","NoticiaLM.birthNotice","","","",1,1,"","","","https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/CoredaNoticiaLM {[]} {[]}
+","Estrutura da notícia de nascimento","Estrutura da notícia de nascimento","","","","","","","","","",,,,,"",,,,"NoticiaLM.birthNotice",1,1,"",""
