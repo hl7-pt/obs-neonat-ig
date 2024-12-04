@@ -152,7 +152,7 @@ Usage: #example
 
 
 Instance: childhealthsurveilance-ex
-InstanceOf: childhealthsurveilance
+InstanceOf: Childhealthsurveilance
 Description: "Exemplo da vigilância de saúde infantil (NN)"
 Usage: #example
 

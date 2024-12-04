@@ -133,7 +133,7 @@ Description: "Composition que cria as secções da noticia nascimento"
 
 * section[followup].entry[puerperium] only Reference(Puerperium)
 //* section[followup].entry[puerperiumreview] only Reference(Organization)
-* section[followup].entry[childhealthsurveilance] only Reference(childhealthsurveilance)
+* section[followup].entry[childhealthsurveilance] only Reference(Childhealthsurveilance)
 * section[followup].entry[letter] only Reference(Letter)
 * section[followup].entry[bulletindelivery] only Reference(Bulletindelivery)
 * section[followup].entry[nextappointment] only Reference(Encounter)
@@ -146,7 +146,7 @@ Description: "Composition que cria as secções da noticia nascimento"
 
 
 
-Profile: childhealthsurveilance
+Profile: Childhealthsurveilance
 Parent: Organization
 Title: "Perfil da vigilância de saúde infantil "
 Description: "Perfil da vigilância de saúde infantil"
