@@ -41,7 +41,7 @@ Description: "Perfil de informação clinicas - apgarScore"
 // @Description: Limit string length invariant
 Invariant:   should-be-between-0-and-10
 Description: "Integer SHOULD be between 0 and 10"
-Expression:  "$this.value <= 11 AND $this.value >= 0"
+Expression:  "$this.value <= 11 and $this.value >= 0"
 Severity:    #error
 
 
