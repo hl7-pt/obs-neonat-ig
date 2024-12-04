@@ -64,9 +64,12 @@ Description: "Perfil de informação clinicas - Rastreio auditivo neonatal unive
 
 
 * component[right].value[x] only integer
+* component[right].value[x] 1..1
+
 * component[right].code  = $sct#1268789008 "Structure of right auditory system"
 * component[left].value[x] only integer
 * component[left].code  = $sct#1268788000 "Structure of left auditory system (body structure)"
+* component[left].value[x] 1..1
 
 
 Profile: Malformation
@@ -146,6 +149,8 @@ Description: "Perfil de informação clinicas - Teste Reflexo pupilar"
 
 * component[right].value[x] only CodeableConcept
 * component[right].code  = $loinc#79815-7 "Right pupil Pupillary response"
+* component[right].value[x] 1..1
+
 * component[right].valueCodeableConcept  from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3 (example)
 * component[right] ^short = "Ouvido direito examinado"
 
@@ -154,6 +159,7 @@ Description: "Perfil de informação clinicas - Teste Reflexo pupilar"
 * component[left].code  = $loinc#79899-1 "Left pupil Pupillary response"
 * component[left].valueCodeableConcept  from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3 (example)
 * component[left] ^short = "Ouvido esquerdo examinado"
+* component[left].value[x] 1..1
 
 
 Profile: Puerperium

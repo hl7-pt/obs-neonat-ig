@@ -73,7 +73,7 @@ Usage: #example
 
 
 Instance: vaccNN-bcg
-InstanceOf: Vaccination-bcg
+InstanceOf: Bcg
 Description: "Exemplo vacina BCG NN"
 Usage: #example
 
@@ -82,7 +82,7 @@ Usage: #example
 * occurrenceDateTime = "2024-08-01T10:00:00.000Z"
 
 Instance: vaccNN-hepb
-InstanceOf: Vaccination-hepb
+InstanceOf: Hepb
 Description: "Exemplo vacina HEPB NN"
 Usage: #example
 
@@ -92,7 +92,7 @@ Usage: #example
 
 
 Instance: vaccNN-antid
-InstanceOf: Vaccination-antid
+InstanceOf: Antid
 Description: "Exemplo vacina ANTI-D NN"
 Usage: #example
 
@@ -188,7 +188,8 @@ Description: "Exemplo de análise pupilar (NN)"
 Usage: #example
 
 
-* valueCodeableConcept = $sct#282332003 "No abnormality detected - examination result"
+* component[right].valueCodeableConcept = $sct#282332003 "No abnormality detected - examination result"
+* component[left].valueCodeableConcept = $sct#282332003 "No abnormality detected - examination result"
 
 Instance: puerperium-ex
 InstanceOf: Puerperium

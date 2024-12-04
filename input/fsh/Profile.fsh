@@ -64,9 +64,9 @@ Description: "Composition que cria as secções da noticia nascimento"
     vhb 1..1 and
     bcg 1..1 and
     immuno 1..1 
-* section[vaccination].entry[vhb] only Reference(Vaccination-hepb)
-* section[vaccination].entry[bcg] only Reference(Vaccination-bcg)
-* section[vaccination].entry[immuno] only Reference(Vaccination-antid)
+* section[vaccination].entry[vhb] only Reference(Hepb)
+* section[vaccination].entry[bcg] only Reference(Bcg)
+* section[vaccination].entry[immuno] only Reference(Antid)
 
 
 * section[newborn].code = $loinc#57075-4 "Newborn delivery information"
@@ -337,21 +337,21 @@ Expression: "(status = 'completed' and occurrence.exists()) or statusReason.exis
 Severity:   #error
 
 
-Profile: Vaccination-bcg
+Profile: Bcg
 Parent: Vaccination
 Title: "Informação sobre vacinação - BCG"
 Description: "Informação sobre vacinação - BCG"
 
 * vaccineCode = $sct#1861000221106  "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
 
-Profile: Vaccination-antid
+Profile: Antid
 Parent: Vaccination
 Title: "Informação sobre vacinação - antid"
 Description: "Informação sobre vacinação - antid"
 
 * vaccineCode =  $sct#786768001 "Product containing only human anti-D immunoglobulin (medicinal product)"
 
-Profile: Vaccination-hepb
+Profile: Hepb
 Parent: Vaccination
 Title: "Informação sobre vacinação - hepb"
 Description: "Informação sobre vacinação - hepb"
