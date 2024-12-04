@@ -8,15 +8,16 @@
 
 
 id: hl7.fhir.pt.obs-neonat
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: BirthNoticeIG
+canonical: https://hl7.pt/fhir/NoticiaNascimento
+
+#url: http://example.com/fhir/example
+name: NoticiaNascimentoIG
 title: "HL7 PT FHIR Implementation Guide: Noticia de Nascimento"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
 date: 2020-02-26
-version: 1.0.0
+version: 0.0.1
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
