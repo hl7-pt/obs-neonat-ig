@@ -7,12 +7,10 @@ Description: "Perfil de informação clinicas - apgarScore"
 * code = $sct#1287344004 "Apgar score (assessment scale)"
 
 * component MS
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "value"
-* component ^slicing.description = "Slicing based on value[x] type."
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #closed
-* component ^requirements = "Required if not(exists(Observation.valueString))"
-* component ^min = 0
+* component ^min = 1
 * component contains
     first 1..1 and
     fifth 1..1 and
@@ -20,11 +18,31 @@ Description: "Perfil de informação clinicas - apgarScore"
 
 
 * component[first].value[x] only integer
+
+
+
+* component[first].value[x] 1..1
 * component[first].code  = $sct#169895004 "Apgar score at 1 minute (observable entity)"
+
+* component[first].valueInteger obeys should-be-between-0-and-10
+
+* component[fifth].value[x] 1..1
 * component[fifth].value[x] only integer
 * component[fifth].code  = $sct#169909004 "Apgar score at 5 minutes (observable entity)"
+* component[fifth].valueInteger obeys should-be-between-0-and-10
+
+* component[tenth].value[x] 1..1
 * component[tenth].value[x] only integer
 * component[tenth].code  = $sct#169922007 "Apgar score at 10 minutes (observable entity)"
+* component[tenth].valueInteger obeys should-be-between-0-and-10
+
+
+// @Name: String Length Invariant
+// @Description: Limit string length invariant
+Invariant:   should-be-between-0-and-10
+Description: "Integer SHOULD be between 0 and 10"
+Expression:  "$this.value() <= 11 AND $this.value() >= 0"
+Severity:    #error
 
 
 Profile: Hearingscreen
@@ -39,7 +57,7 @@ Description: "Perfil de informação clinicas - Rastreio auditivo neonatal unive
 * component ^slicing.discriminator.path = "code"
 
 * component ^slicing.rules = #closed
-* component ^min = 0
+* component ^min = 1
 * component contains
     right 1..1 and
     left 1..1 
@@ -59,6 +77,7 @@ Description: "Perfil de informação clinicas - Dados de malformações"
 
 * status = #final
 * code = $sct#276654001 "Congenital malformation (disorder)"
+* value[x] 1..1
 
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Código para a malformação"
@@ -72,7 +91,9 @@ Description: "Perfil de informação clinicas - Fototerapia"
 
 * value[x] only boolean
 * valueBoolean ^short = "Se existiu fototerapia"
-
+* value[x] 1..1
+* note MS
+* note ^short = "Observações"
 
 Profile: Congenital
 Parent: Observation
@@ -85,7 +106,7 @@ Description: "Perfil de informação clinicas - Rastreio Cardiopatias Congénita
 * value[x] only CodeableConcept
 * valueCodeableConcept from NewbornCongenitalAnomaliesVS (required)
 * valueCodeableConcept ^short = "Código da anomalia congénita"
-
+* value[x] 1..1
 * note MS
 * note ^short = "Observações"
 
@@ -98,6 +119,7 @@ Description: "Perfil de informação clinicas - Rastreio de doenças metabólica
 
 * note MS
 * note ^short = "Observações"
+* value[x] 1..1
 
 * effective[x] only dateTime
 * effectiveDateTime ^short = "Data do rastreio"
@@ -116,7 +138,7 @@ Description: "Perfil de informação clinicas - Teste Reflexo pupilar"
 * component ^slicing.discriminator.path = "code"
 
 * component ^slicing.rules = #closed
-* component ^min = 0
+* component ^min = 1
 * component contains
     right 1..1 and
     left 1..1 
@@ -142,6 +164,8 @@ Description: "Perfil para registar dados do puerpério até à alta"
 
 * code = $sct#597951000005108  "Puerperium observable (observable entity)"
 * value[x] only CodeableConcept
+* value[x] 1..1
+
 * valueCodeableConcept from PuerperiumVS (required)
 * valueCodeableConcept ^short = "Tipo de puerpério"
 * note MS
@@ -158,7 +182,9 @@ Description: "Perfil sobre Elaboração de carta com informação clínica suple
 
 * code = $sct#699842004  "Provision of written information about maternity care (procedure)"
 * value[x] only boolean
-* valueBoolean ^short = "Se for elavborada a carta com informação clinica suplementar"
+* value[x] 1..1
+
+* valueBoolean ^short = "Se for elaborada a carta com informação clinica suplementar"
 * effective[x] only dateTime
 * effectiveDateTime ^short = "Data da elaboração"
 

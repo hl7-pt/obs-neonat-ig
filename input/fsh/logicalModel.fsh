@@ -16,7 +16,7 @@ Description: "Modelo Lógico - Contacto"
 Characteristics: #can-be-target
 
 * id 1..1 string "Identificador do episódio"
-* module 1..1 CodeableConcept "Tipo de episódio (CON/INT/URG/BLO/HDI/RAD/LAB)"
+* module 1..1 Coding "Tipo de episódio (CON/INT/URG/BLO/HDI/RAD/LAB)"
 
 
 Logical: ProfessionalLM
@@ -24,40 +24,28 @@ Title: "Professional (Modelo)"
 Description: "Modelo Lógico - Professional"
 Characteristics: #can-be-target
 
-* functionalgroup 1..1 CodeableConcept "Grupo funcional do profissional (5 – Médico; 4 -Enfermeiro)"
+* functionalgroup 1..1 Coding "Grupo funcional do profissional (5 – Médico; 4 -Enfermeiro)"
 * licence 1..1 integer "Nº de ordem do profissional"
 * name 1..1 string "Nome clínico"
 
-
-Logical: VaccineLM
-Title: "Vacina (modelo)"
-Description: "Modelo Lógico - Vacina"
-Characteristics: #can-be-target
-
-* taken 1..1 boolean "Confirmação de toma da vacina"
-* date 0..1 dateTime "Data da toma (YYYY-MM-DD)"
-* lot 0..1 string "Lote da vacina"
-* reason 0..1 string "Motivo de não toma da vacina"
 
 Logical: BirthNoticeLM
 Title: "BirthNotice (modelo)"
 Description: "Modelo Lógico - BirthNotice"
 Characteristics: #can-be-target
 
-* owner 1..1 CodeableConcept "Identifica se a notícia de nascimento é associada ao bebé ou à mãe (“descendant” – Caso o SNS do bébé seja enviado; “self” – No caso de só possuir SNS da mãe)"
+* owner 1..1 Coding "Identifica se a notícia de nascimento é associada ao bebé ou à mãe (“descendant” – Caso o SNS do bébé seja enviado; “self” – No caso de só possuir SNS da mãe)"
 * code  1..1 integer "Identificador único da instituição na PDS"
+
 * maternity  1..1 BackboneElement "Dados da maternidade"
   * institution 1..1 string "Nome da instituição/maternidade" 
   * service 1..1 string "Serviço da instituição"
-* destination 1..1 BackboneElement "Dados da inscrição nos cuidados de saúde primários"
-  * headquarters 1..1 Identifier "Dados da unidade de saúde de inscrição"
-  * ACES 0..1 string "Agrupamento do centro de saúde"
-  * healthcardNumber 0..1 integer "Nº de SNS do recém-nascido"
-  * healthextension 0..1 string "Extensão de saúde"
-  * familyDoctor 0..1 string "Nome clinico do médico de família"
-  * familyNurse 0..1 string "Nome clinico do enfermeiro de família"
+
+* destination 1..1 DestinationLN "Dados da inscrição nos cuidados de saúde primários"
+
 * motherDemographics 1..1 MotherDemographicsLM "Dados demográficos da mãe"
 * pregnancy 1..1 PregnancyLM "Dados da gravidez e cumprimento do esquema de vigilância pré-natal"
+
 * birth 1..1 BackboneElement "Dados do parto"
   * date 1..1 dateTime "Data e hora do nascimento (YYYY-MM-DD HH:MI:SS)"
   * type 1..1 Coding "Tipo de parto (1 - Eutócico Cefálico; 2 - Distócico-Forceps; 3 - Distócico- Ventosa; 4 - Distócico-Cesariana; 5 - Eutócico-Gemelar; 6 – Eutócico-Pélvico; 7 - Distócico Gemelar; 8 – Distócico- Pélvico; 9 - Desconhecido; 10 - Distócico-Espátulas de Thierry)"
@@ -65,16 +53,19 @@ Characteristics: #can-be-target
   * reason 0..1 string "Motivo em caso de distocia"
   * assist 0..1 Coding "Assistido por (0- Médico(a) obstetra; 1- Enfermeiro(a) ESMO; 2 - Outro)"
   * assistDescription 0..1 string "Descrever o assistido por."
+
 * puerperium 1..1 BackboneElement "Dados do puerpério até à alta"
-  * type 1..1 string "Tipo de puerpério (0- Normal; 1- Patológico)"
+  * type 1..1 Coding "Tipo de puerpério (0- Normal; 1- Patológico)"
   * observations  0..1 string "Observações"
+
 * newborn 1..1 NewBornLM "Dados do recém-nascido"
+
 * puerperiumReview 1..1 BackboneElement "Dados da revisão do puerpério"
-  * local 0..1 integer "Tipo de local (0- USF; 1- Hospital; 2- Privado; 3- Desconhecido)"
+  * local 0..1 Coding "Tipo de local (0- USF; 1- Hospital; 2- Privado; 3- Desconhecido)"
   * description 0..1 string "Descrição do local selecionado"
 
 * childHealthSurveillance 1..1 BackboneElement "Dados da vigilância de saúde infantil"
-  * local 0..1 integer "Tipo de local (0- USF; 1- Hospital; 2- Privado; 3- Desconhecido)"
+  * local 0..1 Coding "Tipo de local (0- USF; 1- Hospital; 2- Privado; 3- Desconhecido)"
   * description 0..1 string "Descrição do local selecionado"
 
 * letterWithClinicalInformation 1..1 BackboneElement "Dados da informação clinica suplementar"
@@ -82,7 +73,19 @@ Characteristics: #can-be-target
   * date 0..1 dateTime "Data da elaboração (YYYY-MM-DD)"
 * professionals 0..* string "Lista de profissionais envolvidos no registo da NN"
 
+Logical: DestinationLN
+Title: "Dados da inscrição nos cuidados de saúde primários (modelo)"
+Description: "Modelo Lógico - Dados da inscrição nos cuidados de saúde primários"
+Characteristics: #can-be-target
 
+* headquarters 1..1 BackboneElement "Dados da unidade de saúde de inscrição"
+  * id 1..1 integer "Identificador único da unidade de saúde de inscrição (presente no RNU – Registo Nacional de Utentes)" 
+  * description 0..1 string "Serviço da instituição"
+* ACES 0..1 string "Agrupamento do centro de saúde"
+* healthcardNumber 0..1 integer "Nº de SNS do recém-nascido"
+* extension 0..1 string "Extensão de saúde"
+* familyDoctor 0..1 string "Nome clinico do médico de família"
+* familyNurse 0..1 string "Nome clinico do enfermeiro de família"
 
 Logical: PregnancyLM
 Title: "Gravidez (modelo)"
@@ -109,7 +112,7 @@ Characteristics: #can-be-target
     * value  0..1 boolean "Indicação de seguimento"
     * reason 0..1 string "Motivo do seguimento"
 * PregnancyType 1..1 Coding "Tipo de gravidez ( 'Simple'- Gravidez de um bebé; 'Multiple'- Gravidez de gémeos)"
-* twinNumber 1..1 string "Corresponde ao Número da criança / total de crianças. Exemplo: “1/2”"
+* twinNumber 1..1 string "Corresponde ao Número da criança / total de crianças. Exemplo: '1/2'"
 
 Logical: NewBornLM
 Title: "Recem-nascido (modelo)"
@@ -185,7 +188,7 @@ Characteristics: #can-be-target
 
 
 * healthcardNumber 1..1 integer "Nº de SNS da mãe"
-* name 1..1 string "Nome da mãe"
+* name 0..1 string "Nome da mãe"
 * birthdate 1..1 dateTime "Data de nascimento (YYYY-MM-DD)"
 * Age 1..1 integer "Idade da mãe"
 * address 0..1 string "Morada"
@@ -200,3 +203,15 @@ Characteristics: #can-be-target
 * districtAddress 0..1 string "Distrito da morada"
 * countyAddress 0..1 string "Código concelho da morada"
 * parishAddress 0..1 string "Freguesia da morada"
+
+
+
+Logical: VaccineLM
+Title: "Vacina (modelo)"
+Description: "Modelo Lógico - Vacina"
+Characteristics: #can-be-target
+
+* taken 1..1 boolean "Confirmação de toma da vacina"
+* date 0..1 dateTime "Data da toma (YYYY-MM-DD)"
+* lot 0..1 string "Lote da vacina"
+* reason 0..1 string "Motivo de não toma da vacina"

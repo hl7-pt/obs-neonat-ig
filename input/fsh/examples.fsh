@@ -71,13 +71,31 @@ Usage: #inline
 
 
 
-Instance: vaccNN
-InstanceOf: Vaccination
+Instance: vaccNN-bcg
+InstanceOf: Vaccination-bcg
 Description: "Exemplo vaccinaction NN"
 Usage: #inline
 
 * status = #completed
-* vaccineCode = http://example#1 "xx"
+* patient = Reference(newBornNN)
+* occurrenceDateTime = "2024-08-01T10:00:00.000Z"
+
+Instance: vaccNN-hepb
+InstanceOf: Vaccination-hepb
+Description: "Exemplo vaccinaction NN"
+Usage: #inline
+
+* status = #completed
+* patient = Reference(newBornNN)
+* occurrenceDateTime = "2024-08-01T10:00:00.000Z"
+
+
+Instance: vaccNN-antid
+InstanceOf: Vaccination-antid
+Description: "Exemplo vaccinaction NN"
+Usage: #inline
+
+* status = #completed
 * patient = Reference(newBornNN)
 * occurrenceDateTime = "2024-08-01T10:00:00.000Z"
 
@@ -131,9 +149,13 @@ Usage: #inline
 
 * section[exams].entry[length] = Reference(length-example)
 * section[exams].entry[bodyweigth] = Reference(body-weigth-example)
+* section[exams].entry[apgar] = Reference(apgar-example)
+* section[exams].entry[Congenital] = Reference(congenital-example)
+* section[exams].entry[Pupillary] = Reference(pupillary-example)
 
-
-* section[vaccination].entry = Reference(vaccNN)
+* section[vaccination].entry[immuno] = Reference(vaccNN-antid)
+* section[vaccination].entry[bcg] = Reference(vaccNN-bcg)
+* section[vaccination].entry[vhb] = Reference(vaccNN-hepb)
 
 //* section[followup].entry[destination]  = Reference(destino)
 * section[followup].entry[childhealthsurveilance]  = Reference(childhealthsurveilance-ex)
@@ -141,6 +163,31 @@ Usage: #inline
 
 * section[destination].entry = Reference(destino)
 
+
+Instance: apgar-example
+InstanceOf: ApgarScore
+Description: "Exemplo de Apgar (NN)"
+Usage: #example
+
+* component[first].valueInteger = 7
+* component[fifth].valueInteger = 9
+* component[tenth].valueInteger = 11
+
+Instance: congenital-example
+InstanceOf: Congenital
+Description: "Exemplo de registo de doença congénita (NN)"
+Usage: #example
+
+* valueCodeableConcept = $sct#282332003 "No abnormality detected - examination result"
+
+
+Instance: pupillary-example
+InstanceOf: Pupillary
+Description: "Exemplo de análise pupilar (NN)"
+Usage: #example
+
+
+* valueCodeableConcept = $sct#282332003 "No abnormality detected - examination result"
 
 Instance: puerperium-ex
 InstanceOf: Puerperium
@@ -150,6 +197,7 @@ Usage: #example
 * identifier.system = "http:/example.org"
 * identifier.value = "4"
 
+* valueCodeableConcept = $sct#597961000005105 "Normal puerperium (finding)"
 
 Instance: childhealthsurveilance-ex
 InstanceOf: Childhealthsurveilance
@@ -199,8 +247,7 @@ Usage: #example
 * entry[+].fullUrl = "http://example.org/Patient/newBornNN"
 * entry[=].resource = newBornNN
 
-* entry[+].fullUrl = "http://example.org/Immunization/vaccNN"
-* entry[=].resource = vaccNN
+
 
 * entry[+].fullUrl = "http://example.org/Observation/body-weigth-example"
 * entry[=].resource = body-weigth-example
@@ -215,5 +262,14 @@ Usage: #example
 
 * entry[+].fullUrl = "http://example.org/Observation/puerperium-ex"
 * entry[=].resource = puerperium-ex
+
+* entry[+].fullUrl = "http://example.org/Immunization/vaccNN-antid"
+* entry[=].resource = vaccNN-antid
+
+* entry[+].fullUrl = "http://example.org/Immunization/vaccNN-hepb"
+* entry[=].resource = vaccNN-hepb
+
+* entry[+].fullUrl = "http://example.org/Immunization/vaccNN-bcg"
+* entry[=].resource = vaccNN-bcg
 
 

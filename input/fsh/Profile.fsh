@@ -55,11 +55,19 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[birth].entry[episode] only Reference(Encounter or Contact)
 
 * section[vaccination].code = $loinc#11369-6 "History of Immunization Narrative"
-* section[vaccination].entry only Reference(Vaccination)
+//* section[vaccination].entry only Reference(Vaccination)
 * section[vaccination].entry MS
 * section[vaccination].entry ^slicing.discriminator[0].type = #profile
 * section[vaccination].entry ^slicing.discriminator[=].path = "resolve()"
 * section[vaccination].entry ^slicing.rules = #open
+* section[vaccination].entry contains
+    vhb 1..1 and
+    bcg 1..1 and
+    immuno 1..1 
+* section[vaccination].entry[vhb] only Reference(Vaccination-hepb)
+* section[vaccination].entry[bcg] only Reference(Vaccination-bcg)
+* section[vaccination].entry[immuno] only Reference(Vaccination-antid)
+
 
 * section[newborn].code = $loinc#57075-4 "Newborn delivery information"
 * section[newborn].entry only Reference(Child)
@@ -75,15 +83,15 @@ Description: "Composition que cria as secções da noticia nascimento"
 * section[exams].entry ^slicing.rules = #open
 * section[exams].entry contains
     length 0..1 and
-    bodyweigth 0..1 and
+    bodyweigth 1..1 and
     cephalicPerimeter 0..1 and
-    apgar 0..1 and
+    apgar 1..1 and
     malformation 0..1 and
     Phototherapy 0..1 and 
     hearingscreen 0..1 and 
-    Congenital 0..1 and 
+    Congenital 1..1 and 
     Metabolic 0..1 and 
-    Pupillary 0..1 and
+    Pupillary 1..1 and
     newbornriskassessment 0..1
 
 * section[exams].entry[length] only Reference(http://hl7.org/fhir/StructureDefinition/bodyheight)
@@ -320,7 +328,6 @@ Description: "Informação sobre vacinação"
 * occurrence[x]  only dateTime 
 * occurrenceDateTime MS
 * lotNumber MS
-* vaccineCode from vacinas-infancia-vs (preferred)
 * statusReason
 * obeys reason-required-not-completed
 
@@ -328,6 +335,29 @@ Invariant:  reason-required-not-completed
 Description: "Either status is completed with date or a reason for the status is required"
 Expression: "(status = 'completed' and occurrence.exists()) or statusReason.exists()"
 Severity:   #error
+
+
+Profile: Vaccination-bcg
+Parent: Vaccination
+Title: "Informação sobre vacinação - BCG"
+Description: "Informação sobre vacinação - BCG"
+
+* vaccineCode = $sct#1861000221106  "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
+
+Profile: Vaccination-antid
+Parent: Vaccination
+Title: "Informação sobre vacinação - antid"
+Description: "Informação sobre vacinação - antid"
+
+* vaccineCode =  $sct#786768001 "Product containing only human anti-D immunoglobulin (medicinal product)"
+
+Profile: Vaccination-hepb
+Parent: Vaccination
+Title: "Informação sobre vacinação - hepb"
+Description: "Informação sobre vacinação - hepb"
+
+* vaccineCode = $sct#871822003  "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
+
 
 Profile: Newbornriskassessment
 Parent: Observation
