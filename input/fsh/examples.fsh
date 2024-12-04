@@ -171,6 +171,7 @@ Usage: #example
 * section[pregnancy].entry = Reference(pregnancyNN)
 
 * section[birth].entry[birthInfo]  = Reference(BirthNN)
+
 * section[birth].entry[episode]  = Reference(episodioInt)
 
 * section[newborn].entry = Reference(newBornNN)
@@ -313,6 +314,11 @@ Usage: #example
 
 * entry[+].fullUrl = "http://example.org/Observation/cephalic-perimeter-example"
 * entry[=].resource = cephalic-perimeter-example
+
+
+* entry[+].fullUrl = "http://example.org/PractitionerRole/ObsRole"
+* entry[=].resource = ObsRole
+
 
 
 

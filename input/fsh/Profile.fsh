@@ -41,7 +41,6 @@ Description: "Perfil do recurso Composition que cria as secções da noticia nas
 * section[pregnancy].entry ^slicing.rules = #open
 
 * section[birth].code = $loinc#57074-7 "Labor and delivery process Narrative"
-//* section[birth].entry only Reference(Birth)
 * section[birth].entry MS
 * section[birth].entry ^slicing.discriminator[0].type = #profile
 * section[birth].entry ^slicing.discriminator[=].path = "resolve()"
@@ -55,7 +54,6 @@ Description: "Perfil do recurso Composition que cria as secções da noticia nas
 * section[birth].entry[episode] only Reference(Encounter or Contact)
 
 * section[vaccination].code = $loinc#11369-6 "History of Immunization Narrative"
-//* section[vaccination].entry only Reference(Vaccination)
 * section[vaccination].entry MS
 * section[vaccination].entry ^slicing.discriminator[0].type = #profile
 * section[vaccination].entry ^slicing.discriminator[=].path = "resolve()"
