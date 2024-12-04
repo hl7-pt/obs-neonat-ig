@@ -1,6 +1,6 @@
 Instance: mother
 InstanceOf: Mother
-Description: "Exemplo NN"
+Description: "Exemplo Mãe NN"
 Usage: #example
 
 * identifier.system = "http://example"
@@ -13,20 +13,21 @@ Usage: #example
 
 Instance: inst
 InstanceOf: Organization
-Description: "Exemplo NN"
+Description: "Exemplo Instituição NN"
 Usage: #example
 * name = "CH ENTRE DOURO E VOUGA"
 
 Instance: destino
 InstanceOf: Organization
-Description: "Exemplo NN"
+Description: "Exemplo destino NN"
 Usage: #example
+
 * identifier.value = "2010491"
 * name = "USF ESCARIZ"
 
 Instance: episodio
 InstanceOf: Contact
-Description: "Exemplo NN"
+Description: "Exemplo episódio contacto NN"
 Usage: #example
 
 * identifier.value = "18001555"
@@ -39,15 +40,15 @@ Usage: #example
 
 Instance: episodioInt
 InstanceOf: Encounter
-Description: "Exemplo NN"
-Usage: #inline
+Description: "Exemplo internamento NN"
+Usage: #example
 
 * class = tipo-episodio-cs#INT
 * status = #finished
 
 Instance: BirthNN
 InstanceOf: Birth
-Description: "Exemplo NN"
+Description: "Exemplo nascimento NN"
 Usage: #example
 
 * effectiveDateTime = "2024-08-01T10:00:00.000Z"
@@ -55,7 +56,7 @@ Usage: #example
 
 Instance: pregnancyNN
 InstanceOf: Pregnancy
-Description: "Exemplo Pregnancy"
+Description: "Exemplo gravidez NN"
 Usage: #example
 
 * effectiveDateTime = "2024-08-01T10:00:00.000Z"
@@ -64,7 +65,7 @@ Usage: #example
 
 Instance: newBornNN
 InstanceOf: Child
-Description: "Exemplo New born"
+Description: "Exemplo recém-nascido"
 Usage: #example
 
 * gender = #female
@@ -73,7 +74,7 @@ Usage: #example
 
 Instance: vaccNN-bcg
 InstanceOf: Vaccination-bcg
-Description: "Exemplo vaccinaction NN"
+Description: "Exemplo vacina BCG NN"
 Usage: #example
 
 * status = #completed
@@ -82,7 +83,7 @@ Usage: #example
 
 Instance: vaccNN-hepb
 InstanceOf: Vaccination-hepb
-Description: "Exemplo vaccinaction NN"
+Description: "Exemplo vacina HEPB NN"
 Usage: #example
 
 * status = #completed
@@ -92,7 +93,7 @@ Usage: #example
 
 Instance: vaccNN-antid
 InstanceOf: Vaccination-antid
-Description: "Exemplo vaccinaction NN"
+Description: "Exemplo vacina ANTI-D NN"
 Usage: #example
 
 * status = #completed
@@ -129,7 +130,7 @@ Usage: #example
 
 Instance: compNN
 InstanceOf: CompositionNoticia
-Description: "Exemplo NN"
+Description: "Exemplo Composition NN"
 Usage: #example
 
 * date = "2021-09-01"
@@ -271,5 +272,14 @@ Usage: #example
 
 * entry[+].fullUrl = "http://example.org/Immunization/vaccNN-bcg"
 * entry[=].resource = vaccNN-bcg
+
+* entry[+].fullUrl = "http://example.org/Observation/apgar-example"
+* entry[=].resource = apgar-example
+
+* entry[+].fullUrl = "http://example.org/Observation/congenital-example"
+* entry[=].resource = congenital-example
+
+* entry[+].fullUrl = "http://example.org/Observation/pupillary-example"
+* entry[=].resource = pupillary-example
 
 
