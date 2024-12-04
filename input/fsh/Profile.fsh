@@ -84,7 +84,7 @@ Description: "Perfil do recurso Composition que cria as secções da noticia nas
 * section[exams].entry contains
     length 0..1 and
     bodyweigth 1..1 and
-    cephalicPerimeter 0..1 and
+    cephalicPerimeter 1..1 and
     apgar 1..1 and
     malformation 0..1 and
     Phototherapy 0..1 and 
@@ -297,11 +297,10 @@ Description: "Perfil de Informação do Parto"
 * component ^slicing.discriminator.path = "value"
 * component ^slicing.description = "Slicing based on value[x] type."
 * component ^slicing.rules = #closed
-* component ^requirements = "Required if not(exists(Observation.valueString))"
-* component ^min = 0
+* component ^min = 1
 * component contains
-    type 0..1 and
-    participation 0..1 and
+    type 1..1 and
+  //  participation 0..1 and
     reason 0..1 and 
     assist 0..1
 
@@ -311,7 +310,7 @@ Description: "Perfil de Informação do Parto"
 
 
 
-* component[participation].value[x] only CodeableConcept
+//* component[participation].value[x] only CodeableConcept
 * component[reason].value[x] only string
 * component[assist].value[x] only CodeableConcept
 

@@ -54,6 +54,21 @@ Usage: #example
 * effectiveDateTime = "2024-08-01T10:00:00.000Z"
 * subject = Reference(newBornNN)
 
+
+
+Instance: cephalic-perimeter-example
+InstanceOf: http://hl7.org/fhir/StructureDefinition/headcircum
+Description: "Exemplo perimetro cefálico"
+Usage: #example
+
+* status = #final
+* effectiveDateTime = "2024-08-01T10:00:00.000Z"
+* subject = Reference(newBornNN)
+* valueQuantity.value = 50.1
+* valueQuantity.unit = "cm(s)"
+* valueQuantity.code = #cm
+
+
 Instance: pregnancyNN
 InstanceOf: Pregnancy
 Description: "Exemplo gravidez"
@@ -155,6 +170,7 @@ Usage: #example
 * section[exams].entry[apgar] = Reference(apgar-example)
 * section[exams].entry[Congenital] = Reference(congenital-example)
 * section[exams].entry[Pupillary] = Reference(pupillary-example)
+* section[exams].entry[cephalicPerimeter] = Reference(cephalic-perimeter-example)
 
 * section[vaccination].entry[immuno] = Reference(vaccNN-antid)
 * section[vaccination].entry[bcg] = Reference(vaccNN-bcg)
@@ -284,5 +300,9 @@ Usage: #example
 
 * entry[+].fullUrl = "http://example.org/Observation/pupillary-example"
 * entry[=].resource = pupillary-example
+
+* entry[+].fullUrl = "http://example.org/Observation/cephalic-perimeter-example"
+* entry[=].resource = cephalic-perimeter-example
+
 
 

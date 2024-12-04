@@ -170,7 +170,7 @@ Characteristics: #can-be-target
 * childYoungHealthBulletinDelivered 0..1 dateTime "Data de entrega do boletim de saúde infantil e juvenil"
 * bulletinDeliveryType 1..1 integer "Tipo de boletim entregue (0- Papel; 1- Digital; 2- Transferido sem BSIJ; 3 - Não entregue devido a Nado Morto ou Falecido)"
 * riskAssessment 0..1 BackboneElement "Avaliação de risco e referenciação ao NHACJR"
-  * riskFactorsIdentified 0..1 integer "Fatores de risco (0- Individual; 1- Familiar; 2- Contexto social; 3- Inexistente)"
+  * riskFactorsIdentified 0..1 Coding "Fatores de risco (0- Individual; 1- Familiar; 2- Contexto social; 3- Inexistente)"
   * reference 0..1 boolean "Referenciação ao Núcleo Hospitalar de Apoio Criança e Jovens em risco (NHACJR)"
   * observations  0..1 string "Observações"
 * Outpatient 0..1 BackboneElement "Consultas"
