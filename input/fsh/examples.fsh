@@ -1,6 +1,6 @@
 Instance: mother
 InstanceOf: Mother
-Description: "Exemplo Mãe NN"
+Description: "Exemplo Mãe"
 Usage: #example
 
 * identifier.system = "http://example"
@@ -13,13 +13,13 @@ Usage: #example
 
 Instance: inst
 InstanceOf: Organization
-Description: "Exemplo Instituição NN"
+Description: "Exemplo Instituição"
 Usage: #example
 * name = "CH ENTRE DOURO E VOUGA"
 
 Instance: destino
 InstanceOf: Organization
-Description: "Exemplo destino NN"
+Description: "Exemplo destino"
 Usage: #example
 
 * identifier.value = "2010491"
@@ -27,7 +27,7 @@ Usage: #example
 
 Instance: episodio
 InstanceOf: Contact
-Description: "Exemplo episódio contacto NN"
+Description: "Exemplo episódio contacto"
 Usage: #example
 
 * identifier.value = "18001555"
@@ -40,7 +40,7 @@ Usage: #example
 
 Instance: episodioInt
 InstanceOf: Encounter
-Description: "Exemplo internamento NN"
+Description: "Exemplo internamento"
 Usage: #example
 
 * class = tipo-episodio-cs#INT
@@ -48,7 +48,7 @@ Usage: #example
 
 Instance: BirthNN
 InstanceOf: Birth
-Description: "Exemplo nascimento NN"
+Description: "Exemplo nascimento"
 Usage: #example
 
 * effectiveDateTime = "2024-08-01T10:00:00.000Z"
@@ -56,7 +56,7 @@ Usage: #example
 
 Instance: pregnancyNN
 InstanceOf: Pregnancy
-Description: "Exemplo gravidez NN"
+Description: "Exemplo gravidez"
 Usage: #example
 
 * effectiveDateTime = "2024-08-01T10:00:00.000Z"
@@ -74,32 +74,34 @@ Usage: #example
 
 Instance: vaccNN-bcg
 InstanceOf: Bcg
-Description: "Exemplo vacina BCG NN"
+Description: "Exemplo vacina BCG"
 Usage: #example
 
 * status = #completed
 * patient = Reference(newBornNN)
 * occurrenceDateTime = "2024-08-01T10:00:00.000Z"
+* lotNumber = "ghy-123/2024"
 
 Instance: vaccNN-hepb
 InstanceOf: Hepb
-Description: "Exemplo vacina HEPB NN"
+Description: "Exemplo vacina HEPB"
 Usage: #example
 
 * status = #completed
 * patient = Reference(newBornNN)
 * occurrenceDateTime = "2024-08-01T10:00:00.000Z"
+* lotNumber = "abc-9878"
 
 
 Instance: vaccNN-antid
 InstanceOf: Antid
-Description: "Exemplo vacina ANTI-D NN"
+Description: "Exemplo vacina ANTI-D"
 Usage: #example
 
 * status = #completed
 * patient = Reference(newBornNN)
 * occurrenceDateTime = "2024-08-01T10:00:00.000Z"
-
+* lotNumber = "xyz-123"
 
 Instance: length-example
 InstanceOf: http://hl7.org/fhir/StructureDefinition/bodyheight
@@ -130,7 +132,7 @@ Usage: #example
 
 Instance: compNN
 InstanceOf: CompositionNoticia
-Description: "Exemplo Composition NN"
+Description: "Exemplo Composition"
 Usage: #example
 
 * date = "2021-09-01"
@@ -167,7 +169,7 @@ Usage: #example
 
 Instance: apgar-example
 InstanceOf: ApgarScore
-Description: "Exemplo de Apgar (NN)"
+Description: "Exemplo de Apgar"
 Usage: #example
 
 * component[first].valueInteger = 7
@@ -176,7 +178,7 @@ Usage: #example
 
 Instance: congenital-example
 InstanceOf: Congenital
-Description: "Exemplo de registo de doença congénita (NN)"
+Description: "Exemplo de registo de doença congénita"
 Usage: #example
 
 * valueCodeableConcept = $sct#282332003 "No abnormality detected - examination result"
@@ -184,7 +186,7 @@ Usage: #example
 
 Instance: pupillary-example
 InstanceOf: Pupillary
-Description: "Exemplo de análise pupilar (NN)"
+Description: "Exemplo de análise pupilar"
 Usage: #example
 
 
@@ -193,7 +195,7 @@ Usage: #example
 
 Instance: puerperium-ex
 InstanceOf: Puerperium
-Description: "Exemplo de puerpério (NN)"
+Description: "Exemplo de puerpério"
 Usage: #example
 
 * identifier.system = "http:/example.org"
@@ -203,7 +205,7 @@ Usage: #example
 
 Instance: childhealthsurveilance-ex
 InstanceOf: Childhealthsurveilance
-Description: "Exemplo da vigilância de saúde infantil (NN)"
+Description: "Exemplo da vigilância de saúde infantil"
 Usage: #example
 
 * identifier.system = "http:/example.org"
@@ -212,7 +214,7 @@ Usage: #example
 
 Instance: exemploNN
 InstanceOf: Bundle
-Description: "Exemplo Noticia Nascimento (NN)"
+Description: "Exemplo Noticia Nascimento"
 Usage: #example
 
 * identifier.system = "http:/example.org"

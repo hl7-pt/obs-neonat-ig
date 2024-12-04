@@ -1,7 +1,7 @@
 Profile: CompositionNoticia
 Parent: $clinicaldocument
-Title: "Composition que cria as secções da noticia nascimento"
-Description: "Composition que cria as secções da noticia nascimento"
+Title: "Perfil do recurso Composition que cria as secções da noticia nascimento"
+Description: "Perfil do recurso Composition que cria as secções da noticia nascimento"
 
 * status = #final
 * type = http://loinc.org/#71230-7 "Birth certificate"
@@ -20,8 +20,8 @@ Description: "Composition que cria as secções da noticia nascimento"
     pregnancy 1..1 MS and
     birth 1..1 MS and
     newborn 1..1 MS and
-    exams 0..1 MS and
-    vaccination 0..1 and 
+    exams 1..1 MS and
+    vaccination 1..1 and 
     followup 1..1 and
     destination 1..1
 
@@ -194,8 +194,8 @@ Description: "Perfil para o profissional de saúde"
 
 Profile: Contact
 Parent: Encounter
-Title: "Contacto"
-Description: "Perfil de contacto"
+Title: "Perfil sobre episódio da notícia de nascimento"
+Description: "Perfil sobre episódio da notícia de nascimento"
 
 * identifier 1..1 MS
 * status = #finished
@@ -318,8 +318,8 @@ Description: "Perfil de Informação do Parto"
 
 Profile: Vaccination
 Parent: Immunization
-Title: "Informação sobre vacinação"
-Description: "Informação sobre vacinação"
+Title: "Perfil sobre Informação sobre vacinação - genérico"
+Description: "Perfil sobre Informação sobre vacinação - genérico"
 
 * status MS
 * patient MS  
@@ -333,36 +333,36 @@ Description: "Informação sobre vacinação"
 
 Invariant:  reason-required-not-completed
 Description: "Either status is completed with date or a reason for the status is required"
-Expression: "(status = 'completed' and occurrence.exists()) or statusReason.exists()"
+Expression: "(status = 'completed' and occurrence.exists() and lotNumber.exists()) or (status!='completed' and statusReason.exists())"
 Severity:   #error
 
 
 Profile: Bcg
 Parent: Vaccination
-Title: "Informação sobre vacinação - BCG"
-Description: "Informação sobre vacinação - BCG"
+Title: "Perfil de Informação sobre vacinação - BCG"
+Description: "Perfil de Informação sobre vacinação - BCG"
 
 * vaccineCode = $sct#1861000221106  "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
 
 Profile: Antid
 Parent: Vaccination
-Title: "Informação sobre vacinação - antid"
-Description: "Informação sobre vacinação - antid"
+Title: "Perfil de Informação sobre vacinação - antid"
+Description: "Perfil de Informação sobre vacinação - antid"
 
 * vaccineCode =  $sct#786768001 "Product containing only human anti-D immunoglobulin (medicinal product)"
 
 Profile: Hepb
 Parent: Vaccination
-Title: "Informação sobre vacinação - hepb"
-Description: "Informação sobre vacinação - hepb"
+Title: "Perfil de Informação sobre vacinação - hepb"
+Description: "Perfil de Informação sobre vacinação - hepb"
 
 * vaccineCode = $sct#871822003  "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
 
 
 Profile: Newbornriskassessment
 Parent: Observation
-Title: "Informação sobre RiskAssessment"
-Description: "Informação sobre RiskAssessment"
+Title: "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR"
+Description: "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR"
 
 * extension contains ReferenciaNHACJR named nhacjr 0..1
 * status = #final
@@ -381,8 +381,8 @@ Description: "Referenciação ao Núcleo Hospitalar de Apoio Criança e Jovens e
 
 Profile: Bulletindelivery
 Parent: Procedure
-Title: "Informação sobre bulletindelivery"
-Description: "Informação sobre bulletindelivery"
+Title: "Perfil de Informação sobre entrega de boletim"
+Description: "Perfil de Informação sobre entrega de boletim"
 
 
 * code from BulletindeliveryVS (required)
@@ -398,8 +398,8 @@ Description: "Informação sobre bulletindelivery"
 
 Extension: TransportInformation
 Id:    transport-information
-Title: "Transport information"
-Description: "Transport information"
+Title: "Extensão sobre informação sobre Transportes"
+Description: "Extensão sobre informação sobre Transportes"
 
 * extension contains
     transporttype 1..1 MS ?! and
@@ -421,8 +421,8 @@ Description: "Transport information"
 
 Profile: Transport
 Parent: Basic
-Title: "Informação sobre Transportes"
-Description: "Informação sobre Transportes"
+Title: "Perfil de informação sobre Transportes"
+Description: "Perfil de informação sobre Transportes"
 
 * extension contains transport-information  named transport-information 1..2 
 * code = $sct#424483007 "Transportation details (observable entity)"

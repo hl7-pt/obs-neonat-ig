@@ -48,8 +48,8 @@ Description:  "Vacinas ValueSet"
 
 ValueSet: PuerperiumVS
 Id: puerperium-vs
-Title:  "puerpério ValueSet"
-Description:  "puerpério ValueSet"
+Title:  "Tipos de outcome de puerpério ValueSet"
+Description:  "Tipos de outcome de puerpério ValueSet"
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#597961000005105  "Normal puerperium (finding)"
 * $sct#362973001  "Disorder of puerperium (disorder)"
@@ -57,8 +57,8 @@ Description:  "puerpério ValueSet"
 
 ValueSet: NewbornriskassessmentVS
 Id: newbornriskassessment-vs
-Title:  "newbornriskassessment ValueSet"
-Description:  "newbornriskassessment ValueSet"
+Title:  "Tipos de risco para avaliação de recém-nascidos ValueSet"
+Description:  "Tipos de risco para avaliação de recém-nascidos ValueSet"
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 
 
@@ -69,8 +69,8 @@ Description:  "newbornriskassessment ValueSet"
 
 CodeSystem: TipoepisodioCS
 Id:         tipo-episodio-cs
-Title:     "Tipos de episodio code system"
-Description: "Tipos de episodio code system"
+Title:     "Tipos de episódio CodeSystem"
+Description: "Tipos de episódio CodeSystem"
 * ^experimental = true
 
 //* ^url =  "http://terminology.hl7.pt/CodeSystem/tipoepisodio"
@@ -111,8 +111,8 @@ Description:  "Tipos de episódio ValueSet"
 
 CodeSystem: DocumentclassificationCS
 Id:         documentclassificationCS
-Title:     "Document Classification code system"
-Description: "Document Classification code system"
+Title:     "Classficação de documentos CodeSystem"
+Description: "Classficação de documentos CodeSystem"
 
 * ^experimental = true
 //* ^url =  "http://terminology.hl7.pt/CodeSystem/documentClassificaiton"
@@ -128,8 +128,8 @@ Description: "Document Classification code system"
 
 ValueSet: BulletindeliveryVS
 Id: bulletin-delivery-vs
-Title:  "bulletindeliveryVS ValueSet"
-Description:  "bulletindeliveryVSValueSet"
+Title:  "Envio de boletim ValueSet"
+Description:  "Envio de boletim ValueSet"
 
 
 
@@ -139,8 +139,8 @@ Description:  "bulletindeliveryVSValueSet"
 
 ValueSet: DocumenttypeVS
 Id: document-type-vs
-Title:  "documenttypeVS ValueSet"
-Description:  "documenttypeVS"
+Title:  "Tipo de documento ValueSet"
+Description:  "Tipo de documento ValueSet"
 
 * $sct#22131000087102 "Electronic report (record artifact)"
 * $sct#22151000087106 "Paper report (record artifact)"
@@ -149,8 +149,8 @@ Description:  "documenttypeVS"
 
 ValueSet: TransportTypeVS
 Id: transport-type-vs
-Title:  "Tipos de transporte de recem-nascido ValueSet"
-Description:  "Tipos de transporte de recem-nascido ValueSet"
+Title:  "Tipos de transporte de recém-nascido ValueSet"
+Description:  "Tipos de transporte de recém-nascido ValueSet"
 
 * $sct#255407002 "Neonatal (qualifier value)"
 * $sct#1156684004 "Fetal antepartum and/or intrapartum and/or early neonatal period (qualifier value)"

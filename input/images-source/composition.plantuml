@@ -6,7 +6,8 @@ Section mother => Informação sobre a mãe
  Section newborn => Informação sobre o(s) recém-nascido(s)
  Section exams => Informação sobre exames, análises laboratoriais e avaliações
  Section vaccination => Informação sobre vacinação
- Section followup => Informação sobre follow-up, destino alta, próximos passos
+ Section followup => Informação sobre follow-up, próximos passos
+ Section destination => Informação sobre destinos alta
 
 
 

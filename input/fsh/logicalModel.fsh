@@ -5,7 +5,7 @@ Characteristics: #can-be-target
 
 * contact 1..1 ContactLM "Estrutura do episódio da notícia de nascimento"
 * professional 1..1 ProfessionalLM "Estrutura do profissional envolvido na submissão da informação"
-* birthNotice 1..1 BirthNoticeLM "Estrutura da notícia de nascimento"
+* birthNotice 1..1 CoredaNoticiaLM "Estrutura da notícia de nascimento"
 
 
 
@@ -29,9 +29,9 @@ Characteristics: #can-be-target
 * name 1..1 string "Nome clínico"
 
 
-Logical: BirthNoticeLM
-Title: "BirthNotice (modelo)"
-Description: "Modelo Lógico - BirthNotice"
+Logical: CoredaNoticiaLM
+Title: "Informações Core da Noticia (modelo)"
+Description: "Modelo Lógico - Informações Core da Noticia"
 Characteristics: #can-be-target
 
 * owner 1..1 Coding "Identifica se a notícia de nascimento é associada ao bebé ou à mãe (“descendant” – Caso o SNS do bébé seja enviado; “self” – No caso de só possuir SNS da mãe)"
@@ -155,7 +155,7 @@ Characteristics: #can-be-target
 * screeningpupillaryReflection 0..1 boolean "Teste Reflexo pupilar (0- Realizado; 1- Não realizado)"
 * screeningpupillaryReflectionChange 0..1 boolean "Se foi realizado rastreio Teste Reflexo pupilar, então: (0 – Sem alteração; 1 – Com alteração)"
 * screeningpupillaryReflectionObservations 0..1 string "Observações do rastreio de Teste Reflexo pupilar com alteração."
-* screeningHearing 1..1 BackboneElement "Rastreio auditivo neonatal universal"
+* screeningHearing 0..1 BackboneElement "Rastreio auditivo neonatal universal"
   * type 0..1 Coding "Tipo de rastreio (0- Potenciais evocados auditivos de tronco cerebral; 1- Otoemissões acústicas; 2- Não realizado; 3- Potenciais evocados auditivos automáticos; 4-Marcado para)"
   * date 0..1 dateTime "Data de realização/marcação (YYYY-MM-DD)"
   * rightEar 0..1 boolean "Ouvido esquerdo examinado (0 – Com Alteração; 1 – Sem Alteração)"
