@@ -1,7 +1,7 @@
 Instance: mother
 InstanceOf: Mother
 Description: "Exemplo NN"
-Usage: #inline
+Usage: #example
 
 * identifier.system = "http://example"
 * identifier.value = "1234567"
@@ -14,20 +14,20 @@ Usage: #inline
 Instance: inst
 InstanceOf: Organization
 Description: "Exemplo NN"
-Usage: #inline
+Usage: #example
 * name = "CH ENTRE DOURO E VOUGA"
 
 Instance: destino
 InstanceOf: Organization
 Description: "Exemplo NN"
-Usage: #inline
+Usage: #example
 * identifier.value = "2010491"
 * name = "USF ESCARIZ"
 
 Instance: episodio
 InstanceOf: Contact
 Description: "Exemplo NN"
-Usage: #inline
+Usage: #example
 
 * identifier.value = "18001555"
 
@@ -48,7 +48,7 @@ Usage: #inline
 Instance: BirthNN
 InstanceOf: Birth
 Description: "Exemplo NN"
-Usage: #inline
+Usage: #example
 
 * effectiveDateTime = "2024-08-01T10:00:00.000Z"
 * subject = Reference(newBornNN)
@@ -56,7 +56,7 @@ Usage: #inline
 Instance: pregnancyNN
 InstanceOf: Pregnancy
 Description: "Exemplo Pregnancy"
-Usage: #inline
+Usage: #example
 
 * effectiveDateTime = "2024-08-01T10:00:00.000Z"
 * subject = Reference(newBornNN)
@@ -65,7 +65,7 @@ Usage: #inline
 Instance: newBornNN
 InstanceOf: Child
 Description: "Exemplo New born"
-Usage: #inline
+Usage: #example
 
 * gender = #female
 
@@ -74,7 +74,7 @@ Usage: #inline
 Instance: vaccNN-bcg
 InstanceOf: Vaccination-bcg
 Description: "Exemplo vaccinaction NN"
-Usage: #inline
+Usage: #example
 
 * status = #completed
 * patient = Reference(newBornNN)
@@ -83,7 +83,7 @@ Usage: #inline
 Instance: vaccNN-hepb
 InstanceOf: Vaccination-hepb
 Description: "Exemplo vaccinaction NN"
-Usage: #inline
+Usage: #example
 
 * status = #completed
 * patient = Reference(newBornNN)
@@ -93,7 +93,7 @@ Usage: #inline
 Instance: vaccNN-antid
 InstanceOf: Vaccination-antid
 Description: "Exemplo vaccinaction NN"
-Usage: #inline
+Usage: #example
 
 * status = #completed
 * patient = Reference(newBornNN)
@@ -103,7 +103,7 @@ Usage: #inline
 Instance: length-example
 InstanceOf: http://hl7.org/fhir/StructureDefinition/bodyheight
 Description: "Exemplo altura recem-nascido"
-Usage: #inline
+Usage: #example
 
 * subject = Reference(newBornNN)
 * effectiveDateTime = "2024-08-01T10:00:00.000Z"
@@ -116,7 +116,7 @@ Usage: #inline
 Instance: body-weigth-example
 InstanceOf: http://hl7.org/fhir/StructureDefinition/bodyweight
 Description: "Exemplo peso recem-nascido"
-Usage: #inline
+Usage: #example
 
 
 * subject = Reference(newBornNN)
@@ -130,7 +130,7 @@ Usage: #inline
 Instance: compNN
 InstanceOf: CompositionNoticia
 Description: "Exemplo NN"
-Usage: #inline
+Usage: #example
 
 * date = "2021-09-01"
 

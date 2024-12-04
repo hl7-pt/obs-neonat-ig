@@ -79,7 +79,7 @@ Description: "Modelo Lógico - Dados da inscrição nos cuidados de saúde prim�
 Characteristics: #can-be-target
 
 * headquarters 1..1 BackboneElement "Dados da unidade de saúde de inscrição"
-  * id 1..1 integer "Identificador único da unidade de saúde de inscrição (presente no RNU – Registo Nacional de Utentes)" 
+  * id 1..1 string "Identificador único da unidade de saúde de inscrição (presente no RNU – Registo Nacional de Utentes)" 
   * description 0..1 string "Serviço da instituição"
 * ACES 0..1 string "Agrupamento do centro de saúde"
 * healthcardNumber 0..1 integer "Nº de SNS do recém-nascido"
