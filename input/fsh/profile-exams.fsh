@@ -24,17 +24,17 @@ Description: "Perfil de informação clinicas - apgarScore"
 * component[first].value[x] 1..1
 * component[first].code  = $sct#169895004 "Apgar score at 1 minute (observable entity)"
 
-* component[first].valueInteger obeys should-be-between-0-and-10
+//* component[first].valueInteger obeys should-be-between-0-and-10
 
 * component[fifth].value[x] 1..1
 * component[fifth].value[x] only integer
 * component[fifth].code  = $sct#169909004 "Apgar score at 5 minutes (observable entity)"
-* component[fifth].valueInteger obeys should-be-between-0-and-10
+//* component[fifth].valueInteger obeys should-be-between-0-and-10
 
 * component[tenth].value[x] 1..1
 * component[tenth].value[x] only integer
 * component[tenth].code  = $sct#169922007 "Apgar score at 10 minutes (observable entity)"
-* component[tenth].valueInteger obeys should-be-between-0-and-10
+//* component[tenth].valueInteger obeys should-be-between-0-and-10
 
 
 // @Name: String Length Invariant

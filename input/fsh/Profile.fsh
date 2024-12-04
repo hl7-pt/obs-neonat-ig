@@ -156,7 +156,7 @@ Description: "Composition que cria as secções da noticia nascimento"
 
 Profile: Childhealthsurveilance
 Parent: Organization
-Title: "Perfil da vigilância de saúde infantil "
+Title: "Perfil da vigilância de saúde infantil"
 Description: "Perfil da vigilância de saúde infantil"
 
 * identifier 1..*
