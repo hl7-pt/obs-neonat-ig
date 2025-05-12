@@ -21,6 +21,6 @@ jobs:
   # This workflow contains a single job called "build"
   call_build: 
     #uses: WorldHealthOrganization/smart-base/.github/workflows/ghbuild.yml@main
-    uses: joofio/smart-base/blob/main/.github/workflows/ghbuild.yml@main
+    uses: joofio/smart-base/.github/workflows/ghbuild.yml@main
     with:
       tx: http://tx.hl7europe.eu/r5
