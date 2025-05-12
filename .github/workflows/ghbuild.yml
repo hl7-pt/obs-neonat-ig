@@ -16,5 +16,5 @@ jobs:
   call_build: 
     #uses: WorldHealthOrganization/smart-base/.github/workflows/ghbuild.yml@main
     uses: joofio/smart-base/.github/workflows/ghbuild.yml@main
-    with:
-      tx: http://tx.hl7europe.eu/r5
+ #   with:
+ #     tx: http://tx.hl7europe.eu/r5
