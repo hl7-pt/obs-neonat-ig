@@ -1,0 +1,107 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/bulletin-delivery-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "BulletindeliveryVS",
+      "title" : "Envio de boletim ValueSet",
+      "description" : "Envio de boletim ValueSet",
+      "systems" : [
+        "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS"
+      ]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/document-type-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "DocumenttypeVS",
+      "title" : "Tipo de documento ValueSet",
+      "description" : "Tipo de documento ValueSet",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "TipoepisodioVS",
+      "title" : "Tipos de episódio ValueSet",
+      "description" : "Tipos de episódio ValueSet",
+      "systems" : [
+        "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"
+      ]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newborn-congenital-anomalies-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "NewbornCongenitalAnomaliesVS",
+      "title" : "Tipos de doença congénita ValueSet",
+      "description" : "Tipos de doença congénita ValueSet",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newbornriskassessment-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "NewbornriskassessmentVS",
+      "title" : "Tipos de risco para avaliação de recém-nascidos ValueSet",
+      "description" : "Tipos de risco para avaliação de recém-nascidos ValueSet",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/puerperium-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "PuerperiumVS",
+      "title" : "Tipos de outcome de puerpério ValueSet",
+      "description" : "Tipos de outcome de puerpério ValueSet",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/risco-gravidez-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "RiscoGravidezVS",
+      "title" : "Risco de gravidez ValueSet",
+      "description" : "Risco de gravidez ValueSet",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-gravidez-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "TipoGravidezVS",
+      "title" : "Tipo de gravidez ValueSet",
+      "description" : "Tipo de gravidez ValueSet",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-parto-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "TipoPartoVS",
+      "title" : "Tipos de parto ValueSet",
+      "description" : "Tipos de parto ValueSet",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/transport-type-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "TransportTypeVS",
+      "title" : "Tipos de transporte de recém-nascido ValueSet",
+      "description" : "Tipos de transporte de recém-nascido ValueSet",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/vacinas-infancia-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "VacinasinfanciaVS",
+      "title" : "Vacinas ValueSet",
+      "description" : "Vacinas ValueSet",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="puerperium-ex"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Puerperium"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation puerperium-ex</b></p><a name="puerperium-ex"> </a><a name="hcpuerperium-ex"> </a><a name="puerperium-ex-pt-PT"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Puerperium.html">Perfil para registar dados do puerpério até à alta</a></p></div><p><b>identifier</b>: <code>http:/example.org</code>/4</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 597951000005108}">Puerperium observable (observable entity)</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 597961000005105}">Normal puerperium (finding)</span></p></div>
+  </text>
+  <identifier>
+    <system value="http:/example.org"/>
+    <value value="4"/>
+  </identifier>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="597951000005108"/>
+      <display value="Puerperium observable (observable entity)"/>
+    </coding>
+  </code>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="597961000005105"/>
+      <display value="Normal puerperium (finding)"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

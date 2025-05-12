@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Observation/pregnancyNN> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pregnancyNN"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pregnancy"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pregnancy>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation pregnancyNN</b></p><a name=\"pregnancyNN\"> </a><a name=\"hcpregnancyNN\"> </a><a name=\"pregnancyNN-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Pregnancy.html\">Perfil de Informação de gravidez</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 77386006}\">Pregnancy (finding)</span></p><p><b>subject</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:77386006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "77386006" ] ;
+       fhir:display [ fhir:v "Pregnancy (finding)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/newBornNN> ;
+     fhir:reference [ fhir:v "Patient/newBornNN" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2024-08-01T10:00:00.000Z"^^xsd:dateTime
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

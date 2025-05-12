@@ -1,0 +1,12 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://hl7.pt/fhir/NoticiaNascimento/ValueSet/bulletin-delivery-vs,0.0.1,active,,BulletindeliveryVS,Envio de boletim ValueSet,"Envio de boletim ValueSet","StructureDefinition/Bulletindelivery","Internal"
+https://hl7.pt/fhir/NoticiaNascimento/ValueSet/document-type-vs,0.0.1,active,,DocumenttypeVS,Tipo de documento ValueSet,"Tipo de documento ValueSet","StructureDefinition/Bulletindelivery","SCT"
+https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs,0.0.1,active,,TipoepisodioVS,Tipos de episódio ValueSet,"Tipos de episódio ValueSet","StructureDefinition/Contact","Internal"
+https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newborn-congenital-anomalies-vs,0.0.1,active,,NewbornCongenitalAnomaliesVS,Tipos de doença congénita ValueSet,"Tipos de doença congénita ValueSet","StructureDefinition/Congenital","SCT"
+https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newbornriskassessment-vs,0.0.1,active,,NewbornriskassessmentVS,Tipos de risco para avaliação de recém-nascidos ValueSet,"Tipos de risco para avaliação de recém-nascidos ValueSet","StructureDefinition/Newbornriskassessment","SCT"
+https://hl7.pt/fhir/NoticiaNascimento/ValueSet/puerperium-vs,0.0.1,active,,PuerperiumVS,Tipos de outcome de puerpério ValueSet,"Tipos de outcome de puerpério ValueSet","StructureDefinition/Puerperium","SCT"
+https://hl7.pt/fhir/NoticiaNascimento/ValueSet/risco-gravidez-vs,0.0.1,active,,RiscoGravidezVS,Risco de gravidez ValueSet,"Risco de gravidez ValueSet","StructureDefinition/Pregnancy","SCT"
+https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-gravidez-vs,0.0.1,active,,TipoGravidezVS,Tipo de gravidez ValueSet,"Tipo de gravidez ValueSet","StructureDefinition/Pregnancy","SCT"
+https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-parto-vs,0.0.1,active,,TipoPartoVS,Tipos de parto ValueSet,"Tipos de parto ValueSet","StructureDefinition/Birth","SCT"
+https://hl7.pt/fhir/NoticiaNascimento/ValueSet/transport-type-vs,0.0.1,active,,TransportTypeVS,Tipos de transporte de recém-nascido ValueSet,"Tipos de transporte de recém-nascido ValueSet","StructureDefinition/transport-information","SCT"
+https://hl7.pt/fhir/NoticiaNascimento/ValueSet/vacinas-infancia-vs,0.0.1,active,,VacinasinfanciaVS,Vacinas ValueSet,"Vacinas ValueSet",,"SCT"

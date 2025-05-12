@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="episodio"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Contact"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter episodio</b></p><a name="episodio"> </a><a name="hcepisodio"> </a><a name="episodio-pt-PT"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Contact.html">Perfil sobre episódio da notícia de nascimento</a></p></div><p><b>identifier</b>: 18001555</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT">Tipos de episódio CodeSystem INT</a>: Internamento</p><p><b>serviceType</b>: <span title="Codes:">Obstetricia</span></p><p><b>serviceProvider</b>: <a href="Organization-inst.html">Organization CH ENTRE DOURO E VOUGA</a></p></div>
+  </text>
+  <identifier>
+    <value value="18001555"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"/>
+    <code value="INT"/>
+  </class>
+  <serviceType>
+    <text value="Obstetricia"/>
+  </serviceType>
+  <serviceProvider>
+    <reference value="Organization/inst"/>
+  </serviceProvider>
+</Encounter>

@@ -1,0 +1,862 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Bundle/exemploNN> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exemploNN"] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "http:/example.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2024-11-28T22:00:00Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://example.org/Composition/compNN"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Composition/compNN> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Procedure/BirthNN"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Procedure/BirthNN> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Encounter/episodioInt"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Encounter/episodioInt> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Organization/destino"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Organization/destino> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Patient/mother"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Patient/mother> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Encounter/episodio"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Encounter/episodio> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Organization/inst"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Organization/inst> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/pregnancyNN"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/pregnancyNN> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Patient/newBornNN"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Patient/newBornNN> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/body-weigth-example"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/body-weigth-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/length-example"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/length-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Organization/childhealthsurveilance-ex"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Organization/childhealthsurveilance-ex> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/puerperium-ex"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/puerperium-ex> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Immunization/vaccNN-antid"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Immunization/vaccNN-antid> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Immunization/vaccNN-hepb"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Immunization/vaccNN-hepb> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Immunization/vaccNN-bcg"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Immunization/vaccNN-bcg> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/apgar-example"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/apgar-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/congenital-example"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/congenital-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/pupillary-example"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/pupillary-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/cephalic-perimeter-example"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/cephalic-perimeter-example> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/PractitionerRole/ObsRole"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/PractitionerRole/ObsRole> )
+  ] ) . # 
+
+<http://example.org/Composition/compNN> a fhir:Composition ;
+  fhir:id [ fhir:v "compNN"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/CompositionNoticia"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/CompositionNoticia>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_compNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition compNN</b></p><a name=\"compNN\"> </a><a name=\"hccompNN\"> </a><a name=\"compNN-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CompositionNoticia.html\">Perfil do recurso Composition que cria as secções da noticia nascimento</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org/ 71230-7}\">Birth certificate</span></p><p><b>encounter</b>: <a href=\"Encounter-episodio.html\">Encounter: identifier = 18001555; status = finished; class = Internamento (Tipos de episódio CodeSystem#INT); serviceType = </a></p><p><b>date</b>: 2021-09-01</p><p><b>author</b>: HCP</p><p><b>title</b>: Noticia de Nascimento de recém-nascido</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://loinc.org/"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "71230-7" ] ;
+       fhir:display [ fhir:v "Birth certificate" ]
+     ] )
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Encounter/episodio> ;
+     fhir:reference [ fhir:v "Encounter/episodio" ]
+  ] ; # 
+  fhir:date [ fhir:v "2021-09-01"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:display [ fhir:v "HCP" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Noticia de Nascimento de recém-nascido"] ; # 
+  fhir:section ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:10160-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10160-0" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/mother> ;
+       fhir:reference [ fhir:v "Patient/mother" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:56833-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "56833-7" ] ;
+         fhir:display [ fhir:v "Pregnancy related history Narrative" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/pregnancyNN> ;
+       fhir:reference [ fhir:v "Observation/pregnancyNN" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:57074-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "57074-7" ] ;
+         fhir:display [ fhir:v "Labor and delivery process Narrative" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Procedure/BirthNN> ;
+       fhir:reference [ fhir:v "Procedure/BirthNN" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Encounter/episodioInt> ;
+       fhir:reference [ fhir:v "Encounter/episodioInt" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:57075-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "57075-4" ] ;
+         fhir:display [ fhir:v "Newborn delivery information" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/newBornNN> ;
+       fhir:reference [ fhir:v "Patient/newBornNN" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:73738-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "73738-7" ] ;
+         fhir:display [ fhir:v "Newborn screening test results panel - Point of Care" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/length-example> ;
+       fhir:reference [ fhir:v "Observation/length-example" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/body-weigth-example> ;
+       fhir:reference [ fhir:v "Observation/body-weigth-example" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/apgar-example> ;
+       fhir:reference [ fhir:v "Observation/apgar-example" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/congenital-example> ;
+       fhir:reference [ fhir:v "Observation/congenital-example" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/pupillary-example> ;
+       fhir:reference [ fhir:v "Observation/pupillary-example" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/cephalic-perimeter-example> ;
+       fhir:reference [ fhir:v "Observation/cephalic-perimeter-example" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11369-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11369-6" ] ;
+         fhir:display [ fhir:v "History of Immunization Narrative" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Immunization/vaccNN-antid> ;
+       fhir:reference [ fhir:v "Immunization/vaccNN-antid" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Immunization/vaccNN-bcg> ;
+       fhir:reference [ fhir:v "Immunization/vaccNN-bcg" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Immunization/vaccNN-hepb> ;
+       fhir:reference [ fhir:v "Immunization/vaccNN-hepb" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11544-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11544-4" ] ;
+         fhir:display [ fhir:v "Hospital discharge follow-up Narrative" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Organization/childhealthsurveilance-ex> ;
+       fhir:reference [ fhir:v "Organization/childhealthsurveilance-ex" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/puerperium-ex> ;
+       fhir:reference [ fhir:v "Observation/puerperium-ex" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:45131006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "45131006" ] ;
+         fhir:display [ fhir:v "Primary care hospital (environment)" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Organization/destino> ;
+       fhir:reference [ fhir:v "Organization/destino" ]
+     ] )
+  ] ) . # 
+
+<http://example.org/Procedure/BirthNN> a fhir:Procedure ;
+  fhir:id [ fhir:v "BirthNN"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Birth"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Birth>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_BirthNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure BirthNN</b></p><a name=\"BirthNN\"> </a><a name=\"hcBirthNN\"> </a><a name=\"BirthNN-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Birth.html\">Perfil de Informação do Parto</a></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 384729004}\">Delivery of vertex presentation (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mother.html\">NOME DE TESTE (no stated gender), DoB: 1989-07-30 ( http://example#1234567)</a></p><p><b>encounter</b>: <a href=\"Encounter-episodioInt.html\">Encounter: status = finished; class = Internamento (Tipos de episódio CodeSystem#INT)</a></p><p><b>performed</b>: 2024-08-01 10:00:00+0000</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-ObsRole.html\">PractitionerRole Obstetrician</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:384729004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "384729004" ] ;
+       fhir:display [ fhir:v "Delivery of vertex presentation (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/mother> ;
+     fhir:reference [ fhir:v "Patient/mother" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Encounter/episodioInt> ;
+     fhir:reference [ fhir:v "Encounter/episodioInt" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:dateTime ;
+     fhir:v "2024-08-01T10:00:00.000Z"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/PractitionerRole/ObsRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/ObsRole" ]
+     ]
+  ] ) . # 
+
+<http://example.org/Encounter/episodioInt> a fhir:Encounter ;
+  fhir:id [ fhir:v "episodioInt"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_episodioInt\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter episodioInt</b></p><a name=\"episodioInt\"> </a><a name=\"hcepisodioInt\"> </a><a name=\"episodioInt-pt-PT\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT\">Tipos de episódio CodeSystem INT</a>: Internamento</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "INT" ]
+  ] . # 
+
+<http://example.org/Organization/destino> a fhir:Organization ;
+  fhir:id [ fhir:v "destino"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_destino\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization destino</b></p><a name=\"destino\"> </a><a name=\"hcdestino\"> </a><a name=\"destino-pt-PT\"> </a><p><b>identifier</b>: 2010491</p><p><b>name</b>: USF ESCARIZ</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "2010491" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "USF ESCARIZ"] . # 
+
+<http://example.org/Patient/mother> a fhir:Patient ;
+  fhir:id [ fhir:v "mother"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Mother"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Mother>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_mother\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient mother</b></p><a name=\"mother\"> </a><a name=\"hcmother\"> </a><a name=\"mother-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Mother.html\">Perfil da mãe</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">NOME DE TESTE (no stated gender), DoB: 1989-07-30 ( http://example#1234567)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">MORADA DE TESTE </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nationality of the patient.\">Patient Nationality:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes:\">Portugal</span></li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:text [ fhir:v "Portugal" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-nationality"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://example"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1234567" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "NOME DE TESTE" ]
+  ] ) ; # 
+  fhir:birthDate [ fhir:v "1989-07-30"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "MORADA DE TESTE" ] )
+  ] ) . # 
+
+<http://example.org/Encounter/episodio> a fhir:Encounter ;
+  fhir:id [ fhir:v "episodio"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Contact"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Contact>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_episodio\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter episodio</b></p><a name=\"episodio\"> </a><a name=\"hcepisodio\"> </a><a name=\"episodio-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Contact.html\">Perfil sobre episódio da notícia de nascimento</a></p></div><p><b>identifier</b>: 18001555</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT\">Tipos de episódio CodeSystem INT</a>: Internamento</p><p><b>serviceType</b>: <span title=\"Codes:\">Obstetricia</span></p><p><b>serviceProvider</b>: <a href=\"Organization-inst.html\">Organization CH ENTRE DOURO E VOUGA</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "18001555" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "INT" ]
+  ] ; # 
+  fhir:serviceType [
+     fhir:text [ fhir:v "Obstetricia" ]
+  ] ; # 
+  fhir:serviceProvider [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Organization/inst> ;
+     fhir:reference [ fhir:v "Organization/inst" ]
+  ] . # 
+
+<http://example.org/Organization/inst> a fhir:Organization ;
+  fhir:id [ fhir:v "inst"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_inst\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization inst</b></p><a name=\"inst\"> </a><a name=\"hcinst\"> </a><a name=\"inst-pt-PT\"> </a><p><b>name</b>: CH ENTRE DOURO E VOUGA</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:name [ fhir:v "CH ENTRE DOURO E VOUGA"] . # 
+
+<http://example.org/Observation/pregnancyNN> a fhir:Observation ;
+  fhir:id [ fhir:v "pregnancyNN"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pregnancy"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pregnancy>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_pregnancyNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation pregnancyNN</b></p><a name=\"pregnancyNN\"> </a><a name=\"hcpregnancyNN\"> </a><a name=\"pregnancyNN-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Pregnancy.html\">Perfil de Informação de gravidez</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 77386006}\">Pregnancy (finding)</span></p><p><b>subject</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:77386006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "77386006" ] ;
+       fhir:display [ fhir:v "Pregnancy (finding)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/newBornNN> ;
+     fhir:reference [ fhir:v "Patient/newBornNN" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2024-08-01T10:00:00.000Z"^^xsd:dateTime
+  ] . # 
+
+<http://example.org/Patient/newBornNN> a fhir:Patient ;
+  fhir:id [ fhir:v "newBornNN"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Child"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Child>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_newBornNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient newBornNN</b></p><a name=\"newBornNN\"> </a><a name=\"hcnewBornNN\"> </a><a name=\"newBornNN-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Child.html\">Perfil do recém-nascido</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB Unknown</p><hr/></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:gender [ fhir:v "female"] . # 
+
+<http://example.org/Observation/body-weigth-example> a fhir:Observation ;
+  fhir:id [ fhir:v "body-weigth-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/bodyweight"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/bodyweight>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_body-weigth-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation body-weigth-example</b></p><a name=\"body-weigth-example\"> </a><a name=\"hcbody-weigth-example\"> </a><a name=\"body-weigth-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/bodyweight.html\">Observation Body Weight Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}\">Weight</span></p><p><b>subject</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p><p><b>value</b>: 3250 gram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:29463-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "29463-7" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/newBornNN> ;
+     fhir:reference [ fhir:v "Patient/newBornNN" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2024-08-01T10:00:00.000Z"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "3250"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "gram(s)" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "g" ]
+  ] . # 
+
+<http://example.org/Observation/length-example> a fhir:Observation ;
+  fhir:id [ fhir:v "length-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/bodyheight"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/bodyheight>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_length-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation length-example</b></p><a name=\"length-example\"> </a><a name=\"hclength-example\"> </a><a name=\"length-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/bodyheight.html\">Observation Body Height Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8302-2}\">Bdy height</span></p><p><b>subject</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p><p><b>value</b>: 50 cm(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8302-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8302-2" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/newBornNN> ;
+     fhir:reference [ fhir:v "Patient/newBornNN" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2024-08-01T10:00:00.000Z"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "cm(s)" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "cm" ]
+  ] . # 
+
+<http://example.org/Organization/childhealthsurveilance-ex> a fhir:Organization ;
+  fhir:id [ fhir:v "childhealthsurveilance-ex"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Childhealthsurveilance"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Childhealthsurveilance>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_childhealthsurveilance-ex\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization childhealthsurveilance-ex</b></p><a name=\"childhealthsurveilance-ex\"> </a><a name=\"hcchildhealthsurveilance-ex\"> </a><a name=\"childhealthsurveilance-ex-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Childhealthsurveilance.html\">Perfil da vigilância de saúde infantil</a></p></div><p><b>identifier</b>: <code>http:/example.org</code>/4</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http:/example.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "4" ]
+  ] ) . # 
+
+<http://example.org/Observation/puerperium-ex> a fhir:Observation ;
+  fhir:id [ fhir:v "puerperium-ex"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Puerperium"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Puerperium>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_puerperium-ex\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation puerperium-ex</b></p><a name=\"puerperium-ex\"> </a><a name=\"hcpuerperium-ex\"> </a><a name=\"puerperium-ex-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Puerperium.html\">Perfil para registar dados do puerpério até à alta</a></p></div><p><b>identifier</b>: <code>http:/example.org</code>/4</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 597951000005108}\">Puerperium observable (observable entity)</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 597961000005105}\">Normal puerperium (finding)</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http:/example.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "4" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:597951000005108 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "597951000005108" ] ;
+       fhir:display [ fhir:v "Puerperium observable (observable entity)" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:597961000005105 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "597961000005105" ] ;
+       fhir:display [ fhir:v "Normal puerperium (finding)" ]
+     ] )
+  ] . # 
+
+<http://example.org/Immunization/vaccNN-antid> a fhir:Immunization ;
+  fhir:id [ fhir:v "vaccNN-antid"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Antid"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Antid>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_vaccNN-antid\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization vaccNN-antid</b></p><a name=\"vaccNN-antid\"> </a><a name=\"hcvaccNN-antid\"> </a><a name=\"vaccNN-antid-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Antid.html\">Perfil de Informação sobre vacinação - antid</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 786768001}\">Product containing only human anti-D immunoglobulin (medicinal product)</span></p><p><b>patient</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>occurrence</b>: 2024-08-01 10:00:00+0000</p><p><b>lotNumber</b>: xyz-123</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       a sct:786768001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "786768001" ] ;
+       fhir:display [ fhir:v "Product containing only human anti-D immunoglobulin (medicinal product)" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/newBornNN> ;
+     fhir:reference [ fhir:v "Patient/newBornNN" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2024-08-01T10:00:00.000Z"^^xsd:dateTime
+  ] ; # 
+  fhir:lotNumber [ fhir:v "xyz-123"] . # 
+
+<http://example.org/Immunization/vaccNN-hepb> a fhir:Immunization ;
+  fhir:id [ fhir:v "vaccNN-hepb"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Hepb"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Hepb>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_vaccNN-hepb\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization vaccNN-hepb</b></p><a name=\"vaccNN-hepb\"> </a><a name=\"hcvaccNN-hepb\"> </a><a name=\"vaccNN-hepb-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Hepb.html\">Perfil de Informação sobre vacinação - hepb</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 871822003}\">Vaccine product containing only Hepatitis B virus antigen (medicinal product)</span></p><p><b>patient</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>occurrence</b>: 2024-08-01 10:00:00+0000</p><p><b>lotNumber</b>: abc-9878</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       a sct:871822003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "871822003" ] ;
+       fhir:display [ fhir:v "Vaccine product containing only Hepatitis B virus antigen (medicinal product)" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/newBornNN> ;
+     fhir:reference [ fhir:v "Patient/newBornNN" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2024-08-01T10:00:00.000Z"^^xsd:dateTime
+  ] ; # 
+  fhir:lotNumber [ fhir:v "abc-9878"] . # 
+
+<http://example.org/Immunization/vaccNN-bcg> a fhir:Immunization ;
+  fhir:id [ fhir:v "vaccNN-bcg"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Bcg"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Bcg>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_vaccNN-bcg\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization vaccNN-bcg</b></p><a name=\"vaccNN-bcg\"> </a><a name=\"hcvaccNN-bcg\"> </a><a name=\"vaccNN-bcg-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Bcg.html\">Perfil de Informação sobre vacinação - BCG</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 1861000221106}\">Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)</span></p><p><b>patient</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>occurrence</b>: 2024-08-01 10:00:00+0000</p><p><b>lotNumber</b>: ghy-123/2024</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       a sct:1861000221106 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1861000221106" ] ;
+       fhir:display [ fhir:v "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/newBornNN> ;
+     fhir:reference [ fhir:v "Patient/newBornNN" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2024-08-01T10:00:00.000Z"^^xsd:dateTime
+  ] ; # 
+  fhir:lotNumber [ fhir:v "ghy-123/2024"] . # 
+
+<http://example.org/Observation/apgar-example> a fhir:Observation ;
+  fhir:id [ fhir:v "apgar-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ApgarScore"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ApgarScore>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_apgar-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation apgar-example</b></p><a name=\"apgar-example\"> </a><a name=\"hcapgar-example\"> </a><a name=\"apgar-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ApgarScore.html\">Perfil de informação clinicas - apgarScore</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1287344004}\">Apgar score (assessment scale)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 169895004}\">Apgar score at 1 minute (observable entity)</span></p><p><b>value</b>: 7</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 169909004}\">Apgar score at 5 minutes (observable entity)</span></p><p><b>value</b>: 9</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 169922007}\">Apgar score at 10 minutes (observable entity)</span></p><p><b>value</b>: 10</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:1287344004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1287344004" ] ;
+       fhir:display [ fhir:v "Apgar score (assessment scale)" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:169895004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "169895004" ] ;
+         fhir:display [ fhir:v "Apgar score at 1 minute (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 7
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:169909004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "169909004" ] ;
+         fhir:display [ fhir:v "Apgar score at 5 minutes (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 9
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:169922007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "169922007" ] ;
+         fhir:display [ fhir:v "Apgar score at 10 minutes (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 10
+     ]
+  ] ) . # 
+
+<http://example.org/Observation/congenital-example> a fhir:Observation ;
+  fhir:id [ fhir:v "congenital-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Congenital"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Congenital>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_congenital-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation congenital-example</b></p><a name=\"congenital-example\"> </a><a name=\"hccongenital-example\"> </a><a name=\"congenital-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Congenital.html\">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 73780-9}\">Congenital anomalies of the newborn [US Standard Certificate of Live Birth]</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 282332003}\">No abnormality detected - examination result</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:73780-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73780-9" ] ;
+       fhir:display [ fhir:v "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:282332003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "282332003" ] ;
+       fhir:display [ fhir:v "No abnormality detected - examination result" ]
+     ] )
+  ] . # 
+
+<http://example.org/Observation/pupillary-example> a fhir:Observation ;
+  fhir:id [ fhir:v "pupillary-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pupillary"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pupillary>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_pupillary-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation pupillary-example</b></p><a name=\"pupillary-example\"> </a><a name=\"hcpupillary-example\"> </a><a name=\"pupillary-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Pupillary.html\">Perfil de informação clinicas - Teste Reflexo pupilar</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271733001}\">Pupil reaction</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 79815-7}\">Right pupil Pupillary response</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 282332003}\">No abnormality detected - examination result</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 79899-1}\">Left pupil Pupillary response</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 282332003}\">No abnormality detected - examination result</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:271733001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "271733001" ] ;
+       fhir:display [ fhir:v "Pupil reaction" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:79815-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "79815-7" ] ;
+         fhir:display [ fhir:v "Right pupil Pupillary response" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:282332003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "282332003" ] ;
+         fhir:display [ fhir:v "No abnormality detected - examination result" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:79899-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "79899-1" ] ;
+         fhir:display [ fhir:v "Left pupil Pupillary response" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:282332003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "282332003" ] ;
+         fhir:display [ fhir:v "No abnormality detected - examination result" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://example.org/Observation/cephalic-perimeter-example> a fhir:Observation ;
+  fhir:id [ fhir:v "cephalic-perimeter-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/headcircum"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/headcircum>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_cephalic-perimeter-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation cephalic-perimeter-example</b></p><a name=\"cephalic-perimeter-example\"> </a><a name=\"hccephalic-perimeter-example\"> </a><a name=\"cephalic-perimeter-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/headcircum.html\">Observation Head Circumference Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9843-4}\">Head Circumf OCF</span></p><p><b>subject</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p><p><b>value</b>: 50.1 cm(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:9843-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9843-4" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/newBornNN> ;
+     fhir:reference [ fhir:v "Patient/newBornNN" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2024-08-01T10:00:00.000Z"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 50.1 ] ;
+     fhir:unit [ fhir:v "cm(s)" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "cm" ]
+  ] . # 
+
+<http://example.org/PractitionerRole/ObsRole> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "ObsRole"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_ObsRole\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole ObsRole</b></p><a name=\"ObsRole\"> </a><a name=\"hcObsRole\"> </a><a name=\"ObsRole-pt-PT\"> </a><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 11935004}\">Obstetrician</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       a sct:11935004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11935004" ] ;
+       fhir:display [ fhir:v "Obstetrician" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

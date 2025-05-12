@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Usar Este IG - HL7 PT FHIR Implementation Guide: Noticia de Nascimento v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Noticia de Nascimento</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Índice</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introdução
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Análise Funcional</a>
+      </li>
+      <li>
+        <a href="mapping.html">Mapeamentos</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="usage.html">Usar Este IG</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Usar Este IG</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Noticia de Nascimento, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 0.0.1 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-pt/obs-neonat-ig/tree/master">https://github.com/hl7-pt/obs-neonat-ig/tree/master</a> and changes regularly. See the <a href="https://hl7.pt/fhir/NoticiaNascimento/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Usar Este IG</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#fhir-e-ig-uma-introdução" id="markdown-toc-fhir-e-ig-uma-introdução">FHIR e IG: Uma introdução</a></li>
+  <li><a href="#criação-de-um-ig-dicas" id="markdown-toc-criação-de-um-ig-dicas">Criação de um IG: Dicas</a></li>
+  <li><a href="#usar-um-ig" id="markdown-toc-usar-um-ig">Usar um IG</a></li>
+</ul>
+
+</div>
+<h3 id="fhir-e-ig-uma-introdução">FHIR e IG: Uma introdução</h3>
+
+<p>FHIR (Fast Healthcare Interoperability Resources) é um padrão criado pela HL7 para facilitar a troca de
+informações em saúde de forma eletrónica. O objetivo do FHIR é permitir que diferentes sistemas de saúde se
+comuniquem de maneira mais eficiente e segura.
+O que é um Guia de Implementação FHIR?
+Um Guia de Implementação (IG) FHIR é um conjunto de regras sobre como os recursos FHIR são usados (ou devem ser
+usados) para resolver um problema específico, com documentação associadas para apoiar e esclarecer o uso. Um IG
+ajuda desenvolvedores e profissionais de TI a entender como aplicar os recursos FHIR para resolver problemas
+específicos de interoperabilidade em saúde.</p>
+
+<p>Componentes de um Guia de Implementação FHIR:</p>
+<ol>
+  <li>Descrição do Contexto: Explicação do problema ou do cenário clínico que o guia aborda.</li>
+  <li>Perfis FHIR: Definições personalizadas dos recursos FHIR para atender às necessidades específicas do contexto.</li>
+  <li>Extensões FHIR: Adições aos recursos padrões para cobrir informações que não estão incluídas nos recursos
+básicos.</li>
+  <li>Valores Permitidos: Conjuntos de valores específicos para atributos de recursos.</li>
+  <li>Exemplos: Exemplos práticos de mensagens FHIR que ilustram como os recursos devem ser usados.</li>
+</ol>
+
+<p><strong>O que é um Recurso?</strong></p>
+
+<p>Os recursos são blocos de construção do FHIR, ou seja, é a unidade fundamental de informação. Cada recurso representa
+um conceito distinto e autossuficiente em saúde, como pacientes, medicamentos, diagnósticos, observações, etc.
+O padrão FHIR fornece um conjunto central de perfis para coisas comuns, descrevendo um conjunto de recursos básicos
+que são usados em muitos contextos diferentes na área da saúde. No entanto, há uma grande variabilidade em todo o
+ecossistema de saúde em torno de práticas, requisitos, regulamentos entre outros.
+Por esse motivo, a especificação FHIR é algo genérico que requer uma adaptação a contextos específicos e consoante os
+casos de uso. Para permitir essa adaptação de maneira “controlada”, os recursos FHIR devem ser personalizados e
+especializados por meio de perfis.
+Um recurso pode estar em conformidade com vários Guias de Implementação, desde que os IG sejam compatíveis.</p>
+
+<p><strong>Exemplos de Recursos:</strong></p>
+<ul>
+  <li>Patient: Contém informações sobre um paciente.</li>
+  <li>Observation: Contém resultados de observações clínicas, como resultados de testes laboratoriais.</li>
+  <li>Medication: Contém informações sobre medicamentos.</li>
+</ul>
+
+<p><strong>O que é um Perfil de Recurso?</strong>
+Um perfil de recurso é uma versão personalizada de um recurso FHIR padrão. Ele define restrições adicionais e
+especifica como o recurso deve ser usado em um contexto específico. Um perfil pode restringir, estender ou adicionar
+regras ao recurso padrão.</p>
+
+<p><strong>Componentes de um Perfil de Recurso:</strong></p>
+<ol>
+  <li>Restrições: Limitações adicionais nos elementos de dados (por exemplo, um campo que deve ser obrigatório).</li>
+  <li>Extensões: Adições que permitem incluir informações adicionais não cobertas pelo recurso básico.</li>
+  <li>Exemplos de Uso: Casos de uso específicos que mostram como o perfil deve ser implementado.</li>
+</ol>
+
+<h3 id="criação-de-um-ig-dicas">Criação de um IG: Dicas</h3>
+
+<p><strong>Dicas de um Guia de Implementação FHIR para Iniciantes</strong></p>
+
+<ol>
+  <li>Identifique o Contexto e o Problema<br />
+Comece por identificar o problema que pretende resolver e o contexto em que isso ocorre. Por exemplo, pode ser a troca
+de informações sobre pacientes entre diferentes hospitais.</li>
+  <li>Selecione os Recursos FHIR<br />
+Escolha os recursos FHIR que serão relevantes para o contexto. Por exemplo:
+Patient: Para informações sobre pacientes.
+Encounter: Para detalhes sobre episódios / visitas clínicas.
+Observation: Para resultados de exames.</li>
+  <li>Defina Perfis de Recursos<br />
+Personalize os recursos escolhidos criando perfis. Defina as restrições e extensões necessárias. Por exemplo:
+O perfil do Patient pode exigir que o campo "nome" seja obrigatório.
+O perfil do Observation pode adicionar uma extensão para incluir um novo tipo de observação.</li>
+  <li>Crie Extensões<br />
+Se houver informações adicionais que não são cobertas pelos recursos padrão, crie extensões. Por exemplo, uma extensão
+para incluir o número do processo clínico num recurso Patient.</li>
+  <li>Defina Valores Permitidos<br />
+Especifique valores permitidos para certos atributos. Por exemplo, uma lista de códigos de diagnóstico permitidos para
+um recurso Observation.</li>
+  <li>Forneça Exemplos<br />
+Inclua exemplos de como os recursos e perfis devem ser usados na prática. Mostre mensagens FHIR exemplares que
+ilustram o uso correto.</li>
+  <li>Documente as Interações<br />
+Descreva como os diferentes sistemas devem interagir usando os recursos definidos. Inclua diagramas de fluxo de dados
+e cenários de uso.</li>
+</ol>
+
+<h3 id="usar-um-ig">Usar um IG</h3>
+<p>Ler os FHIR Implementation Guides (IGs) é fundamental para entender como implementar stantdards de interoperabilidade, nomeadamente Fast Healthcare Interoperability Resources (FHIR) em contextos específicos. Estes fornecem orientações detalhadas, exemplos de uso que definem como os recursos FHIR devem ser usados para cumprir determinados requisitos clínicos ou administrativos. Para começar, é essencial familiarizar-se com a estrutura geral dos IGs, que geralmente incluem uma introdução, perfis de recursos, extensões, valores de referência e exemplos. Navegar pelas secções de <a href="artifacts.html">"Artefactos"</a> ajuda a identificar os recursos e suas respectivas restrições, enquanto a documentação <a href="background.html">funcional</a> oferece uma visão geral dos requisitos funcionais e como estes são impactados por esta implementação.</p>
+
+<p>Os FHIR Implementation Guides são igualmente úteis na validação de documentos e recursos FHIR. Ferramentas como o FHIR Validator, disponíveis através do HL7 e outras plataformas, permitem validar instâncias de recursos contra os perfis definidos nos IGs. Esse processo de validação assegura que os documentos e recursos estejam em conformidade com as especificações e restrições definidas, garantindo interoperabilidade e consistência de dados entre diferentes sistemas. Além disso, a validação pode identificar erros e discrepâncias que precisam ser corrigidos para atender aos requisitos de conformidade. Usando os IGs como referência, desenvolvedores e implementadores podem assegurar que suas implementações FHIR não apenas atendam aos padrões técnicos, mas também cumpram os objetivos clínicos e administrativos para os quais foram projetadas.</p>
+
+<p>Exemplo de validação de recursos FHIR em função deste IG:</p>
+<ol>
+  <li>ir a <a href="https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar">https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar</a> e fazer download do validator.</li>
+  <li>ter os recursos ou pastas com recursos a validar num sistema local (exemplo para um recurso patient.xml)</li>
+  <li>correr o seguinte comando <code class="language-plaintext highlighter-rouge">java -jar validator_cli.jar c:\temp\patient.xml -version 5.0 -ig -ig hl7.fhir.pt.adr#current -html-output report.html -output-style compact</code>
+    <ol>
+      <li>este comando irá validar um recurso face a este IG e devolve uma página HTML com o resultado da validação.</li>
+    </ol>
+  </li>
+</ol>
+
+<p>Mais informações e opções do validador, ver <a href="https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator">aqui</a></p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.obs-neonat#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 12, 2025 10:06+0000">2025-05-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

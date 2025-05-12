@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Encounter/episodio> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "episodio"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Contact"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Contact>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter episodio</b></p><a name=\"episodio\"> </a><a name=\"hcepisodio\"> </a><a name=\"episodio-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Contact.html\">Perfil sobre episódio da notícia de nascimento</a></p></div><p><b>identifier</b>: 18001555</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT\">Tipos de episódio CodeSystem INT</a>: Internamento</p><p><b>serviceType</b>: <span title=\"Codes:\">Obstetricia</span></p><p><b>serviceProvider</b>: <a href=\"Organization-inst.html\">Organization CH ENTRE DOURO E VOUGA</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "18001555" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "INT" ]
+  ] ; # 
+  fhir:serviceType [
+     fhir:text [ fhir:v "Obstetricia" ]
+  ] ; # 
+  fhir:serviceProvider [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Organization/inst> ;
+     fhir:reference [ fhir:v "Organization/inst" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

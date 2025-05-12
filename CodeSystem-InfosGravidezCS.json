@@ -1,0 +1,71 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "InfosGravidezCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem InfosGravidezCS</b></p><a name=\"InfosGravidezCS\"> </a><a name=\"hcInfosGravidezCS\"> </a><a name=\"InfosGravidezCS-pt-PT\"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">BIO1T<a name=\"InfosGravidezCS-BIO1T\"> </a></td><td>Analítico 1º Trimestre</td><td>Analítico 1º Trimestre</td></tr><tr><td style=\"white-space:nowrap\">BIO2T<a name=\"InfosGravidezCS-BIO2T\"> </a></td><td>Analítico 2º Trimestre</td><td>Analítico 2º Trimestre</td></tr><tr><td style=\"white-space:nowrap\">BIO3T<a name=\"InfosGravidezCS-BIO3T\"> </a></td><td>Analítico 3º Trimestre</td><td>Analítico 3º Trimestre</td></tr><tr><td style=\"white-space:nowrap\">PREGRISKREASON<a name=\"InfosGravidezCS-PREGRISKREASON\"> </a></td><td>Motivo do risco</td><td>Motivo do risco</td></tr><tr><td style=\"white-space:nowrap\">INTEROC<a name=\"InfosGravidezCS-INTEROC\"> </a></td><td>Intercorrências</td><td>Intercorrências</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS",
+  "version" : "0.0.1",
+  "name" : "InfosGravidezCS",
+  "title" : "Elementos adicionais de informação gravidez CodeSystem",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-05-12T10:05:23+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Elementos adicionais de informação gravidez CodeSystem - Criado por falta de um código internacional ideal",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "BIO1T",
+    "display" : "Analítico 1º Trimestre",
+    "definition" : "Analítico 1º Trimestre"
+  },
+  {
+    "code" : "BIO2T",
+    "display" : "Analítico 2º Trimestre",
+    "definition" : "Analítico 2º Trimestre"
+  },
+  {
+    "code" : "BIO3T",
+    "display" : "Analítico 3º Trimestre",
+    "definition" : "Analítico 3º Trimestre"
+  },
+  {
+    "code" : "PREGRISKREASON",
+    "display" : "Motivo do risco",
+    "definition" : "Motivo do risco"
+  },
+  {
+    "code" : "INTEROC",
+    "display" : "Intercorrências",
+    "definition" : "Intercorrências"
+  }]
+}

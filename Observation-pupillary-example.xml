@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="pupillary-example"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pupillary"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation pupillary-example</b></p><a name="pupillary-example"> </a><a name="hcpupillary-example"> </a><a name="pupillary-example-pt-PT"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Pupillary.html">Perfil de informação clinicas - Teste Reflexo pupilar</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 271733001}">Pupil reaction</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 79815-7}">Right pupil Pupillary response</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 282332003}">No abnormality detected - examination result</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 79899-1}">Left pupil Pupillary response</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 282332003}">No abnormality detected - examination result</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="271733001"/>
+      <display value="Pupil reaction"/>
+    </coding>
+  </code>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="79815-7"/>
+        <display value="Right pupil Pupillary response"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="282332003"/>
+        <display value="No abnormality detected - examination result"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="79899-1"/>
+        <display value="Left pupil Pupillary response"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="282332003"/>
+        <display value="No abnormality detected - examination result"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

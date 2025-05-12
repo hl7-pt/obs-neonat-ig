@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="InfosGravidezCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem InfosGravidezCS</b></p><a name="InfosGravidezCS"> </a><a name="hcInfosGravidezCS"> </a><a name="InfosGravidezCS-pt-PT"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">BIO1T<a name="InfosGravidezCS-BIO1T"> </a></td><td>Analítico 1º Trimestre</td><td>Analítico 1º Trimestre</td></tr><tr><td style="white-space:nowrap">BIO2T<a name="InfosGravidezCS-BIO2T"> </a></td><td>Analítico 2º Trimestre</td><td>Analítico 2º Trimestre</td></tr><tr><td style="white-space:nowrap">BIO3T<a name="InfosGravidezCS-BIO3T"> </a></td><td>Analítico 3º Trimestre</td><td>Analítico 3º Trimestre</td></tr><tr><td style="white-space:nowrap">PREGRISKREASON<a name="InfosGravidezCS-PREGRISKREASON"> </a></td><td>Motivo do risco</td><td>Motivo do risco</td></tr><tr><td style="white-space:nowrap">INTEROC<a name="InfosGravidezCS-INTEROC"> </a></td><td>Intercorrências</td><td>Intercorrências</td></tr></table></div>
+  </text>
+  <url value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS"/>
+  <version value="0.0.1"/>
+  <name value="InfosGravidezCS"/>
+  <title value="Elementos adicionais de informação gravidez CodeSystem"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-05-12T10:05:23+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Elementos adicionais de informação gravidez CodeSystem - Criado por falta de um código internacional ideal"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="BIO1T"/>
+    <display value="Analítico 1º Trimestre"/>
+    <definition value="Analítico 1º Trimestre"/>
+  </concept>
+  <concept>
+    <code value="BIO2T"/>
+    <display value="Analítico 2º Trimestre"/>
+    <definition value="Analítico 2º Trimestre"/>
+  </concept>
+  <concept>
+    <code value="BIO3T"/>
+    <display value="Analítico 3º Trimestre"/>
+    <definition value="Analítico 3º Trimestre"/>
+  </concept>
+  <concept>
+    <code value="PREGRISKREASON"/>
+    <display value="Motivo do risco"/>
+    <definition value="Motivo do risco"/>
+  </concept>
+  <concept>
+    <code value="INTEROC"/>
+    <display value="Intercorrências"/>
+    <definition value="Intercorrências"/>
+  </concept>
+</CodeSystem>

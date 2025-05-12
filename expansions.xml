@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="6bac0b51-1336-417e-87d5-d110a522fb9e"/>
+  <meta>
+    <lastUpdated value="2025-05-12T10:06:08.333+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/bulletin-delivery-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-documentclassificationCS.html">codesystem Classficação de documentos CodeSystem v0.0.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (pt-PT)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS-BISC"> </a>  
+                  <a href="CodeSystem-documentclassificationCS.html#documentclassificationCS-BISC">BISC</a>
+                </td>
+                <td>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Boletim Individual de saúde da criança</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS-BSIJ"> </a>  
+                  <a href="CodeSystem-documentclassificationCS.html#documentclassificationCS-BSIJ">BSIJ</a>
+                </td>
+                <td>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Boletim de saúde infantil e juvenil</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/bulletin-delivery-vs"/>
+        <version value="0.0.1"/>
+        <name value="BulletindeliveryVS"/>
+        <title value="Envio de boletim ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-12T10:05:23+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:364566f2-ab75-450b-93df-431c9e28cabd"/>
+          <timestamp value="2025-05-12T10:07:03+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="pt-PT"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-experimental"/>
+            <valueUri value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS|0.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS|0.0.1"/>
+          </parameter>
+          <contains>
+            <system value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS"/>
+            <code value="BISC"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS"/>
+            <code value="BSIJ"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/document-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (pt-PT)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-22131000087102"> </a>  
+                  <a href="http://snomed.info/id/22131000087102">22131000087102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Electronic report (record artifact)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-22151000087106"> </a>  
+                  <a href="http://snomed.info/id/22151000087106">22151000087106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Paper report (record artifact)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/document-type-vs"/>
+        <version value="0.0.1"/>
+        <name value="DocumenttypeVS"/>
+        <title value="Tipo de documento ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-12T10:05:23+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5790c712-21fd-4a31-b4b2-b264c0b987ee"/>
+          <timestamp value="2025-05-12T10:07:03+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="pt-PT"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="22131000087102"/>
+            <display value="Electronic report (record artifact)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="22151000087106"/>
+            <display value="Paper report (record artifact)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-tipo-episodio-cs.html">codesystem Tipos de episódio CodeSystem v0.0.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 7 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (pt-PT)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs-CON"> </a>  
+                  <a href="CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-CON">CON</a>
+                </td>
+                <td>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Consulta</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs-INT"> </a>  
+                  <a href="CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT">INT</a>
+                </td>
+                <td>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Internamento</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs-URG"> </a>  
+                  <a href="CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-URG">URG</a>
+                </td>
+                <td>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Urgência</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs-BLO"> </a>  
+                  <a href="CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-BLO">BLO</a>
+                </td>
+                <td>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Bloco</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs-HDI"> </a>  
+                  <a href="CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-HDI">HDI</a>
+                </td>
+                <td>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Hospital de Dia</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs-RAD"> </a>  
+                  <a href="CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-RAD">RAD</a>
+                </td>
+                <td>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>RAD</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs-LAB"> </a>  
+                  <a href="CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-LAB">LAB</a>
+                </td>
+                <td>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>LAB</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs"/>
+        <version value="0.0.1"/>
+        <name value="TipoepisodioVS"/>
+        <title value="Tipos de episódio ValueSet"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2025-05-12T10:05:23+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:864743f9-0730-4426-9038-63626054c57b"/>
+          <timestamp value="2025-05-12T10:07:03+00:00"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="pt-PT"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs|0.0.1"/>
+          </parameter>
+          <contains>
+            <system value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"/>
+            <code value="CON"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"/>
+            <code value="INT"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"/>
+            <code value="URG"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"/>
+            <code value="BLO"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"/>
+            <code value="HDI"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"/>
+            <code value="RAD"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"/>
+            <code value="LAB"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newborn-congenital-anomalies-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 13 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (pt-PT)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-89369001"> </a>  
+                  <a href="http://snomed.info/id/89369001">89369001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Anencephalus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67531005"> </a>  
+                  <a href="http://snomed.info/id/67531005">67531005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Spina bifida</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-12770006"> </a>  
+                  <a href="http://snomed.info/id/12770006">12770006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cyanotic congenital heart disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-17190001"> </a>  
+                  <a href="http://snomed.info/id/17190001">17190001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Congenital diaphragmatic hernia</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-18735004"> </a>  
+                  <a href="http://snomed.info/id/18735004">18735004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Congenital omphalocele</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-72951007"> </a>  
+                  <a href="http://snomed.info/id/72951007">72951007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gastroschisis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67341007"> </a>  
+                  <a href="http://snomed.info/id/67341007">67341007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Longitudinal deficiency of limb</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-80281008"> </a>  
+                  <a href="http://snomed.info/id/80281008">80281008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cleft lip</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-87979003"> </a>  
+                  <a href="http://snomed.info/id/87979003">87979003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cleft palate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-70156005"> </a>  
+                  <a href="http://snomed.info/id/70156005">70156005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Anomaly of chromosome pair 21</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-409709004"> </a>  
+                  <a href="http://snomed.info/id/409709004">409709004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chromosomal disorder (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-416010008"> </a>  
+                  <a href="http://snomed.info/id/416010008">416010008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypospadias (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-282332003"> </a>  
+                  <a href="http://snomed.info/id/282332003">282332003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>No abnormality detected - examination result</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newborn-congenital-anomalies-vs"/>
+        <version value="0.0.1"/>
+        <name value="NewbornCongenitalAnomaliesVS"/>
+        <title value="Tipos de doença congénita ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-12T10:05:23+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:e05f0424-a98e-4fbc-9108-4ca6d24c0695"/>
+          <timestamp value="2025-05-12T10:07:03+00:00"/>
+          <total value="13"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="pt-PT"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="89369001"/>
+            <display value="Anencephalus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67531005"/>
+            <display value="Spina bifida"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="12770006"/>
+            <display value="Cyanotic congenital heart disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="17190001"/>
+            <display value="Congenital diaphragmatic hernia"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="18735004"/>
+            <display value="Congenital omphalocele"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72951007"/>
+            <display value="Gastroschisis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67341007"/>
+            <display value="Longitudinal deficiency of limb"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="80281008"/>
+            <display value="Cleft lip"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="87979003"/>
+            <display value="Cleft palate"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="70156005"/>
+            <display value="Anomaly of chromosome pair 21"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="409709004"/>
+            <display value="Chromosomal disorder (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="416010008"/>
+            <display value="Hypospadias (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282332003"/>
+            <display value="No abnormality detected - examination result"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newbornriskassessment-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (pt-PT)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-102486008"> </a>  
+                  <a href="http://snomed.info/id/102486008">102486008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Familial risk factor</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-102485007"> </a>  
+                  <a href="http://snomed.info/id/102485007">102485007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Personal risk factor</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-102487004"> </a>  
+                  <a href="http://snomed.info/id/102487004">102487004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Environmental risk factor</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newbornriskassessment-vs"/>
+        <version value="0.0.1"/>
+        <name value="NewbornriskassessmentVS"/>
+        <title value="Tipos de risco para avaliação de recém-nascidos ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-12T10:05:23+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:71463fc2-9599-422c-87c9-a22c572c787f"/>
+          <timestamp value="2025-05-12T10:07:03+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="pt-PT"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="102486008"/>
+            <display value="Familial risk factor"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="102485007"/>
+            <display value="Personal risk factor"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="102487004"/>
+            <display value="Environmental risk factor"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/puerperium-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (pt-PT)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-597961000005105"> </a>  
+                  <a href="http://snomed.info/id/597961000005105">597961000005105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Normal puerperium</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-362973001"> </a>  
+                  <a href="http://snomed.info/id/362973001">362973001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of puerperium</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/puerperium-vs"/>
+        <version value="0.0.1"/>
+        <name value="PuerperiumVS"/>
+        <title value="Tipos de outcome de puerpério ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-12T10:05:23+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4f72e8ba-2b01-4593-b8aa-f2350f2a86e8"/>
+          <timestamp value="2025-05-12T10:07:03+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="pt-PT"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="597961000005105"/>
+            <display value="Normal puerperium"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362973001"/>
+            <display value="Disorder of puerperium"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/risco-gravidez-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (pt-PT)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237239003"> </a>  
+                  <a href="http://snomed.info/id/237239003">237239003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Low risk pregnancy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1303255001"> </a>  
+                  <a href="http://snomed.info/id/1303255001">1303255001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Medium risk pregnancy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-47200007"> </a>  
+                  <a href="http://snomed.info/id/47200007">47200007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>High risk pregnancy</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/risco-gravidez-vs"/>
+        <version value="0.0.1"/>
+        <name value="RiscoGravidezVS"/>
+        <title value="Risco de gravidez ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-12T10:05:23+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5772a3f1-761e-46d4-be33-42d8ed583697"/>
+          <timestamp value="2025-05-12T10:07:04+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="pt-PT"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237239003"/>
+            <display value="Low risk pregnancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1303255001"/>
+            <display value="Medium risk pregnancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="47200007"/>
+            <display value="High risk pregnancy"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-gravidez-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (pt-PT)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-169826009"> </a>  
+                  <a href="http://snomed.info/id/169826009">169826009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Single live birth (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-45384004"> </a>  
+                  <a href="http://snomed.info/id/45384004">45384004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Multiple birth</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-gravidez-vs"/>
+        <version value="0.0.1"/>
+        <name value="TipoGravidezVS"/>
+        <title value="Tipo de gravidez ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-12T10:05:23+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:155f0c87-f701-4320-aab2-303f026d5caa"/>
+          <timestamp value="2025-05-12T10:07:04+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="pt-PT"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="169826009"/>
+            <display value="Single live birth (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="45384004"/>
+            <display value="Multiple birth"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-parto-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 7 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (pt-PT)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-384729004"> </a>  
+                  <a href="http://snomed.info/id/384729004">384729004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Delivery of vertex presentation (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-302383004"> </a>  
+                  <a href="http://snomed.info/id/302383004">302383004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>FD - Forceps delivery</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-61586001"> </a>  
+                  <a href="http://snomed.info/id/61586001">61586001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Delivery by vacuum extraction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-11466000"> </a>  
+                  <a href="http://snomed.info/id/11466000">11466000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cesarean section</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-177157003"> </a>  
+                  <a href="http://snomed.info/id/177157003">177157003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Spontaneous breech delivery</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-417121007"> </a>  
+                  <a href="http://snomed.info/id/417121007">417121007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Breech extraction (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-69466000"> </a>  
+                  <a href="http://snomed.info/id/69466000">69466000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Unknown procedure</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-parto-vs"/>
+        <version value="0.0.1"/>
+        <name value="TipoPartoVS"/>
+        <title value="Tipos de parto ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-12T10:05:23+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:1080d7c8-164a-46e4-9b8e-24cac5dcef61"/>
+          <timestamp value="2025-05-12T10:07:04+00:00"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="pt-PT"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="384729004"/>
+            <display value="Delivery of vertex presentation (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="302383004"/>
+            <display value="FD - Forceps delivery"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="61586001"/>
+            <display value="Delivery by vacuum extraction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11466000"/>
+            <display value="Cesarean section"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="177157003"/>
+            <display value="Spontaneous breech delivery"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="417121007"/>
+            <display value="Breech extraction (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="69466000"/>
+            <display value="Unknown procedure"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/transport-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (pt-PT)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-255407002"> </a>  
+                  <a href="http://snomed.info/id/255407002">255407002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Neonatal</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1156684004"> </a>  
+                  <a href="http://snomed.info/id/1156684004">1156684004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Fetal antepartum and/or intrapartum and/or early neonatal period (qualifier value)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/transport-type-vs"/>
+        <version value="0.0.1"/>
+        <name value="TransportTypeVS"/>
+        <title value="Tipos de transporte de recém-nascido ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-12T10:05:23+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c585c003-2553-4f13-b26f-be22afb42883"/>
+          <timestamp value="2025-05-12T10:07:04+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="pt-PT"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="255407002"/>
+            <display value="Neonatal"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1156684004"/>
+            <display value="Fetal antepartum and/or intrapartum and/or early neonatal period (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/vacinas-infancia-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (pt-PT)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1861000221106"> </a>  
+                  <a href="http://snomed.info/id/1861000221106">1861000221106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Bacillus Calmette-Guerin vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-871822003"> </a>  
+                  <a href="http://snomed.info/id/871822003">871822003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hepatitis B virus antigen only vaccine product</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-786768001"> </a>  
+                  <a href="http://snomed.info/id/786768001">786768001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Product containing only human anti-D immunoglobulin (medicinal product)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/vacinas-infancia-vs"/>
+        <version value="0.0.1"/>
+        <name value="VacinasinfanciaVS"/>
+        <title value="Vacinas ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-12T10:05:23+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f5f27d18-22c1-4473-86fd-e2cc3a309615"/>
+          <timestamp value="2025-05-12T10:07:04+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="pt-PT"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1861000221106"/>
+            <display value="Bacillus Calmette-Guerin vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="871822003"/>
+            <display value="Hepatitis B virus antigen only vaccine product"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="786768001"/>
+            <display value="Product containing only human anti-D immunoglobulin (medicinal product)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

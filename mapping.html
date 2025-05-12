@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Mapeamentos - HL7 PT FHIR Implementation Guide: Noticia de Nascimento v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Noticia de Nascimento</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Índice</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introdução
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Análise Funcional</a>
+      </li>
+      <li>
+        <a href="mapping.html">Mapeamentos</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="usage.html">Usar Este IG</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Mapeamentos</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Noticia de Nascimento, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 0.0.1 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-pt/obs-neonat-ig/tree/master">https://github.com/hl7-pt/obs-neonat-ig/tree/master</a> and changes regularly. See the <a href="https://hl7.pt/fhir/NoticiaNascimento/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Mapeamentos</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>O mapeamento não foi feito de forma direta, sendo que a estrutura foi alterada de forma a corresponder a um documento em FHIR. No entanto, tentou-se que a alteração fosse o menos profunda possível, de forma a facilitar a implementação
+Tentámos usar terminologias internacionais sempre que possíveis, criando CodeSystem quando não foi possível. Tentámos também vincular campos codificados a estas terminologias. De igual forma, criámos constraints adicionais para facilitar a transformação.</p>
+
+<p>Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na especificação FHIR:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Origem</th>
+      <th>Descrição</th>
+      <th>Modelo Lógico</th>
+      <th>FHIR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>contact.id</td>
+      <td>Encounter[Contact].identifier</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>contact.module</td>
+      <td>Encounter[Contact].class</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>professional.functionalgroup</td>
+      <td>Patient[Mother].generalPractitioner</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>professional.licence</td>
+      <td>Patient[Mother].generalPractitioner</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>professional.name</td>
+      <td>Patient[Mother].generalPractitioner</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.owner</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.code</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.maternity.institution</td>
+      <td>Encounter[Contact].serviceProvider</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.maternity.service</td>
+      <td>Encounter[Contact].serviceProvider</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.destination.headquarters</td>
+      <td>Organization</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.destination.ACES</td>
+      <td>Organization</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.destination.healthcardNumber</td>
+      <td>Organization</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.destination.healthextension</td>
+      <td>Organization</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.destination.familyDoctor</td>
+      <td>Patient[Mother].generalPractitioner</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.destination.familyNurse</td>
+      <td>Patient[Mother].generalPractitioner</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.healthcardNumber</td>
+      <td>Patient.identifier</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.name</td>
+      <td>Patient.name</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.birthdate</td>
+      <td>Patient.birthDate</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.Age</td>
+      <td>Patient.birthDate</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.address</td>
+      <td>Patient.address</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.placeOfBirth</td>
+      <td>Patient.extension.birthPlace</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.nationality</td>
+      <td>Patient.extension.nationality</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.phone</td>
+      <td>Patient.contact</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.postalCode</td>
+      <td>Patient.address</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.countryOfBirth</td>
+      <td>Patient.extension.birthPlace</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.districtOfBirth</td>
+      <td>Patient.extension.birthPlace</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.countyOfBirth</td>
+      <td>Patient.extension.birthPlace</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.parishOfBirth</td>
+      <td>Patient.extension.birthPlace</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.districtAddress</td>
+      <td>Patient.address</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.countyAddress</td>
+      <td>Patient.address</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.motherDemographics.parishAddress</td>
+      <td>Patient.address</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.days</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.weeks</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.risk</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.riskReason</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.immunoglobulinAdministration</td>
+      <td>Vaccination.status</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.immunoglobulinAdministrationDate</td>
+      <td>Vaccination.effectiveDateTime</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.prenatalMonitorizationFulfillment.firstQuarterEco</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.prenatalMonitorizationFulfillment.firstQuarterBio</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.prenatalMonitorizationFulfillment.secondQuarterEco</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.prenatalMonitorizationFulfillment.secondQuarterBio</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.prenatalMonitorizationFulfillment.thirdQuarterEco</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.prenatalMonitorizationFulfillment.thirdQuarterBio</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.prenatalMonitorizationFulfillment.visits</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.prenatalMonitorizationFulfillment.intercurrences</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.type</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.value</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.prenatalMonitorizationFulfillment.locals.reason</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.PregnancyType</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.pregnancy.twinNumber</td>
+      <td>Observation[Pregancy].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.birth.date</td>
+      <td>Observation[Birth].effectiveDatetime</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.birth.type</td>
+      <td>Observation[Birth].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.birth.participation</td>
+      <td>Observation[Birth].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.birth.reason</td>
+      <td>Observation[Birth].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.birth.assist</td>
+      <td>Observation[Birth].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.birth.assistDescription</td>
+      <td>Observation[Birth].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.puerperium.type</td>
+      <td>Observation[puerperium]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.puerperium.observations</td>
+      <td>Observation[puerperium]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.liveBirth</td>
+      <td>Patient[Child].deceased</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.gender</td>
+      <td>Patient[Child].gender</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.length</td>
+      <td>Observation[length]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.deceased</td>
+      <td>Patient[Child].deceased</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.deathBirth</td>
+      <td>Patient[Child].deceased</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.deathBirthDate</td>
+      <td>Patient[Child].deceased</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.reanimated</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.cephalicPerimeter</td>
+      <td>Observation[cephalicPerimeter]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.weight</td>
+      <td>Observation[weight]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.apgarIndexFirstMinute</td>
+      <td>Observation[apgarScore]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.apgarIndexFifthMinute</td>
+      <td>Observation[apgarScore]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.apgarIndexTenthMinute</td>
+      <td>Observation[apgarScore]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.phototherapy</td>
+      <td>Observation[phototherapy]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.malformations.code</td>
+      <td>Observation[malformation]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.malformations.description</td>
+      <td>Observation[malformation]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.AdmissionNeonatology</td>
+      <td>Encounter.class</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.AdmissionNeonatologyReason</td>
+      <td>Encounter.reasonCode</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.AdmissionNeonatologyLocal</td>
+      <td>Encounter.location</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.transport.Neonatal</td>
+      <td>Basic</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.transport.NeonatalDestination</td>
+      <td>Basic</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.transport.NeonatalReason</td>
+      <td>Basic</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.transport.InUtero</td>
+      <td>Basic</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.transport.InUteroProvanance</td>
+      <td>Basic</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.transport.InUteroReason</td>
+      <td>Basic</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningMetabolicDiseasesTaken</td>
+      <td>Observation[metabolic]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningMetabolicReason</td>
+      <td>Observation[metabolic]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningMetabolicDiseasesDate</td>
+      <td>Observation[metabolic]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningCongenitalDiseases</td>
+      <td>Observation[congenital]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningCongenitalDiseasesChange</td>
+      <td>Observation[congenital]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningCongenitalDiseasesObservations</td>
+      <td>Observation[congenital]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningpupillaryReflection</td>
+      <td>Observation[pupillary]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningpupillaryReflectionChange</td>
+      <td>Observation[pupillary]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningpupillaryReflectionObservations</td>
+      <td>Observation[pupillary]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningHearing.type</td>
+      <td>Observation[hearingscreen]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningHearing.date</td>
+      <td>Observation[hearingscreen]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningHearing.rightEar</td>
+      <td>Observation[hearingscreen]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningHearing.leftEar</td>
+      <td>Observation[hearingscreen]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.screeningHearing.repeatDate</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.VHB.taken</td>
+      <td>Vaccination.status</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.VHB.date</td>
+      <td>Vaccination.occurrenceDateTime</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.VHB.lot</td>
+      <td>Vaccination.lotNumber</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.VHB.reason</td>
+      <td>Vaccination.statusReason</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.BCG.taken</td>
+      <td>Vaccination.status</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.BCG.date</td>
+      <td>Vaccination.occurrenceDateTime</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.BCG.lot</td>
+      <td>Vaccination.lotNumber</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.BCG.reason</td>
+      <td>Vaccination.statusReason</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.immunoglobulin.taken</td>
+      <td>Vaccination.status</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.immunoglobulin.date</td>
+      <td>Vaccination.occurrenceDateTime</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.immunoglobulin.lot</td>
+      <td>Vaccination.lotNumber</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.immunoglobulin.reason</td>
+      <td>Vaccination.statusReason</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.feedingUntilDischarge</td>
+      <td>Observation[Birth].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.feedingFirstHour</td>
+      <td>Observation[Birth].component</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.individualHealthBulletinDelivered</td>
+      <td>bulletindelivery</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.childYoungHealthBulletinDelivered</td>
+      <td>bulletindelivery</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.bulletinDeliveryType</td>
+      <td>bulletindelivery</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.riskAssessment.riskFactorsIdentified</td>
+      <td>Observation[newbornriskassessment].code</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.riskAssessment.reference</td>
+      <td>Observation[newbornriskassessment].extension</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.riskAssessment.observations</td>
+      <td>Observation[newbornriskassessment].note</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.Outpatient.institution</td>
+      <td>Encounter</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.Outpatient.date</td>
+      <td>Encounter</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.newborn.confirmedDeceased</td>
+      <td>Patient[child]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.puerperiumReview</td>
+      <td>Observation[puerperium].performer</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.childHealthSurveillance</td>
+      <td>Organization</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.letterWithClinicalInformation.hasLetterWithClinicalInformation</td>
+      <td>Observation[letter]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.letterWithClinicalInformation.date</td>
+      <td>Observation[letter]</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>birthNotice.professionals</td>
+      <td>Practitioner</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="estrutura-fhir">Estrutura FHIR</h3>
+
+<p>Sendo um documento, os recursos estão organizados de maneira a tentar estar agrupados de maneira lógica.
+O recurso Bundle atua como o envelope do documento todo. O recurso Composition é o principal ponte para conseguir entender a organização lógica.
+O perfil está aqui e visualmente poderá ser entendido como:</p>
+
+<div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="CLASS" height="183px" preserveAspectRatio="none" style="width:609px;height:183px;background:#FFFFFF;" version="1.1" viewBox="0 0 609 183" width="609px" zoomAndPan="magnify"><defs /><g><g class="entity" data-entity="Composition" data-source-line="1" data-uid="ent0002" id="entity_Composition"><rect fill="#F1F1F1" height="162.375" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="588.7979" x="7" y="7" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87.4316" x="257.6831" y="21.9951">Composition</text><line style="stroke:#181818;stroke-width:1;" x1="7" x2="595.7979" y1="27.2969" y2="27.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107.3994" x="26.7417" y="42.292">Section mother</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="200.6006" x="158.8828" y="42.292">Informa&#231;&#227;o sobre a gravidez</text><line style="stroke:#181818;stroke-width:1;" x1="153.8828" x2="153.8828" y1="27.2969" y2="47.5938" /><line style="stroke:#181818;stroke-width:1;" x1="7" x2="595.7979" y1="47.5938" y2="47.5938" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89.3594" x="35.7617" y="62.5889">Section birth</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="340.4639" x="158.8828" y="62.5889">Informa&#231;&#227;o sobre o parto, assim como epis&#243;dios</text><line style="stroke:#181818;stroke-width:1;" x1="153.8828" x2="153.8828" y1="47.5938" y2="67.8906" /><line style="stroke:#181818;stroke-width:1;" x1="7" x2="595.7979" y1="67.8906" y2="67.8906" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117.4824" x="21.7002" y="82.8857">Section newborn</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="279.9316" x="158.8828" y="82.8857">Informa&#231;&#227;o sobre o(s) rec&#233;m-nascido(s)</text><line style="stroke:#181818;stroke-width:1;" x1="153.8828" x2="153.8828" y1="67.8906" y2="88.1875" /><line style="stroke:#181818;stroke-width:1;" x1="7" x2="595.7979" y1="88.1875" y2="88.1875" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102.874" x="29.0044" y="103.1826">Section exams</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="431.915" x="158.8828" y="103.1826">Informa&#231;&#227;o sobre exames, an&#225;lises laboratoriais e avalia&#231;&#245;es</text><line style="stroke:#181818;stroke-width:1;" x1="153.8828" x2="153.8828" y1="88.1875" y2="108.4844" /><line style="stroke:#181818;stroke-width:1;" x1="7" x2="595.7979" y1="108.4844" y2="108.4844" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136.8828" x="12" y="123.4795">Section vaccination</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198.0713" x="158.8828" y="123.4795">Informa&#231;&#227;o sobre vacina&#231;&#227;o</text><line style="stroke:#181818;stroke-width:1;" x1="153.8828" x2="153.8828" y1="108.4844" y2="128.7813" /><line style="stroke:#181818;stroke-width:1;" x1="7" x2="595.7979" y1="128.7813" y2="128.7813" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115.5137" x="22.6846" y="143.7764">Section followup</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="317.5703" x="158.8828" y="143.7764">Informa&#231;&#227;o sobre follow-up, pr&#243;ximos passos</text><line style="stroke:#181818;stroke-width:1;" x1="153.8828" x2="153.8828" y1="128.7813" y2="149.0781" /><line style="stroke:#181818;stroke-width:1;" x1="7" x2="595.7979" y1="149.0781" y2="149.0781" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134.9072" x="12.9878" y="164.0732">Section destination</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217.2188" x="158.8828" y="164.0732">Informa&#231;&#227;o sobre destinos alta</text><line style="stroke:#181818;stroke-width:1;" x1="153.8828" x2="153.8828" y1="149.0781" y2="169.375" /></g></g></svg></div>
+<p><br clear="all" /></p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.obs-neonat#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 12, 2025 10:06+0000">2025-05-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

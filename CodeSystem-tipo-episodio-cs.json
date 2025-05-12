@@ -1,0 +1,81 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "tipo-episodio-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tipo-episodio-cs</b></p><a name=\"tipo-episodio-cs\"> </a><a name=\"hctipo-episodio-cs\"> </a><a name=\"tipo-episodio-cs-pt-PT\"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">CON<a name=\"tipo-episodio-cs-CON\"> </a></td><td>Consulta</td><td>Consulta</td></tr><tr><td style=\"white-space:nowrap\">INT<a name=\"tipo-episodio-cs-INT\"> </a></td><td>Internamento</td><td>Internamento</td></tr><tr><td style=\"white-space:nowrap\">URG<a name=\"tipo-episodio-cs-URG\"> </a></td><td>Urgência</td><td>Urgência</td></tr><tr><td style=\"white-space:nowrap\">BLO<a name=\"tipo-episodio-cs-BLO\"> </a></td><td>Bloco</td><td>Bloco</td></tr><tr><td style=\"white-space:nowrap\">HDI<a name=\"tipo-episodio-cs-HDI\"> </a></td><td>Hospital de Dia</td><td>Hospital de Dia</td></tr><tr><td style=\"white-space:nowrap\">RAD<a name=\"tipo-episodio-cs-RAD\"> </a></td><td>RAD</td><td>RAD</td></tr><tr><td style=\"white-space:nowrap\">LAB<a name=\"tipo-episodio-cs-LAB\"> </a></td><td>LAB</td><td>LAB</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs",
+  "version" : "0.0.1",
+  "name" : "TipoepisodioCS",
+  "title" : "Tipos de episódio CodeSystem",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-05-12T10:05:23+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Tipos de episódio CodeSystem",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "CON",
+    "display" : "Consulta",
+    "definition" : "Consulta"
+  },
+  {
+    "code" : "INT",
+    "display" : "Internamento",
+    "definition" : "Internamento"
+  },
+  {
+    "code" : "URG",
+    "display" : "Urgência",
+    "definition" : "Urgência"
+  },
+  {
+    "code" : "BLO",
+    "display" : "Bloco",
+    "definition" : "Bloco"
+  },
+  {
+    "code" : "HDI",
+    "display" : "Hospital de Dia",
+    "definition" : "Hospital de Dia"
+  },
+  {
+    "code" : "RAD",
+    "display" : "RAD",
+    "definition" : "RAD"
+  },
+  {
+    "code" : "LAB",
+    "display" : "LAB",
+    "definition" : "LAB"
+  }]
+}

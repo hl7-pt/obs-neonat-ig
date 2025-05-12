@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="vaccNN-antid"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Antid"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Immunization vaccNN-antid</b></p><a name="vaccNN-antid"> </a><a name="hcvaccNN-antid"> </a><a name="vaccNN-antid-pt-PT"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Antid.html">Perfil de Informação sobre vacinação - antid</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Codes:{http://snomed.info/sct 786768001}">Product containing only human anti-D immunoglobulin (medicinal product)</span></p><p><b>patient</b>: <a href="Patient-newBornNN.html">Anonymous Patient Female, DoB Unknown</a></p><p><b>occurrence</b>: 2024-08-01 10:00:00+0000</p><p><b>lotNumber</b>: xyz-123</p></div>
+  </text>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="786768001"/>
+      <display value="Product containing only human anti-D immunoglobulin (medicinal product)"/>
+    </coding>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/newBornNN"/>
+  </patient>
+  <occurrenceDateTime value="2024-08-01T10:00:00.000Z"/>
+  <lotNumber value="xyz-123"/>
+</Immunization>

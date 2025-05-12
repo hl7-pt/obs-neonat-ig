@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Patient/mother> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mother"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Mother"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Mother>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient mother</b></p><a name=\"mother\"> </a><a name=\"hcmother\"> </a><a name=\"mother-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Mother.html\">Perfil da mãe</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">NOME DE TESTE (no stated gender), DoB: 1989-07-30 ( http://example#1234567)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">MORADA DE TESTE </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nationality of the patient.\">Patient Nationality:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes:\">Portugal</span></li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:text [ fhir:v "Portugal" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-nationality"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://example"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1234567" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "NOME DE TESTE" ]
+  ] ) ; # 
+  fhir:birthDate [ fhir:v "1989-07-30"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "MORADA DE TESTE" ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

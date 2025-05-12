@@ -1,0 +1,13 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "episodioInt",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter episodioInt</b></p><a name=\"episodioInt\"> </a><a name=\"hcepisodioInt\"> </a><a name=\"episodioInt-pt-PT\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT\">Tipos de episódio CodeSystem INT</a>: Internamento</p></div>"
+  },
+  "status" : "finished",
+  "class" : {
+    "system" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs",
+    "code" : "INT"
+  }
+}

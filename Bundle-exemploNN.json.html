@@ -1,0 +1,1159 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>exemploNN - JSON Representation - HL7 PT FHIR Implementation Guide: Noticia de Nascimento v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.59"}
+    h3,h4,h5,h6{--heading-prefix:"7.59"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Noticia de Nascimento</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Índice</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introdução
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Análise Funcional</a>
+      </li>
+      <li>
+        <a href="mapping.html">Mapeamentos</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="usage.html">Usar Este IG</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>exemploNN</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Noticia de Nascimento, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 0.0.1 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-pt/obs-neonat-ig/tree/master">https://github.com/hl7-pt/obs-neonat-ig/tree/master</a> and changes regularly. See the <a href="https://hl7.pt/fhir/NoticiaNascimento/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-exemploNN.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-exemploNN.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-exemploNN.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: exemploNN - JSON Representation</h2>
+
+
+<p><a href="Bundle-exemploNN.json" no-download="true">Raw json</a> | <a href="Bundle-exemploNN.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "exemploNN",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.identifier">identifier</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http:/example.org",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "2"
+  },
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "document",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">timestamp</a>" : "2024-11-28T22:00:00Z",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Composition/compNN",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/composition.html">resourceType</a>" : "Composition",
+        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.id">id</a>" : "compNN",
+        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-CompositionNoticia.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/CompositionNoticia"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Composition_compNN\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Composition compNN&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;compNN\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccompNN\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;compNN-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-CompositionNoticia.html\&quot;&gt;Perfil do recurso Composition que cria as secções da noticia nascimento&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org/ 71230-7}\&quot;&gt;Birth certificate&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-episodio.html\&quot;&gt;Encounter: identifier = 18001555; status = finished; class = Internamento (Tipos de episódio CodeSystem#INT); serviceType = &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2021-09-01&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: HCP&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Noticia de Nascimento de recém-nascido&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.status">status</a>" : "final",
+        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.type">type</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org/",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "71230-7",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Birth certificate"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.encounter">encounter</a>" : {
+          <a href="Encounter-episodio.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/episodio"
+        },
+        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.date">date</a>" : "2021-09-01",
+        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.author">author</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "HCP"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.title">title</a>" : "Noticia de Nascimento de recém-nascido",
+        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10160-0"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+              {
+                <a href="Patient-mother.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/mother"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "56833-7",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Pregnancy related history Narrative"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+              {
+                <a href="Observation-pregnancyNN.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/pregnancyNN"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "57074-7",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Labor and delivery process Narrative"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+              {
+                <a href="Procedure-BirthNN.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Procedure/BirthNN"
+              },
+              {
+                <a href="Encounter-episodioInt.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/episodioInt"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "57075-4",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Newborn delivery information"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+              {
+                <a href="Patient-newBornNN.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/newBornNN"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "73738-7",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Newborn screening test results panel - Point of Care"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+              {
+                <a href="Observation-length-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/length-example"
+              },
+              {
+                <a href="Observation-body-weigth-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/body-weigth-example"
+              },
+              {
+                <a href="Observation-apgar-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/apgar-example"
+              },
+              {
+                <a href="Observation-congenital-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/congenital-example"
+              },
+              {
+                <a href="Observation-pupillary-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/pupillary-example"
+              },
+              {
+                <a href="Observation-cephalic-perimeter-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/cephalic-perimeter-example"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11369-6",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "History of Immunization Narrative"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+              {
+                <a href="Immunization-vaccNN-antid.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Immunization/vaccNN-antid"
+              },
+              {
+                <a href="Immunization-vaccNN-bcg.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Immunization/vaccNN-bcg"
+              },
+              {
+                <a href="Immunization-vaccNN-hepb.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Immunization/vaccNN-hepb"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11544-4",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Hospital discharge follow-up Narrative"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+              {
+                <a href="Organization-childhealthsurveilance-ex.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/childhealthsurveilance-ex"
+              },
+              {
+                <a href="Observation-puerperium-ex.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/puerperium-ex"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "45131006",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Primary care hospital (environment)"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+              {
+                <a href="Organization-destino.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/destino"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Procedure/BirthNN",
+      "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/procedure.html">resourceType</a>" : "Procedure",
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.id">id</a>" : "BirthNN",
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Birth.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Birth"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Procedure_BirthNN\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Procedure BirthNN&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;BirthNN\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcBirthNN\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;BirthNN-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Birth.html\&quot;&gt;Perfil de Informação do Parto&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 384729004}\&quot;&gt;Delivery of vertex presentation (procedure)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-mother.html\&quot;&gt;NOME DE TESTE (no stated gender), DoB: 1989-07-30 ( http://example#1234567)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-episodioInt.html\&quot;&gt;Encounter: status = finished; class = Internamento (Tipos de episódio CodeSystem#INT)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: 2024-08-01 10:00:00+0000&lt;/p&gt;&lt;h3&gt;Performers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Actor&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;PractitionerRole-ObsRole.html\&quot;&gt;PractitionerRole Obstetrician&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "384729004",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Delivery of vertex presentation (procedure)"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.subject">subject</a>" : {
+          <a href="Patient-mother.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/mother"
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.encounter">encounter</a>" : {
+          <a href="Encounter-episodioInt.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/episodioInt"
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performed[x]">performedDateTime</a>" : "2024-08-01T10:00:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performer">performer</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performer.actor">actor</a>" : {
+              <a href="PractitionerRole-ObsRole.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "PractitionerRole/ObsRole"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Encounter/episodioInt",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/encounter.html">resourceType</a>" : "Encounter",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "episodioInt",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Encounter_episodioInt\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Encounter episodioInt&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;episodioInt\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcepisodioInt\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;episodioInt-pt-PT\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT\&quot;&gt;Tipos de episódio CodeSystem INT&lt;/a&gt;: Internamento&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "finished",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "INT"
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Organization/destino",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "destino",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Organization_destino\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization destino&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;destino\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcdestino\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;destino-pt-PT\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 2010491&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: USF ESCARIZ&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "2010491"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>" : "USF ESCARIZ"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Patient/mother",
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "mother",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Mother.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Mother"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_mother\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient mother&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;mother\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmother\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;mother-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Mother.html\&quot;&gt;Perfil da mãe&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;NOME DE TESTE (no stated gender), DoB: 1989-07-30 ( http://example#1234567)&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Ways to contact the Patient\&quot;&gt;Contact Detail&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;MORADA DE TESTE &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;The nationality of the patient.\&quot;&gt;Patient Nationality:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;code: &lt;span title=\&quot;Codes:\&quot;&gt;Portugal&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "code",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Portugal"
+                }
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://example",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "1234567"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a>" : "NOME DE TESTE"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1989-07-30",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
+              "MORADA DE TESTE"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Encounter/episodio",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/encounter.html">resourceType</a>" : "Encounter",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "episodio",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Contact.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Contact"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Encounter_episodio\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Encounter episodio&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;episodio\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcepisodio\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;episodio-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Contact.html\&quot;&gt;Perfil sobre episódio da notícia de nascimento&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 18001555&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT\&quot;&gt;Tipos de episódio CodeSystem INT&lt;/a&gt;: Internamento&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceType&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Obstetricia&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-inst.html\&quot;&gt;Organization CH ENTRE DOURO E VOUGA&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "18001555"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "finished",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "INT"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceType">serviceType</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Obstetricia"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>" : {
+          <a href="Organization-inst.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/inst"
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Organization/inst",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "inst",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Organization_inst\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization inst&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;inst\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcinst\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;inst-pt-PT\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: CH ENTRE DOURO E VOUGA&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>" : "CH ENTRE DOURO E VOUGA"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Observation/pregnancyNN",
+      "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "pregnancyNN",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Pregnancy.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pregnancy"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_pregnancyNN\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation pregnancyNN&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;pregnancyNN\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcpregnancyNN\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;pregnancyNN-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Pregnancy.html\&quot;&gt;Perfil de Informação de gravidez&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 77386006}\&quot;&gt;Pregnancy (finding)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-newBornNN.html\&quot;&gt;Anonymous Patient Female, DoB Unknown&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-08-01 10:00:00+0000&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "77386006",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Pregnancy (finding)"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
+          <a href="Patient-newBornNN.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/newBornNN"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2024-08-01T10:00:00.000Z"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Patient/newBornNN",
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "newBornNN",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Child.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Child"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_newBornNN\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient newBornNN&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;newBornNN\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcnewBornNN\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;newBornNN-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Child.html\&quot;&gt;Perfil do recém-nascido&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Anonymous Patient Female, DoB Unknown&lt;/p&gt;&lt;hr/&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "female"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Observation/body-weigth-example",
+      "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "body-weigth-example",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="http://hl7.org/fhir/R4/bodyweight.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/bodyweight"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_body-weigth-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation body-weigth-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;body-weigth-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcbody-weigth-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;body-weigth-example-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;http://hl7.org/fhir/R4/bodyweight.html\&quot;&gt;Observation Body Weight Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 29463-7}\&quot;&gt;Weight&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-newBornNN.html\&quot;&gt;Anonymous Patient Female, DoB Unknown&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-08-01 10:00:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 3250 gram(s)&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codeg = 'g')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "vital-signs"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "29463-7"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
+          <a href="Patient-newBornNN.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/newBornNN"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2024-08-01T10:00:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 3250,
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "gram(s)",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "g"
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Observation/length-example",
+      "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "length-example",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="http://hl7.org/fhir/R4/bodyheight.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/bodyheight"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_length-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation length-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;length-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hclength-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;length-example-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;http://hl7.org/fhir/R4/bodyheight.html\&quot;&gt;Observation Body Height Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 8302-2}\&quot;&gt;Bdy height&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-newBornNN.html\&quot;&gt;Anonymous Patient Female, DoB Unknown&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-08-01 10:00:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 50 cm(s)&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codecm = 'cm')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "vital-signs"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "8302-2"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
+          <a href="Patient-newBornNN.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/newBornNN"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2024-08-01T10:00:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 50,
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "cm(s)",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "cm"
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Organization/childhealthsurveilance-ex",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "childhealthsurveilance-ex",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Childhealthsurveilance.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Childhealthsurveilance"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Organization_childhealthsurveilance-ex\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization childhealthsurveilance-ex&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;childhealthsurveilance-ex\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcchildhealthsurveilance-ex\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;childhealthsurveilance-ex-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Childhealthsurveilance.html\&quot;&gt;Perfil da vigilância de saúde infantil&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http:/example.org&lt;/code&gt;/4&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http:/example.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "4"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Observation/puerperium-ex",
+      "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "puerperium-ex",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Puerperium.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Puerperium"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_puerperium-ex\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation puerperium-ex&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;puerperium-ex\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcpuerperium-ex\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;puerperium-ex-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Puerperium.html\&quot;&gt;Perfil para registar dados do puerpério até à alta&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http:/example.org&lt;/code&gt;/4&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 597951000005108}\&quot;&gt;Puerperium observable (observable entity)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 597961000005105}\&quot;&gt;Normal puerperium (finding)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http:/example.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "4"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "597951000005108",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Puerperium observable (observable entity)"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueCodeableConcept</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "597961000005105",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Normal puerperium (finding)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Immunization/vaccNN-antid",
+      "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/immunization.html">resourceType</a>" : "Immunization",
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.id">id</a>" : "vaccNN-antid",
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Antid.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Antid"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Immunization_vaccNN-antid\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Immunization vaccNN-antid&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;vaccNN-antid\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcvaccNN-antid\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;vaccNN-antid-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Antid.html\&quot;&gt;Perfil de Informação sobre vacinação - antid&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;vaccineCode&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 786768001}\&quot;&gt;Product containing only human anti-D immunoglobulin (medicinal product)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-newBornNN.html\&quot;&gt;Anonymous Patient Female, DoB Unknown&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: 2024-08-01 10:00:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;lotNumber&lt;/b&gt;: xyz-123&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.vaccineCode">vaccineCode</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "786768001",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Product containing only human anti-D immunoglobulin (medicinal product)"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.patient">patient</a>" : {
+          <a href="Patient-newBornNN.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/newBornNN"
+        },
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.occurrence[x]">occurrenceDateTime</a>" : "2024-08-01T10:00:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.lotNumber">lotNumber</a>" : "xyz-123"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Immunization/vaccNN-hepb",
+      "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/immunization.html">resourceType</a>" : "Immunization",
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.id">id</a>" : "vaccNN-hepb",
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Hepb.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Hepb"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Immunization_vaccNN-hepb\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Immunization vaccNN-hepb&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;vaccNN-hepb\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcvaccNN-hepb\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;vaccNN-hepb-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Hepb.html\&quot;&gt;Perfil de Informação sobre vacinação - hepb&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;vaccineCode&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 871822003}\&quot;&gt;Vaccine product containing only Hepatitis B virus antigen (medicinal product)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-newBornNN.html\&quot;&gt;Anonymous Patient Female, DoB Unknown&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: 2024-08-01 10:00:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;lotNumber&lt;/b&gt;: abc-9878&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.vaccineCode">vaccineCode</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "871822003",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.patient">patient</a>" : {
+          <a href="Patient-newBornNN.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/newBornNN"
+        },
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.occurrence[x]">occurrenceDateTime</a>" : "2024-08-01T10:00:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.lotNumber">lotNumber</a>" : "abc-9878"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Immunization/vaccNN-bcg",
+      "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/immunization.html">resourceType</a>" : "Immunization",
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.id">id</a>" : "vaccNN-bcg",
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Bcg.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Bcg"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Immunization_vaccNN-bcg\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Immunization vaccNN-bcg&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;vaccNN-bcg\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcvaccNN-bcg\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;vaccNN-bcg-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Bcg.html\&quot;&gt;Perfil de Informação sobre vacinação - BCG&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;vaccineCode&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 1861000221106}\&quot;&gt;Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-newBornNN.html\&quot;&gt;Anonymous Patient Female, DoB Unknown&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: 2024-08-01 10:00:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;lotNumber&lt;/b&gt;: ghy-123/2024&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.vaccineCode">vaccineCode</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "1861000221106",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.patient">patient</a>" : {
+          <a href="Patient-newBornNN.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/newBornNN"
+        },
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.occurrence[x]">occurrenceDateTime</a>" : "2024-08-01T10:00:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.lotNumber">lotNumber</a>" : "ghy-123/2024"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Observation/apgar-example",
+      "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "apgar-example",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-ApgarScore.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ApgarScore"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_apgar-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation apgar-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;apgar-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcapgar-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;apgar-example-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ApgarScore.html\&quot;&gt;Perfil de informação clinicas - apgarScore&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 1287344004}\&quot;&gt;Apgar score (assessment scale)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 169895004}\&quot;&gt;Apgar score at 1 minute (observable entity)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 7&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 169909004}\&quot;&gt;Apgar score at 5 minutes (observable entity)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 9&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 169922007}\&quot;&gt;Apgar score at 10 minutes (observable entity)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 10&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "1287344004",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Apgar score (assessment scale)"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component">component</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "169895004",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Apgar score at 1 minute (observable entity)"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">valueInteger</a>" : 7
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "169909004",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Apgar score at 5 minutes (observable entity)"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">valueInteger</a>" : 9
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "169922007",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Apgar score at 10 minutes (observable entity)"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">valueInteger</a>" : 10
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Observation/congenital-example",
+      "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "congenital-example",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Congenital.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Congenital"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_congenital-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation congenital-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;congenital-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccongenital-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;congenital-example-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Congenital.html\&quot;&gt;Perfil de informação clinicas - Rastreio Cardiopatias Congénitas&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 73780-9}\&quot;&gt;Congenital anomalies of the newborn [US Standard Certificate of Live Birth]&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 282332003}\&quot;&gt;No abnormality detected - examination result&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "73780-9",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueCodeableConcept</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "282332003",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "No abnormality detected - examination result"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Observation/pupillary-example",
+      "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "pupillary-example",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Pupillary.html" style="color: Maroon">&#x1F517;</a> "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pupillary"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_pupillary-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation pupillary-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;pupillary-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcpupillary-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;pupillary-example-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Pupillary.html\&quot;&gt;Perfil de informação clinicas - Teste Reflexo pupilar&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 271733001}\&quot;&gt;Pupil reaction&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 79815-7}\&quot;&gt;Right pupil Pupillary response&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 282332003}\&quot;&gt;No abnormality detected - examination result&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 79899-1}\&quot;&gt;Left pupil Pupillary response&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 282332003}\&quot;&gt;No abnormality detected - examination result&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "271733001",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Pupil reaction"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component">component</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "79815-7",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Right pupil Pupillary response"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">valueCodeableConcept</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "282332003",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "No abnormality detected - examination result"
+                }
+              ]
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "79899-1",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Left pupil Pupillary response"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">valueCodeableConcept</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "282332003",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "No abnormality detected - examination result"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Observation/cephalic-perimeter-example",
+      "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "cephalic-perimeter-example",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="http://hl7.org/fhir/R4/headcircum.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/headcircum"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_cephalic-perimeter-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation cephalic-perimeter-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cephalic-perimeter-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccephalic-perimeter-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;cephalic-perimeter-example-pt-PT\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;http://hl7.org/fhir/R4/headcircum.html\&quot;&gt;Observation Head Circumference Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 9843-4}\&quot;&gt;Head Circumf OCF&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-newBornNN.html\&quot;&gt;Anonymous Patient Female, DoB Unknown&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-08-01 10:00:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 50.1 cm(s)&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codecm = 'cm')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "vital-signs"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "9843-4"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
+          <a href="Patient-newBornNN.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/newBornNN"
+        },
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2024-08-01T10:00:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 50.1,
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "cm(s)",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "cm"
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/PractitionerRole/ObsRole",
+      "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/practitionerrole.html">resourceType</a>" : "PractitionerRole",
+        "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.id">id</a>" : "ObsRole",
+        "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;PractitionerRole_ObsRole\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: PractitionerRole ObsRole&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ObsRole\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcObsRole\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ObsRole-pt-PT\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 11935004}\&quot;&gt;Obstetrician&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.code">code</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11935004",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Obstetrician"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.obs-neonat#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 12, 2025 10:06+0000">2025-05-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

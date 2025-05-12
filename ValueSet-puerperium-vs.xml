@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="puerperium-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet puerperium-vs</b></p><a name="puerperium-vs"> </a><a name="hcpuerperium-vs"> </a><a name="puerperium-vs-pt-PT"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/597961000005105">597961000005105</a></td><td>Normal puerperium (finding)</td></tr><tr><td><a href="http://snomed.info/id/362973001">362973001</a></td><td>Disorder of puerperium (disorder)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/puerperium-vs"/>
+  <version value="0.0.1"/>
+  <name value="PuerperiumVS"/>
+  <title value="Tipos de outcome de puerpério ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-12T10:05:23+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Tipos de outcome de puerpério ValueSet"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="597961000005105"/>
+        <display value="Normal puerperium (finding)"/>
+      </concept>
+      <concept>
+        <code value="362973001"/>
+        <display value="Disorder of puerperium (disorder)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

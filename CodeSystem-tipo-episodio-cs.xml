@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tipo-episodio-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem tipo-episodio-cs</b></p><a name="tipo-episodio-cs"> </a><a name="hctipo-episodio-cs"> </a><a name="tipo-episodio-cs-pt-PT"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">CON<a name="tipo-episodio-cs-CON"> </a></td><td>Consulta</td><td>Consulta</td></tr><tr><td style="white-space:nowrap">INT<a name="tipo-episodio-cs-INT"> </a></td><td>Internamento</td><td>Internamento</td></tr><tr><td style="white-space:nowrap">URG<a name="tipo-episodio-cs-URG"> </a></td><td>Urgência</td><td>Urgência</td></tr><tr><td style="white-space:nowrap">BLO<a name="tipo-episodio-cs-BLO"> </a></td><td>Bloco</td><td>Bloco</td></tr><tr><td style="white-space:nowrap">HDI<a name="tipo-episodio-cs-HDI"> </a></td><td>Hospital de Dia</td><td>Hospital de Dia</td></tr><tr><td style="white-space:nowrap">RAD<a name="tipo-episodio-cs-RAD"> </a></td><td>RAD</td><td>RAD</td></tr><tr><td style="white-space:nowrap">LAB<a name="tipo-episodio-cs-LAB"> </a></td><td>LAB</td><td>LAB</td></tr></table></div>
+  </text>
+  <url value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"/>
+  <version value="0.0.1"/>
+  <name value="TipoepisodioCS"/>
+  <title value="Tipos de episódio CodeSystem"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-05-12T10:05:23+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Tipos de episódio CodeSystem"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="CON"/>
+    <display value="Consulta"/>
+    <definition value="Consulta"/>
+  </concept>
+  <concept>
+    <code value="INT"/>
+    <display value="Internamento"/>
+    <definition value="Internamento"/>
+  </concept>
+  <concept>
+    <code value="URG"/>
+    <display value="Urgência"/>
+    <definition value="Urgência"/>
+  </concept>
+  <concept>
+    <code value="BLO"/>
+    <display value="Bloco"/>
+    <definition value="Bloco"/>
+  </concept>
+  <concept>
+    <code value="HDI"/>
+    <display value="Hospital de Dia"/>
+    <definition value="Hospital de Dia"/>
+  </concept>
+  <concept>
+    <code value="RAD"/>
+    <display value="RAD"/>
+    <definition value="RAD"/>
+  </concept>
+  <concept>
+    <code value="LAB"/>
+    <display value="LAB"/>
+    <definition value="LAB"/>
+  </concept>
+</CodeSystem>

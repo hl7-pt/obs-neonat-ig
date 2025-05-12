@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "BirthNN",
+  "meta" : {
+    "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Birth"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure BirthNN</b></p><a name=\"BirthNN\"> </a><a name=\"hcBirthNN\"> </a><a name=\"BirthNN-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Birth.html\">Perfil de Informação do Parto</a></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 384729004}\">Delivery of vertex presentation (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mother.html\">NOME DE TESTE (no stated gender), DoB: 1989-07-30 ( http://example#1234567)</a></p><p><b>encounter</b>: <a href=\"Encounter-episodioInt.html\">Encounter: status = finished; class = Internamento (Tipos de episódio CodeSystem#INT)</a></p><p><b>performed</b>: 2024-08-01 10:00:00+0000</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-ObsRole.html\">PractitionerRole Obstetrician</a></td></tr></table></div>"
+  },
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "384729004",
+      "display" : "Delivery of vertex presentation (procedure)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mother"
+  },
+  "encounter" : {
+    "reference" : "Encounter/episodioInt"
+  },
+  "performedDateTime" : "2024-08-01T10:00:00.000Z",
+  "performer" : [{
+    "actor" : {
+      "reference" : "PractitionerRole/ObsRole"
+    }
+  }]
+}

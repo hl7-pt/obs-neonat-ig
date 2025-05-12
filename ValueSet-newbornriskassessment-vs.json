@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "newbornriskassessment-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet newbornriskassessment-vs</b></p><a name=\"newbornriskassessment-vs\"> </a><a name=\"hcnewbornriskassessment-vs\"> </a><a name=\"newbornriskassessment-vs-pt-PT\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/102486008\">102486008</a></td><td>Familial risk factor (observable entity)</td></tr><tr><td><a href=\"http://snomed.info/id/102485007\">102485007</a></td><td>Personal risk factor (observable entity)</td></tr><tr><td><a href=\"http://snomed.info/id/102487004\">102487004</a></td><td>Environmental risk factor (observable entity)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newbornriskassessment-vs",
+  "version" : "0.0.1",
+  "name" : "NewbornriskassessmentVS",
+  "title" : "Tipos de risco para avaliação de recém-nascidos ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-12T10:05:23+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Tipos de risco para avaliação de recém-nascidos ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "102486008",
+        "display" : "Familial risk factor (observable entity)"
+      },
+      {
+        "code" : "102485007",
+        "display" : "Personal risk factor (observable entity)"
+      },
+      {
+        "code" : "102487004",
+        "display" : "Environmental risk factor (observable entity)"
+      }]
+    }]
+  }
+}

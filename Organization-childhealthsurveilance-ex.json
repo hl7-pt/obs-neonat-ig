@@ -1,0 +1,15 @@
+{
+  "resourceType" : "Organization",
+  "id" : "childhealthsurveilance-ex",
+  "meta" : {
+    "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Childhealthsurveilance"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization childhealthsurveilance-ex</b></p><a name=\"childhealthsurveilance-ex\"> </a><a name=\"hcchildhealthsurveilance-ex\"> </a><a name=\"childhealthsurveilance-ex-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Childhealthsurveilance.html\">Perfil da vigilância de saúde infantil</a></p></div><p><b>identifier</b>: <code>http:/example.org</code>/4</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http:/example.org",
+    "value" : "4"
+  }]
+}

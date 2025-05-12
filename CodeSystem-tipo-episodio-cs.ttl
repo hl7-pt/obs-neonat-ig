@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tipo-episodio-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tipo-episodio-cs</b></p><a name=\"tipo-episodio-cs\"> </a><a name=\"hctipo-episodio-cs\"> </a><a name=\"tipo-episodio-cs-pt-PT\"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">CON<a name=\"tipo-episodio-cs-CON\"> </a></td><td>Consulta</td><td>Consulta</td></tr><tr><td style=\"white-space:nowrap\">INT<a name=\"tipo-episodio-cs-INT\"> </a></td><td>Internamento</td><td>Internamento</td></tr><tr><td style=\"white-space:nowrap\">URG<a name=\"tipo-episodio-cs-URG\"> </a></td><td>Urgência</td><td>Urgência</td></tr><tr><td style=\"white-space:nowrap\">BLO<a name=\"tipo-episodio-cs-BLO\"> </a></td><td>Bloco</td><td>Bloco</td></tr><tr><td style=\"white-space:nowrap\">HDI<a name=\"tipo-episodio-cs-HDI\"> </a></td><td>Hospital de Dia</td><td>Hospital de Dia</td></tr><tr><td style=\"white-space:nowrap\">RAD<a name=\"tipo-episodio-cs-RAD\"> </a></td><td>RAD</td><td>RAD</td></tr><tr><td style=\"white-space:nowrap\">LAB<a name=\"tipo-episodio-cs-LAB\"> </a></td><td>LAB</td><td>LAB</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
+  fhir:name [ fhir:v "TipoepisodioCS"] ; # 
+  fhir:title [ fhir:v "Tipos de episódio CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-05-12T10:05:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipos de episódio CodeSystem"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "CON" ] ;
+     fhir:display [ fhir:v "Consulta" ] ;
+     fhir:definition [ fhir:v "Consulta" ]
+  ] [
+     fhir:code [ fhir:v "INT" ] ;
+     fhir:display [ fhir:v "Internamento" ] ;
+     fhir:definition [ fhir:v "Internamento" ]
+  ] [
+     fhir:code [ fhir:v "URG" ] ;
+     fhir:display [ fhir:v "Urgência" ] ;
+     fhir:definition [ fhir:v "Urgência" ]
+  ] [
+     fhir:code [ fhir:v "BLO" ] ;
+     fhir:display [ fhir:v "Bloco" ] ;
+     fhir:definition [ fhir:v "Bloco" ]
+  ] [
+     fhir:code [ fhir:v "HDI" ] ;
+     fhir:display [ fhir:v "Hospital de Dia" ] ;
+     fhir:definition [ fhir:v "Hospital de Dia" ]
+  ] [
+     fhir:code [ fhir:v "RAD" ] ;
+     fhir:display [ fhir:v "RAD" ] ;
+     fhir:definition [ fhir:v "RAD" ]
+  ] [
+     fhir:code [ fhir:v "LAB" ] ;
+     fhir:display [ fhir:v "LAB" ] ;
+     fhir:definition [ fhir:v "LAB" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,20 @@
+{
+  "url" : "https://hl7.pt/fhir/NoticiaNascimento/ImplementationGuide/hl7.fhir.pt.obs-neonat",
+  "name" : "NoticiaNascimentoIG",
+  "title" : "HL7 PT FHIR Implementation Guide: Noticia de Nascimento",
+  "description" : "Example IG exercises many of the fields in a SUSHI configuration.",
+  "ig-date" : "2020-02-26",
+  "status" : "active",
+  "package-id" : "hl7.fhir.pt.obs-neonat",
+  "ig-ver" : "0.0.1",
+  "date" : "Mon, 12 May, 2025 10:06:08 +0000",
+  "dateISO8601" : "2025-05-12T10:06:08+00:00",
+  "errs" : 0,
+  "warnings" : 166,
+  "hints" : 167,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1812837360
+}

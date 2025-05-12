@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="vaccNN-bcg"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Bcg"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Immunization vaccNN-bcg</b></p><a name="vaccNN-bcg"> </a><a name="hcvaccNN-bcg"> </a><a name="vaccNN-bcg-pt-PT"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Bcg.html">Perfil de Informação sobre vacinação - BCG</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Codes:{http://snomed.info/sct 1861000221106}">Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)</span></p><p><b>patient</b>: <a href="Patient-newBornNN.html">Anonymous Patient Female, DoB Unknown</a></p><p><b>occurrence</b>: 2024-08-01 10:00:00+0000</p><p><b>lotNumber</b>: ghy-123/2024</p></div>
+  </text>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1861000221106"/>
+      <display value="Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"/>
+    </coding>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/newBornNN"/>
+  </patient>
+  <occurrenceDateTime value="2024-08-01T10:00:00.000Z"/>
+  <lotNumber value="ghy-123/2024"/>
+</Immunization>

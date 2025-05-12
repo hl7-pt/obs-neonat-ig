@@ -1,0 +1,1269 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-Professional.html" : "Perfil para o profissional de saúde",
+      "StructureDefinition-Child.html" : "Perfil do recém-nascido",
+      "StructureDefinition-Mother.html" : "Perfil da mãe"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/basic-resource-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BasicResourceTypes",
+      "title" : "Basic Resource Types",
+      "description" : "This value set defines codes for resources not yet supported by (or which will never be supported by) FHIR.  Many of the codes listed here will eventually be turned into official resources.  However, there is no guarantee that any particular resource will be created nor that the scope will be exactly as defined by the codes presented here.  Codes in this set will be deprecated if/when formal resources are defined that encompass these concepts.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/basic-resource-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.138"],
+      "sources" : ["2.16.840.1.113883.4.642.3.138"],
+      "uses" : {
+      },
+      "StructureDefinition-Transport.html" : "Perfil de informação sobre Transportes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-Pupillary.html" : "Perfil de informação clinicas - Teste Reflexo pupilar",
+      "StructureDefinition-Hearingscreen.html" : "Perfil de informação clinicas - Rastreio auditivo neonatal universal",
+      "StructureDefinition-Malformation.html" : "Perfil de informação clinicas - Dados de malformações",
+      "StructureDefinition-Newbornriskassessment.html" : "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR",
+      "StructureDefinition-ApgarScore.html" : "Perfil de informação clinicas - apgarScore",
+      "StructureDefinition-Letter.html" : "Perfil sobre Elaboração de carta com informação clínica suplementar",
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto",
+      "StructureDefinition-Phototherapy.html" : "Perfil de informação clinicas - Fototerapia",
+      "StructureDefinition-Metabolic.html" : "Perfil de informação clinicas - Rastreio de doenças metabólicas",
+      "StructureDefinition-Puerperium.html" : "Perfil para registar dados do puerpério até à alta",
+      "StructureDefinition-Pregnancy.html" : "Perfil de Informação de gravidez",
+      "StructureDefinition-Congenital.html" : "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas",
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionAttestationMode",
+      "title" : "CompositionAttestationMode",
+      "description" : "The way in which a person authenticated a composition.",
+      "systems" : ["http://hl7.org/fhir/composition-attestation-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.238"],
+      "sources" : ["2.16.840.1.113883.4.642.3.238"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionNoticia.html" : "Perfil do recurso Composition que cria as secções da noticia nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.241"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionNoticia.html" : "Perfil do recurso Composition que cria as secções da noticia nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim",
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-Childhealthsurveilance.html" : "Perfil da vigilância de saúde infantil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-Metabolic.html" : "Perfil de informação clinicas - Rastreio de doenças metabólicas",
+      "StructureDefinition-Puerperium.html" : "Perfil para registar dados do puerpério até à alta",
+      "StructureDefinition-Pregnancy.html" : "Perfil de Informação de gravidez",
+      "StructureDefinition-Congenital.html" : "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas",
+      "StructureDefinition-Pupillary.html" : "Perfil de informação clinicas - Teste Reflexo pupilar",
+      "StructureDefinition-Hearingscreen.html" : "Perfil de informação clinicas - Rastreio auditivo neonatal universal",
+      "StructureDefinition-Malformation.html" : "Perfil de informação clinicas - Dados de malformações",
+      "StructureDefinition-Newbornriskassessment.html" : "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR",
+      "StructureDefinition-ApgarScore.html" : "Perfil de informação clinicas - apgarScore",
+      "StructureDefinition-Letter.html" : "Perfil sobre Elaboração de carta com informação clínica suplementar",
+      "StructureDefinition-Phototherapy.html" : "Perfil de informação clinicas - Fototerapia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-action",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureDeviceActionCodes",
+      "title" : "Procedure Device Action Codes",
+      "description" : "Example codes indicating the change that happened to the device during the procedure.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.425"],
+      "sources" : ["2.16.840.1.113883.4.642.3.425"],
+      "uses" : {
+      },
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim",
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDeviceTypes",
+      "title" : "FHIR Device Types",
+      "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.208"],
+      "sources" : ["2.16.840.1.113883.4.642.3.208"],
+      "uses" : {
+      },
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim",
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentSectionCodes",
+      "title" : "Document Section Codes",
+      "description" : "Document section codes (LOINC codes used in CCDA sections).",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.237"],
+      "sources" : ["2.16.840.1.113883.4.642.3.237"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionNoticia.html" : "Perfil do recurso Composition que cria as secções da noticia nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/doc-typecodes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDocumentTypeCodes",
+      "title" : "FHIR Document Type Codes",
+      "description" : "FHIR Document Codes - all LOINC codes where scale type = 'DOC'.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.240"],
+      "sources" : ["2.16.840.1.113883.4.642.3.240"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionNoticia.html" : "Perfil do recurso Composition que cria as secções da noticia nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DocumentClassValueSet",
+      "title" : "Document Class Value Set",
+      "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionNoticia.html" : "Perfil do recurso Composition que cria as secções da noticia nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.244"],
+      "sources" : ["2.16.840.1.113883.4.642.3.244"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionNoticia.html" : "Perfil do recurso Composition que cria as secções da noticia nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.259"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterType",
+      "title" : "Encounter type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.248"],
+      "sources" : ["2.16.840.1.113883.4.642.3.248"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/event-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EventStatus",
+      "title" : "EventStatus",
+      "description" : "Codes identifying the lifecycle stage of an event.",
+      "systems" : ["http://hl7.org/fhir/event-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.109"],
+      "sources" : ["2.16.840.1.113883.4.642.3.109"],
+      "uses" : {
+      },
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim",
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationFunctionCodes",
+      "title" : "Immunization Function Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the function a practitioner or organization may play in the immunization event. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0443"],
+      "oids" : ["2.16.840.1.113883.4.642.3.995"],
+      "sources" : ["2.16.840.1.113883.4.642.3.995"],
+      "uses" : {
+      },
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-funding-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationFundingSource",
+      "title" : "Immunization Funding Source",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the vaccine administered. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-funding-source"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.293"],
+      "sources" : ["2.16.840.1.113883.4.642.3.293"],
+      "uses" : {
+      },
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-origin",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationOriginCodes",
+      "title" : "Immunization Origin Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the data when the report of the immunization event is not based on information from the person, entity or organization who administered the vaccine. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/immunization-origin"],
+      "oids" : ["2.16.840.1.113883.4.642.3.296"],
+      "sources" : ["2.16.840.1.113883.4.642.3.296"],
+      "uses" : {
+      },
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-program-eligibility",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationProgramEligibility",
+      "title" : "Immunization Program Eligibility",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the patient's eligibility for a vaccination program. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.291"],
+      "sources" : ["2.16.840.1.113883.4.642.3.291"],
+      "uses" : {
+      },
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationReasonCodes",
+      "title" : "Immunization Reason Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was administered. This value set is provided as a suggestive example.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.290"],
+      "sources" : ["2.16.840.1.113883.4.642.3.290"],
+      "uses" : {
+      },
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationRouteCodes",
+      "title" : "Immunization Route Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the administrative routes used during vaccination. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.289"],
+      "sources" : ["2.16.840.1.113883.4.642.3.289"],
+      "uses" : {
+      },
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CodesForImmunizationSiteOfAdministration",
+      "title" : "Codes for Immunization Site of Administration",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the body site where the vaccination occurred. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActSite"],
+      "oids" : ["2.16.840.1.113883.4.642.3.288"],
+      "sources" : ["2.16.840.1.113883.4.642.3.288"],
+      "uses" : {
+      },
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationStatusCodes",
+      "title" : "Immunization Status Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the current status of the administered dose of vaccine.",
+      "systems" : ["http://hl7.org/fhir/event-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.295"],
+      "sources" : ["2.16.840.1.113883.4.642.3.295"],
+      "uses" : {
+      },
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationStatusReasonCodes",
+      "title" : "Immunization Status Reason Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was not administered. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.992"],
+      "sources" : ["2.16.840.1.113883.4.642.3.992"],
+      "uses" : {
+      },
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-subpotent-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationSubpotentReason",
+      "title" : "Immunization Subpotent Reason",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose is considered to be subpotent. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.993"],
+      "sources" : ["2.16.840.1.113883.4.642.3.993"],
+      "uses" : {
+      },
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-target-disease",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationTargetDiseaseCodes",
+      "title" : "Immunization Target Disease Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the disease that the dose is being administered against. This value set is provided as a suggestive example and includes the SNOMED CT concepts from the 64572001 (Disease) hierarchy.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1047"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1047"],
+      "uses" : {
+      },
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionNoticia.html" : "Perfil do recurso Composition que cria as secções da noticia nascimento",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Professional.html" : "Perfil para o profissional de saúde",
+      "StructureDefinition-Pupillary.html" : "Perfil de informação clinicas - Teste Reflexo pupilar",
+      "StructureDefinition-Child.html" : "Perfil do recém-nascido",
+      "StructureDefinition-Childhealthsurveilance.html" : "Perfil da vigilância de saúde infantil",
+      "StructureDefinition-Hearingscreen.html" : "Perfil de informação clinicas - Rastreio auditivo neonatal universal",
+      "StructureDefinition-Malformation.html" : "Perfil de informação clinicas - Dados de malformações",
+      "StructureDefinition-Newbornriskassessment.html" : "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Mother.html" : "Perfil da mãe",
+      "StructureDefinition-ApgarScore.html" : "Perfil de informação clinicas - apgarScore",
+      "StructureDefinition-Letter.html" : "Perfil sobre Elaboração de carta com informação clínica suplementar",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG",
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto",
+      "StructureDefinition-Phototherapy.html" : "Perfil de informação clinicas - Fototerapia",
+      "StructureDefinition-Metabolic.html" : "Perfil de informação clinicas - Rastreio de doenças metabólicas",
+      "StructureDefinition-Puerperium.html" : "Perfil para registar dados do puerpério até à alta",
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Pregnancy.html" : "Perfil de Informação de gravidez",
+      "StructureDefinition-Congenital.html" : "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas",
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim",
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento",
+      "StructureDefinition-Transport.html" : "Perfil de informação sobre Transportes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-Child.html" : "Perfil do recém-nascido",
+      "StructureDefinition-Mother.html" : "Perfil da mãe"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListEmptyReasons",
+      "title" : "List Empty Reasons",
+      "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-empty-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.322"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionNoticia.html" : "Perfil do recurso Composition que cria as secções da noticia nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListMode",
+      "title" : "ListMode",
+      "description" : "The processing mode that applies to this list.",
+      "systems" : ["http://hl7.org/fhir/list-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.318"],
+      "sources" : ["2.16.840.1.113883.4.642.3.318"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionNoticia.html" : "Perfil do recurso Composition que cria as secções da noticia nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-order",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListOrderCodes",
+      "title" : "List Order Codes",
+      "description" : "Base values for the order of the items in a list resource.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-order"],
+      "oids" : ["2.16.840.1.113883.4.642.3.324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.324"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionNoticia.html" : "Perfil do recurso Composition que cria as secções da noticia nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-Child.html" : "Perfil do recém-nascido",
+      "StructureDefinition-Mother.html" : "Perfil da mãe"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-Metabolic.html" : "Perfil de informação clinicas - Rastreio de doenças metabólicas",
+      "StructureDefinition-Puerperium.html" : "Perfil para registar dados do puerpério até à alta",
+      "StructureDefinition-Pregnancy.html" : "Perfil de Informação de gravidez",
+      "StructureDefinition-Congenital.html" : "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas",
+      "StructureDefinition-Pupillary.html" : "Perfil de informação clinicas - Teste Reflexo pupilar",
+      "StructureDefinition-Hearingscreen.html" : "Perfil de informação clinicas - Rastreio auditivo neonatal universal",
+      "StructureDefinition-Malformation.html" : "Perfil de informação clinicas - Dados de malformações",
+      "StructureDefinition-Newbornriskassessment.html" : "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR",
+      "StructureDefinition-ApgarScore.html" : "Perfil de informação clinicas - apgarScore",
+      "StructureDefinition-Letter.html" : "Perfil sobre Elaboração de carta com informação clínica suplementar",
+      "StructureDefinition-Phototherapy.html" : "Perfil de informação clinicas - Fototerapia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-Metabolic.html" : "Perfil de informação clinicas - Rastreio de doenças metabólicas",
+      "StructureDefinition-Puerperium.html" : "Perfil para registar dados do puerpério até à alta",
+      "StructureDefinition-Pregnancy.html" : "Perfil de Informação de gravidez",
+      "StructureDefinition-Congenital.html" : "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas",
+      "StructureDefinition-Pupillary.html" : "Perfil de informação clinicas - Teste Reflexo pupilar",
+      "StructureDefinition-Hearingscreen.html" : "Perfil de informação clinicas - Rastreio auditivo neonatal universal",
+      "StructureDefinition-Malformation.html" : "Perfil de informação clinicas - Dados de malformações",
+      "StructureDefinition-Newbornriskassessment.html" : "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR",
+      "StructureDefinition-ApgarScore.html" : "Perfil de informação clinicas - apgarScore",
+      "StructureDefinition-Letter.html" : "Perfil sobre Elaboração de carta com informação clínica suplementar",
+      "StructureDefinition-Phototherapy.html" : "Perfil de informação clinicas - Fototerapia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-Metabolic.html" : "Perfil de informação clinicas - Rastreio de doenças metabólicas",
+      "StructureDefinition-Puerperium.html" : "Perfil para registar dados do puerpério até à alta",
+      "StructureDefinition-Pregnancy.html" : "Perfil de Informação de gravidez",
+      "StructureDefinition-Congenital.html" : "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas",
+      "StructureDefinition-Pupillary.html" : "Perfil de informação clinicas - Teste Reflexo pupilar",
+      "StructureDefinition-Hearingscreen.html" : "Perfil de informação clinicas - Rastreio auditivo neonatal universal",
+      "StructureDefinition-Malformation.html" : "Perfil de informação clinicas - Dados de malformações",
+      "StructureDefinition-Newbornriskassessment.html" : "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR",
+      "StructureDefinition-ApgarScore.html" : "Perfil de informação clinicas - apgarScore",
+      "StructureDefinition-Letter.html" : "Perfil sobre Elaboração de carta com informação clínica suplementar",
+      "StructureDefinition-Phototherapy.html" : "Perfil de informação clinicas - Fototerapia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-Metabolic.html" : "Perfil de informação clinicas - Rastreio de doenças metabólicas",
+      "StructureDefinition-Puerperium.html" : "Perfil para registar dados do puerpério até à alta",
+      "StructureDefinition-Pregnancy.html" : "Perfil de Informação de gravidez",
+      "StructureDefinition-Congenital.html" : "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas",
+      "StructureDefinition-Pupillary.html" : "Perfil de informação clinicas - Teste Reflexo pupilar",
+      "StructureDefinition-Hearingscreen.html" : "Perfil de informação clinicas - Rastreio auditivo neonatal universal",
+      "StructureDefinition-Malformation.html" : "Perfil de informação clinicas - Dados de malformações",
+      "StructureDefinition-Newbornriskassessment.html" : "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR",
+      "StructureDefinition-ApgarScore.html" : "Perfil de informação clinicas - apgarScore",
+      "StructureDefinition-Letter.html" : "Perfil sobre Elaboração de carta com informação clínica suplementar",
+      "StructureDefinition-Phototherapy.html" : "Perfil de informação clinicas - Fototerapia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-Metabolic.html" : "Perfil de informação clinicas - Rastreio de doenças metabólicas",
+      "StructureDefinition-Puerperium.html" : "Perfil para registar dados do puerpério até à alta",
+      "StructureDefinition-Pregnancy.html" : "Perfil de Informação de gravidez",
+      "StructureDefinition-Congenital.html" : "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas",
+      "StructureDefinition-Pupillary.html" : "Perfil de informação clinicas - Teste Reflexo pupilar",
+      "StructureDefinition-Hearingscreen.html" : "Perfil de informação clinicas - Rastreio auditivo neonatal universal",
+      "StructureDefinition-Malformation.html" : "Perfil de informação clinicas - Dados de malformações",
+      "StructureDefinition-Newbornriskassessment.html" : "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR",
+      "StructureDefinition-ApgarScore.html" : "Perfil de informação clinicas - apgarScore",
+      "StructureDefinition-Letter.html" : "Perfil sobre Elaboração de carta com informação clínica suplementar",
+      "StructureDefinition-Phototherapy.html" : "Perfil de informação clinicas - Fototerapia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
+      "uses" : {
+      },
+      "StructureDefinition-Childhealthsurveilance.html" : "Perfil da vigilância de saúde infantil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-Child.html" : "Perfil do recém-nascido",
+      "StructureDefinition-Mother.html" : "Perfil da mãe"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim",
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCategoryCodes(SNOMEDCT)",
+      "title" : "Procedure Category Codes (SNOMED CT)",
+      "description" : "Procedure Category code: A selection of relevant SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.430"],
+      "sources" : ["2.16.840.1.113883.4.642.3.430"],
+      "uses" : {
+      },
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-followup",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureFollowUpCodes(SNOMEDCT)",
+      "title" : "Procedure Follow up Codes (SNOMED CT)",
+      "description" : "Procedure follow up codes: A selection of SNOMED CT codes relevant to procedure follow up.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.429"],
+      "sources" : ["2.16.840.1.113883.4.642.3.429"],
+      "uses" : {
+      },
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim",
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-not-performed-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ProcedureNotPerformedReason(SNOMED-CT)",
+      "title" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "description" : "Situation codes describing the reason that a procedure, which might otherwise be expected, was not performed, or a procedure that was started and was not completed. Consists of SNOMED CT codes, children of procedure contraindicated (183932001), procedure discontinued (416406003), procedure not done (416237000), procedure not indicated (428119001), procedure not offered (416064006), procedure not wanted (416432009), procedure refused (183944003), and procedure stopped (394908001).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.431"],
+      "sources" : ["2.16.840.1.113883.4.642.3.431"],
+      "uses" : {
+      },
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim",
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureOutcomeCodes(SNOMEDCT)",
+      "title" : "Procedure Outcome Codes (SNOMED CT)",
+      "description" : "Procedure Outcome code: A selection of relevant SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.428"],
+      "sources" : ["2.16.840.1.113883.4.642.3.428"],
+      "uses" : {
+      },
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim",
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureReasonCodes",
+      "title" : "Procedure Reason Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.432"],
+      "sources" : ["2.16.840.1.113883.4.642.3.432"],
+      "uses" : {
+      },
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim",
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-Metabolic.html" : "Perfil de informação clinicas - Rastreio de doenças metabólicas",
+      "StructureDefinition-Puerperium.html" : "Perfil para registar dados do puerpério até à alta",
+      "StructureDefinition-Pregnancy.html" : "Perfil de Informação de gravidez",
+      "StructureDefinition-Congenital.html" : "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas",
+      "StructureDefinition-Pupillary.html" : "Perfil de informação clinicas - Teste Reflexo pupilar",
+      "StructureDefinition-Hearingscreen.html" : "Perfil de informação clinicas - Rastreio auditivo neonatal universal",
+      "StructureDefinition-Malformation.html" : "Perfil de informação clinicas - Dados de malformações",
+      "StructureDefinition-Newbornriskassessment.html" : "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR",
+      "StructureDefinition-ApgarScore.html" : "Perfil de informação clinicas - apgarScore",
+      "StructureDefinition-Letter.html" : "Perfil sobre Elaboração de carta com informação clínica suplementar",
+      "StructureDefinition-Phototherapy.html" : "Perfil de informação clinicas - Fototerapia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-Metabolic.html" : "Perfil de informação clinicas - Rastreio de doenças metabólicas",
+      "StructureDefinition-Puerperium.html" : "Perfil para registar dados do puerpério até à alta",
+      "StructureDefinition-Pregnancy.html" : "Perfil de Informação de gravidez",
+      "StructureDefinition-Congenital.html" : "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas",
+      "StructureDefinition-Pupillary.html" : "Perfil de informação clinicas - Teste Reflexo pupilar",
+      "StructureDefinition-Hearingscreen.html" : "Perfil de informação clinicas - Rastreio auditivo neonatal universal",
+      "StructureDefinition-Malformation.html" : "Perfil de informação clinicas - Dados de malformações",
+      "StructureDefinition-Newbornriskassessment.html" : "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR",
+      "StructureDefinition-ApgarScore.html" : "Perfil de informação clinicas - apgarScore",
+      "StructureDefinition-Letter.html" : "Perfil sobre Elaboração de carta com informação clínica suplementar",
+      "StructureDefinition-Phototherapy.html" : "Perfil de informação clinicas - Fototerapia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/vaccine-code",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "VaccineAdministeredValueSet",
+      "title" : "Vaccine Administered Value Set",
+      "description" : "This identifies the vaccine substance administered - CVX codes.",
+      "systems" : ["urn:oid:1.2.36.1.2001.1005.17", "http://hl7.org/fhir/sid/cvx"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.22"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.22"],
+      "uses" : {
+      },
+      "StructureDefinition-Antid.html" : "Perfil de Informação sobre vacinação - antid",
+      "StructureDefinition-Hepb.html" : "Perfil de Informação sobre vacinação - hepb",
+      "StructureDefinition-Vaccination.html" : "Perfil sobre Informação sobre vacinação - genérico",
+      "StructureDefinition-Bcg.html" : "Perfil de Informação sobre vacinação - BCG"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+      "version" : "0360",
+      "status" : "active",
+      "name" : "v2.0360.2.7",
+      "title" : "v2 table 0360, Version 2.7",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-Professional.html" : "Perfil para o profissional de saúde"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionNoticia.html" : "Perfil do recurso Composition que cria as secções da noticia nascimento"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
+      "version" : "2014-03-26",
+      "status" : "active",
+      "name" : "v3.ConfidentialityClassification",
+      "title" : "V3 Value SetConfidentialityClassification",
+      "description" : " Set of codes used to value Act.Confidentiality and Role.Confidentiality attribute in accordance with the definition for concept domain \"Confidentiality\".",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Confidentiality"],
+      "oids" : ["2.16.840.1.113883.1.11.10228"],
+      "sources" : ["2.16.840.1.113883.1.11.10228"],
+      "uses" : {
+      },
+      "StructureDefinition-CompositionNoticia.html" : "Perfil do recurso Composition que cria as secções da noticia nascimento"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/bulletin-delivery-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "BulletindeliveryVS",
+      "title" : "Envio de boletim ValueSet",
+      "description" : "Envio de boletim ValueSet",
+      "systems" : [
+        "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/document-type-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "DocumenttypeVS",
+      "title" : "Tipo de documento ValueSet",
+      "description" : "Tipo de documento ValueSet",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Bulletindelivery.html" : "Perfil de Informação sobre entrega de boletim"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "TipoepisodioVS",
+      "title" : "Tipos de episódio ValueSet",
+      "description" : "Tipos de episódio ValueSet",
+      "systems" : [
+        "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Perfil sobre episódio da notícia de nascimento"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newborn-congenital-anomalies-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "NewbornCongenitalAnomaliesVS",
+      "title" : "Tipos de doença congénita ValueSet",
+      "description" : "Tipos de doença congénita ValueSet",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Congenital.html" : "Perfil de informação clinicas - Rastreio Cardiopatias Congénitas"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newbornriskassessment-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "NewbornriskassessmentVS",
+      "title" : "Tipos de risco para avaliação de recém-nascidos ValueSet",
+      "description" : "Tipos de risco para avaliação de recém-nascidos ValueSet",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Newbornriskassessment.html" : "Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/puerperium-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "PuerperiumVS",
+      "title" : "Tipos de outcome de puerpério ValueSet",
+      "description" : "Tipos de outcome de puerpério ValueSet",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Puerperium.html" : "Perfil para registar dados do puerpério até à alta"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/risco-gravidez-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "RiscoGravidezVS",
+      "title" : "Risco de gravidez ValueSet",
+      "description" : "Risco de gravidez ValueSet",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Pregnancy.html" : "Perfil de Informação de gravidez"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-gravidez-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "TipoGravidezVS",
+      "title" : "Tipo de gravidez ValueSet",
+      "description" : "Tipo de gravidez ValueSet",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Pregnancy.html" : "Perfil de Informação de gravidez"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-parto-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "TipoPartoVS",
+      "title" : "Tipos de parto ValueSet",
+      "description" : "Tipos de parto ValueSet",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Birth.html" : "Perfil de Informação do Parto"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/transport-type-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "TransportTypeVS",
+      "title" : "Tipos de transporte de recém-nascido ValueSet",
+      "description" : "Tipos de transporte de recém-nascido ValueSet",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-transport-information.html" : "Extensão sobre informação sobre Transportes"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/vacinas-infancia-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "VacinasinfanciaVS",
+      "title" : "Vacinas ValueSet",
+      "description" : "Vacinas ValueSet",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

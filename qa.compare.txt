@@ -1,0 +1,486 @@
+NoticiaNascimentoIG : Validation Results
+=========================================
+
+err = 0, warn = 166, info = 167
+$--
+Generated $--. FHIR version $-- for hl7.fhir.pt.obs-neonat#$-- (canonical = https://hl7.pt/fhir/NoticiaNascimento)
+ Build Errors : 0 / 6 / 0
+ /work/fsh-generated/resources/Bundle-exemploNN : 0 / 37 / 89
+ /work/fsh-generated/resources/CodeSystem-InfosGravidezCS : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-documentclassificationCS : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-tipo-episodio-cs : 0 / 0 / 1
+ /work/fsh-generated/resources/Composition-compNN : 0 / 2 / 8
+ /work/fsh-generated/resources/Encounter-episodio : 0 / 0 / 1
+ /work/fsh-generated/resources/Encounter-episodioInt : 0 / 0 / 1
+ /work/fsh-generated/resources/Immunization-vaccNN-antid : 0 / 0 / 2
+ /work/fsh-generated/resources/Immunization-vaccNN-bcg : 0 / 0 / 2
+ /work/fsh-generated/resources/Immunization-vaccNN-hepb : 0 / 0 / 2
+ /work/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.obs-neonat : 0 / 0 / 1
+ /work/fsh-generated/resources/Observation-apgar-example : 0 / 3 / 5
+ /work/fsh-generated/resources/Observation-body-weigth-example : 0 / 1 / 2
+ /work/fsh-generated/resources/Observation-cephalic-perimeter-example : 0 / 1 / 2
+ /work/fsh-generated/resources/Observation-congenital-example : 0 / 3 / 3
+ /work/fsh-generated/resources/Observation-length-example : 0 / 1 / 2
+ /work/fsh-generated/resources/Observation-pregnancyNN : 0 / 1 / 2
+ /work/fsh-generated/resources/Observation-puerperium-ex : 0 / 3 / 3
+ /work/fsh-generated/resources/Observation-pupillary-example : 0 / 5 / 6
+ /work/fsh-generated/resources/Organization-childhealthsurveilance-ex : 0 / 0 / 1
+ /work/fsh-generated/resources/Organization-destino : 0 / 0 / 1
+ /work/fsh-generated/resources/Organization-inst : 0 / 0 / 1
+ /work/fsh-generated/resources/Patient-mother : 0 / 1 / 1
+ /work/fsh-generated/resources/Patient-newBornNN : 0 / 0 / 1
+ /work/fsh-generated/resources/PractitionerRole-ObsRole : 0 / 0 / 2
+ /work/fsh-generated/resources/Procedure-BirthNN : 0 / 0 / 2
+ /work/fsh-generated/resources/StructureDefinition-Antid : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-ApgarScore : 0 / 3 / 9
+ /work/fsh-generated/resources/StructureDefinition-Bcg : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-Birth : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-Bulletindelivery : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-Child : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-Childhealthsurveilance : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-CompositionNoticia : 0 / 27 / 18
+ /work/fsh-generated/resources/StructureDefinition-Congenital : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-Contact : 0 / 2 / 1
+ /work/fsh-generated/resources/StructureDefinition-ContactLM : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-CoredaNoticiaLM : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-DestinationLN : 0 / 2 / 1
+ /work/fsh-generated/resources/StructureDefinition-Hearingscreen : 0 / 2 / 8
+ /work/fsh-generated/resources/StructureDefinition-Hepb : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-Letter : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-Malformation : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-Metabolic : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-Mother : 0 / 4 / 1
+ /work/fsh-generated/resources/StructureDefinition-MotherDemographicsLM : 0 / 2 / 1
+ /work/fsh-generated/resources/StructureDefinition-NewBornLM : 0 / 31 / 1
+ /work/fsh-generated/resources/StructureDefinition-Newbornriskassessment : 0 / 0 / 5
+ /work/fsh-generated/resources/StructureDefinition-NoticiaLM : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-Phototherapy : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-Pregnancy : 0 / 13 / 29
+ /work/fsh-generated/resources/StructureDefinition-PregnancyLM : 0 / 2 / 1
+ /work/fsh-generated/resources/StructureDefinition-Professional : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-ProfessionalLM : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-Puerperium : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-Pupillary : 0 / 6 / 7
+ /work/fsh-generated/resources/StructureDefinition-ReferenciaNHACJR : 0 / 2 / 1
+ /work/fsh-generated/resources/StructureDefinition-Transport : 0 / 1 / 3
+ /work/fsh-generated/resources/StructureDefinition-Vaccination : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-VaccineLM : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-transport-information : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-bulletin-delivery-vs : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-document-type-vs : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-episode-type-vs : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-newborn-congenital-anomalies-vs : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-newbornriskassessment-vs : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-puerperium-vs : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-risco-gravidez-vs : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-tipo-gravidez-vs : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-tipo-parto-vs : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-transport-type-vs : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-vacinas-infancia-vs : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/ObsRole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/Bundle-exemploNN.json ==
+WARNING: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.type.coding[0]: A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org/#71230-7)
+WARNING: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.type.coding[0].system: URL value 'http://loinc.org/' does not resolve
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[1].code.coding[0].display: There are no valid display names found for the code http://loinc.org#56833-7 for language(s) 'pt-PT'. The display is 'Pregnancy related history Narrative' the default language display
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[2].code.coding[0].display: There are no valid display names found for the code http://loinc.org#57074-7 for language(s) 'pt-PT'. The display is 'Labor and delivery process Narrative' the default language display
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[3].code.coding[0].display: There are no valid display names found for the code http://loinc.org#57075-4 for language(s) 'pt-PT'. The display is 'Newborn delivery information' the default language display
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[4].code.coding[0].display: There are no valid display names found for the code http://loinc.org#73738-7 for language(s) 'pt-PT'. The display is 'Newborn screening test results panel - Point of Care' the default language display
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[5].code.coding[0].display: There are no valid display names found for the code http://loinc.org#11369-6 for language(s) 'pt-PT'. The display is 'History of Immunization Narrative' the default language display
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[6].code.coding[0].display: There are no valid display names found for the code http://loinc.org#11544-4 for language(s) 'pt-PT'. The display is 'Hospital discharge follow-up Narrative' the default language display
+INFORMATION: Bundle/exemploNN: Bundle.entry[0].resource/*Composition/compNN*/.section[7].code.coding[0].display: 'Primary care hospital (environment)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[1].resource/*Procedure/BirthNN*/.code.coding[0].display: 'Delivery of vertex presentation (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[1].resource.code.coding[0].display: 'Delivery of vertex presentation (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: Bundle/exemploNN: Bundle.entry[4].resource/*Patient/mother*/.identifier[0].system: URL value 'http://example' does not resolve
+WARNING: Bundle/exemploNN: Bundle.entry[7].resource/*Observation/pregnancyNN*/: Best Practice Recommendation: In general, all observations should have a performer
+INFORMATION: Bundle/exemploNN: Bundle.entry[7].resource/*Observation/pregnancyNN*/.code.coding[0].display: 'Pregnancy (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: Bundle/exemploNN: Bundle.entry[9].resource/*Observation/body-weigth-example*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[10].resource/*Observation/length-example*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[12].resource/*Observation/puerperium-ex*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[12].resource/*Observation/puerperium-ex*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[12].resource/*Observation/puerperium-ex*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/exemploNN: Bundle.entry[12].resource/*Observation/puerperium-ex*/.code.coding[0].display: 'Puerperium observable (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[12].resource/*Observation/puerperium-ex*/.value.ofType(CodeableConcept).coding[0].display: 'Normal puerperium (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[12].resource.code.coding[0].display: 'Puerperium observable (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[12].resource.value.ofType(CodeableConcept).coding[0].display: 'Normal puerperium (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[13].resource/*Immunization/vaccNN-antid*/.vaccineCode.coding[0].display: 'Product containing only human anti-D immunoglobulin (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[13].resource.vaccineCode.coding[0].display: 'Product containing only human anti-D immunoglobulin (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[14].resource/*Immunization/vaccNN-hepb*/.vaccineCode.coding[0].display: 'Vaccine product containing only Hepatitis B virus antigen (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[14].resource.vaccineCode.coding[0].display: 'Vaccine product containing only Hepatitis B virus antigen (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[15].resource/*Immunization/vaccNN-bcg*/.vaccineCode.coding[0].display: 'Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[15].resource.vaccineCode.coding[0].display: 'Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: Bundle/exemploNN: Bundle.entry[16].resource/*Observation/apgar-example*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[16].resource/*Observation/apgar-example*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[16].resource/*Observation/apgar-example*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/exemploNN: Bundle.entry[16].resource/*Observation/apgar-example*/.code.coding[0].display: 'Apgar score (assessment scale)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[16].resource/*Observation/apgar-example*/.component[0].code.coding[0].display: 'Apgar score at 1 minute (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[16].resource/*Observation/apgar-example*/.component[1].code.coding[0].display: 'Apgar score at 5 minutes (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[16].resource/*Observation/apgar-example*/.component[2].code.coding[0].display: 'Apgar score at 10 minutes (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[16].resource.code.coding[0].display: 'Apgar score (assessment scale)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[16].resource.component[0].code.coding[0].display: 'Apgar score at 1 minute (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[16].resource.component[1].code.coding[0].display: 'Apgar score at 5 minutes (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[16].resource.component[2].code.coding[0].display: 'Apgar score at 10 minutes (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: Bundle/exemploNN: Bundle.entry[17].resource/*Observation/congenital-example*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[17].resource/*Observation/congenital-example*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[17].resource/*Observation/congenital-example*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/exemploNN: Bundle.entry[17].resource/*Observation/congenital-example*/.code.coding[0].display: There are no valid display names found for the code http://loinc.org#73780-9 for language(s) 'pt-PT'. The display is 'Congenital anomalies of the newborn [US Standard Certificate of Live Birth]' the default language display
+INFORMATION: Bundle/exemploNN: Bundle.entry[17].resource/*Observation/congenital-example*/.value.ofType(CodeableConcept).coding[0].display: 'No abnormality detected - examination result' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[17].resource.code.coding[0].display: There are no valid display names found for the code http://loinc.org#73780-9 for language(s) 'pt-PT'. The display is 'Congenital anomalies of the newborn [US Standard Certificate of Live Birth]' the default language display
+INFORMATION: Bundle/exemploNN: Bundle.entry[17].resource.value.ofType(CodeableConcept).coding[0].display: 'No abnormality detected - examination result' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource/*Observation/pupillary-example*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource/*Observation/pupillary-example*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource/*Observation/pupillary-example*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/exemploNN: Bundle.entry[18].resource/*Observation/pupillary-example*/.code.coding[0].display: 'Pupil reaction' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[18].resource/*Observation/pupillary-example*/.component[0].code.coding[0].display: There are no valid display names found for the code http://loinc.org#79815-7 for language(s) 'pt-PT'. The display is 'Right pupil Pupillary response' the default language display
+INFORMATION: Bundle/exemploNN: Bundle.entry[18].resource/*Observation/pupillary-example*/.component[0].value.ofType(CodeableConcept).coding[0].display: 'No abnormality detected - examination result' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[18].resource/*Observation/pupillary-example*/.component[1].code.coding[0].display: There are no valid display names found for the code http://loinc.org#79899-1 for language(s) 'pt-PT'. The display is 'Left pupil Pupillary response' the default language display
+INFORMATION: Bundle/exemploNN: Bundle.entry[18].resource/*Observation/pupillary-example*/.component[1].value.ofType(CodeableConcept).coding[0].display: 'No abnormality detected - examination result' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[18].resource.code.coding[0].display: 'Pupil reaction' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[18].resource.component[0].code.coding[0].display: There are no valid display names found for the code http://loinc.org#79815-7 for language(s) 'pt-PT'. The display is 'Right pupil Pupillary response' the default language display
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource.component[0].value.ofType(CodeableConcept): ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found
+INFORMATION: Bundle/exemploNN: Bundle.entry[18].resource.component[0].value.ofType(CodeableConcept).coding[0].display: 'No abnormality detected - examination result' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Bundle/exemploNN: Bundle.entry[18].resource.component[1].code.coding[0].display: There are no valid display names found for the code http://loinc.org#79899-1 for language(s) 'pt-PT'. The display is 'Left pupil Pupillary response' the default language display
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource.component[1].value.ofType(CodeableConcept): ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found
+INFORMATION: Bundle/exemploNN: Bundle.entry[18].resource.component[1].value.ofType(CodeableConcept).coding[0].display: 'No abnormality detected - examination result' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: Bundle/exemploNN: Bundle.entry[19].resource/*Observation/cephalic-perimeter-example*/: Best Practice Recommendation: In general, all observations should have a performer
+INFORMATION: Bundle/exemploNN: Bundle.entry[20].resource/*PractitionerRole/ObsRole*/.code[0].coding[0].display: 'Obstetrician' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: Bundle/exemploNN: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[12].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[12].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[12].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/exemploNN: Bundle.entry[16].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[16].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[16].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/exemploNN: Bundle.entry[17].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[17].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[17].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/exemploNN: Bundle.entry[18].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/exemploNN: Bundle.entry[19].resource: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/CodeSystem-InfosGravidezCS.json ==
+== fsh-generated/resources/CodeSystem-documentclassificationCS.json ==
+== fsh-generated/resources/CodeSystem-tipo-episodio-cs.json ==
+== fsh-generated/resources/Composition-compNN.json ==
+WARNING: Composition/compNN: Composition.type.coding[0]: A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated
+WARNING: Composition/compNN: Composition.type.coding[0].system: URL value 'http://loinc.org/' does not resolve
+INFORMATION: Composition/compNN: Composition.section[1].code.coding[0].display: There are no valid display names found for the code http://loinc.org#56833-7 for language(s) 'pt-PT'. The display is 'Pregnancy related history Narrative' the default language display
+INFORMATION: Composition/compNN: Composition.section[2].code.coding[0].display: There are no valid display names found for the code http://loinc.org#57074-7 for language(s) 'pt-PT'. The display is 'Labor and delivery process Narrative' the default language display
+INFORMATION: Composition/compNN: Composition.section[3].code.coding[0].display: There are no valid display names found for the code http://loinc.org#57075-4 for language(s) 'pt-PT'. The display is 'Newborn delivery information' the default language display
+INFORMATION: Composition/compNN: Composition.section[4].code.coding[0].display: There are no valid display names found for the code http://loinc.org#73738-7 for language(s) 'pt-PT'. The display is 'Newborn screening test results panel - Point of Care' the default language display
+INFORMATION: Composition/compNN: Composition.section[5].code.coding[0].display: There are no valid display names found for the code http://loinc.org#11369-6 for language(s) 'pt-PT'. The display is 'History of Immunization Narrative' the default language display
+INFORMATION: Composition/compNN: Composition.section[6].code.coding[0].display: There are no valid display names found for the code http://loinc.org#11544-4 for language(s) 'pt-PT'. The display is 'Hospital discharge follow-up Narrative' the default language display
+INFORMATION: Composition/compNN: Composition.section[7].code.coding[0].display: 'Primary care hospital (environment)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+== fsh-generated/resources/Encounter-episodio.json ==
+== fsh-generated/resources/Encounter-episodioInt.json ==
+== fsh-generated/resources/Immunization-vaccNN-antid.json ==
+INFORMATION: Immunization/vaccNN-antid: Immunization.vaccineCode.coding[0].display: 'Product containing only human anti-D immunoglobulin (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+== fsh-generated/resources/Immunization-vaccNN-bcg.json ==
+INFORMATION: Immunization/vaccNN-bcg: Immunization.vaccineCode.coding[0].display: 'Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+== fsh-generated/resources/Immunization-vaccNN-hepb.json ==
+INFORMATION: Immunization/vaccNN-hepb: Immunization.vaccineCode.coding[0].display: 'Vaccine product containing only Hepatitis B virus antigen (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.obs-neonat.json ==
+== fsh-generated/resources/Observation-apgar-example.json ==
+INFORMATION: Observation/apgar-example: Observation.code.coding[0].display: 'Apgar score (assessment scale)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Observation/apgar-example: Observation.component[0].code.coding[0].display: 'Apgar score at 1 minute (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Observation/apgar-example: Observation.component[1].code.coding[0].display: 'Apgar score at 5 minutes (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Observation/apgar-example: Observation.component[2].code.coding[0].display: 'Apgar score at 10 minutes (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: Observation/apgar-example: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/apgar-example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/apgar-example: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-body-weigth-example.json ==
+WARNING: Observation/body-weigth-example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-cephalic-perimeter-example.json ==
+WARNING: Observation/cephalic-perimeter-example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-congenital-example.json ==
+INFORMATION: Observation/congenital-example: Observation.code.coding[0].display: There are no valid display names found for the code http://loinc.org#73780-9 for language(s) 'pt-PT'. The display is 'Congenital anomalies of the newborn [US Standard Certificate of Live Birth]' the default language display
+INFORMATION: Observation/congenital-example: Observation.value.ofType(CodeableConcept).coding[0].display: 'No abnormality detected - examination result' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: Observation/congenital-example: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/congenital-example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/congenital-example: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-length-example.json ==
+WARNING: Observation/length-example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-pregnancyNN.json ==
+INFORMATION: Observation/pregnancyNN: Observation.code.coding[0].display: 'Pregnancy (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: Observation/pregnancyNN: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-puerperium-ex.json ==
+INFORMATION: Observation/puerperium-ex: Observation.code.coding[0].display: 'Puerperium observable (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Observation/puerperium-ex: Observation.value.ofType(CodeableConcept).coding[0].display: 'Normal puerperium (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: Observation/puerperium-ex: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/puerperium-ex: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/puerperium-ex: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-pupillary-example.json ==
+INFORMATION: Observation/pupillary-example: Observation.code.coding[0].display: 'Pupil reaction' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Observation/pupillary-example: Observation.component[0].code.coding[0].display: There are no valid display names found for the code http://loinc.org#79815-7 for language(s) 'pt-PT'. The display is 'Right pupil Pupillary response' the default language display
+WARNING: Observation/pupillary-example: Observation.component[0].value.ofType(CodeableConcept): ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found
+INFORMATION: Observation/pupillary-example: Observation.component[0].value.ofType(CodeableConcept).coding[0].display: 'No abnormality detected - examination result' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: Observation/pupillary-example: Observation.component[1].code.coding[0].display: There are no valid display names found for the code http://loinc.org#79899-1 for language(s) 'pt-PT'. The display is 'Left pupil Pupillary response' the default language display
+WARNING: Observation/pupillary-example: Observation.component[1].value.ofType(CodeableConcept): ValueSet 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' not found
+INFORMATION: Observation/pupillary-example: Observation.component[1].value.ofType(CodeableConcept).coding[0].display: 'No abnormality detected - examination result' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: Observation/pupillary-example: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/pupillary-example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/pupillary-example: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Organization-childhealthsurveilance-ex.json ==
+== fsh-generated/resources/Organization-destino.json ==
+== fsh-generated/resources/Organization-inst.json ==
+== fsh-generated/resources/Patient-mother.json ==
+WARNING: Patient/mother: Patient.identifier[0].system: URL value 'http://example' does not resolve
+== fsh-generated/resources/Patient-newBornNN.json ==
+== fsh-generated/resources/PractitionerRole-ObsRole.json ==
+INFORMATION: PractitionerRole/ObsRole: PractitionerRole.code[0].coding[0].display: 'Obstetrician' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+== fsh-generated/resources/Procedure-BirthNN.json ==
+INFORMATION: Procedure/BirthNN: Procedure.code.coding[0].display: 'Delivery of vertex presentation (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+== fsh-generated/resources/StructureDefinition-Antid.json ==
+INFORMATION: StructureDefinition/Antid: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+INFORMATION: StructureDefinition/Antid: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0].display: 'Product containing only human anti-D immunoglobulin (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Antid: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: 'Product containing only human anti-D immunoglobulin (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+== fsh-generated/resources/StructureDefinition-ApgarScore.json ==
+INFORMATION: StructureDefinition/ApgarScore: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: 'Apgar score (assessment scale)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/ApgarScore: StructureDefinition.snapshot.element[54].pattern.ofType(CodeableConcept).coding[0].display: 'Apgar score at 1 minute (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/ApgarScore: StructureDefinition.snapshot.element[63].pattern.ofType(CodeableConcept).coding[0].display: 'Apgar score at 5 minutes (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/ApgarScore: StructureDefinition.snapshot.element[72].pattern.ofType(CodeableConcept).coding[0].display: 'Apgar score at 10 minutes (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/ApgarScore: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].display: 'Apgar score (assessment scale)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/ApgarScore: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0].display: 'Apgar score at 1 minute (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/ApgarScore: StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept).coding[0].display: 'Apgar score at 5 minutes (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/ApgarScore: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0].display: 'Apgar score at 10 minutes (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: StructureDefinition/ApgarScore: StructureDefinition.snapshot: The slice 'first' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ApgarScore: StructureDefinition.snapshot: The slice 'fifth' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ApgarScore: StructureDefinition.snapshot: The slice 'tenth' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-Bcg.json ==
+INFORMATION: StructureDefinition/Bcg: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0].display: 'Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Bcg: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: 'Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+== fsh-generated/resources/StructureDefinition-Birth.json ==
+INFORMATION: StructureDefinition/Birth: StructureDefinition.snapshot.element[16].pattern.ofType(CodeableConcept).coding[0].display: 'Human parturition, function (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Birth: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: 'Human parturition, function (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+== fsh-generated/resources/StructureDefinition-Bulletindelivery.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Bulletindelivery'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Child.json ==
+== fsh-generated/resources/StructureDefinition-Childhealthsurveilance.json ==
+== fsh-generated/resources/StructureDefinition-CompositionNoticia.json ==
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber' to 'http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.2.0'
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0].system: URL value 'http://loinc.org/' does not resolve
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[74].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#56833-7 for language(s) 'pt-PT'. The display is 'Pregnancy related history Narrative' the default language display
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[88].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#57074-7 for language(s) 'pt-PT'. The display is 'Labor and delivery process Narrative' the default language display
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[104].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#57075-4 for language(s) 'pt-PT'. The display is 'Newborn delivery information' the default language display
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[118].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#73738-7 for language(s) 'pt-PT'. The display is 'Newborn screening test results panel - Point of Care' the default language display
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[143].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#11369-6 for language(s) 'pt-PT'. The display is 'History of Immunization Narrative' the default language display
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[160].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#11544-4 for language(s) 'pt-PT'. The display is 'Hospital discharge follow-up Narrative' the default language display
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[180].pattern.ofType(CodeableConcept).coding[0].display: 'Primary care hospital (environment)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://loinc.org/' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: URL value 'http://loinc.org/' does not resolve
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#56833-7 for language(s) 'pt-PT'. The display is 'Pregnancy related history Narrative' the default language display
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#57074-7 for language(s) 'pt-PT'. The display is 'Labor and delivery process Narrative' the default language display
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[19].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#57075-4 for language(s) 'pt-PT'. The display is 'Newborn delivery information' the default language display
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[22].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#73738-7 for language(s) 'pt-PT'. The display is 'Newborn screening test results panel - Point of Care' the default language display
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[36].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#11369-6 for language(s) 'pt-PT'. The display is 'History of Immunization Narrative' the default language display
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[42].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#11544-4 for language(s) 'pt-PT'. The display is 'Hospital discharge follow-up Narrative' the default language display
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[51].pattern.ofType(CodeableConcept).coding[0].display: 'Primary care hospital (environment)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.differential.element[4].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/CompositionNoticia: Composition.extension: The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.2.0 is deprecated
+INFORMATION: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot.element[41].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'birthInfo' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'episode' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'length' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'bodyweigth' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'cephalicPerimeter' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'apgar' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'malformation' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'Phototherapy' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'hearingscreen' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'Congenital' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'Metabolic' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'Pupillary' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'newbornriskassessment' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'vhb' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'bcg' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'immuno' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'puerperium' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'childhealthsurveilance' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'bulletindelivery' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'letter' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'nextappointment' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/CompositionNoticia: StructureDefinition.snapshot: The slice 'transport' on path 'Composition.section.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-Congenital.json ==
+INFORMATION: StructureDefinition/Congenital: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#73780-9 for language(s) 'pt-PT'. The display is 'Congenital anomalies of the newborn [US Standard Certificate of Live Birth]' the default language display
+INFORMATION: StructureDefinition/Congenital: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#73780-9 for language(s) 'pt-PT'. The display is 'Congenital anomalies of the newborn [US Standard Certificate of Live Birth]' the default language display
+== fsh-generated/resources/StructureDefinition-Contact.json ==
+WARNING: StructureDefinition/Contact: StructureDefinition.differential.element[2].binding: The definition for the element 'Encounter.class' binds to the value set 'https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/Contact: StructureDefinition.snapshot.element[17].binding: The definition for the element 'Encounter.class' binds to the value set 'https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-ContactLM.json ==
+== fsh-generated/resources/StructureDefinition-CoredaNoticiaLM.json ==
+== fsh-generated/resources/StructureDefinition-DestinationLN.json ==
+WARNING: StructureDefinition/DestinationLN: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/DestinationLN: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+== fsh-generated/resources/StructureDefinition-Hearingscreen.json ==
+INFORMATION: StructureDefinition/Hearingscreen: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: 'Neonatal hearing test' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Hearingscreen: StructureDefinition.snapshot.element[54].pattern.ofType(CodeableConcept).coding[0].display: 'Structure of right auditory system' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Hearingscreen: StructureDefinition.snapshot.element[63].pattern.ofType(CodeableConcept).coding[0].display: 'Structure of left auditory system (body structure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Hearingscreen: StructureDefinition.differential.element[0].pattern.ofType(CodeableConcept).coding[0].display: 'Neonatal hearing test' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Hearingscreen: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0].display: 'Structure of right auditory system' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Hearingscreen: StructureDefinition.differential.element[6].pattern.ofType(CodeableConcept).coding[0].display: 'Structure of left auditory system (body structure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: StructureDefinition/Hearingscreen: StructureDefinition.snapshot: The slice 'right' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Hearingscreen: StructureDefinition.snapshot: The slice 'left' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+INFORMATION: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Hearingscreen'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-Hepb.json ==
+INFORMATION: StructureDefinition/Hepb: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept).coding[0].display: 'Vaccine product containing only Hepatitis B virus antigen (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Hepb: StructureDefinition.differential.element[0].pattern.ofType(CodeableConcept).coding[0].display: 'Vaccine product containing only Hepatitis B virus antigen (medicinal product)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+== fsh-generated/resources/StructureDefinition-Letter.json ==
+INFORMATION: StructureDefinition/Letter: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: 'Provision of written information about maternity care (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Letter: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: 'Provision of written information about maternity care (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Letter'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-Malformation.json ==
+INFORMATION: StructureDefinition/Malformation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: 'Congenital malformation (disorder)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Malformation: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: 'Congenital malformation (disorder)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Malformation'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-Metabolic.json ==
+INFORMATION: StructureDefinition/Metabolic: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: 'Guthrie test' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Metabolic: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: 'Guthrie test' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Metabolic'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-Mother.json ==
+WARNING: StructureDefinition/Mother: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace' to 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0'
+WARNING: StructureDefinition/Mother: StructureDefinition.snapshot.element[9].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-nationality'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-nationality' to 'http://hl7.org/fhir/StructureDefinition/patient-nationality|5.2.0'
+WARNING: StructureDefinition/Mother: StructureDefinition.differential.element[1].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace' to 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0'
+WARNING: StructureDefinition/Mother: StructureDefinition.differential.element[2].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-nationality'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-nationality' to 'http://hl7.org/fhir/StructureDefinition/patient-nationality|5.2.0'
+== fsh-generated/resources/StructureDefinition-MotherDemographicsLM.json ==
+WARNING: StructureDefinition/MotherDemographicsLM: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/MotherDemographicsLM: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+== fsh-generated/resources/StructureDefinition-NewBornLM.json ==
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[20]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[21]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[22]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[27]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[28]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[29]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[30]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[32]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[51]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[52]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[66]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[67]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[68]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[69]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[70]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.snapshot.element[71]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[17]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[18]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[19]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[21]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[22]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[23]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[24]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[25]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[26]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[42]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[43]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[54]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[55]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/NewBornLM: StructureDefinition.differential.element[56]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+== fsh-generated/resources/StructureDefinition-Newbornriskassessment.json ==
+INFORMATION: StructureDefinition/Newbornriskassessment: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: 'Risk assessment status (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Newbornriskassessment: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0].display: 'Risk assessment status (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Newbornriskassessment: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Newbornriskassessment'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-NoticiaLM.json ==
+== fsh-generated/resources/StructureDefinition-Phototherapy.json ==
+INFORMATION: StructureDefinition/Phototherapy: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: 'Phototherapy of newborn' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Phototherapy: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: 'Phototherapy of newborn' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Phototherapy'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-Pregnancy.json ==
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: 'Pregnancy (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[54].pattern.ofType(CodeableConcept).coding[0].display: 'day (qualifier value)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[63].pattern.ofType(CodeableConcept).coding[0].display: 'week (qualifier value)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[72].pattern.ofType(CodeableConcept).coding[0].display: 'Pregnancy risk level (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[81].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[90].pattern.ofType(CodeableConcept).coding[0].display: 'Ultrasonography in first trimester (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[99].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[108].pattern.ofType(CodeableConcept).coding[0].display: 'Ultrasonography in second trimester (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[117].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[126].pattern.ofType(CodeableConcept).coding[0].display: 'Ultrasonography in third trimester (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[135].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[144].pattern.ofType(CodeableConcept).coding[0].display: 'Total number of prenatal care visits (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[153].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.snapshot.element[162].pattern.ofType(CodeableConcept).coding[0].display: 'Birth (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: 'Pregnancy (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0].display: 'day (qualifier value)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept).coding[0].display: 'week (qualifier value)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0].display: 'Pregnancy risk level (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[17].pattern.ofType(CodeableConcept).coding[0].display: 'Ultrasonography in first trimester (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[20].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[23].pattern.ofType(CodeableConcept).coding[0].display: 'Ultrasonography in second trimester (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[26].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[29].pattern.ofType(CodeableConcept).coding[0].display: 'Ultrasonography in third trimester (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[32].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[35].pattern.ofType(CodeableConcept).coding[0].display: 'Total number of prenatal care visits (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[38].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS|0.0.1
+INFORMATION: StructureDefinition/Pregnancy: StructureDefinition.differential.element[41].pattern.ofType(CodeableConcept).coding[0].display: 'Birth (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'days' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'weeks' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'risk' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'riskreason' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'firstQuarterEco' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'firstQuarterBio' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'secondQuarterEco' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'secondQuarterBio' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'thirdQuarterEco' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'thirdQuarterBio' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'visits' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'intercurrences' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pregnancy: StructureDefinition.snapshot: The slice 'pregancyType' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-PregnancyLM.json ==
+WARNING: StructureDefinition/PregnancyLM: StructureDefinition.snapshot.element[26]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/PregnancyLM: StructureDefinition.differential.element[20]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+== fsh-generated/resources/StructureDefinition-Professional.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Professional'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ProfessionalLM.json ==
+== fsh-generated/resources/StructureDefinition-Puerperium.json ==
+INFORMATION: StructureDefinition/Puerperium: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: 'Puerperium observable (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Puerperium: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: 'Puerperium observable (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+== fsh-generated/resources/StructureDefinition-Pupillary.json ==
+INFORMATION: StructureDefinition/Pupillary: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: 'Pupil reaction' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pupillary: StructureDefinition.snapshot.element[54].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#79815-7 for language(s) 'pt-PT'. The display is 'Right pupil Pupillary response' the default language display
+WARNING: StructureDefinition/Pupillary: StructureDefinition.snapshot.element[55].binding.valueSet: Canonical URL 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' does not resolve
+INFORMATION: StructureDefinition/Pupillary: StructureDefinition.snapshot.element[63].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#79899-1 for language(s) 'pt-PT'. The display is 'Left pupil Pupillary response' the default language display
+WARNING: StructureDefinition/Pupillary: StructureDefinition.snapshot.element[64].binding.valueSet: Canonical URL 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' does not resolve
+INFORMATION: StructureDefinition/Pupillary: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: 'Pupil reaction' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Pupillary: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#79815-7 for language(s) 'pt-PT'. The display is 'Right pupil Pupillary response' the default language display
+WARNING: StructureDefinition/Pupillary: StructureDefinition.differential.element[5].binding.valueSet: Canonical URL 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' does not resolve
+INFORMATION: StructureDefinition/Pupillary: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0].display: There are no valid display names found for the code http://loinc.org#79899-1 for language(s) 'pt-PT'. The display is 'Left pupil Pupillary response' the default language display
+WARNING: StructureDefinition/Pupillary: StructureDefinition.differential.element[8].binding.valueSet: Canonical URL 'https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3762-3' does not resolve
+WARNING: StructureDefinition/Pupillary: StructureDefinition.snapshot: The slice 'right' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/Pupillary: StructureDefinition.snapshot: The slice 'left' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-ReferenciaNHACJR.json ==
+WARNING: StructureDefinition/ReferenciaNHACJR: StructureDefinition.context[0]: Review the extension type for ReferenciaNHACJR: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ReferenciaNHACJR'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Transport.json ==
+INFORMATION: StructureDefinition/Transport: StructureDefinition.snapshot.element[11].pattern.ofType(CodeableConcept).coding[0].display: 'Transportation details (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+INFORMATION: StructureDefinition/Transport: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].display: 'Transportation details (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language pt-PT
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Transport'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Vaccination.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Vaccination'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-VaccineLM.json ==
+== fsh-generated/resources/StructureDefinition-transport-information.json ==
+WARNING: StructureDefinition/transport-information: StructureDefinition.context[0]: Review the extension type for transport-information: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/transport-information'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/ValueSet-bulletin-delivery-vs.json ==
+== fsh-generated/resources/ValueSet-document-type-vs.json ==
+== fsh-generated/resources/ValueSet-episode-type-vs.json ==
+== fsh-generated/resources/ValueSet-newborn-congenital-anomalies-vs.json ==
+== fsh-generated/resources/ValueSet-newbornriskassessment-vs.json ==
+== fsh-generated/resources/ValueSet-puerperium-vs.json ==
+== fsh-generated/resources/ValueSet-risco-gravidez-vs.json ==
+== fsh-generated/resources/ValueSet-tipo-gravidez-vs.json ==
+== fsh-generated/resources/ValueSet-tipo-parto-vs.json ==
+== fsh-generated/resources/ValueSet-transport-type-vs.json ==
+== fsh-generated/resources/ValueSet-vacinas-infancia-vs.json ==

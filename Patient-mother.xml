@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="mother"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Mother"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient mother</b></p><a name="mother"> </a><a name="hcmother"> </a><a name="mother-pt-PT"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Mother.html">Perfil da mãe</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">NOME DE TESTE (no stated gender), DoB: 1989-07-30 ( http://example#1234567)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">MORADA DE TESTE </td></tr><tr><td style="background-color: #f3f5da" title="The nationality of the patient.">Patient Nationality:</td><td colspan="3"><ul><li>code: <span title="Codes:">Portugal</span></li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">
+    <extension url="code">
+      <valueCodeableConcept>
+        <text value="Portugal"/>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="http://example"/>
+    <value value="1234567"/>
+  </identifier>
+  <name>
+    <text value="NOME DE TESTE"/>
+  </name>
+  <birthDate value="1989-07-30"/>
+  <address>
+    <line value="MORADA DE TESTE"/>
+  </address>
+</Patient>

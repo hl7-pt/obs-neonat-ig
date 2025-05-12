@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/PractitionerRole/ObsRole> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ObsRole"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole ObsRole</b></p><a name=\"ObsRole\"> </a><a name=\"hcObsRole\"> </a><a name=\"ObsRole-pt-PT\"> </a><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 11935004}\">Obstetrician</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       a sct:11935004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11935004" ] ;
+       fhir:display [ fhir:v "Obstetrician" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

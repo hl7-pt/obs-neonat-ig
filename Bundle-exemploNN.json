@@ -1,0 +1,738 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "exemploNN",
+  "identifier" : {
+    "system" : "http:/example.org",
+    "value" : "2"
+  },
+  "type" : "document",
+  "timestamp" : "2024-11-28T22:00:00Z",
+  "entry" : [{
+    "fullUrl" : "http://example.org/Composition/compNN",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "compNN",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/CompositionNoticia"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_compNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition compNN</b></p><a name=\"compNN\"> </a><a name=\"hccompNN\"> </a><a name=\"compNN-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CompositionNoticia.html\">Perfil do recurso Composition que cria as secções da noticia nascimento</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org/ 71230-7}\">Birth certificate</span></p><p><b>encounter</b>: <a href=\"Encounter-episodio.html\">Encounter: identifier = 18001555; status = finished; class = Internamento (Tipos de episódio CodeSystem#INT); serviceType = </a></p><p><b>date</b>: 2021-09-01</p><p><b>author</b>: HCP</p><p><b>title</b>: Noticia de Nascimento de recém-nascido</p></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org/",
+          "code" : "71230-7",
+          "display" : "Birth certificate"
+        }]
+      },
+      "encounter" : {
+        "reference" : "Encounter/episodio"
+      },
+      "date" : "2021-09-01",
+      "author" : [{
+        "display" : "HCP"
+      }],
+      "title" : "Noticia de Nascimento de recém-nascido",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10160-0"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Patient/mother"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "56833-7",
+            "display" : "Pregnancy related history Narrative"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/pregnancyNN"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "57074-7",
+            "display" : "Labor and delivery process Narrative"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Procedure/BirthNN"
+        },
+        {
+          "reference" : "Encounter/episodioInt"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "57075-4",
+            "display" : "Newborn delivery information"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Patient/newBornNN"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "73738-7",
+            "display" : "Newborn screening test results panel - Point of Care"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/length-example"
+        },
+        {
+          "reference" : "Observation/body-weigth-example"
+        },
+        {
+          "reference" : "Observation/apgar-example"
+        },
+        {
+          "reference" : "Observation/congenital-example"
+        },
+        {
+          "reference" : "Observation/pupillary-example"
+        },
+        {
+          "reference" : "Observation/cephalic-perimeter-example"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11369-6",
+            "display" : "History of Immunization Narrative"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Immunization/vaccNN-antid"
+        },
+        {
+          "reference" : "Immunization/vaccNN-bcg"
+        },
+        {
+          "reference" : "Immunization/vaccNN-hepb"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11544-4",
+            "display" : "Hospital discharge follow-up Narrative"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Organization/childhealthsurveilance-ex"
+        },
+        {
+          "reference" : "Observation/puerperium-ex"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "45131006",
+            "display" : "Primary care hospital (environment)"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Organization/destino"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Procedure/BirthNN",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "BirthNN",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Birth"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_BirthNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure BirthNN</b></p><a name=\"BirthNN\"> </a><a name=\"hcBirthNN\"> </a><a name=\"BirthNN-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Birth.html\">Perfil de Informação do Parto</a></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 384729004}\">Delivery of vertex presentation (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mother.html\">NOME DE TESTE (no stated gender), DoB: 1989-07-30 ( http://example#1234567)</a></p><p><b>encounter</b>: <a href=\"Encounter-episodioInt.html\">Encounter: status = finished; class = Internamento (Tipos de episódio CodeSystem#INT)</a></p><p><b>performed</b>: 2024-08-01 10:00:00+0000</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-ObsRole.html\">PractitionerRole Obstetrician</a></td></tr></table></div>"
+      },
+      "status" : "completed",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "384729004",
+          "display" : "Delivery of vertex presentation (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mother"
+      },
+      "encounter" : {
+        "reference" : "Encounter/episodioInt"
+      },
+      "performedDateTime" : "2024-08-01T10:00:00.000Z",
+      "performer" : [{
+        "actor" : {
+          "reference" : "PractitionerRole/ObsRole"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Encounter/episodioInt",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "episodioInt",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_episodioInt\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter episodioInt</b></p><a name=\"episodioInt\"> </a><a name=\"hcepisodioInt\"> </a><a name=\"episodioInt-pt-PT\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT\">Tipos de episódio CodeSystem INT</a>: Internamento</p></div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs",
+        "code" : "INT"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Organization/destino",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "destino",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_destino\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization destino</b></p><a name=\"destino\"> </a><a name=\"hcdestino\"> </a><a name=\"destino-pt-PT\"> </a><p><b>identifier</b>: 2010491</p><p><b>name</b>: USF ESCARIZ</p></div>"
+      },
+      "identifier" : [{
+        "value" : "2010491"
+      }],
+      "name" : "USF ESCARIZ"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Patient/mother",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mother",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Mother"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_mother\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient mother</b></p><a name=\"mother\"> </a><a name=\"hcmother\"> </a><a name=\"mother-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Mother.html\">Perfil da mãe</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">NOME DE TESTE (no stated gender), DoB: 1989-07-30 ( http://example#1234567)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">MORADA DE TESTE </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nationality of the patient.\">Patient Nationality:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes:\">Portugal</span></li></ul></td></tr></table></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCodeableConcept" : {
+            "text" : "Portugal"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+      }],
+      "identifier" : [{
+        "system" : "http://example",
+        "value" : "1234567"
+      }],
+      "name" : [{
+        "text" : "NOME DE TESTE"
+      }],
+      "birthDate" : "1989-07-30",
+      "address" : [{
+        "line" : ["MORADA DE TESTE"]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Encounter/episodio",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "episodio",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Contact"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_episodio\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter episodio</b></p><a name=\"episodio\"> </a><a name=\"hcepisodio\"> </a><a name=\"episodio-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Contact.html\">Perfil sobre episódio da notícia de nascimento</a></p></div><p><b>identifier</b>: 18001555</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"CodeSystem-tipo-episodio-cs.html#tipo-episodio-cs-INT\">Tipos de episódio CodeSystem INT</a>: Internamento</p><p><b>serviceType</b>: <span title=\"Codes:\">Obstetricia</span></p><p><b>serviceProvider</b>: <a href=\"Organization-inst.html\">Organization CH ENTRE DOURO E VOUGA</a></p></div>"
+      },
+      "identifier" : [{
+        "value" : "18001555"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs",
+        "code" : "INT"
+      },
+      "serviceType" : {
+        "text" : "Obstetricia"
+      },
+      "serviceProvider" : {
+        "reference" : "Organization/inst"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Organization/inst",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "inst",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_inst\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization inst</b></p><a name=\"inst\"> </a><a name=\"hcinst\"> </a><a name=\"inst-pt-PT\"> </a><p><b>name</b>: CH ENTRE DOURO E VOUGA</p></div>"
+      },
+      "name" : "CH ENTRE DOURO E VOUGA"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/pregnancyNN",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "pregnancyNN",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pregnancy"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_pregnancyNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation pregnancyNN</b></p><a name=\"pregnancyNN\"> </a><a name=\"hcpregnancyNN\"> </a><a name=\"pregnancyNN-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Pregnancy.html\">Perfil de Informação de gravidez</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 77386006}\">Pregnancy (finding)</span></p><p><b>subject</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "77386006",
+          "display" : "Pregnancy (finding)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/newBornNN"
+      },
+      "effectiveDateTime" : "2024-08-01T10:00:00.000Z"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Patient/newBornNN",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "newBornNN",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Child"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_newBornNN\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient newBornNN</b></p><a name=\"newBornNN\"> </a><a name=\"hcnewBornNN\"> </a><a name=\"newBornNN-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Child.html\">Perfil do recém-nascido</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB Unknown</p><hr/></div>"
+      },
+      "gender" : "female"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/body-weigth-example",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "body-weigth-example",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/bodyweight"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_body-weigth-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation body-weigth-example</b></p><a name=\"body-weigth-example\"> </a><a name=\"hcbody-weigth-example\"> </a><a name=\"body-weigth-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/bodyweight.html\">Observation Body Weight Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}\">Weight</span></p><p><b>subject</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p><p><b>value</b>: 3250 gram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "29463-7"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/newBornNN"
+      },
+      "effectiveDateTime" : "2024-08-01T10:00:00.000Z",
+      "valueQuantity" : {
+        "value" : 3250,
+        "unit" : "gram(s)",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/length-example",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "length-example",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/bodyheight"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_length-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation length-example</b></p><a name=\"length-example\"> </a><a name=\"hclength-example\"> </a><a name=\"length-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/bodyheight.html\">Observation Body Height Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8302-2}\">Bdy height</span></p><p><b>subject</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p><p><b>value</b>: 50 cm(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8302-2"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/newBornNN"
+      },
+      "effectiveDateTime" : "2024-08-01T10:00:00.000Z",
+      "valueQuantity" : {
+        "value" : 50,
+        "unit" : "cm(s)",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cm"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Organization/childhealthsurveilance-ex",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "childhealthsurveilance-ex",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Childhealthsurveilance"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_childhealthsurveilance-ex\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization childhealthsurveilance-ex</b></p><a name=\"childhealthsurveilance-ex\"> </a><a name=\"hcchildhealthsurveilance-ex\"> </a><a name=\"childhealthsurveilance-ex-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Childhealthsurveilance.html\">Perfil da vigilância de saúde infantil</a></p></div><p><b>identifier</b>: <code>http:/example.org</code>/4</p></div>"
+      },
+      "identifier" : [{
+        "system" : "http:/example.org",
+        "value" : "4"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/puerperium-ex",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "puerperium-ex",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Puerperium"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_puerperium-ex\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation puerperium-ex</b></p><a name=\"puerperium-ex\"> </a><a name=\"hcpuerperium-ex\"> </a><a name=\"puerperium-ex-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Puerperium.html\">Perfil para registar dados do puerpério até à alta</a></p></div><p><b>identifier</b>: <code>http:/example.org</code>/4</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 597951000005108}\">Puerperium observable (observable entity)</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 597961000005105}\">Normal puerperium (finding)</span></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http:/example.org",
+        "value" : "4"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "597951000005108",
+          "display" : "Puerperium observable (observable entity)"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "597961000005105",
+          "display" : "Normal puerperium (finding)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Immunization/vaccNN-antid",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "vaccNN-antid",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Antid"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_vaccNN-antid\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization vaccNN-antid</b></p><a name=\"vaccNN-antid\"> </a><a name=\"hcvaccNN-antid\"> </a><a name=\"vaccNN-antid-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Antid.html\">Perfil de Informação sobre vacinação - antid</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 786768001}\">Product containing only human anti-D immunoglobulin (medicinal product)</span></p><p><b>patient</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>occurrence</b>: 2024-08-01 10:00:00+0000</p><p><b>lotNumber</b>: xyz-123</p></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "786768001",
+          "display" : "Product containing only human anti-D immunoglobulin (medicinal product)"
+        }]
+      },
+      "patient" : {
+        "reference" : "Patient/newBornNN"
+      },
+      "occurrenceDateTime" : "2024-08-01T10:00:00.000Z",
+      "lotNumber" : "xyz-123"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Immunization/vaccNN-hepb",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "vaccNN-hepb",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Hepb"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_vaccNN-hepb\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization vaccNN-hepb</b></p><a name=\"vaccNN-hepb\"> </a><a name=\"hcvaccNN-hepb\"> </a><a name=\"vaccNN-hepb-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Hepb.html\">Perfil de Informação sobre vacinação - hepb</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 871822003}\">Vaccine product containing only Hepatitis B virus antigen (medicinal product)</span></p><p><b>patient</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>occurrence</b>: 2024-08-01 10:00:00+0000</p><p><b>lotNumber</b>: abc-9878</p></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "871822003",
+          "display" : "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
+        }]
+      },
+      "patient" : {
+        "reference" : "Patient/newBornNN"
+      },
+      "occurrenceDateTime" : "2024-08-01T10:00:00.000Z",
+      "lotNumber" : "abc-9878"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Immunization/vaccNN-bcg",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "vaccNN-bcg",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Bcg"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_vaccNN-bcg\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization vaccNN-bcg</b></p><a name=\"vaccNN-bcg\"> </a><a name=\"hcvaccNN-bcg\"> </a><a name=\"vaccNN-bcg-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Bcg.html\">Perfil de Informação sobre vacinação - BCG</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 1861000221106}\">Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)</span></p><p><b>patient</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>occurrence</b>: 2024-08-01 10:00:00+0000</p><p><b>lotNumber</b>: ghy-123/2024</p></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1861000221106",
+          "display" : "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
+        }]
+      },
+      "patient" : {
+        "reference" : "Patient/newBornNN"
+      },
+      "occurrenceDateTime" : "2024-08-01T10:00:00.000Z",
+      "lotNumber" : "ghy-123/2024"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/apgar-example",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "apgar-example",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ApgarScore"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_apgar-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation apgar-example</b></p><a name=\"apgar-example\"> </a><a name=\"hcapgar-example\"> </a><a name=\"apgar-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ApgarScore.html\">Perfil de informação clinicas - apgarScore</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1287344004}\">Apgar score (assessment scale)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 169895004}\">Apgar score at 1 minute (observable entity)</span></p><p><b>value</b>: 7</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 169909004}\">Apgar score at 5 minutes (observable entity)</span></p><p><b>value</b>: 9</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 169922007}\">Apgar score at 10 minutes (observable entity)</span></p><p><b>value</b>: 10</p></blockquote></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1287344004",
+          "display" : "Apgar score (assessment scale)"
+        }]
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "169895004",
+            "display" : "Apgar score at 1 minute (observable entity)"
+          }]
+        },
+        "valueInteger" : 7
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "169909004",
+            "display" : "Apgar score at 5 minutes (observable entity)"
+          }]
+        },
+        "valueInteger" : 9
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "169922007",
+            "display" : "Apgar score at 10 minutes (observable entity)"
+          }]
+        },
+        "valueInteger" : 10
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/congenital-example",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "congenital-example",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Congenital"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_congenital-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation congenital-example</b></p><a name=\"congenital-example\"> </a><a name=\"hccongenital-example\"> </a><a name=\"congenital-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Congenital.html\">Perfil de informação clinicas - Rastreio Cardiopatias Congénitas</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 73780-9}\">Congenital anomalies of the newborn [US Standard Certificate of Live Birth]</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 282332003}\">No abnormality detected - examination result</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "73780-9",
+          "display" : "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282332003",
+          "display" : "No abnormality detected - examination result"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/pupillary-example",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "pupillary-example",
+      "meta" : {
+        "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/Pupillary"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_pupillary-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation pupillary-example</b></p><a name=\"pupillary-example\"> </a><a name=\"hcpupillary-example\"> </a><a name=\"pupillary-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Pupillary.html\">Perfil de informação clinicas - Teste Reflexo pupilar</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271733001}\">Pupil reaction</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 79815-7}\">Right pupil Pupillary response</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 282332003}\">No abnormality detected - examination result</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 79899-1}\">Left pupil Pupillary response</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 282332003}\">No abnormality detected - examination result</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "271733001",
+          "display" : "Pupil reaction"
+        }]
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "79815-7",
+            "display" : "Right pupil Pupillary response"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "282332003",
+            "display" : "No abnormality detected - examination result"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "79899-1",
+            "display" : "Left pupil Pupillary response"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "282332003",
+            "display" : "No abnormality detected - examination result"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/Observation/cephalic-perimeter-example",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "cephalic-perimeter-example",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/headcircum"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_cephalic-perimeter-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation cephalic-perimeter-example</b></p><a name=\"cephalic-perimeter-example\"> </a><a name=\"hccephalic-perimeter-example\"> </a><a name=\"cephalic-perimeter-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/headcircum.html\">Observation Head Circumference Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9843-4}\">Head Circumf OCF</span></p><p><b>subject</b>: <a href=\"Patient-newBornNN.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p><p><b>value</b>: 50.1 cm(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "9843-4"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/newBornNN"
+      },
+      "effectiveDateTime" : "2024-08-01T10:00:00.000Z",
+      "valueQuantity" : {
+        "value" : 50.1,
+        "unit" : "cm(s)",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cm"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/PractitionerRole/ObsRole",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "ObsRole",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_ObsRole\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole ObsRole</b></p><a name=\"ObsRole\"> </a><a name=\"hcObsRole\"> </a><a name=\"ObsRole-pt-PT\"> </a><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 11935004}\">Obstetrician</span></p></div>"
+      },
+      "code" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "11935004",
+          "display" : "Obstetrician"
+        }]
+      }]
+    }
+  }]
+}

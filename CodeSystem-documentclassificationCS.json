@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "documentclassificationCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem documentclassificationCS</b></p><a name=\"documentclassificationCS\"> </a><a name=\"hcdocumentclassificationCS\"> </a><a name=\"documentclassificationCS-pt-PT\"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">BISC<a name=\"documentclassificationCS-BISC\"> </a></td><td>Boletim Individual de saúde da criança</td><td>Boletim Individual de saúde da criança</td></tr><tr><td style=\"white-space:nowrap\">BSIJ<a name=\"documentclassificationCS-BSIJ\"> </a></td><td>Boletim de saúde infantil e juvenil</td><td>Boletim de saúde infantil e juvenil</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS",
+  "version" : "0.0.1",
+  "name" : "DocumentclassificationCS",
+  "title" : "Classficação de documentos CodeSystem",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-05-12T10:05:23+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Classficação de documentos CodeSystem",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "BISC",
+    "display" : "Boletim Individual de saúde da criança",
+    "definition" : "Boletim Individual de saúde da criança"
+  },
+  {
+    "code" : "BSIJ",
+    "display" : "Boletim de saúde infantil e juvenil",
+    "definition" : "Boletim de saúde infantil e juvenil"
+  }]
+}

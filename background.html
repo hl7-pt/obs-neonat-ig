@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Análise Funcional - HL7 PT FHIR Implementation Guide: Noticia de Nascimento v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Noticia de Nascimento</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Índice</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introdução
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Análise Funcional</a>
+      </li>
+      <li>
+        <a href="mapping.html">Mapeamentos</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="usage.html">Usar Este IG</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Análise Funcional</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Noticia de Nascimento, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 0.0.1 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-pt/obs-neonat-ig/tree/master">https://github.com/hl7-pt/obs-neonat-ig/tree/master</a> and changes regularly. See the <a href="https://hl7.pt/fhir/NoticiaNascimento/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Análise Funcional</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>A gravidez tem um conjunto de etapas funcionais associadas como descrita na imagem abaixo:</p>
+
+<p><img src="gravidez1.png" alt="Lógica gravidez" />
+<br clear="all" /></p>
+
+<h4 id="etapa-1---preconceção">Etapa 1 - Preconceção</h4>
+<p>Consulta pré-concecional realizada em centro de saúde habitualmente (depende dos fatores de risco da grávida). Esta consulta deve ser realizada antes de parar a contraceção e deve ser programada uma consulta subsequente para avaliação dos resultados dos exames realizados e das intervenções propostas.</p>
+
+<ol>
+  <li>
+    <p>História clínica: determinar estado geral de saúde da mulher/casal e respetivos antecedentes pessoais e familiares;</p>
+  </li>
+  <li>
+    <p>Avaliação física:</p>
+  </li>
+</ol>
+
+<ul>
+  <li>peso e altura / índice de massa corporal</li>
+  <li>pressão arterial (PA)</li>
+  <li>exame mamário</li>
+  <li>exame ginecológico (atenção à genitália externa para deteção de situações de mutilação genital feminina);</li>
+</ul>
+
+<ol>
+  <li>Avaliação laboratorial:
+    <ul>
+      <li>determinar grupo sanguíneo e fator RhD</li>
+      <li>hemograma</li>
+      <li>glicémia jejum</li>
+      <li>rastreio das hemoglobinopatias</li>
+      <li>rastreio da sífilis, hepatite B (vacinação, se aplicável), VIH</li>
+      <li>Serologias da Rubéola (com respetiva vacinação, se aplicável), Toxoplamose e Citomegalovirus (se aplicável);</li>
+    </ul>
+  </li>
+  <li>Rastreio do cancro do colo do útero, se não foi efetuado há menos de 3 anos;</li>
+  <li>Avaliação do estado vacinal e atualização do PNV (prioridade na vacinação contra o tétano, a difteria, a rubéola e o sarampo);</li>
+  <li>Avaliação do estado nutricional, peso adequado e distúrbios do comportamento alimentar;</li>
+  <li>Avaliação do consumo de tabaco, álcool e outras SPA (substâncias psicoativas);</li>
+  <li>Avaliação de fatores de risco social, tais como pobreza, imigração, desemprego, refugiados, condições habitacionais precárias;</li>
+  <li>Rastreio da violência nas relações de intimidade através de perguntas tipo, como: “Existem conflitos familiares que a estejam a preocupar? Tem tido problemas de relacionamento com o seu companheiro? Sente-se segura na sua relação?”;</li>
+  <li>Avaliação de fatores de risco familiares / contextos de vida;</li>
+  <li>Preenchimento do BSR/PF – Boletim de Saúde Reprodutiva/Planeamento Familiar.</li>
+</ol>
+
+<h4 id="etapa-2--gravidez">Etapa 2 – Gravidez</h4>
+<p>O esquema de vigilância e conduta durante a gravidez dependem da existência ou não de patologia. Por isso pode ser estabelecido um esquema comum para todas as grávidas numa gravidez de baixo risco. A identificação de um factor de risco ou de uma situação anómala determina a atuação subsequente. Considera-se gravidez de baixo risco aquela em que não é possível identificar, após avaliação clínica de acordo com a avaliação do risco pré-natal baseada na escala de Goodwin modificada, nenhum fator acrescido de morbilidade materna, fetal e/ou neonatal. O risco, sendo dinâmico ao longo da gravidez, deve ser reavaliado em todas as consultas.</p>
+
+<p><strong>Idade gestacional</strong><br />
+Definição da idade gestacional Idade gestacional cronológica: definida a partir da data da última menstruação. Deve depois ser revista com os dados da ecografia do 1º Trimestre (11-13 semanas e 6 dias). 
+Idade gestacional definitiva (cronológica ou corrigida por ecografia do 1º T): definida pelo comprimento crânio-caudal, na ecografia das 11-13 semanas e seis dias. Quando o cálculo da idade gestacional é feito desta forma, mantém-se inalterável ao longo de toda a gravidez.</p>
+
+<p>Na gravidez de baixo risco preconiza-se:</p>
+<ul>
+  <li>Realizar a 1ª consulta, o mais precocemente possível e até às 12 semanas de gravidez (1ºT de gravidez);</li>
+  <li>Realizar as consultas de vigilância pré-natal, após a 1ª consulta:
+    <ul>
+      <li>a cada 4-6 semanas até às 30 semanas;</li>
+      <li>a cada 2-3 semanas entre as 30 e as 36 semanas;</li>
+      <li>a cada 1-2 semanas após as 36 semanas até ao parto.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Todas as grávidas, entre as 36 e as 40 semanas, devem ter acesso a uma consulta no hospital onde se prevê que venha a ocorrer o parto.</p>
+
+<p>O esquema e periodicidade das consultas pré-natais assim definidos podem ser acrescidos, tendo em conta: os dados da avaliação clínica e os resultados dos exames complementares realizados; as necessidades de cada mulher/casal; os protocolos de cada Unidade Coordenadora Funcional, sem prejuízo do definido no ponto anterior. Quando a grávida entra em contacto com os serviços de saúde tardiamente, deverá realizar os exames/rastreios preconizados para a 1ª consulta de gravidez (até às 12 semanas), com exceção dos exames que já não sejam possíveis realizar atendendo à idade gestacional.</p>
+
+<p><strong>Avaliação da adaptação à gravidez, saúde mental e fatores psicossociais:</strong></p>
+
+<ul>
+  <li>Avaliar o risco psicossocial e estruturar intervenções individuais à medida de cada grávida/casal/família;
+    <ul>
+      <li>Encorajar as grávidas/casal/famílias a falar sobre quaisquer alterações do estado emocional (humor, perceção, pensamento) e dos comportamentos que considerem que saem fora do padrão habitual;</li>
+      <li>Promover e desenvolver fatores protetores da saúde mental na gravidez e na primeira infância, intervindo precocemente nas situações identificadas como problemáticas mantendo um contacto próximo e um conhecimento atualizado;</li>
+      <li>Referenciar para consultas de saúde mental/psicologia a grávida e/ou companheiro que apresentem sintomas inequívocos de depressão;</li>
+    </ul>
+  </li>
+  <li>Avaliação do estado nutricional;</li>
+  <li>Avaliação da progressão ponderal:
+    <ul>
+      <li>Avaliar peso e altura;</li>
+      <li>Aconselhar sobre o ganho de peso adequado durante a gravidez (tabela 3).</li>
+    </ul>
+  </li>
+  <li>Rastreios analíticos contemplados ao longo da gravidez;</li>
+  <li>Rastreios ecográficos contemplados ao longo da gravidez;</li>
+  <li>Avaliação do consumo de substâncias nocivas como tabaco, álcool e outras substâncias psicoativas;</li>
+  <li>Questionar sobre a ingestão de fármacos e medicamentos de venda livre;</li>
+  <li>Suplementação durante a gravidez (iodo, ácido fólico, ferro).</li>
+  <li>Avaliação do estado vacinal.</li>
+  <li>Profilaxia da isoimunização nas grávidas Rh D negativas:
+    <ul>
+      <li>Disponibilizar a imunoglobulina anti-D (300 µg) a todas as grávidas RhD negativas não sensibilizadas, às 28 semanas de gestação;</li>
+    </ul>
+  </li>
+  <li>Rastreio da neoplasia do colo uterino, se aplicável.</li>
+  <li>Rastreio da violência doméstica (VD):
+    <ul>
+      <li>Realizar o rastreio da VD, na primeira consulta pré-natal e em todas as consultas subsequentes;</li>
+      <li>Detetar sinais e sintomas sugestivos da existência de violência;</li>
+      <li>Intervir e acompanhar a vítima de VD, durante a gravidez.</li>
+    </ul>
+  </li>
+  <li>Rastreio de grávidas com mutilação genital feminina (MGF):
+    <ul>
+      <li>Identificar grávidas vítimas de mutilação genital feminina;</li>
+      <li>Detetar o tipo de MGF e as suas repercussões para a grávida;</li>
+      <li>Orientar a grávida com mutilação e a sua família, no sentido de prevenir a sua realização na criança que vai nascer (sexo feminino) e de outras raparigas da família.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="etapa-3--parto">Etapa 3 – Parto</h4>
+
+<p>O momento do parto é um processo complexo e muito significativo tanto para a mãe quanto para o bebé. Durante este período, são recolhidos dados e realizadas avaliações relativas ao bem-estar materno e fetal:</p>
+<ul>
+  <li>Parto/Expulsão: Tipo de parto, apresentação do feto, início do trabalho de parto, aceleração ocitócica, antibioterapia intraparto, febre materna.</li>
+  <li>Monitorização fetal: Cardiotocografia</li>
+  <li>Trabalho de parto: Estratégias não farmacológicas para controlo da dor, posições adotadas durante o trabalho de parto, duração do período expulsivo, avaliação rotura da bolsa amniótica e líquido amniótico.</li>
+  <li>Recém nascido e amamentação: Estado, sexo, peso, comprimento, perímetro cefálico, índice Apgar, Utilização de suporte de O2 e reanimação, malformações visíveis no recém-nascido, eliminação urinária e intestinal, contacto pele a pele, amamentação na 1ª hora de vida, resposta adequada à amamentação, avaliação física das mamas e mamilos, avaliação da dor.</li>
+  <li>Dequitadura: Tipo de dequitadura, mecanismo de descolamento, peso da placenta, alterações da placenta.</li>
+  <li>Cordão umbilical: Tempo até à laqueação do cordão, comprimento do cordão, número de vasos, número de circulares, inserção do cordão, colheita do cordão umbilical.</li>
+  <li>Analgesia: Tipo de analgesia, complicações da analgesia.</li>
+  <li>Intervenções: Episiotomia, laceração, distócia de ombros, entre outros procedimentos.</li>
+</ul>
+
+<h4 id="etapa-41--berçário">Etapa 4.1 – Berçário</h4>
+
+<p>Após o nascimento, o recém-nascido é encaminhado para o berçário, onde são realizados os primeiros cuidados essenciais. Este espaço é preparado para garantir um ambiente seguro e higiénico, adequado às necessidades do bebé.
+No berçário, o pediatra realiza uma série de exames e avaliações para assegurar a saúde e o bem-estar do recém-nascido. Estas incluem:</p>
+<ul>
+  <li>Análise das medidas antropométricas:
+    <ul>
+      <li>Peso</li>
+      <li>Comprimento</li>
+      <li>Perímetro cefálico</li>
+    </ul>
+  </li>
+  <li>Exame Físico Completo:
+    <ul>
+      <li>Auscultação Cardíaca e Pulmonar: Verificação dos sons cardíacos e pulmonares para identificar murmúrios cardíacos, ritmo respiratório e outros sinais.</li>
+      <li>Avaliação Abdominal: Palpação do abdómen para identificar anomalias.</li>
+      <li>Inspeção da Pele: Avaliação da cor da pele (icterícia, cianose) e identificação de manchas ou sinais de infeções.</li>
+      <li>Avaliação Neurológica: Testes de reflexos primitivos (reflexo de Moro, de sucção, de preensão palmar e plantar).</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Exame dos Olhos: Verificação de reflexos pupilares e anomalias oculares.</strong></p>
+<ul>
+  <li>Testes Preventivos e Profiláticos:
+    <ul>
+      <li>Administração de Vitamina K: Para prevenir a doença hemorrágica do recém-nascido.</li>
+      <li>Profilaxia Ocular: Aplicação de colírio antibiótico para prevenir infeções oculares.</li>
+      <li>Vacinação, de acordo com Plano Nacional de Vacinação</li>
+      <li>Avaliação da Alimentação e do Estado de Hidratação:
+        <ul>
+          <li>Observação das primeiras tentativas de amamentação.</li>
+          <li>Verificação da sucção e da deglutição.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Triagem Neonatal:
+    <ul>
+      <li>Colheita de sangue para o teste do pezinho, que rastreia várias doenças metabólicas, genéticas e endócrinas.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="etapa-42--puerpério">Etapa 4.2 – Puerpério</h4>
+
+<p>Puerpério é o período de recuperação física e psicológica da mãe que começa imediatamente a seguir ao nascimento do(s) recém-nascido(s) e se prolonga por 6 semanas pós-parto (42 dias).</p>
+
+<p>No puerpério que decorra sem complicações ou desvios da normalidade preconiza-se:
+Uma consulta a realizar entre a 4ª e a 6ª semanas após o parto;</p>
+
+<p>Deve ser consagrada uma consulta no puerpério precoce (até ao 15º dia pós-parto) em puérperas com determinadas situações: 
+Extremos da idade reprodutiva; 
+Necessitem de avaliação de ferida cirúrgica e eventual remoção de material de sutura; 
+Dificuldades no estabelecimento e manutenção do aleitamento materno; 
+Sinalizadas pelo hospital e/ou no âmbito dos protocolos da UCF.</p>
+
+<h4 id="noticia-de-nascimento-e-alta">Noticia de nascimento e alta</h4>
+
+<p>O processo de preenchimento do formulário eletrónico referente à "Notícia de Nascimento" é desempenhado por diversos profissionais de saúde e só após o seu completo preenchimento é possível a progenitora e o recém-nascido terem alta hospitalar. 
+De acordo com a Norma nº 013/2015 de 01/07/2015 da Direção-Geral da Saúde, são necessárias as seguintes informações sobre a Mãe, sobre o Parto e o Recém-nascido e informações administrativas:</p>
+
+<p><strong>Informações sobre a Mãe:</strong></p>
+<ol>
+  <li>Nome completo</li>
+  <li>Data de nascimento</li>
+  <li>Morada</li>
+  <li>Naturalidade e nacionalidade</li>
+  <li>Número de telefone</li>
+  <li>Detalhes da gravidez:
+    <ul>
+      <li>Tipo (simples ou múltipla)</li>
+      <li>Número de gémeos (se aplicável)</li>
+      <li>Idade gestacional (em semanas e dias)</li>
+      <li>Risco da gravidez e motivo</li>
+      <li>Administração de imunoglobulina anti-D e data (se aplicável)</li>
+      <li>Cumprimento do esquema de vigilância pré-natal (ecografias e análises realizadas)</li>
+      <li>Intercorrências durante a gravidez</li>
+    </ul>
+  </li>
+  <li>Tipo de seguimento após o nascimento (Cuidados de Saúde Primários, hospital, obstetra privado, etc.)</li>
+</ol>
+
+<p><strong>Informações sobre o Parto:</strong></p>
+<ol>
+  <li>Data do parto</li>
+  <li>Tipo de parto (vaginal, cesariana, etc.)</li>
+  <li>Motivo em caso de distocia (complicações no parto)</li>
+  <li>Profissional que assistiu o parto (médico, enfermeira obstetra, etc.)</li>
+  <li>Estado do puerpério até à alta (normal ou patológico)</li>
+</ol>
+
+<p><strong>Informações sobre o Recém-Nascido:</strong></p>
+<ol>
+  <li>Estado ao nascer (nado vivo, feto morto, falecido, etc.)</li>
+  <li>Sexo</li>
+  <li>Comprimento (em cm)</li>
+  <li>Peso ao nascer (em gramas)</li>
+  <li>Perímetro cefálico (em cm)</li>
+  <li>Índice de Apgar ao 1º, 5º e 10º minuto</li>
+  <li>Necessidade de reanimação (sim ou não)</li>
+  <li>Internamento em unidades de cuidados intensivos ou intermédios (motivo)</li>
+  <li>Fototerapia (se realizada)</li>
+  <li>Presença de malformações</li>
+  <li>Resultados de rastreios (doenças metabólicas, auditivo neonatal)</li>
+  <li>Vacinas administradas (BCG, Hepatite B, etc.)</li>
+  <li>Aleitamento até à alta hospitalar</li>
+  <li>Avaliação de risco (fatores de risco individual, familiar, socioeconómico)</li>
+  <li>Consulta de seguimento hospitalar marcada (se aplicável)</li>
+</ol>
+
+<p><strong>Informações Administrativas:</strong></p>
+<ol>
+  <li>Identificação da Unidade de Saúde dos Cuidados de Saúde Primários (UCSP/USF) e Agrupamento de Centros de Saúde (ACES)</li>
+  <li>Número de utente</li>
+  <li>Nome do médico e enfermeiro de família</li>
+  <li>Data de preenchimento da notícia de nascimento</li>
+</ol>
+
+<p>Todas estas informações são essenciais para o acompanhamento do recém-nascido e são essenciais para um acompanhamento de proximidade por parte das unidades de saúde locais. Os dados são preenchidos pelos obstetras responsáveis pela realização do parto, enfermeiros destacados e pessoal administrativo auxiliar da instituição onde foi realizado o parto. Para a atribuição da alta hospitalar tanto ao progenitor como ao recém-nascido é essencial que toda a informação obrigatório do processo da "Notícia de Nascimento" esteja preenchida corretamente.</p>
+
+<h3 id="noticia-nascimento---enquadramento-legal">Noticia Nascimento - enquadramento legal</h3>
+
+<p>Ao abrigo do projeto de inovação digital e simplificação dos processos de saúde em Portugal,
+“Simplex Saúde Infantil e Juvenil”, foram implementados dois projetos auxiliares que incidem
+sobre o registro de recém-nascidos e introdução de novos utentes no Serviço Nacional de
+Saúde (SNS). Desta forma, foram desenvolvidos os projetos “Notícia Nascimento” e “Nascer
+Utente”, sendo o primeiro referente ao processo de registo eletrónico de um nascimento em
+formulário próprio melhorando a comunicação de dados entre os Cuidados de Saúde
+Hospitalares e os Cuidados de Saúde Primários. O projeto “Nascer Utente” está dependente do
+anterior, sendo que este permite que tosos os recém-nascidos passem a ter um médico de
+família associado. A inscrição do recém-nascido é automática e imediata no Registo Nacional
+de Utentes (RNU), procedendo-se à atribuição do respetivo número de utente, a constar do
+Cartão de Cidadão, e de médico de família.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.obs-neonat#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 12, 2025 10:06+0000">2025-05-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

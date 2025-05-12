@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="compNN"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/CompositionNoticia"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition compNN</b></p><a name="compNN"> </a><a name="hccompNN"> </a><a name="compNN-pt-PT"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-CompositionNoticia.html">Perfil do recurso Composition que cria as secções da noticia nascimento</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org/ 71230-7}">Birth certificate</span></p><p><b>encounter</b>: <a href="Encounter-episodio.html">Encounter: identifier = 18001555; status = finished; class = Internamento (Tipos de episódio CodeSystem#INT); serviceType = </a></p><p><b>date</b>: 2021-09-01</p><p><b>author</b>: HCP</p><p><b>title</b>: Noticia de Nascimento de recém-nascido</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org/"/>
+      <code value="71230-7"/>
+      <display value="Birth certificate"/>
+    </coding>
+  </type>
+  <encounter>
+    <reference value="Encounter/episodio"/>
+  </encounter>
+  <date value="2021-09-01"/>
+  <author>
+    <display value="HCP"/>
+  </author>
+  <title value="Noticia de Nascimento de recém-nascido"/>
+  <section>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="10160-0"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Patient/mother"/>
+    </entry>
+  </section>
+  <section>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="56833-7"/>
+        <display value="Pregnancy related history Narrative"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/pregnancyNN"/>
+    </entry>
+  </section>
+  <section>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="57074-7"/>
+        <display value="Labor and delivery process Narrative"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Procedure/BirthNN"/>
+    </entry>
+    <entry>
+      <reference value="Encounter/episodioInt"/>
+    </entry>
+  </section>
+  <section>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="57075-4"/>
+        <display value="Newborn delivery information"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Patient/newBornNN"/>
+    </entry>
+  </section>
+  <section>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="73738-7"/>
+        <display value="Newborn screening test results panel - Point of Care"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/length-example"/>
+    </entry>
+    <entry>
+      <reference value="Observation/body-weigth-example"/>
+    </entry>
+    <entry>
+      <reference value="Observation/apgar-example"/>
+    </entry>
+    <entry>
+      <reference value="Observation/congenital-example"/>
+    </entry>
+    <entry>
+      <reference value="Observation/pupillary-example"/>
+    </entry>
+    <entry>
+      <reference value="Observation/cephalic-perimeter-example"/>
+    </entry>
+  </section>
+  <section>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11369-6"/>
+        <display value="History of Immunization Narrative"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Immunization/vaccNN-antid"/>
+    </entry>
+    <entry>
+      <reference value="Immunization/vaccNN-bcg"/>
+    </entry>
+    <entry>
+      <reference value="Immunization/vaccNN-hepb"/>
+    </entry>
+  </section>
+  <section>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11544-4"/>
+        <display value="Hospital discharge follow-up Narrative"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Organization/childhealthsurveilance-ex"/>
+    </entry>
+    <entry>
+      <reference value="Observation/puerperium-ex"/>
+    </entry>
+  </section>
+  <section>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="45131006"/>
+        <display value="Primary care hospital (environment)"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Organization/destino"/>
+    </entry>
+  </section>
+</Composition>

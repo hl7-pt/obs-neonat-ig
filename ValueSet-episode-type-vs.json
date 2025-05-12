@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "episode-type-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet episode-type-vs</b></p><a name=\"episode-type-vs\"> </a><a name=\"hcepisode-type-vs\"> </a><a name=\"episode-type-vs-pt-PT\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-tipo-episodio-cs.html\"><code>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</code></a></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs",
+  "version" : "0.0.1",
+  "name" : "TipoepisodioVS",
+  "title" : "Tipos de episódio ValueSet",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-05-12T10:05:23+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Tipos de episódio ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"
+    }]
+  }
+}

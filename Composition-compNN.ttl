@@ -1,0 +1,174 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Composition/compNN> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "compNN"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/CompositionNoticia"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/CompositionNoticia>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition compNN</b></p><a name=\"compNN\"> </a><a name=\"hccompNN\"> </a><a name=\"compNN-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CompositionNoticia.html\">Perfil do recurso Composition que cria as secções da noticia nascimento</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org/ 71230-7}\">Birth certificate</span></p><p><b>encounter</b>: <a href=\"Encounter-episodio.html\">Encounter: identifier = 18001555; status = finished; class = Internamento (Tipos de episódio CodeSystem#INT); serviceType = </a></p><p><b>date</b>: 2021-09-01</p><p><b>author</b>: HCP</p><p><b>title</b>: Noticia de Nascimento de recém-nascido</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://loinc.org/"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "71230-7" ] ;
+       fhir:display [ fhir:v "Birth certificate" ]
+     ] )
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Encounter/episodio> ;
+     fhir:reference [ fhir:v "Encounter/episodio" ]
+  ] ; # 
+  fhir:date [ fhir:v "2021-09-01"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:display [ fhir:v "HCP" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Noticia de Nascimento de recém-nascido"] ; # 
+  fhir:section ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:10160-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10160-0" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/mother> ;
+       fhir:reference [ fhir:v "Patient/mother" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:56833-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "56833-7" ] ;
+         fhir:display [ fhir:v "Pregnancy related history Narrative" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/pregnancyNN> ;
+       fhir:reference [ fhir:v "Observation/pregnancyNN" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:57074-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "57074-7" ] ;
+         fhir:display [ fhir:v "Labor and delivery process Narrative" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Procedure/BirthNN> ;
+       fhir:reference [ fhir:v "Procedure/BirthNN" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Encounter/episodioInt> ;
+       fhir:reference [ fhir:v "Encounter/episodioInt" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:57075-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "57075-4" ] ;
+         fhir:display [ fhir:v "Newborn delivery information" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/newBornNN> ;
+       fhir:reference [ fhir:v "Patient/newBornNN" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:73738-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "73738-7" ] ;
+         fhir:display [ fhir:v "Newborn screening test results panel - Point of Care" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/length-example> ;
+       fhir:reference [ fhir:v "Observation/length-example" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/body-weigth-example> ;
+       fhir:reference [ fhir:v "Observation/body-weigth-example" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/apgar-example> ;
+       fhir:reference [ fhir:v "Observation/apgar-example" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/congenital-example> ;
+       fhir:reference [ fhir:v "Observation/congenital-example" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/pupillary-example> ;
+       fhir:reference [ fhir:v "Observation/pupillary-example" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/cephalic-perimeter-example> ;
+       fhir:reference [ fhir:v "Observation/cephalic-perimeter-example" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11369-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11369-6" ] ;
+         fhir:display [ fhir:v "History of Immunization Narrative" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Immunization/vaccNN-antid> ;
+       fhir:reference [ fhir:v "Immunization/vaccNN-antid" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Immunization/vaccNN-bcg> ;
+       fhir:reference [ fhir:v "Immunization/vaccNN-bcg" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Immunization/vaccNN-hepb> ;
+       fhir:reference [ fhir:v "Immunization/vaccNN-hepb" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11544-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11544-4" ] ;
+         fhir:display [ fhir:v "Hospital discharge follow-up Narrative" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Organization/childhealthsurveilance-ex> ;
+       fhir:reference [ fhir:v "Organization/childhealthsurveilance-ex" ]
+     ] [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Observation/puerperium-ex> ;
+       fhir:reference [ fhir:v "Observation/puerperium-ex" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:45131006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "45131006" ] ;
+         fhir:display [ fhir:v "Primary care hospital (environment)" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Organization/destino> ;
+       fhir:reference [ fhir:v "Organization/destino" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

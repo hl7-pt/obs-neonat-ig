@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "InfosGravidezCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem InfosGravidezCS</b></p><a name=\"InfosGravidezCS\"> </a><a name=\"hcInfosGravidezCS\"> </a><a name=\"InfosGravidezCS-pt-PT\"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">BIO1T<a name=\"InfosGravidezCS-BIO1T\"> </a></td><td>Analítico 1º Trimestre</td><td>Analítico 1º Trimestre</td></tr><tr><td style=\"white-space:nowrap\">BIO2T<a name=\"InfosGravidezCS-BIO2T\"> </a></td><td>Analítico 2º Trimestre</td><td>Analítico 2º Trimestre</td></tr><tr><td style=\"white-space:nowrap\">BIO3T<a name=\"InfosGravidezCS-BIO3T\"> </a></td><td>Analítico 3º Trimestre</td><td>Analítico 3º Trimestre</td></tr><tr><td style=\"white-space:nowrap\">PREGRISKREASON<a name=\"InfosGravidezCS-PREGRISKREASON\"> </a></td><td>Motivo do risco</td><td>Motivo do risco</td></tr><tr><td style=\"white-space:nowrap\">INTEROC<a name=\"InfosGravidezCS-INTEROC\"> </a></td><td>Intercorrências</td><td>Intercorrências</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
+  fhir:name [ fhir:v "InfosGravidezCS"] ; # 
+  fhir:title [ fhir:v "Elementos adicionais de informação gravidez CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-05-12T10:05:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Elementos adicionais de informação gravidez CodeSystem - Criado por falta de um código internacional ideal"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "BIO1T" ] ;
+     fhir:display [ fhir:v "Analítico 1º Trimestre" ] ;
+     fhir:definition [ fhir:v "Analítico 1º Trimestre" ]
+  ] [
+     fhir:code [ fhir:v "BIO2T" ] ;
+     fhir:display [ fhir:v "Analítico 2º Trimestre" ] ;
+     fhir:definition [ fhir:v "Analítico 2º Trimestre" ]
+  ] [
+     fhir:code [ fhir:v "BIO3T" ] ;
+     fhir:display [ fhir:v "Analítico 3º Trimestre" ] ;
+     fhir:definition [ fhir:v "Analítico 3º Trimestre" ]
+  ] [
+     fhir:code [ fhir:v "PREGRISKREASON" ] ;
+     fhir:display [ fhir:v "Motivo do risco" ] ;
+     fhir:definition [ fhir:v "Motivo do risco" ]
+  ] [
+     fhir:code [ fhir:v "INTEROC" ] ;
+     fhir:display [ fhir:v "Intercorrências" ] ;
+     fhir:definition [ fhir:v "Intercorrências" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

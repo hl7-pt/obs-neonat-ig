@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tipo-gravidez-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tipo-gravidez-vs</b></p><a name=\"tipo-gravidez-vs\"> </a><a name=\"hctipo-gravidez-vs\"> </a><a name=\"tipo-gravidez-vs-pt-PT\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/169826009\">169826009</a></td><td>Single live birth (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/45384004\">45384004</a></td><td>Multiple birth (finding)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-gravidez-vs",
+  "version" : "0.0.1",
+  "name" : "TipoGravidezVS",
+  "title" : "Tipo de gravidez ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-12T10:05:23+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Tipo de gravidez ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169826009",
+        "display" : "Single live birth (finding)"
+      },
+      {
+        "code" : "45384004",
+        "display" : "Multiple birth (finding)"
+      }]
+    }]
+  }
+}

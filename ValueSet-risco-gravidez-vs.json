@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "risco-gravidez-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet risco-gravidez-vs</b></p><a name=\"risco-gravidez-vs\"> </a><a name=\"hcrisco-gravidez-vs\"> </a><a name=\"risco-gravidez-vs-pt-PT\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/237239003\">237239003</a></td><td>Low risk pregnancy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1303255001\">1303255001</a></td><td>Medium risk pregnancy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/47200007\">47200007</a></td><td>High risk pregnancy (finding)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/risco-gravidez-vs",
+  "version" : "0.0.1",
+  "name" : "RiscoGravidezVS",
+  "title" : "Risco de gravidez ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-12T10:05:23+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Risco de gravidez ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "237239003",
+        "display" : "Low risk pregnancy (finding)"
+      },
+      {
+        "code" : "1303255001",
+        "display" : "Medium risk pregnancy (finding)"
+      },
+      {
+        "code" : "47200007",
+        "display" : "High risk pregnancy (finding)"
+      }]
+    }]
+  }
+}

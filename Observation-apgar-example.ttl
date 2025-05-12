@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Observation/apgar-example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "apgar-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ApgarScore"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ApgarScore>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation apgar-example</b></p><a name=\"apgar-example\"> </a><a name=\"hcapgar-example\"> </a><a name=\"apgar-example-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ApgarScore.html\">Perfil de informação clinicas - apgarScore</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1287344004}\">Apgar score (assessment scale)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 169895004}\">Apgar score at 1 minute (observable entity)</span></p><p><b>value</b>: 7</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 169909004}\">Apgar score at 5 minutes (observable entity)</span></p><p><b>value</b>: 9</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 169922007}\">Apgar score at 10 minutes (observable entity)</span></p><p><b>value</b>: 10</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:1287344004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1287344004" ] ;
+       fhir:display [ fhir:v "Apgar score (assessment scale)" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:169895004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "169895004" ] ;
+         fhir:display [ fhir:v "Apgar score at 1 minute (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 7
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:169909004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "169909004" ] ;
+         fhir:display [ fhir:v "Apgar score at 5 minutes (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 9
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:169922007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "169922007" ] ;
+         fhir:display [ fhir:v "Apgar score at 10 minutes (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 10
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

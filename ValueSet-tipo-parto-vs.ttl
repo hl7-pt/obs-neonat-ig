@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-parto-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tipo-parto-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tipo-parto-vs</b></p><a name=\"tipo-parto-vs\"> </a><a name=\"hctipo-parto-vs\"> </a><a name=\"tipo-parto-vs-pt-PT\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/384729004\">384729004</a></td><td>Delivery of vertex presentation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/302383004\">302383004</a></td><td>Forceps delivery (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/61586001\">61586001</a></td><td>Delivery by vacuum extraction (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/11466000\">11466000</a></td><td>Cesarean section (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/177157003\">177157003</a></td><td>Spontaneous breech delivery (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/417121007\">417121007</a></td><td>Breech extraction (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/69466000\">69466000</a></td><td>Unknown procedure (finding)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-parto-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
+  fhir:name [ fhir:v "TipoPartoVS"] ; # 
+  fhir:title [ fhir:v "Tipos de parto ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-12T10:05:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipos de parto ValueSet"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "384729004" ] ;
+         fhir:display [ fhir:v "Delivery of vertex presentation (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "302383004" ] ;
+         fhir:display [ fhir:v "Forceps delivery (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "61586001" ] ;
+         fhir:display [ fhir:v "Delivery by vacuum extraction (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "11466000" ] ;
+         fhir:display [ fhir:v "Cesarean section (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "177157003" ] ;
+         fhir:display [ fhir:v "Spontaneous breech delivery (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "417121007" ] ;
+         fhir:display [ fhir:v "Breech extraction (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "69466000" ] ;
+         fhir:display [ fhir:v "Unknown procedure (finding)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
