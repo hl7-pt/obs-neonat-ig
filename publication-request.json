@@ -1,0 +1,9 @@
+{
+  "package-id": "hl7.fhir.pt.obs-neonat",
+  "version":    "1.0.0",
+  "path":       "https://hl7.pt/fhir/NoticiaNascimento/1.0.0",
+  "mode":       "milestone",
+  "status":     "release",
+  "sequence":   "Releases",
+  "desc":       "Initial Release"
+}
