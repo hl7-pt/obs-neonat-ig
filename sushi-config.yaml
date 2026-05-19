@@ -16,8 +16,8 @@ title: "HL7 PT FHIR Implementation Guide: Noticia de Nascimento"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
-date: 2020-02-26
-version: 0.0.1
+date: 2026-05-19
+version: 1.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -33,8 +33,8 @@ parameters:
 # camelcase, but if authors use the formal parameter names, SUSHI
 # will recognize them as well. In either case, they'll be copied
 # to the IG JSON using the formal names.
-copyrightYear: 2024+
-releaseLabel: STU1
+copyrightYear: 2026+
+releaseLabel: release
 
 # The publisher can be a single item or a list, each with a name and
 # optional url and/or email. The first publisher's name will be used
