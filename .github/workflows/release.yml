@@ -40,6 +40,9 @@ jobs:
     needs: check
     if: needs.check.outputs.file_exists == 'true'
     uses: hl7-pt/hl7-pt-webroot/.github/workflows/release.yml@main
-
+    with:
+      create_prs: ${{ github.event_name == 'workflow_dispatch' && inputs.create_prs == true }}
+    secrets:
+      github_token: ${{ secrets.HL7PT_PAT }}
 #    with:
 #      tag_name: ${{ github.event.release.tag_name }}
