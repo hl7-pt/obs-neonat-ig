@@ -1,0 +1,24 @@
+{
+  "package-id" : "hl7.fhir.pt.noticia-nascimento",
+  "title" : "HL7 PT FHIR IG: Notícia de Nascimento",
+  "canonical" : "https://hl7.pt/fhir/noticia-nascimento",
+  "introduction" : "HL7 Portugal FHIR Implementation Guide for Notícia de Nascimento",
+  "category" : "base",
+  "list" : [{
+    "version" : "current",
+    "desc" : "Continuous Integration Build",
+    "path" : "https://hl7.pt/fhir/noticia-nascimento",
+    "status" : "ci-build",
+    "current" : true
+  },
+  {
+    "version" : "1.0.0",
+    "path" : "https://hl7.pt/fhir/noticia-nascimento/1.0.0",
+    "status" : "release",
+    "sequence" : "Releases",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-05-25",
+    "current" : true,
+    "desc" : "Initial Release"
+  }]
+}

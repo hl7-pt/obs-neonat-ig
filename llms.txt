@@ -1,0 +1,106 @@
+# hl7.fhir.pt.obs-neonat#0.0.1: HL7 PT FHIR Implementation Guide: Noticia de Nascimento
+
+## Pages
+
+* [Home Page](index.md)
+* [IG Change History](changes.md)
+* [Artifacts Summary](artifacts.md)
+* [Downloads](downloads.md)
+* [Mapeamentos](mapping.md)
+* [Análise Funcional](background.md)
+* [Usar Este IG](usage.md)
+
+## Resources
+
+### CodeSystems
+
+* [Elementos adicionais de informação gravidez CodeSystem](CodeSystem-InfosGravidezCS.md)
+* [Classficação de documentos CodeSystem](CodeSystem-documentclassificationCS.md)
+* [Tipos de episódio CodeSystem](CodeSystem-tipo-episodio-cs.md)
+
+### ValueSets
+
+* [Envio de boletim ValueSet](ValueSet-bulletin-delivery-vs.md)
+* [Tipo de documento ValueSet](ValueSet-document-type-vs.md)
+* [Tipos de episódio ValueSet](ValueSet-episode-type-vs.md)
+* [Tipos de doença congénita ValueSet](ValueSet-newborn-congenital-anomalies-vs.md)
+* [Tipos de risco para avaliação de recém-nascidos ValueSet](ValueSet-newbornriskassessment-vs.md)
+* [Tipos de outcome de puerpério ValueSet](ValueSet-puerperium-vs.md)
+* [Risco de gravidez ValueSet](ValueSet-risco-gravidez-vs.md)
+* [Tipo de gravidez ValueSet](ValueSet-tipo-gravidez-vs.md)
+* [Tipos de parto ValueSet](ValueSet-tipo-parto-vs.md)
+* [Tipos de transporte de recém-nascido ValueSet](ValueSet-transport-type-vs.md)
+* [Vacinas ValueSet](ValueSet-vacinas-infancia-vs.md)
+
+### Logicals
+
+* [Contacto (modelo)](StructureDefinition-ContactLM.md)
+* [Informações Core da Noticia (modelo)](StructureDefinition-CoredaNoticiaLM.md)
+* [Dados da inscrição nos cuidados de saúde primários (modelo)](StructureDefinition-DestinationLN.md)
+* [Dados demográficos da mãe (modelo)](StructureDefinition-MotherDemographicsLM.md)
+* [Recem-nascido (modelo)](StructureDefinition-NewBornLM.md)
+* [Notícia de Nascimento (modelo)](StructureDefinition-NoticiaLM.md)
+* [Gravidez (modelo)](StructureDefinition-PregnancyLM.md)
+* [Professional (Modelo)](StructureDefinition-ProfessionalLM.md)
+* [Vacina (modelo)](StructureDefinition-VaccineLM.md)
+
+### Resource Profiles
+
+* [Perfil de Informação sobre vacinação - antid](StructureDefinition-Antid.md)
+* [Perfil de informação clinicas - apgarScore](StructureDefinition-ApgarScore.md)
+* [Perfil de Informação sobre vacinação - BCG](StructureDefinition-Bcg.md)
+* [Perfil de Informação do Parto](StructureDefinition-Birth.md)
+* [Perfil de Informação sobre entrega de boletim](StructureDefinition-Bulletindelivery.md)
+* [Perfil do recém-nascido](StructureDefinition-Child.md)
+* [Perfil da vigilância de saúde infantil](StructureDefinition-Childhealthsurveilance.md)
+* [Perfil do recurso Composition que cria as secções da noticia nascimento](StructureDefinition-CompositionNoticia.md)
+* [Perfil de informação clinicas - Rastreio Cardiopatias Congénitas](StructureDefinition-Congenital.md)
+* [Perfil sobre episódio da notícia de nascimento](StructureDefinition-Contact.md)
+* [Perfil de informação clinicas - Rastreio auditivo neonatal universal](StructureDefinition-Hearingscreen.md)
+* [Perfil de Informação sobre vacinação - hepb](StructureDefinition-Hepb.md)
+* [Perfil sobre Elaboração de carta com informação clínica suplementar](StructureDefinition-Letter.md)
+* [Perfil de informação clinicas - Dados de malformações](StructureDefinition-Malformation.md)
+* [Perfil de informação clinicas - Rastreio de doenças metabólicas](StructureDefinition-Metabolic.md)
+* [Perfil da mãe](StructureDefinition-Mother.md)
+* [Perfil de Informação sobre Avaliação de risco e referenciação ao NHACJR](StructureDefinition-Newbornriskassessment.md)
+* [Perfil de informação clinicas - Fototerapia](StructureDefinition-Phototherapy.md)
+* [Perfil de Informação de gravidez](StructureDefinition-Pregnancy.md)
+* [Perfil para o profissional de saúde](StructureDefinition-Professional.md)
+* [Perfil para registar dados do puerpério até à alta](StructureDefinition-Puerperium.md)
+* [Perfil de informação clinicas - Teste Reflexo pupilar](StructureDefinition-Pupillary.md)
+* [Perfil de informação sobre Transportes](StructureDefinition-Transport.md)
+* [Perfil sobre Informação sobre vacinação - genérico](StructureDefinition-Vaccination.md)
+
+### Extensions
+
+* [ReferenciaNHACJR](StructureDefinition-ReferenciaNHACJR.md)
+* [Extensão sobre informação sobre Transportes](StructureDefinition-transport-information.md)
+
+### ImplementationGuides
+
+* [HL7 PT FHIR Implementation Guide: Noticia de Nascimento](index.md)
+
+### Examples
+
+* [exemploNN (Bundle)](Bundle-exemploNN.md)
+* [Noticia de Nascimento de recém-nascido (Composition)](Composition-compNN.md)
+* [episodio (Encounter)](Encounter-episodio.md)
+* [episodioInt (Encounter)](Encounter-episodioInt.md)
+* [vaccNN-antid (Immunization)](Immunization-vaccNN-antid.md)
+* [vaccNN-bcg (Immunization)](Immunization-vaccNN-bcg.md)
+* [vaccNN-hepb (Immunization)](Immunization-vaccNN-hepb.md)
+* [apgar-example (Observation)](Observation-apgar-example.md)
+* [body-weigth-example (Observation)](Observation-body-weigth-example.md)
+* [cephalic-perimeter-example (Observation)](Observation-cephalic-perimeter-example.md)
+* [congenital-example (Observation)](Observation-congenital-example.md)
+* [length-example (Observation)](Observation-length-example.md)
+* [pregnancyNN (Observation)](Observation-pregnancyNN.md)
+* [puerperium-ex (Observation)](Observation-puerperium-ex.md)
+* [pupillary-example (Observation)](Observation-pupillary-example.md)
+* [childhealthsurveilance-ex (Organization)](Organization-childhealthsurveilance-ex.md)
+* [USF ESCARIZ (Organization)](Organization-destino.md)
+* [CH ENTRE DOURO E VOUGA (Organization)](Organization-inst.md)
+* [mother (Patient)](Patient-mother.md)
+* [newBornNN (Patient)](Patient-newBornNN.md)
+* [ObsRole (PractitionerRole)](PractitionerRole-ObsRole.md)
+* [BirthNN (Procedure)](Procedure-BirthNN.md)
