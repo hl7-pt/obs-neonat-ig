@@ -1,7 +1,7 @@
 {
   "package-id": "hl7.fhir.pt.noticia-nascimento",
   "version":    "1.0.0",
-  "path":       "https://hl7.pt/fhir/NoticiaNascimento/1.0.0",
+  "path":       "https://hl7.pt/fhir/noticia-nascimento/1.0.0",
   "mode":       "milestone",
   "status":     "release",
   "sequence":   "Releases",
