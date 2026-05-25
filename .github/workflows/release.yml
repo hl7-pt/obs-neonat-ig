@@ -1,5 +1,5 @@
 # FILE: obs-neonat-ig/.github/workflows/release.yml
-# CHANGES 25-05-2026:
+# CHANGES:
 #   1. Fixed deprecated ::set-output → $GITHUB_OUTPUT
 #   2. Bumped checkout action to v4
 #   3. Fixed ref: funciona em release e workflow_dispatch
@@ -20,11 +20,6 @@ on:
   release:
     types: [created]
   workflow_dispatch:
-    inputs:
-      create_prs:
-        description: 'Criar PRs? (usar após aprovar o sitepreview)'
-        type: boolean
-        default: false
 
 jobs:
   check:
@@ -55,6 +50,6 @@ jobs:
       pubreq_version: "1.0.0"
       pubreq_canonical: "https://hl7.pt/fhir/noticia-nascimento"
       pubreq_path: "https://hl7.pt/fhir/noticia-nascimento/1.0.0"
-      create_prs: ${{ github.event_name == 'release' || inputs.create_prs == true }}
+      create_prs: ${{ github.event_name == 'release' }}
     secrets:
       github_token: ${{ secrets.HL7PT_PAT }}
