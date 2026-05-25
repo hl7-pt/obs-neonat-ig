@@ -1,3 +1,13 @@
+# FILE: obs-neonat-ig/.github/workflows/release.yml
+# CHANGES 25-05-2026:
+#   1. Fixed deprecated ::set-output → $GITHUB_OUTPUT
+#   2. Bumped checkout action to v4
+#   3. Fixed ref: funciona em release e workflow_dispatch
+#   4. Corrigido package-id e URLs para noticia-nascimento
+#   5. Adicionado input create_prs no workflow_dispatch
+#   6. PRs criados automaticamente em release, opcionalmente em workflow_dispatch
+#   7. Substituído secrets: inherit por PAT explícito para PRs cross-repo
+
 name: Release build
 
 permissions:
@@ -5,11 +15,16 @@ permissions:
   pages: write
   id-token: write
   pull-requests: write
-  
+
 on:
   release:
     types: [created]
   workflow_dispatch:
+    inputs:
+      create_prs:
+        description: 'Criar PRs? (usar após aprovar o sitepreview)'
+        type: boolean
+        default: false
 
 jobs:
   check:
@@ -18,22 +33,28 @@ jobs:
       file_exists: ${{ steps.checkfile.outputs.exists }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.release.tag_name }}
+          ref: ${{ github.event.release.tag_name || github.ref }}
 
       - name: Check for publication-request.json
         id: checkfile
         run: |
           if [[ -f "publication-request.json" ]]; then
-            echo "::set-output name=exists::true"
+            echo "exists=true" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=exists::false"
+            echo "exists=false" >> $GITHUB_OUTPUT
           fi
 
   trigger:
     needs: check
     if: needs.check.outputs.file_exists == 'true'
     uses: hl7-pt/hl7-pt-webroot/.github/workflows/release.yml@main
-#    with:
-#      tag_name: ${{ github.event.release.tag_name }}
+    with:
+      pubreq_package_id: "hl7.fhir.pt.noticia-nascimento"
+      pubreq_version: "1.0.0"
+      pubreq_canonical: "https://hl7.pt/fhir/noticia-nascimento"
+      pubreq_path: "https://hl7.pt/fhir/noticia-nascimento/1.0.0"
+      create_prs: ${{ github.event_name == 'release' || inputs.create_prs == true }}
+    secrets:
+      github_token: ${{ secrets.HL7PT_PAT }}
