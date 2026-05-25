@@ -10,7 +10,12 @@ on:
   release:
     types: [created]
   workflow_dispatch:
-
+  
+    inputs:
+      create_prs:
+        description: 'Criar PRs (correr depois de aprovar o sitepreview)'
+        type: boolean
+        default: false
 jobs:
   check:
     runs-on: ubuntu-latest
