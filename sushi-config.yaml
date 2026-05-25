@@ -8,7 +8,7 @@
 
 
 id: hl7.fhir.pt.noticia-nascimento
-canonical: https://hl7.pt/fhir/NoticiaNascimento
+canonical: https://hl7.pt/fhir/noticia-nascimento
 
 #url: http://example.com/fhir/example
 name: NoticiaNascimentoIG
