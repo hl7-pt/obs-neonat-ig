@@ -172,6 +172,8 @@ Description: "Perfil da mãe"
 * birthDate 1..1 MS
 * address 0..1 MS
 * contact 0..1 MS
+* deceased[x] MS
+
 
 * extension contains 
 http://hl7.org/fhir/StructureDefinition/patient-birthPlace  named birthPlace 0..1 and
