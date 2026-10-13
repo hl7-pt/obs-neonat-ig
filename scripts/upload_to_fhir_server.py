@@ -12,7 +12,7 @@ Env:   FHIR_SERVER_URL (required), FHIR_SERVER_TOKEN (optional bearer token)
 """
 import glob, json, os, sys, urllib.request, urllib.error
 
-BASE = os.environ["FHIR_SERVER_URL"].rstrip("/")
+BASE = os.environ.get("FHIR_SERVER_URL", "").rstrip("/")
 TOKEN = os.environ.get("FHIR_SERVER_TOKEN")
 DIR = sys.argv[1] if len(sys.argv) > 1 else "output"
 BATCH = int(sys.argv[2]) if len(sys.argv) > 2 else 50
@@ -78,6 +78,9 @@ def send(batch, failed, errors):
 
 
 def main():
+    if not BASE:
+        print("FHIR_SERVER_URL is not set; skipping upload to FHIR server.")
+        return
     pending, ok, errors = load(), 0, {}
     for n in range(1, MAX_PASSES + 1):
         failed = []
