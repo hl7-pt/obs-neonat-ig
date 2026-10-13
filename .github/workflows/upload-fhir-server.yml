@@ -9,6 +9,7 @@ env:
   # Repository variable / secret
   FHIR_SERVER_URL: ${{ vars.FHIR_SERVER_URL }}      # e.g. https://hapi.example.org/fhir
   FHIR_SERVER_TOKEN: ${{ secrets.FHIR_SERVER_TOKEN }} # optional
+  TX_SERVER: ${{ vars.TX_SERVER }}
 
 jobs:
   upload:
@@ -31,11 +32,12 @@ jobs:
           mkdir -p input-cache
           curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o input-cache/publisher.jar
       - name: Build IG
-        run: java -jar input-cache/publisher.jar -ig .
+        run: ./_genonce.sh
       - name: Upload IG output and QA report as artifact
         uses: actions/upload-artifact@v4
         with:
           name: ig-output
           path: output
       - name: Upload profiles, extensions, terminology and examples
+        if: env.FHIR_SERVER_URL != ''
         run: python3 scripts/upload_to_fhir_server.py output 50
