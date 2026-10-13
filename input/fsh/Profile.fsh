@@ -188,6 +188,11 @@ Description: "Perfil do recém-nascido"
 * identifier MS
 * deceased[x] only dateTime
 * gender 1..1
+* birthDate 1..1 MS
+* multipleBirth[x] 1..1 MS
+* multipleBirth[x] only integer
+
+
 
 
 Profile: Professional

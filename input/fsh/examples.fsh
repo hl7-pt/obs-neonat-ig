@@ -94,7 +94,8 @@ Description: "Exemplo recém-nascido"
 Usage: #example
 
 * gender = #female
-
+* birthDate = "2024-08-01"
+* multipleBirthInteger = 1
 
 
 Instance: vaccNN-bcg
