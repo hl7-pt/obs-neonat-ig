@@ -161,7 +161,8 @@ Description: "Exemplo Composition"
 Usage: #example
 
 * date = "2021-09-01"
-
+* identifier.system = "http:/example.org"
+* identifier.value = "2"
 * author.display = "HCP"
 * title = "Noticia de Nascimento de recém-nascido"
 

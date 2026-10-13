@@ -3,9 +3,12 @@ Parent: $clinicaldocument
 Title: "Perfil do recurso Composition que cria as secções da noticia nascimento"
 Description: "Perfil do recurso Composition que cria as secções da noticia nascimento"
 
+* identifier 1..1 MS
 * status = #final
 * type = http://loinc.org/#71230-7 "Birth certificate"
 * encounter 1..1 MS
+* date 1..1 MS
+* author 1..1 MS
 
 * section ^slicing.discriminator[0].type = #pattern
 * section ^slicing.discriminator[=].path = "code"
