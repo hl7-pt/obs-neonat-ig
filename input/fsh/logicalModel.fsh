@@ -160,7 +160,7 @@ Characteristics: #can-be-target
   * date 0..1 dateTime "Data de realização/marcação (YYYY-MM-DD)"
   * rightEar 0..1 boolean "Ouvido esquerdo examinado (0 – Com Alteração; 1 – Sem Alteração)"
   * leftEar 0..1 boolean "Ouvido esquerdo examinado (0 – Com Alteração; 1 – Sem Alteração)"
-  * repeatDate 1..1 dateTime "Data de repetição (YYYY-MM-DD)"
+  * repeatDate 0..1 dateTime "Data de repetição (YYYY-MM-DD)"
 * VHB 1..1 VaccineLM "Administração da vacina VHB"
 * BCG 1..1 VaccineLM "Administração da vacina BCG"
 * immunoglobulin 1..1 VaccineLM "Administração de imunoglubina"
