@@ -33,4 +33,4 @@ jobs:
       - name: Build IG
         run: java -jar input-cache/publisher.jar -ig .
       - name: Upload profiles, extensions, terminology and examples
-        run: ./scripts/upload-to-fhir-server.sh output
+        run: python3 scripts/upload_to_fhir_server.py output 50
