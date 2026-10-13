@@ -5,7 +5,7 @@ Characteristics: #can-be-target
 
 * contact 1..1 ContactLM "Estrutura do episódio da notícia de nascimento"
 * professional 1..1 ProfessionalLM "Estrutura do profissional envolvido na submissão da informação"
-* birthNotice 1..1 CoredaNoticiaLM "Estrutura da notícia de nascimento"
+* birthNotice 1..1 BirthNoticeLM "Estrutura da notícia de nascimento"
 
 
 
@@ -29,8 +29,8 @@ Characteristics: #can-be-target
 * name 1..1 string "Nome clínico"
 
 
-Logical: CoredaNoticiaLM
-Title: "Informações Core da Noticia (modelo)"
+Logical: BirthNoticeLM
+Title: "Notícia de Nascimento - informação core (modelo)"
 Description: "Modelo Lógico - Informações Core da Noticia"
 Characteristics: #can-be-target
 
@@ -41,7 +41,7 @@ Characteristics: #can-be-target
   * institution 1..1 string "Nome da instituição/maternidade" 
   * service 1..1 string "Serviço da instituição"
 
-* destination 1..1 DestinationLN "Dados da inscrição nos cuidados de saúde primários"
+* destination 1..1 DestinationLM "Dados da inscrição nos cuidados de saúde primários"
 
 * motherDemographics 1..1 MotherDemographicsLM "Dados demográficos da mãe"
 * pregnancy 1..1 PregnancyLM "Dados da gravidez e cumprimento do esquema de vigilância pré-natal"
@@ -73,7 +73,7 @@ Characteristics: #can-be-target
   * date 0..1 dateTime "Data da elaboração (YYYY-MM-DD)"
 * professionals 0..* string "Lista de profissionais envolvidos no registo da NN"
 
-Logical: DestinationLN
+Logical: DestinationLM
 Title: "Dados da inscrição nos cuidados de saúde primários (modelo)"
 Description: "Modelo Lógico - Dados da inscrição nos cuidados de saúde primários"
 Characteristics: #can-be-target
@@ -81,9 +81,9 @@ Characteristics: #can-be-target
 * headquarters 1..1 BackboneElement "Dados da unidade de saúde de inscrição"
   * id 1..1 string "Identificador único da unidade de saúde de inscrição (presente no RNU – Registo Nacional de Utentes)" 
   * description 0..1 string "Serviço da instituição"
-* ACES 0..1 string "Agrupamento do centro de saúde"
+* aces 0..1 string "Agrupamento do centro de saúde"
 * healthcardNumber 0..1 integer "Nº de SNS do recém-nascido"
-* extension 0..1 string "Extensão de saúde"
+* healthExtension 0..1 string "Extensão de saúde"
 * familyDoctor 0..1 string "Nome clinico do médico de família"
 * familyNurse 0..1 string "Nome clinico do enfermeiro de família"
 
@@ -111,7 +111,7 @@ Characteristics: #can-be-target
     * type  0..1 Coding "Local do seguimento (0- Centro de saúde; 1- Hospital; 2- Obstetra privado; 3- Vigilância partilhado; 4-Outro)"
     * value  0..1 boolean "Indicação de seguimento"
     * reason 0..1 string "Motivo do seguimento"
-* PregnancyType 1..1 Coding "Tipo de gravidez ( 'Simple'- Gravidez de um bebé; 'Multiple'- Gravidez de gémeos)"
+* pregnancyType 1..1 Coding "Tipo de gravidez ( 'Simple'- Gravidez de um bebé; 'Multiple'- Gravidez de gémeos)"
 * twinNumber 1..1 string "Corresponde ao Número da criança / total de crianças. Exemplo: '1/2'"
 
 Logical: NewBornLM
@@ -136,16 +136,16 @@ Characteristics: #can-be-target
 * malformations 0..* BackboneElement "Dados de malformações"
   * code 0..1 Coding "Codificação ICD9 da malformação"
   * description  0..1 string "Descrição da malformação"
-* AdmissionNeonatology 0..1 boolean "Internamento em neonatologia"
-* AdmissionNeonatologyReason 0..1 string "Motivo do internamento"
-* AdmissionNeonatologyLocal 0..1 string "Local de internamento"
+* admissionNeonatology 0..1 boolean "Internamento em neonatologia"
+* admissionNeonatologyReason 0..1 string "Motivo do internamento"
+* admissionNeonatologyLocal 0..1 string "Local de internamento"
 * transport 0..1 BackboneElement "Dados de transporte"
-  * Neonatal  0..1 boolean "Transporte neonatal"
-  * NeonatalDestination  0..1 string "Destino do transporte neonatal"
-  * NeonatalReason  0..1 string "Motivo do não transporte neonatal"
-  * InUtero  0..1 boolean "Transporte in útero"
-  * InUteroProvanance  0..1 string "Proveniência do transporte"
-  * InUteroReason  0..1 string "Motivo de não transporte in útero"
+  * neonatal  0..1 boolean "Transporte neonatal"
+  * neonatalDestination  0..1 string "Destino do transporte neonatal"
+  * neonatalReason  0..1 string "Motivo do não transporte neonatal"
+  * inUtero  0..1 boolean "Transporte in útero"
+  * inUteroProvanance  0..1 string "Proveniência do transporte"
+  * inUteroReason  0..1 string "Motivo de não transporte in útero"
 * screeningMetabolicDiseasesTaken 0..1 Coding "Rastreio de doenças metabólicas (0- Realizado; 1- Não realizado; 2- Marcado)"
 * screeningMetabolicReason 0..1 string "Motivo para não realização do rastreio"
 * screeningMetabolicDiseasesDate 0..1 dateTime "Data da marcação do rastreio"
@@ -161,8 +161,8 @@ Characteristics: #can-be-target
   * rightEar 0..1 boolean "Ouvido esquerdo examinado (0 – Com Alteração; 1 – Sem Alteração)"
   * leftEar 0..1 boolean "Ouvido esquerdo examinado (0 – Com Alteração; 1 – Sem Alteração)"
   * repeatDate 0..1 dateTime "Data de repetição (YYYY-MM-DD)"
-* VHB 1..1 VaccineLM "Administração da vacina VHB"
-* BCG 1..1 VaccineLM "Administração da vacina BCG"
+* vhb 1..1 VaccineLM "Administração da vacina VHB"
+* bcg 1..1 VaccineLM "Administração da vacina BCG"
 * immunoglobulin 1..1 VaccineLM "Administração de imunoglubina"
 * feedingUntilDischarge 0..1 Coding "Aleitamento até a alta hospitalar (0 - Materno; 1 - Misto; 2 - Artificial)"
 * feedingFirstHour 0..1 boolean "Aleitamento materno na primeira hora de vida"
@@ -173,7 +173,7 @@ Characteristics: #can-be-target
   * riskFactorsIdentified 0..1 Coding "Fatores de risco (0- Individual; 1- Familiar; 2- Contexto social; 3- Inexistente)"
   * reference 0..1 boolean "Referenciação ao Núcleo Hospitalar de Apoio Criança e Jovens em risco (NHACJR)"
   * observations  0..1 string "Observações"
-* Outpatient 0..1 BackboneElement "Consultas"
+* outpatient 0..1 BackboneElement "Consultas"
   * institution 0..1 string "Unidade de saúde da consulta"
   * date 0..1 dateTime "Data da consulta (YYYY-MM-DD HH:MI:SS)"
 * confirmedDeceased 1..1 boolean "Identificação de falecimento"
@@ -190,7 +190,7 @@ Characteristics: #can-be-target
 * healthcardNumber 1..1 integer "Nº de SNS da mãe"
 * name 0..1 string "Nome da mãe"
 * birthdate 1..1 dateTime "Data de nascimento (YYYY-MM-DD)"
-* Age 1..1 integer "Idade da mãe"
+* age 1..1 integer "Idade da mãe"
 * address 0..1 string "Morada"
 * placeOfBirth 0..1 string "Local de nascimento"
 * nationality 0..1 string "Nacionalidade"
