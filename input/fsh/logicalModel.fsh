@@ -134,7 +134,7 @@ Characteristics: #can-be-target
 * apgarIndexTenthMinute 1..1 integer "Índice apgar ao 10º minuto"
 * phototherapy 0..1 boolean "Fototerapia"
 * malformations 0..* BackboneElement "Dados de malformações"
-  * code 1..1 Coding "Codificação ICD9 da malformação"
+  * code 0..1 Coding "Codificação ICD9 da malformação"
   * description  0..1 string "Descrição da malformação"
 * AdmissionNeonatology 0..1 boolean "Internamento em neonatologia"
 * AdmissionNeonatologyReason 0..1 string "Motivo do internamento"
