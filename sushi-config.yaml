@@ -109,19 +109,132 @@ jurisdiction: urn:iso:std:iso:3166#PT "Portugal"
 # use their own instead, they can use the mechanism below.  This will
 # create IG.definition.grouping entries and associate the individual
 # resource entries with the corresponding groupIds.
-#groups:
-#  GroupA:
-#    name: Group A
-#    description: The Alpha Group
-#    resources:
-#    - StructureDefinition/animal-patient
-#    - StructureDefinition/arm-procedure
-#  GroupB:
-#    name: Group B
-#    description: The Beta Group
-#    resources:
-#    - StructureDefinition/bark-control
-#    - StructureDefinition/bee-sting
+groups:
+  documento:
+    name: "Documento: Notícia de Nascimento"
+    description: Composition que estrutura o documento e as suas secções.
+    resources:
+    - StructureDefinition/CompositionNoticia
+  mae-gravidez:
+    name: "Mãe e gravidez"
+    description: Dados demográficos da mãe, da gravidez e do puerpério.
+    resources:
+    - StructureDefinition/Mother
+    - StructureDefinition/Pregnancy
+    - StructureDefinition/Puerperium
+  parto:
+    name: "Parto e episódios"
+    description: Informação do parto e episódio(s) de internamento.
+    resources:
+    - StructureDefinition/Birth
+    - StructureDefinition/Contact
+  recem-nascido:
+    name: "Recém-nascido: identificação, medidas e observações"
+    description: Perfil do recém-nascido, medidas ao nascer, avaliações e rastreios neonatais.
+    resources:
+    - StructureDefinition/Child
+  #  - StructureDefinition/BirthWeight
+  #  - StructureDefinition/BirthLength
+  #  - StructureDefinition/BirthHeadCircumference
+    - StructureDefinition/ApgarScore
+    - StructureDefinition/Malformation
+    - StructureDefinition/Phototherapy
+    - StructureDefinition/Congenital
+    - StructureDefinition/Metabolic
+    - StructureDefinition/Pupillary
+    - StructureDefinition/Hearingscreen
+    - StructureDefinition/Newbornriskassessment
+  vacinacao:
+    name: "Vacinação"
+    description: Vacinas e imunoglobulina administradas.
+    resources:
+    - StructureDefinition/Vaccination
+    - StructureDefinition/Bcg
+    - StructureDefinition/Hepb
+    - StructureDefinition/Antid
+  seguimento:
+    name: "Seguimento e alta"
+    description: Boletins, carta de informação clínica, vigilância de saúde infantil e transporte.
+    resources:
+    - StructureDefinition/Bulletindelivery
+    - StructureDefinition/Letter
+    - StructureDefinition/Childhealthsurveilance
+    - StructureDefinition/Transport
+  organizacoes-profissionais:
+    name: "Organizações e profissionais"
+    description: Instituições de saúde e profissionais envolvidos no registo.
+    resources:
+   # - StructureDefinition/HealthcareOrganization
+    - StructureDefinition/Professional
+  #  - StructureDefinition/ProfessionalRole
+  extensoes:
+    name: "Extensões"
+    resources:
+    - StructureDefinition/ReferenciaNHACJR
+    - StructureDefinition/transport-information
+ #   - StructureDefinition/scheduled-date
+  modelos-logicos:
+    name: "Modelos lógicos"
+    description: Modelo de dados da Notícia de Nascimento (API SPMS) usado nos mapeamentos.
+    resources:
+    - StructureDefinition/NoticiaLM
+    - StructureDefinition/ContactLM
+    - StructureDefinition/ProfessionalLM
+   # - StructureDefinition/BirthNoticeLM
+   # - StructureDefinition/DestinationLM
+    - StructureDefinition/MotherDemographicsLM
+    - StructureDefinition/PregnancyLM
+    - StructureDefinition/NewBornLM
+    - StructureDefinition/VaccineLM
+  terminologia:
+    name: "Terminologia"
+    description: CodeSystems e ValueSets definidos neste guia.
+    resources:
+    - CodeSystem/InfosGravidezCS
+    - CodeSystem/documentclassificationCS
+    - CodeSystem/tipo-episodio-cs
+  #  - CodeSystem/tipo-local-seguimento-cs
+    - ValueSet/tipo-parto-vs
+    - ValueSet/tipo-gravidez-vs
+    - ValueSet/risco-gravidez-vs
+    - ValueSet/puerperium-vs
+    - ValueSet/episode-type-vs
+    - ValueSet/newborn-congenital-anomalies-vs
+    - ValueSet/newbornriskassessment-vs
+    - ValueSet/vacinas-infancia-vs
+  #  - ValueSet/vaccination-status-reason-vs
+    - ValueSet/bulletin-delivery-vs
+    - ValueSet/document-type-vs
+    - ValueSet/transport-type-vs
+ #   - ValueSet/tipo-local-seguimento-vs
+  #  - ValueSet/professional-role-vs
+  exemplos:
+    name: "Exemplos"
+    description: Exemplo completo (Bundle documento) e recursos que o compõem.
+    resources:
+    - Bundle/exemploNN
+    - Composition/compNN
+    - Patient/mother
+    - Patient/newBornNN
+    - Observation/pregnancyNN
+    - Procedure/BirthNN
+    - Encounter/episodio
+    - Encounter/episodioInt
+    - Observation/length-example
+    - Observation/body-weigth-example
+    - Observation/cephalic-perimeter-example
+    - Observation/apgar-example
+    - Observation/congenital-example
+    - Observation/pupillary-example
+    - Observation/puerperium-ex
+    - Immunization/vaccNN-bcg
+    - Immunization/vaccNN-hepb
+    - Immunization/vaccNN-antid
+    - Organization/inst
+    - Organization/destino
+    - Organization/childhealthsurveilance-ex
+  #  - Practitioner/obstetra
+    - PractitionerRole/ObsRole
 
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
