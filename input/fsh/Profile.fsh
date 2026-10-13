@@ -326,7 +326,7 @@ Description: "Perfil sobre Informação sobre vacinação - genérico"
 * occurrence[x]  only dateTime 
 * occurrenceDateTime MS
 * lotNumber MS
-* statusReason
+* statusReason from ImmunizationStatusReasonVS (extensible)
 * obeys reason-required-not-completed
 
 Invariant:  reason-required-not-completed

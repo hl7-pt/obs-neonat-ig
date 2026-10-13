@@ -220,3 +220,127 @@ Description:  "Tipos de doença congénita ValueSet"
 * $sct#409709004 "Chromosomal disorder"
 * $sct#416010008 "Hypospadias"
 * $sct#282332003 "No abnormality detected - examination result"
+
+
+ValueSet: ImmunizationStatusReasonVS
+Id: immunization-status-reason-vs
+Title:  "Motivos de não vacinação ValueSet"
+Description:  "Motivos para a não administração de uma vacina (Immunization.statusReason), de acordo com o Catálogo Português de Vacinas (CPV)."
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* ^experimental = false
+
+* $sct#62479008 "Acquired immune deficiency syndrome (disorder)"
+* $sct#62479008 ^designation[0].language = #pt-PT
+* $sct#62479008 ^designation[0].value = "Síndrome de imunodeficiência adquirida"
+
+* $sct#427099000 "Active tuberculosis (disorder)"
+* $sct#427099000 ^designation[0].language = #pt-PT
+* $sct#427099000 ^designation[0].value = "Tuberculose ativa"
+
+* $sct#699618001 "Administration of prophylactic antituberculosis agent (procedure)"
+* $sct#699618001 ^designation[0].language = #pt-PT
+* $sct#699618001 ^designation[0].value = "Administração de agente antituberculoso profilático"
+
+* $sct#293104008 "Adverse reaction to component of vaccine product (disorder)"
+* $sct#293104008 ^designation[0].language = #pt-PT
+* $sct#293104008 ^designation[0].value = "Reação adversa a componente de produto de vacinação"
+
+* $sct#131145007 "Altered immunity (finding)"
+* $sct#131145007 ^designation[0].language = #pt-PT
+* $sct#131145007 ^designation[0].value = "Imunidade alterada"
+
+* $sct#1217476001 "Anaphylaxis caused by component of vaccine product (disorder)"
+* $sct#1217476001 ^designation[0].language = #pt-PT
+* $sct#1217476001 ^designation[0].value = "Anafilaxia causada por componente de produto de vacinação"
+
+* $sct#126764002 "Congenital anomaly of intestinal tract (disorder)"
+* $sct#126764002 ^designation[0].language = #pt-PT
+* $sct#126764002 ^designation[0].value = "Anomalia congénita do trato intestinal"
+
+* $sct#36138009 "Congenital immunodeficiency disease (disorder)"
+* $sct#36138009 ^designation[0].language = #pt-PT
+* $sct#36138009 ^designation[0].value = "Imunodeficiência congénita"
+
+* $sct#1340037004 "Disorder of nervous system due to and following vaccination (disorder)"
+* $sct#1340037004 ^designation[0].language = #pt-PT
+* $sct#1340037004 ^designation[0].value = "Patologia neurológica devido e após a vacinação"
+
+* $sct#271511000 "Hepatitis B immune (finding)"
+* $sct#271511000 ^designation[0].language = #pt-PT
+* $sct#271511000 ^designation[0].value = "Imune a Hepatite B"
+
+* $sct#1340016007 "History of intussusception of intestine (situation)"
+* $sct#1340016007 ^designation[0].language = #pt-PT
+* $sct#1340016007 ^designation[0].value = "História de intussuscepção intestinal"
+
+* $sct#161421005 "History of rubella (situation)"
+* $sct#161421005 ^designation[0].language = #pt-PT
+* $sct#161421005 ^designation[0].value = "História de rubéola"
+
+* $sct#1340019000 "History of thrombosis with thrombocytopenia syndrome following vaccination with non-replicating adenovirus vector vaccine for severe acute respiratory syndrome coronavirus 2 (situation)"
+* $sct#1340019000 ^designation[0].language = #pt-PT
+* $sct#1340019000 ^designation[0].value = "História de síndrome de trombose com trombocitopenia após vacinação com vacina de vetor de adenovírus não-replicante para coronavírus do síndrome respiratório agudo grave 2"
+
+* $sct#86406008 "Human immunodeficiency virus infection (disorder)"
+* $sct#86406008 ^designation[0].language = #pt-PT
+* $sct#86406008 ^designation[0].value = "Infeção pelo vírus de imunodeficiência humana"
+
+* $sct#421961002 "Hypersensitivity reaction (disorder)"
+* $sct#421961002 ^designation[0].language = #pt-PT
+* $sct#421961002 ^designation[0].value = "Reação de hipersensibilidade"
+
+* $sct#255386009 "Immune (qualifier value)"
+* $sct#255386009 ^designation[0].language = #pt-PT
+* $sct#255386009 ^designation[0].value = "Imune"
+
+* $sct#310376006 "Immunization consent not given (finding)"
+* $sct#310376006 ^designation[0].language = #pt-PT
+* $sct#310376006 ^designation[0].value = "Consentimento de imunização não dado"
+
+* $sct#86553008 "Immunosuppressive therapy (procedure)"
+* $sct#86553008 ^designation[0].language = #pt-PT
+* $sct#86553008 ^designation[0].value = "Terapia imunosupressiva"
+
+* $sct#268376005 "Mantoux: positive (finding)"
+* $sct#268376005 ^designation[0].language = #pt-PT
+* $sct#268376005 ^designation[0].value = "Prova de tuberculina: positiva"
+
+* $sct#1260078007 "Maternal breastfeeding (finding)"
+* $sct#1260078007 ^designation[0].language = #pt-PT
+* $sct#1260078007 ^designation[0].value = "Aleitamento materno"
+
+* $sct#42565008 "No reason for (contextual qualifier) (qualifier value)"
+* $sct#42565008 ^designation[0].language = #pt-PT
+* $sct#42565008 ^designation[0].value = "Sem motivo para"
+
+* $sct#29740003 "Nutritional marasmus (disorder)"
+* $sct#29740003 ^designation[0].language = #pt-PT
+* $sct#29740003 ^designation[0].value = "Marasmo nutricional"
+
+* $sct#77386006 "Pregnancy (finding)"
+* $sct#77386006 ^designation[0].language = #pt-PT
+* $sct#77386006 ^designation[0].value = "Gravidez"
+
+* $sct#183945002 "Procedure declined for religious reason (situation)"
+* $sct#183945002 ^designation[0].language = #pt-PT
+* $sct#183945002 ^designation[0].value = "Procedimento recusado por motivo religioso"
+
+* $sct#278968001 "Rubella immune (finding)"
+* $sct#278968001 ^designation[0].language = #pt-PT
+* $sct#278968001 ^designation[0].value = "Imune a rubéola"
+
+* $sct#1340080008 "Scar of skin following first vaccination (disorder)"
+* $sct#1340080008 ^designation[0].language = #pt-PT
+* $sct#1340080008 ^designation[0].value = "Cicatriz na pele após primeira vacinação"
+
+* $sct#31323000 "Severe combined immunodeficiency disease (disorder)"
+* $sct#31323000 ^designation[0].language = #pt-PT
+* $sct#31323000 ^designation[0].value = "Imunodeficiência combinada grave"
+
+* $sct#1290619001 "Vaccine product out of stock (finding)"
+* $sct#1290619001 ^designation[0].language = #pt-PT
+* $sct#1290619001 ^designation[0].value = "Vacina fora de stock"
+
+* $sct#371113008 "Varicella immune (finding)"
+* $sct#371113008 ^designation[0].language = #pt-PT
+* $sct#371113008 ^designation[0].value = "Imune a varicela"
