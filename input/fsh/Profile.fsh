@@ -200,6 +200,9 @@ Parent: Practitioner
 Title: "Perfil para o profissional de saúde"
 Description: "Perfil para o profissional de saúde"
 
+* name 1..1 MS
+* identifier 1..1 MS
+
 Profile: Contact
 Parent: Encounter
 Title: "Perfil sobre episódio da notícia de nascimento"
