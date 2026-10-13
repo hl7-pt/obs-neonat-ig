@@ -1,8 +1,7 @@
 <blockquote class="stu-note">
-    <p>A especificação aqui documentada é, por enquanto, uma especificação de prova de conceito e não pode ser usada para fins de implementação. 
+    <p>A especificação aqui documentada é, por enquanto, uma especificação de prova de conceito e não pode ser usada para fins de implementação.
     Nenhuma responsabilidade pode ser inferida do uso ou mau uso desta especificação, ou de suas consequências.</p>
   </blockquote>
-
 
 ### Âmbito
 
@@ -24,33 +23,30 @@ A Legislação referente a este projeto pode ser consultada em:
 * <a href="https://diariodarepublica.pt/dr/detalhe/despacho/1774-a-2017-106531278">Despacho n.º 1774-A/2017, de 24 de fevereiro
 [Define regras de organização e mecanismos de gestão referentes ao Registo Nacional de Utentes (RNU), bem como estabelece os critérios e os procedimentos de organização e atualização das listas de utentes nos Agrupamentos de Centros de Saúde (ACeS) e nas suas unidades funcionais]</a>
 
-
 ### Descrição
 
 O projeto "Notícia Nascimento" oferece a possibilidade de registar imediatamente todos os recém-nascidos e as informações referentes ao parto dos mesmos, comunicando e partilhando estas informações através de um formulário digital. Esta comunicação apresenta-se como uma ferramenta essencial na partilha de informações deste cariz, entre unidades de saúde hospitalar e unidades locais de cuidados de saúde. Esta ferramenta permite a maior e mais rápida prestação de cuidados de saúde ao recém-nascido, assim como comunicar alertas sobre o mesmo.
 Este projeto foi desenvolvido e empregue pelo XXI Governo Constitucional de Portugal, no seu programa de cuidados de saúde tendo como objetivo desenvolver e melhorar a capacidade da sua rede de cuidados de saúde primários.
 Este recurso permite a integração dos dados relativos ao recém-nascido e ao parto realizado na Plataforma de Dados de Saúde (PDS).
-O desenvolvimento deste projeto e da "Notícia de Nascimento" tem como principal vantagem a criação automática de um Registo Eletrónico de Saúde da criança/bebé, através dos dados incluídos no formulário da "Notícia de Nascimento", assim como notificar o nascimento e o novo utente às unidades locais de cuidados de saúde. 
+O desenvolvimento deste projeto e da "Notícia de Nascimento" tem como principal vantagem a criação automática de um Registo Eletrónico de Saúde da criança/bebé, através dos dados incluídos no formulário da "Notícia de Nascimento", assim como notificar o nascimento e o novo utente às unidades locais de cuidados de saúde.
 Após a partilha da notícia de nascimento, o registo pode ser consultado na área restrita a profissionais de saúde na Plataforma de Dados de Saúde (PDS), através do perfil da mãe ou através do perfil do recém-nascido (no caso de o recém-nascido já ter associado ao seu perfil um número de utente do Serviço Nacional de Saúde).
-
-
 
 ### Authors and Contributors
 
-| Role  | Name | Organization | Contact |
+| Role | Name | Organization | Contact |
 | --- | --- | --- | --- |
-| **Primary Editor** | André Oliveira | ProChild CoLAB | andre.oliveira __at__ prochildcolab.pt |
-| **Primary Editor** | Samuel Frade | Virtual Care | samuel.frade __at__ virtualcare.pt |
-| **Primary Editor** | Tiago Costa | Virtual Care | tcosta __at__ virtualcare.pt 
-| **Primary Editor** | João Almeida |  HL7 Portugal | joaofilipe90 __at__ gmail.com |
-| **Primary Editor** | Joana Cunha |  HL7 Portugal | [joana](https://chat.fhir.org/#user/664024) |
-| **Primary Editor** | Daniel Rodrigues |  Virtual Care | daniel __at__ virtualcare.pt|
+| **Primary Editor** | André Oliveira | ProChild CoLAB | andre.oliveira **at** prochildcolab.pt |
+| **Primary Editor** | Samuel Frade | Virtual Care | samuel.frade **at** virtualcare.pt |
+| **Primary Editor** | Tiago Costa | Virtual Care | tcosta **at** virtualcare.pt
+| **Primary Editor** | João Almeida | HL7 Portugal | joaofilipe90 **at** gmail.com |
+| **Primary Editor** | Joana Cunha | HL7 Portugal | [joana](https://chat.fhir.org/#user/664024) |
+| **Primary Editor** | Daniel Rodrigues | Virtual Care | daniel **at** virtualcare.pt |
 
 ### Acknowledgements & Agradecimentos
 
-Aviso 2022-C05i0101-02 Agendas/Alianças mobilizadoras para a reindustrialização,  Projeto nº C630926586-00465198. 
+Aviso 2022-C05i0101-02 Agendas/Alianças mobilizadoras para a reindustrialização,  Projeto nº C630926586-00465198.
 
-This work was financed by the project Health from Portugal (“Aviso 2022-C05i0101-02 Agendas/Alianças mobilizadoras para a reindustrialização,  Projeto nº C630926586-00465198”). 
+This work was financed by the project Health from Portugal (“Aviso 2022-C05i0101-02 Agendas/Alianças mobilizadoras para a reindustrialização,  Projeto nº C630926586-00465198”).
 
 <img src="funding.png" alt="An overview of access to resources"/>
 <br clear="all"/>

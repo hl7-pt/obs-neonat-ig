@@ -1,10 +1,7 @@
 O mapeamento não foi feito de forma direta, sendo que a estrutura foi alterada de forma a corresponder a um documento em FHIR. No entanto, tentou-se que a alteração fosse o menos profunda possível, de forma a facilitar a implementação
 Tentámos usar terminologias internacionais sempre que possíveis, criando CodeSystem quando não foi possível. Tentámos também vincular campos codificados a estas terminologias. De igual forma, criámos constraints adicionais para facilitar a transformação.
 
-
 Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na especificação FHIR:  
-
-
 
 | Origem | Descrição |          Modelo Lógico      | FHIR  |
 |--|--|----------------------------------------------------------------------------|---|
@@ -138,7 +135,6 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 Sendo um documento, os recursos estão organizados de maneira a tentar estar agrupados de maneira lógica.
 O recurso Bundle atua como o envelope do documento todo. O recurso Composition é o principal ponte para conseguir entender a organização lógica.
 O perfil está aqui e visualmente poderá ser entendido como:
-
 
 <div>{% include composition.svg %}</div>
 <br clear="all"/>

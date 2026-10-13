@@ -335,21 +335,23 @@ Parent: Vaccination
 Title: "Perfil de Informação sobre vacinação - BCG"
 Description: "Perfil de Informação sobre vacinação - BCG"
 
-* vaccineCode = $sct#1861000221106  "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
+* vaccineCode = $sct#836402002  "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
+
+
 
 Profile: Antid
 Parent: Vaccination
 Title: "Perfil de Informação sobre vacinação - antid"
 Description: "Perfil de Informação sobre vacinação - antid"
 
-* vaccineCode =  $sct#786768001 "Product containing only human anti-D immunoglobulin (medicinal product)"
+* vaccineCode =  $sct#786224004 "Product containing only human anti-D immunoglobulin (medicinal product)"
 
 Profile: Hepb
 Parent: Vaccination
 Title: "Perfil de Informação sobre vacinação - hepb"
 Description: "Perfil de Informação sobre vacinação - hepb"
 
-* vaccineCode = $sct#871822003  "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
+* vaccineCode = $sct#836374004  "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
 
 
 Profile: Newbornriskassessment
