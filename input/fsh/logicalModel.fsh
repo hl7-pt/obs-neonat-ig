@@ -24,7 +24,7 @@ Title: "Professional (Modelo)"
 Description: "Modelo Lógico - Professional"
 Characteristics: #can-be-target
 
-* functionalgroup 1..1 Coding "Grupo funcional do profissional (5 – Médico; 4 -Enfermeiro)"
+* functionalGroup 1..1 Coding "Grupo funcional do profissional (5 – Médico; 4 -Enfermeiro)"
 * licence 1..1 integer "Nº de ordem do profissional"
 * name 1..1 string "Nome clínico"
 
