@@ -32,5 +32,10 @@ jobs:
           curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o input-cache/publisher.jar
       - name: Build IG
         run: java -jar input-cache/publisher.jar -ig .
+      - name: Upload IG output and QA report as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ig-output
+          path: output
       - name: Upload profiles, extensions, terminology and examples
         run: python3 scripts/upload_to_fhir_server.py output 50
