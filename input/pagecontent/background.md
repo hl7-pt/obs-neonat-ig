@@ -3,7 +3,9 @@ A gravidez tem um conjunto de etapas funcionais associadas como descrita na imag
 <img src="gravidez1.png" alt="Lógica gravidez"/>
 <br clear="all"/>
 
-### Etapa 1 - Preconceção
+### Etapas
+
+#### Etapa 1 - Preconceção
 
 Consulta pré-concecional realizada em centro de saúde habitualmente (depende dos fatores de risco da grávida). Esta consulta deve ser realizada antes de parar a contraceção e deve ser programada uma consulta subsequente para avaliação dos resultados dos exames realizados e das intervenções propostas.
 
@@ -34,7 +36,7 @@ Consulta pré-concecional realizada em centro de saúde habitualmente (depende d
 7. Avaliação de fatores de risco familiares / contextos de vida;
 8. Preenchimento do BSR/PF – Boletim de Saúde Reprodutiva/Planeamento Familiar.
 
-### Etapa 2 – Gravidez
+#### Etapa 2 – Gravidez
 
 O esquema de vigilância e conduta durante a gravidez dependem da existência ou não de patologia. Por isso pode ser estabelecido um esquema comum para todas as grávidas numa gravidez de baixo risco. A identificação de um factor de risco ou de uma situação anómala determina a atuação subsequente. Considera-se gravidez de baixo risco aquela em que não é possível identificar, após avaliação clínica de acordo com a avaliação do risco pré-natal baseada na escala de Goodwin modificada, nenhum fator acrescido de morbilidade materna, fetal e/ou neonatal. O risco, sendo dinâmico ao longo da gravidez, deve ser reavaliado em todas as consultas.
 
@@ -82,7 +84,7 @@ O esquema e periodicidade das consultas pré-natais assim definidos podem ser ac
   * Detetar o tipo de MGF e as suas repercussões para a grávida;
   * Orientar a grávida com mutilação e a sua família, no sentido de prevenir a sua realização na criança que vai nascer (sexo feminino) e de outras raparigas da família.
 
-### Etapa 3 – Parto
+#### Etapa 3 – Parto
 
 O momento do parto é um processo complexo e muito significativo tanto para a mãe quanto para o bebé. Durante este período, são recolhidos dados e realizadas avaliações relativas ao bem-estar materno e fetal:
 
@@ -135,7 +137,7 @@ Necessitem de avaliação de ferida cirúrgica e eventual remoção de material 
 Dificuldades no estabelecimento e manutenção do aleitamento materno;
 Sinalizadas pelo hospital e/ou no âmbito dos protocolos da UCF.
 
-## Noticia de nascimento e alta
+### Noticia de nascimento e alta
 
 O processo de preenchimento do formulário eletrónico referente à "Notícia de Nascimento" é desempenhado por diversos profissionais de saúde e só após o seu completo preenchimento é possível a progenitora e o recém-nascido terem alta hospitalar.
 De acordo com a Norma nº 013/2015 de 01/07/2015 da Direção-Geral da Saúde, são necessárias as seguintes informações sobre a Mãe, sobre o Parto e o Recém-nascido e informações administrativas:
@@ -194,7 +196,7 @@ De acordo com a Norma nº 013/2015 de 01/07/2015 da Direção-Geral da Saúde, s
 
 Todas estas informações são essenciais para o acompanhamento do recém-nascido e são essenciais para um acompanhamento de proximidade por parte das unidades de saúde locais. Os dados são preenchidos pelos obstetras responsáveis pela realização do parto, enfermeiros destacados e pessoal administrativo auxiliar da instituição onde foi realizado o parto. Para a atribuição da alta hospitalar tanto ao progenitor como ao recém-nascido é essencial que toda a informação obrigatório do processo da "Notícia de Nascimento" esteja preenchida corretamente.
 
-## Noticia Nascimento - enquadramento legal
+### Noticia Nascimento - enquadramento legal
 
 Ao abrigo do projeto de inovação digital e simplificação dos processos de saúde em Portugal,
 “Simplex Saúde Infantil e Juvenil”, foram implementados dois projetos auxiliares que incidem
