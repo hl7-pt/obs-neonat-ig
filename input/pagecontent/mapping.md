@@ -89,7 +89,7 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | birthNotice.newborn.transport.InUteroReason                                | Basic |
 |  |  | birthNotice.newborn.screeningMetabolicDiseasesTaken                        | Observation\[metabolic\]  |
 |  |  | birthNotice.newborn.screeningMetabolicReason                               | Observation\[metabolic\]  |
-|  |  | birthNotice.newborn.screeningMetabolicDiseasesDate                         | Observation\[metabolic\]  |
+|  |  | birthNotice.newborn.screeningMetabolicDiseasesDate                         | ServiceRequest\[screeningRequest\].occurrenceDateTime  |
 |  |  | birthNotice.newborn.screeningCongenitalDiseases                            | Observation\[congenital\]  |
 |  |  | birthNotice.newborn.screeningCongenitalDiseasesChange                      | Observation\[congenital\]  |
 |  |  | birthNotice.newborn.screeningCongenitalDiseasesObservations                | Observation\[congenital\]  |
@@ -97,7 +97,7 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | birthNotice.newborn.screeningpupillaryReflectionChange                     | Observation\[pupillary\] |
 |  |  | birthNotice.newborn.screeningpupillaryReflectionObservations               | Observation\[pupillary\] |
 |  |  | birthNotice.newborn.screeningHearing.type                                  | Observation\[hearingscreen\]  |
-|  |  | birthNotice.newborn.screeningHearing.date                                  | Observation\[hearingscreen\]  |
+|  |  | birthNotice.newborn.screeningHearing.date                                  | Observation\[hearingscreen\].effectiveDateTime / ServiceRequest\[screeningRequest\].occurrenceDateTime  |
 |  |  | birthNotice.newborn.screeningHearing.rightEar                              | Observation\[hearingscreen\]  |
 |  |  | birthNotice.newborn.screeningHearing.leftEar                               | Observation\[hearingscreen\]  |
 |  |  | birthNotice.newborn.screeningHearing.repeatDate                            |  - |

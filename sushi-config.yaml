@@ -143,6 +143,8 @@ groups:
     - StructureDefinition/Metabolic
     - StructureDefinition/Pupillary
     - StructureDefinition/Hearingscreen
+    - StructureDefinition/ScreeningRequest
+    - ValueSet/neonatal-screening-vs
     - StructureDefinition/Newbornriskassessment
   vacinacao:
     name: "Vacinação"

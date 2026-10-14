@@ -380,3 +380,19 @@ Description:  "Vacinas e imunoglobulinas registadas na notícia de nascimento (I
 * $sct#786224004 "Product containing only human anti-D immunoglobulin (medicinal product)"
 * $sct#786224004 ^designation[0].language = #pt-PT
 * $sct#786224004 ^designation[0].value = "Imunoglobulina anti-D humana"
+
+
+ValueSet: NeonatalScreeningVS
+Id: neonatal-screening-vs
+Title:  "Rastreios neonatais marcáveis ValueSet"
+Description:  "Rastreios neonatais que podem ser marcados para data futura na notícia de nascimento (ServiceRequest.code)."
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* ^experimental = false
+
+* $sct#417491009 "Neonatal hearing test"
+* $sct#417491009 ^designation[0].language = #pt-PT
+* $sct#417491009 ^designation[0].value = "Rastreio auditivo neonatal universal"
+
+* $sct#275977009 "Guthrie test"
+* $sct#275977009 ^designation[0].language = #pt-PT
+* $sct#275977009 ^designation[0].value = "Rastreio de doenças metabólicas (teste do pezinho)"

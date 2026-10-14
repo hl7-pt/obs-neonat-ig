@@ -48,6 +48,7 @@ Parent: Observation
 Title: "Perfil de informação clinicas - Rastreio auditivo neonatal universal"
 Description: "Perfil de informação clinicas - Rastreio auditivo neonatal universal"
 
+* status = #final
 * code = $sct#417491009 "Neonatal hearing test"
 
 * component MS
@@ -69,6 +70,22 @@ Description: "Perfil de informação clinicas - Rastreio auditivo neonatal unive
 * component[left].code  = $sct#1268788000 "Structure of left auditory system (body structure)"
 * component[left].value[x] 1..1
 * note MS
+
+
+Profile: ScreeningRequest
+Parent: ServiceRequest
+Title: "Perfil de informação clinicas - Marcação de rastreio neonatal"
+Description: "Perfil de informação clinicas - Marcação de rastreio neonatal (auditivo ou de doenças metabólicas) ainda não realizado e marcado para data futura"
+* status = #active
+* intent = #order
+* code from NeonatalScreeningVS (required)
+* subject only Reference(Child)
+* occurrence[x] 1..1
+* occurrence[x] only dateTime
+* occurrenceDateTime MS
+* occurrenceDateTime ^short = "Data da marcação do rastreio"
+* note MS
+* note ^short = "Observações"
 
 
 Profile: Malformation

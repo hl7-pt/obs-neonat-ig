@@ -86,7 +86,8 @@ Description: "Perfil do recurso Composition que cria as secções da noticia nas
     Congenital 1..1 and 
     Metabolic 0..1 and 
     Pupillary 1..1 and
-    newbornriskassessment 0..1
+    newbornriskassessment 0..1 and
+    screeningRequest 0..2
 
 * section[exams].entry[length] only Reference(http://hl7.org/fhir/StructureDefinition/bodyheight)
 * section[exams].entry[length] ^short = "Comprimento (cm)"
@@ -100,10 +101,15 @@ Description: "Perfil do recurso Composition que cria as secções da noticia nas
 //* section[exams].entry[malformation] ^short = "Perímetro cefálico (cm)"
 
 * section[exams].entry[hearingscreen] only Reference(Hearingscreen)
+* section[exams].entry[hearingscreen] ^short = "Rastreio auditivo neonatal universal (realizado)"
 
 * section[exams].entry[Phototherapy] only Reference(Phototherapy)
 * section[exams].entry[Congenital] only Reference(Congenital)
 * section[exams].entry[Metabolic] only Reference(Metabolic)
+* section[exams].entry[Metabolic] ^short = "Rastreio de doenças metabólicas (realizado/não realizado)"
+* section[exams].entry[screeningRequest] only Reference(ScreeningRequest)
+* section[exams].entry[screeningRequest] ^short = "Rastreio auditivo e/ou de doenças metabólicas marcado para data futura"
+* section[exams] obeys screening-hearing-single and screening-metabolic-single
 * section[exams].entry[Pupillary] only Reference(Pupillary)
 * section[exams].entry[Pupillary] ^short = "Teste Reflexo pupilar"
 
@@ -335,6 +341,16 @@ Description: "Perfil sobre Informação sobre vacinação - genérico"
 Invariant:  reason-required-not-completed
 Description: "Either status is completed with date or a reason for the status is required"
 Expression: "(status = 'completed' and occurrence.exists() and lotNumber.exists()) or (status!='completed' and statusReason.exists())"
+Severity:   #error
+
+Invariant:  screening-hearing-single
+Description: "O rastreio auditivo é registado como realizado (Observation) ou marcado (ServiceRequest), nunca ambos"
+Expression: "entry.resolve().where(code.coding.where(system = 'http://snomed.info/sct' and code = '417491009').exists()).count() <= 1"
+Severity:   #error
+
+Invariant:  screening-metabolic-single
+Description: "O rastreio de doenças metabólicas é registado como realizado/não realizado (Observation) ou marcado (ServiceRequest), nunca ambos"
+Expression: "entry.resolve().where(code.coding.where(system = 'http://snomed.info/sct' and code = '275977009').exists()).count() <= 1"
 Severity:   #error
 
 Invariant:  vacc-hepb
