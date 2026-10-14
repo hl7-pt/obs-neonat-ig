@@ -4,6 +4,7 @@ Title:  "Tipos de parto ValueSet"
 Description:  "Tipos de parto ValueSet"
 * ^experimental = false
 
+/*
 * $sct#384729004 "Delivery of vertex presentation (procedure)" // "Eutócico Cefálico"
 * $sct#302383004 "Forceps delivery (procedure)" //    "Distócico-Forceps"
 * $sct#61586001 "Delivery by vacuum extraction (procedure)" //    "Distócico-Ventosa"
@@ -15,7 +16,14 @@ Description:  "Tipos de parto ValueSet"
 // * $sct#151441000119105 "Twin live born in hospital by vaginal delivery (finding)" //    "Eutócico-Gemelar"
 //    "Distócico Gemelar"
 // "Distócico-Espátulas de Thierry"
-
+*/
+* $sct#48782003 "Delivery normal (finding)" // - Parto eutócico
+* $sct#271373005 "Deliveries by spontaneous breech delivery (finding)" //- Pélvico"
+* $sct#309469004 "Spontaneous vertex delivery (finding)" //-  Cefálico
+* $sct#200130005 "Forceps delivery - delivered (finding)" //- Fórceps
+* $sct#200130005 "Forceps delivery - delivered (finding)" //- Cesareana
+* $sct#10761101000119105 "Vacuum assisted vaginal delivery (finding)" // - Ventosa
+* $sct#271370008 "Deliveries by breech extraction (finding)" //- Extração pélvica
 
 
 ValueSet: RiscoGravidezVS
@@ -41,13 +49,27 @@ Description:  "Tipo de gravidez ValueSet"
 
 ValueSet: VacinasinfanciaVS
 Id: vacinas-infancia-vs
-Title:  "Vacinas ValueSet"
-Description:  "Vacinas ValueSet"
+Title:  "Vacinas e imunoglobulinas do recém-nascido ValueSet"
+Description:  "Vacinas e imunoglobulinas registadas na notícia de nascimento (Immunization.vaccineCode)."
+
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
-* $sct#1861000221106  "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
-* $sct#871822003  "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
-* $sct#786768001 "Product containing only human anti-D immunoglobulin (medicinal product)"
+
+* $sct#836374004 "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
+* $sct#836374004 ^designation[0].language = #pt-PT
+* $sct#836374004 ^designation[0].value = "Vacina contra a hepatite B"
+
+* $sct#836402002 "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
+* $sct#836402002 ^designation[0].language = #pt-PT
+* $sct#836402002 ^designation[0].value = "Vacina BCG"
+
+* $sct#786224004 "Product containing only human anti-D immunoglobulin (medicinal product)"
+* $sct#786224004 ^designation[0].language = #pt-PT
+* $sct#786224004 ^designation[0].value = "Imunoglobulina anti-D humana"
 * ^experimental = false
+
+
+
+
 
 
 ValueSet: PuerperiumVS
@@ -56,7 +78,7 @@ Title:  "Tipos de outcome de puerpério ValueSet"
 Description:  "Tipos de outcome de puerpério ValueSet"
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#597961000005105  "Normal puerperium (finding)"
-* $sct#362973001  "Disorder of puerperium (disorder)"
+* $sct#362973001  "Maternal disorder during postpartum period (disorder)"
 * ^experimental = false
 
 
@@ -371,24 +393,7 @@ Description:  "Grupo funcional do profissional de saúde envolvido na notícia d
 * $sct#106292003 "Professional nurse (occupation)"
 * $sct#309453006 "Registered midwife (occupation)"
 
-ValueSet: NewbornVaccineVS
-Id: newborn-vaccine-vs
-Title:  "Vacinas e imunoglobulinas do recém-nascido ValueSet"
-Description:  "Vacinas e imunoglobulinas registadas na notícia de nascimento (Immunization.vaccineCode)."
-* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
-* ^experimental = false
 
-* $sct#836374004 "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
-* $sct#836374004 ^designation[0].language = #pt-PT
-* $sct#836374004 ^designation[0].value = "Vacina contra a hepatite B"
-
-* $sct#836402002 "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
-* $sct#836402002 ^designation[0].language = #pt-PT
-* $sct#836402002 ^designation[0].value = "Vacina BCG"
-
-* $sct#786224004 "Product containing only human anti-D immunoglobulin (medicinal product)"
-* $sct#786224004 ^designation[0].language = #pt-PT
-* $sct#786224004 ^designation[0].value = "Imunoglobulina anti-D humana"
 
 
 ValueSet: NeonatalScreeningVS
@@ -405,3 +410,23 @@ Description:  "Rastreios neonatais que podem ser marcados para data futura na no
 * $sct#275977009 "Guthrie test"
 * $sct#275977009 ^designation[0].language = #pt-PT
 * $sct#275977009 ^designation[0].value = "Rastreio de doenças metabólicas (teste do pezinho)"
+
+
+
+CodeSystem: TipoLocalSeguimentoCS
+Id:         tipo-local-seguimento-cs
+Title:     "Tipo de local de seguimento CodeSystem"
+Description:   "Tipo de organização/local de prestação de cuidados (USF, hospital, privado, desconhecido), a partir dos valores do modelo lógico da notícia de nascimento"
+* ^experimental = true
+* ^caseSensitive = true
+* #USF "USF" "Unidade de Saúde Familiar / cuidados de saúde primários"
+* #HOSP "Hospital" "Hospital"
+* #PRIV "Privado" "Prestador privado"
+* #DESC "Desconhecido" "Local desconhecido"
+
+ValueSet: TipoLocalSeguimentoVS
+Id: tipo-local-seguimento-vs
+Title:  "Tipo de local de seguimento ValueSet"
+Description:  "Tipo de organização/local de prestação de cuidados (USF, hospital, privado, desconhecido)"
+* ^experimental = false
+* include codes from system TipoLocalSeguimentoCS

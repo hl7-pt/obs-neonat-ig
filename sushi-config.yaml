@@ -151,7 +151,6 @@ groups:
     description: Vacinas e imunoglobulina administradas.
     resources:
     - StructureDefinition/Vaccination
-    - ValueSet/newborn-vaccine-vs
     - ValueSet/immunization-status-reason-vs
   seguimento:
     name: "Seguimento e alta"

@@ -236,12 +236,14 @@ Usage: #example
 * valueCodeableConcept = $sct#597961000005105 "Normal puerperium (finding)"
 
 Instance: childhealthsurveilance-ex
-InstanceOf: Childhealthsurveilance
+InstanceOf: HealthcareOrganization
 Description: "Exemplo da vigilância de saúde infantil"
 Usage: #example
 
 * identifier.system = "http:/example.org"
 * identifier.value = "4"
+* name = "Vigilância de Saúde Infantil"
+* type = $sct#394814009 "Healthcare organization (organization)"
 
 
 Instance: exemploNN

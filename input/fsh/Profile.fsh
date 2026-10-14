@@ -342,7 +342,7 @@ Description: "Perfil sobre Informação sobre vacinação"
 * occurrenceDateTime MS
 * lotNumber MS
 * vaccineCode MS
-* vaccineCode from NewbornVaccineVS (required)
+* vaccineCode from VacinasinfanciaVS (required)
 * statusReason from ImmunizationStatusReasonVS (extensible)
 * obeys reason-required-not-completed
 
