@@ -162,6 +162,7 @@ Description: "Perfil da vigilância de saúde infantil"
 
 * identifier 1..*
 
+
 Profile: Mother
 Parent: Patient
 Title: "Perfil da mãe"
@@ -192,9 +193,6 @@ Description: "Perfil do recém-nascido"
 * multipleBirth[x] 1..1 MS
 * multipleBirth[x] only integer
 
-
-
-
 Profile: Professional
 Parent: Practitioner
 Title: "Perfil para o profissional de saúde"
@@ -202,6 +200,7 @@ Description: "Perfil para o profissional de saúde"
 
 * name 1..1 MS
 * identifier 1..1 MS
+
 
 Profile: Contact
 Parent: Encounter
@@ -311,6 +310,12 @@ Description: "Perfil de Informação do Parto"
 * encounter MS
 * encounter 1..1
 * performer 1..*
+* performer MS
+* performer.function ^short = "Assistido por (médico obstetra, enfermeiro EESMO, outro)"
+* performer.actor MS
+* performer.actor ^short = "Profissional que esteve envolvido no parto"
+* performer.actor only Reference(Professional or ProfessionalRole)
+
 
 * code from TipoPartoVS (required)
 * note MS
@@ -433,3 +438,14 @@ Description: "Perfil de informação sobre Transportes"
 * subject 1..1
 
 
+
+Profile: ProfessionalRole
+Parent: PractitionerRole
+Title: "Perfil para a função do profissional de saúde"
+Description: "Função desempenhada pelo profissional de saúde (ex.: médico, enfermeiro) no registo da notícia de nascimento"
+
+* practitioner 1..1 MS
+* practitioner only Reference(Professional)
+* code 1..* MS
+* code from ProfessionalRoleVS (extensible)
+* code ^short = "Grupo funcional do profissional (médico, enfermeiro, ...)"

@@ -102,6 +102,10 @@ Description: "Tipos de episódio CodeSystem"
 * #LAB
     "LAB"  //faz sentido aqui?
     "LAB"
+* #AMB
+    "Ambulatório"
+    "Ambulatório"
+
  
 //neonatalogia?
 
@@ -344,3 +348,16 @@ Description:  "Motivos para a não administração de uma vacina (Immunization.s
 * $sct#371113008 "Varicella immune (finding)"
 * $sct#371113008 ^designation[0].language = #pt-PT
 * $sct#371113008 ^designation[0].value = "Imune a varicela"
+
+
+
+ValueSet: ProfessionalRoleVS
+Id: professional-role-vs
+Title:  "Grupo funcional do profissional ValueSet"
+Description:  "Grupo funcional do profissional de saúde envolvido na notícia de nascimento"
+* ^experimental = false
+* ^copyright = "This value set includes content from SNOMED CT, ..."
+* $sct#158965000 "Medical practitioner (occupation)"
+* $sct#11935004 "Obstetrician (occupation)"
+* $sct#106292003 "Professional nurse (occupation)"
+* $sct#309453006 "Registered midwife (occupation)"
