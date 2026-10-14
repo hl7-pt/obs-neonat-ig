@@ -196,6 +196,12 @@ De acordo com a Norma nº 013/2015 de 01/07/2015 da Direção-Geral da Saúde, s
 
 Todas estas informações são essenciais para o acompanhamento do recém-nascido e são essenciais para um acompanhamento de proximidade por parte das unidades de saúde locais. Os dados são preenchidos pelos obstetras responsáveis pela realização do parto, enfermeiros destacados e pessoal administrativo auxiliar da instituição onde foi realizado o parto. Para a atribuição da alta hospitalar tanto ao progenitor como ao recém-nascido é essencial que toda a informação obrigatório do processo da "Notícia de Nascimento" esteja preenchida corretamente.
 
+#### Momento da notificação
+
+A Notícia de Nascimento deve ser notificada **no momento da alta hospitalar** da progenitora e do recém-nascido. Não deve ser enviada antes da alta, uma vez que parte da informação só fica disponível ou só é consolidada durante o internamento (por exemplo, o estado do puerpério até à alta, o aleitamento até à alta, os resultados dos rastreios neonatais, as vacinas administradas e a eventual consulta de seguimento hospitalar marcada).
+
+Assim, a submissão da Notícia de Nascimento coincide com o registo da alta: o preenchimento completo da informação obrigatória é condição para a alta, e a notificação é efetuada nesse momento, refletindo o estado da mãe e do recém-nascido à data da alta.
+
 ### Noticia Nascimento - enquadramento legal
 
 Ao abrigo do projeto de inovação digital e simplificação dos processos de saúde em Portugal,
