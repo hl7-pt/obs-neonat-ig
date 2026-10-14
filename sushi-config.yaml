@@ -149,9 +149,7 @@ groups:
     description: Vacinas e imunoglobulina administradas.
     resources:
     - StructureDefinition/Vaccination
-    - StructureDefinition/Bcg
-    - StructureDefinition/Hepb
-    - StructureDefinition/Antid
+    - ValueSet/newborn-vaccine-vs
   seguimento:
     name: "Seguimento e alta"
     description: Boletins, carta de informação clínica, vigilância de saúde infantil e transporte.

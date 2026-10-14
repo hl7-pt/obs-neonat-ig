@@ -99,20 +99,22 @@ Usage: #example
 
 
 Instance: vaccNN-bcg
-InstanceOf: Bcg
+InstanceOf: Vaccination
 Description: "Exemplo vacina BCG"
 Usage: #example
 
+* vaccineCode = $sct#836402002 "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
 * status = #completed
 * patient = Reference(newBornNN)
 * occurrenceDateTime = "2024-08-01T10:00:00.000Z"
 * lotNumber = "ghy-123/2024"
 
 Instance: vaccNN-hepb
-InstanceOf: Hepb
+InstanceOf: Vaccination
 Description: "Exemplo vacina HEPB"
 Usage: #example
 
+* vaccineCode = $sct#836374004 "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
 * status = #completed
 * patient = Reference(newBornNN)
 * occurrenceDateTime = "2024-08-01T10:00:00.000Z"
@@ -120,10 +122,11 @@ Usage: #example
 
 
 Instance: vaccNN-antid
-InstanceOf: Antid
+InstanceOf: Vaccination
 Description: "Exemplo vacina ANTI-D"
 Usage: #example
 
+* vaccineCode = $sct#786224004 "Product containing only human anti-D immunoglobulin (medicinal product)"
 * status = #completed
 * patient = Reference(newBornNN)
 * occurrenceDateTime = "2024-08-01T10:00:00.000Z"
@@ -185,9 +188,9 @@ Usage: #example
 * section[exams].entry[Pupillary] = Reference(pupillary-example)
 * section[exams].entry[cephalicPerimeter] = Reference(cephalic-perimeter-example)
 
-* section[vaccination].entry[immuno] = Reference(vaccNN-antid)
-* section[vaccination].entry[bcg] = Reference(vaccNN-bcg)
-* section[vaccination].entry[vhb] = Reference(vaccNN-hepb)
+* section[vaccination].entry[+] = Reference(vaccNN-hepb)
+* section[vaccination].entry[+] = Reference(vaccNN-bcg)
+* section[vaccination].entry[+] = Reference(vaccNN-antid)
 
 //* section[followup].entry[destination]  = Reference(destino)
 * section[followup].entry[childhealthsurveilance]  = Reference(childhealthsurveilance-ex)

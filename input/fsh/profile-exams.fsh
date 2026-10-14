@@ -68,6 +68,7 @@ Description: "Perfil de informação clinicas - Rastreio auditivo neonatal unive
 * component[left].value[x] only integer
 * component[left].code  = $sct#1268788000 "Structure of left auditory system (body structure)"
 * component[left].value[x] 1..1
+* note MS
 
 
 Profile: Malformation

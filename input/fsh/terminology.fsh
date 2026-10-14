@@ -361,3 +361,22 @@ Description:  "Grupo funcional do profissional de saúde envolvido na notícia d
 * $sct#11935004 "Obstetrician (occupation)"
 * $sct#106292003 "Professional nurse (occupation)"
 * $sct#309453006 "Registered midwife (occupation)"
+
+ValueSet: NewbornVaccineVS
+Id: newborn-vaccine-vs
+Title:  "Vacinas e imunoglobulinas do recém-nascido ValueSet"
+Description:  "Vacinas e imunoglobulinas registadas na notícia de nascimento (Immunization.vaccineCode)."
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* ^experimental = false
+
+* $sct#836374004 "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
+* $sct#836374004 ^designation[0].language = #pt-PT
+* $sct#836374004 ^designation[0].value = "Vacina contra a hepatite B"
+
+* $sct#836402002 "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
+* $sct#836402002 ^designation[0].language = #pt-PT
+* $sct#836402002 ^designation[0].value = "Vacina BCG"
+
+* $sct#786224004 "Product containing only human anti-D immunoglobulin (medicinal product)"
+* $sct#786224004 ^designation[0].language = #pt-PT
+* $sct#786224004 ^designation[0].value = "Imunoglobulina anti-D humana"

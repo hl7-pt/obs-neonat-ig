@@ -58,16 +58,9 @@ Description: "Perfil do recurso Composition que cria as secções da noticia nas
 
 * section[vaccination].code = $loinc#11369-6 "History of Immunization Narrative"
 * section[vaccination].entry MS
-* section[vaccination].entry ^slicing.discriminator[0].type = #profile
-* section[vaccination].entry ^slicing.discriminator[=].path = "resolve()"
-* section[vaccination].entry ^slicing.rules = #open
-* section[vaccination].entry contains
-    vhb 1..1 and
-    bcg 1..1 and
-    immuno 1..1 
-* section[vaccination].entry[vhb] only Reference(Hepb)
-* section[vaccination].entry[bcg] only Reference(Bcg)
-* section[vaccination].entry[immuno] only Reference(Antid)
+* section[vaccination].entry 3..3
+* section[vaccination].entry only Reference(Vaccination)
+* section[vaccination] obeys vacc-hepb and vacc-bcg and vacc-antid
 
 
 * section[newborn].code = $loinc#57075-4 "Newborn delivery information"
@@ -334,6 +327,8 @@ Description: "Perfil sobre Informação sobre vacinação - genérico"
 * occurrence[x]  only dateTime 
 * occurrenceDateTime MS
 * lotNumber MS
+* vaccineCode MS
+* vaccineCode from NewbornVaccineVS (required)
 * statusReason from ImmunizationStatusReasonVS (extensible)
 * obeys reason-required-not-completed
 
@@ -342,29 +337,20 @@ Description: "Either status is completed with date or a reason for the status is
 Expression: "(status = 'completed' and occurrence.exists() and lotNumber.exists()) or (status!='completed' and statusReason.exists())"
 Severity:   #error
 
+Invariant:  vacc-hepb
+Description: "A secção de vacinação tem de incluir exatamente um registo da vacina contra a Hepatite B (SNOMED CT 836374004)"
+Expression: "entry.resolve().ofType(Immunization).where(vaccineCode.coding.where(system = 'http://snomed.info/sct' and code = '836374004').exists()).count() = 1"
+Severity:   #error
 
-Profile: Bcg
-Parent: Vaccination
-Title: "Perfil de Informação sobre vacinação - BCG"
-Description: "Perfil de Informação sobre vacinação - BCG"
+Invariant:  vacc-bcg
+Description: "A secção de vacinação tem de incluir exatamente um registo da vacina BCG (SNOMED CT 836402002)"
+Expression: "entry.resolve().ofType(Immunization).where(vaccineCode.coding.where(system = 'http://snomed.info/sct' and code = '836402002').exists()).count() = 1"
+Severity:   #error
 
-* vaccineCode = $sct#836402002  "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
-
-
-
-Profile: Antid
-Parent: Vaccination
-Title: "Perfil de Informação sobre vacinação - antid"
-Description: "Perfil de Informação sobre vacinação - antid"
-
-* vaccineCode =  $sct#786224004 "Product containing only human anti-D immunoglobulin (medicinal product)"
-
-Profile: Hepb
-Parent: Vaccination
-Title: "Perfil de Informação sobre vacinação - hepb"
-Description: "Perfil de Informação sobre vacinação - hepb"
-
-* vaccineCode = $sct#836374004  "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
+Invariant:  vacc-antid
+Description: "A secção de vacinação tem de incluir exatamente um registo da imunoglobulina anti-D (SNOMED CT 786224004)"
+Expression: "entry.resolve().ofType(Immunization).where(vaccineCode.coding.where(system = 'http://snomed.info/sct' and code = '786224004').exists()).count() = 1"
+Severity:   #error
 
 
 Profile: Newbornriskassessment
