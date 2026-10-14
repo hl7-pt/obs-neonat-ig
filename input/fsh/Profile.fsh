@@ -141,7 +141,7 @@ Description: "Perfil do recurso Composition que cria as secções da noticia nas
 
 * section[followup].entry[puerperium] only Reference(Puerperium)
 //* section[followup].entry[puerperiumreview] only Reference(Organization)
-* section[followup].entry[childhealthsurveilance] only Reference(Childhealthsurveilance)
+* section[followup].entry[childhealthsurveilance] only Reference(HealthcareOrganization)
 * section[followup].entry[letter] only Reference(Letter)
 * section[followup].entry[bulletindelivery] only Reference(Bulletindelivery)
 * section[followup].entry[nextappointment] only Reference(Encounter)
@@ -154,12 +154,19 @@ Description: "Perfil do recurso Composition que cria as secções da noticia nas
 
 
 
-Profile: Childhealthsurveilance
+Profile: HealthcareOrganization
 Parent: Organization
-Title: "Perfil da vigilância de saúde infantil"
-Description: "Perfil da vigilância de saúde infantil"
+Title: "Perfil da organização de saúde"
+Description: "Organização de saúde (hospital/maternidade, unidade de cuidados de saúde primários, etc.) referenciada na notícia de nascimento"
 
-* identifier 1..*
+* identifier 1..* MS
+* identifier ^short = "Identificador da instituição/unidade de saúde"
+* name 1..1 MS
+* alias MS
+* alias ^short = "Outros nomes ou siglas da instituição"
+* type 1..1 MS
+* type from TipoLocalSeguimentoVS (extensible)
+* type ^short = "Tipo de organização/local (USF, hospital, privado, desconhecido)"
 
 
 Profile: Mother
@@ -210,6 +217,7 @@ Description: "Perfil sobre episódio da notícia de nascimento"
 * status = #finished
 * class from episode-type-vs (required)
 * serviceProvider 1..1
+* serviceProvider only Reference(HealthcareOrganization)
 * serviceType 1..1
 
 Profile: Pregnancy
@@ -323,8 +331,8 @@ Description: "Perfil de Informação do Parto"
 
 Profile: Vaccination
 Parent: Immunization
-Title: "Perfil sobre Informação sobre vacinação - genérico"
-Description: "Perfil sobre Informação sobre vacinação - genérico"
+Title: "Perfil sobre Informação sobre vacinação"
+Description: "Perfil sobre Informação sobre vacinação"
 
 * status MS
 * patient MS  
