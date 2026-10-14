@@ -152,21 +152,22 @@ groups:
     resources:
     - StructureDefinition/Vaccination
     - ValueSet/newborn-vaccine-vs
+    - ValueSet/immunization-status-reason-vs
   seguimento:
     name: "Seguimento e alta"
     description: Boletins, carta de informação clínica, vigilância de saúde infantil e transporte.
     resources:
     - StructureDefinition/Bulletindelivery
     - StructureDefinition/Letter
-    - StructureDefinition/Childhealthsurveilance
     - StructureDefinition/Transport
   organizacoes-profissionais:
     name: "Organizações e profissionais"
     description: Instituições de saúde e profissionais envolvidos no registo.
     resources:
-   # - StructureDefinition/HealthcareOrganization
+    - StructureDefinition/HealthcareOrganization
     - StructureDefinition/Professional
-  #  - StructureDefinition/ProfessionalRole
+    - StructureDefinition/ProfessionalRole
+    - ValueSet/professional-role-vs
   extensoes:
     name: "Extensões"
     resources:
@@ -180,8 +181,8 @@ groups:
     - StructureDefinition/NoticiaLM
     - StructureDefinition/ContactLM
     - StructureDefinition/ProfessionalLM
-   # - StructureDefinition/BirthNoticeLM
-   # - StructureDefinition/DestinationLM
+    - StructureDefinition/BirthNoticeLM
+    - StructureDefinition/DestinationLM
     - StructureDefinition/MotherDemographicsLM
     - StructureDefinition/PregnancyLM
     - StructureDefinition/NewBornLM
@@ -202,12 +203,10 @@ groups:
     - ValueSet/newborn-congenital-anomalies-vs
     - ValueSet/newbornriskassessment-vs
     - ValueSet/vacinas-infancia-vs
-  #  - ValueSet/vaccination-status-reason-vs
     - ValueSet/bulletin-delivery-vs
     - ValueSet/document-type-vs
     - ValueSet/transport-type-vs
  #   - ValueSet/tipo-local-seguimento-vs
-  #  - ValueSet/professional-role-vs
   exemplos:
     name: "Exemplos"
     description: Exemplo completo (Bundle documento) e recursos que o compõem.

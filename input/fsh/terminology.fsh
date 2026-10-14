@@ -97,17 +97,26 @@ Description: "Tipos de episódio CodeSystem"
     "Hospital de Dia"
     "Hospital de Dia"
 * #RAD
-    "RAD" //faz sentido aqui?
-    "RAD"
+    "Radiologia" 
+    "Radiologia"
 * #LAB
-    "LAB"  //faz sentido aqui?
-    "LAB"
+    "Laboratório"  
+    "Laboratório"
 * #AMB
     "Ambulatório"
     "Ambulatório"
 
- 
-//neonatalogia?
+* #HOSPDOM
+    "Hospitalização Domiciliária"
+    "Hospitalização Domiciliária"
+
+* #TELE
+    "Teleconsulta"
+    "Teleconsulta"
+
+* #BLOCOPARTO
+    "Bloco de Parto"
+    "Bloco de Parto"
 
 
 
