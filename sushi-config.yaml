@@ -193,7 +193,6 @@ groups:
     - CodeSystem/InfosGravidezCS
     - CodeSystem/documentclassificationCS
     - CodeSystem/tipo-episodio-cs
-  #  - CodeSystem/tipo-local-seguimento-cs
     - ValueSet/tipo-parto-vs
     - ValueSet/tipo-gravidez-vs
     - ValueSet/risco-gravidez-vs
@@ -205,7 +204,7 @@ groups:
     - ValueSet/bulletin-delivery-vs
     - ValueSet/document-type-vs
     - ValueSet/transport-type-vs
- #   - ValueSet/tipo-local-seguimento-vs
+    - ValueSet/tipo-local-seguimento-vs
   exemplos:
     name: "Exemplos"
     description: Exemplo completo (Bundle documento) e recursos que o compõem.

@@ -166,7 +166,8 @@ Description: "Organização de saúde (hospital/maternidade, unidade de cuidados
 * alias ^short = "Outros nomes ou siglas da instituição"
 * type 1..1 MS
 * type from TipoLocalSeguimentoVS (extensible)
-* type ^short = "Tipo de organização/local (USF, hospital, privado, desconhecido)"
+* type ^short = "Tipo de local de seguimento (cuidados de saúde primários, consulta hospitalar, estrangeiro)"
+* type ^comment = "'Outro' regista-se em type.text. 'Não sabe' não é um tipo de local: regista-se com a extensão data-absent-reason (http://hl7.org/fhir/StructureDefinition/data-absent-reason) em type, com o código 'unknown'. O seguimento privado não tem código adequado neste value set, uma vez que a distinção público/privado corresponde ao setor do prestador e não ao tipo de local."
 
 
 Profile: Mother

@@ -67,6 +67,8 @@ Description:  "Vacinas e imunoglobulinas registadas na notícia de nascimento (I
 * $sct#786224004 ^designation[0].value = "Imunoglobulina anti-D humana"
 * ^experimental = false
 
+//E falta esta 9542007 |Product containing Hepatitis B surface antigen immunoglobulin (medicinal product)|
+
 
 
 
@@ -413,20 +415,21 @@ Description:  "Rastreios neonatais que podem ser marcados para data futura na no
 
 
 
-CodeSystem: TipoLocalSeguimentoCS
-Id:         tipo-local-seguimento-cs
-Title:     "Tipo de local de seguimento CodeSystem"
-Description:   "Tipo de organização/local de prestação de cuidados (USF, hospital, privado, desconhecido), a partir dos valores do modelo lógico da notícia de nascimento"
-* ^experimental = true
-* ^caseSensitive = true
-* #USF "USF" "Unidade de Saúde Familiar / cuidados de saúde primários"
-* #HOSP "Hospital" "Hospital"
-* #PRIV "Privado" "Prestador privado"
-* #DESC "Desconhecido" "Local desconhecido"
-
 ValueSet: TipoLocalSeguimentoVS
 Id: tipo-local-seguimento-vs
 Title:  "Tipo de local de seguimento ValueSet"
-Description:  "Tipo de organização/local de prestação de cuidados (USF, hospital, privado, desconhecido)"
+Description:  "Tipo de local de seguimento (revisão do puerpério e vigilância de saúde infantil). Mapeamento dos valores do formulário da norma: USF/UCSP → 45131006; No Hospital → 224885007 (consulta externa hospitalar). 'Privado' não tem correspondência adequada (o setor público/privado é uma característica do prestador e não um tipo de local); 'Outro' regista-se em type.text; 'Não sabe' representa ausência de informação e regista-se com a extensão data-absent-reason, não como código deste value set."
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * ^experimental = false
-* include codes from system TipoLocalSeguimentoCS
+
+* $sct#45131006 "Primary care hospital"
+* $sct#45131006 ^designation[0].language = #pt-PT
+* $sct#45131006 ^designation[0].value = "Cuidados de saúde primários"
+
+* $sct#224885007 "Hospital consulting room"
+* $sct#224885007 ^designation[0].language = #pt-PT
+* $sct#224885007 ^designation[0].value = "Consulta hospitalar"
+
+* $sct#1367626006 "Follow-up abroad"
+* $sct#1367626006 ^designation[0].language = #pt-PT
+* $sct#1367626006 ^designation[0].value = "Seguimento no estrangeiro"

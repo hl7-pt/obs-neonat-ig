@@ -243,7 +243,7 @@ Usage: #example
 * identifier.system = "http:/example.org"
 * identifier.value = "4"
 * name = "Vigilância de Saúde Infantil"
-* type = $sct#394814009 "Healthcare organization (organization)"
+* type = $sct#45131006 "Primary care hospital"
 
 
 Instance: exemploNN

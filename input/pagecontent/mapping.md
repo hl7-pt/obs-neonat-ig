@@ -130,6 +130,19 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | birthNotice.letterWithClinicalInformation.date                             | Observation\[letter\]  |
 |  |  | birthNotice.professionals                                                  | Practitioner |
 
+### Tipo de local de seguimento
+
+Os campos `puerperiumReview.local` e `childHealthSurveillance.local` do formulário da norma mapeiam para `Organization.type` (perfil [HealthcareOrganization](StructureDefinition-HealthcareOrganization.html)), com o value set [TipoLocalSeguimentoVS](ValueSet-tipo-local-seguimento-vs.html):
+
+| Valor no formulário | Código SNOMED CT | Designação (pt-PT) | Notas |
+|--|--|--|--|
+| USF/UCSP | 45131006 | Cuidados de saúde primários | |
+| No Hospital | 224885007 | Consulta hospitalar | A vigilância em contexto hospitalar ocorre em consulta externa |
+| Privado | — | — | Sem correspondência adequada. A distinção público/privado corresponde ao setor do prestador e não ao tipo de local; a sua representação num elemento próprio está em avaliação. O conceito 309895006 (Hospital privado) não é usado por ser demasiado restritivo (o seguimento privado ocorre frequentemente em consultório ou clínica) |
+| Outro | — | — | Registar em `type.text` |
+| Não sabe | — | — | Ausência de informação, não um tipo de local: registar com a extensão [data-absent-reason](http://hl7.org/fhir/R4/extension-data-absent-reason.html) (`unknown`) em `type` |
+| *(não previsto na norma)* | 1367626006 | Seguimento no estrangeiro | Para os casos em que a família passa a residir fora do país |
+
 ### Estrutura FHIR
 
 Sendo um documento, os recursos estão organizados de maneira a tentar estar agrupados de maneira lógica.
