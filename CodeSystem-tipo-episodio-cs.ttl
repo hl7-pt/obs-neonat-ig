@@ -1,0 +1,121 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "tipo-episodio-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem tipo-episodio-cs</b></p><a name=\"tipo-episodio-cs\"> </a><a name=\"hctipo-episodio-cs\"> </a><p>Este case-insensitive sistema de código <code>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">CON<a name=\"tipo-episodio-cs-CON\"> </a></td><td>Consulta</td><td>Consulta</td></tr><tr><td style=\"white-space:nowrap\">INT<a name=\"tipo-episodio-cs-INT\"> </a></td><td>Internamento</td><td>Internamento</td></tr><tr><td style=\"white-space:nowrap\">URG<a name=\"tipo-episodio-cs-URG\"> </a></td><td>Urgência</td><td>Urgência</td></tr><tr><td style=\"white-space:nowrap\">BLO<a name=\"tipo-episodio-cs-BLO\"> </a></td><td>Bloco</td><td>Bloco</td></tr><tr><td style=\"white-space:nowrap\">HDI<a name=\"tipo-episodio-cs-HDI\"> </a></td><td>Hospital de Dia</td><td>Hospital de Dia</td></tr><tr><td style=\"white-space:nowrap\">RAD<a name=\"tipo-episodio-cs-RAD\"> </a></td><td>Radiologia</td><td>Radiologia</td></tr><tr><td style=\"white-space:nowrap\">LAB<a name=\"tipo-episodio-cs-LAB\"> </a></td><td>Laboratório</td><td>Laboratório</td></tr><tr><td style=\"white-space:nowrap\">AMB<a name=\"tipo-episodio-cs-AMB\"> </a></td><td>Ambulatório</td><td>Ambulatório</td></tr><tr><td style=\"white-space:nowrap\">HOSPDOM<a name=\"tipo-episodio-cs-HOSPDOM\"> </a></td><td>Hospitalização Domiciliária</td><td>Hospitalização Domiciliária</td></tr><tr><td style=\"white-space:nowrap\">TELE<a name=\"tipo-episodio-cs-TELE\"> </a></td><td>Teleconsulta</td><td>Teleconsulta</td></tr><tr><td style=\"white-space:nowrap\">BLOCOPARTO<a name=\"tipo-episodio-cs-BLOCOPARTO\"> </a></td><td>Bloco de Parto</td><td>Bloco de Parto</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "TipoepisodioCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Tipos de episódio CodeSystem"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-15T08:48:18+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Portugal"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Portugal" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://hl7.pt" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "info@hl7.pt" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Portugal" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "geral@hl7.pt" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Tipos de episódio CodeSystem"] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "PT" ] ;
+       fhir:Coding.display [ fhir:value "Portugal" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "11"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CON" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Consulta" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Consulta" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "INT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Internamento" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Internamento" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "URG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urgência" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Urgência" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BLO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bloco" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Bloco" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HDI" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hospital de Dia" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hospital de Dia" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "RAD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Radiologia" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Radiologia" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laboratório" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laboratório" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AMB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ambulatório" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ambulatório" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HOSPDOM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hospitalização Domiciliária" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hospitalização Domiciliária" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TELE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Teleconsulta" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Teleconsulta" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BLOCOPARTO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bloco de Parto" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Bloco de Parto" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

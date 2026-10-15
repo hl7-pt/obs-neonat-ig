@@ -1,0 +1,22 @@
+{
+  "website": {
+    "style": "fhir.layout",
+    "url": "https://hl7.pt/fhir",
+    "server": "apache",
+    "org": "HL7 Portugal",
+    "index-template": "index.template",
+    "clone-xml-json": true
+  },
+  "layout-rules": [
+    {
+      "npm": "hl7.fhir.pt.*",
+      "canonical": "https://hl7.pt/fhir/{4}",
+      "destination": "/{4}"
+    },
+    {
+      "npm": "hl7.pt.fhir.*",
+      "canonical": "http://hl7.pt/fhir/ig/{4}",
+      "destination": "/{4}"
+    }
+  ]
+}

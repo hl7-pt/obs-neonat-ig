@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tipo-episodio-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem tipo-episodio-cs</b></p><a name="tipo-episodio-cs"> </a><a name="hctipo-episodio-cs"> </a><p>Este case-insensitive sistema de código <code>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">CON<a name="tipo-episodio-cs-CON"> </a></td><td>Consulta</td><td>Consulta</td></tr><tr><td style="white-space:nowrap">INT<a name="tipo-episodio-cs-INT"> </a></td><td>Internamento</td><td>Internamento</td></tr><tr><td style="white-space:nowrap">URG<a name="tipo-episodio-cs-URG"> </a></td><td>Urgência</td><td>Urgência</td></tr><tr><td style="white-space:nowrap">BLO<a name="tipo-episodio-cs-BLO"> </a></td><td>Bloco</td><td>Bloco</td></tr><tr><td style="white-space:nowrap">HDI<a name="tipo-episodio-cs-HDI"> </a></td><td>Hospital de Dia</td><td>Hospital de Dia</td></tr><tr><td style="white-space:nowrap">RAD<a name="tipo-episodio-cs-RAD"> </a></td><td>Radiologia</td><td>Radiologia</td></tr><tr><td style="white-space:nowrap">LAB<a name="tipo-episodio-cs-LAB"> </a></td><td>Laboratório</td><td>Laboratório</td></tr><tr><td style="white-space:nowrap">AMB<a name="tipo-episodio-cs-AMB"> </a></td><td>Ambulatório</td><td>Ambulatório</td></tr><tr><td style="white-space:nowrap">HOSPDOM<a name="tipo-episodio-cs-HOSPDOM"> </a></td><td>Hospitalização Domiciliária</td><td>Hospitalização Domiciliária</td></tr><tr><td style="white-space:nowrap">TELE<a name="tipo-episodio-cs-TELE"> </a></td><td>Teleconsulta</td><td>Teleconsulta</td></tr><tr><td style="white-space:nowrap">BLOCOPARTO<a name="tipo-episodio-cs-BLOCOPARTO"> </a></td><td>Bloco de Parto</td><td>Bloco de Parto</td></tr></table></div>
+  </text>
+  <url value="https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"/>
+  <version value="1.0.0"/>
+  <name value="TipoepisodioCS"/>
+  <title value="Tipos de episódio CodeSystem"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-10-15T08:48:18+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Tipos de episódio CodeSystem"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="CON"/>
+    <display value="Consulta"/>
+    <definition value="Consulta"/>
+  </concept>
+  <concept>
+    <code value="INT"/>
+    <display value="Internamento"/>
+    <definition value="Internamento"/>
+  </concept>
+  <concept>
+    <code value="URG"/>
+    <display value="Urgência"/>
+    <definition value="Urgência"/>
+  </concept>
+  <concept>
+    <code value="BLO"/>
+    <display value="Bloco"/>
+    <definition value="Bloco"/>
+  </concept>
+  <concept>
+    <code value="HDI"/>
+    <display value="Hospital de Dia"/>
+    <definition value="Hospital de Dia"/>
+  </concept>
+  <concept>
+    <code value="RAD"/>
+    <display value="Radiologia"/>
+    <definition value="Radiologia"/>
+  </concept>
+  <concept>
+    <code value="LAB"/>
+    <display value="Laboratório"/>
+    <definition value="Laboratório"/>
+  </concept>
+  <concept>
+    <code value="AMB"/>
+    <display value="Ambulatório"/>
+    <definition value="Ambulatório"/>
+  </concept>
+  <concept>
+    <code value="HOSPDOM"/>
+    <display value="Hospitalização Domiciliária"/>
+    <definition value="Hospitalização Domiciliária"/>
+  </concept>
+  <concept>
+    <code value="TELE"/>
+    <display value="Teleconsulta"/>
+    <definition value="Teleconsulta"/>
+  </concept>
+  <concept>
+    <code value="BLOCOPARTO"/>
+    <display value="Bloco de Parto"/>
+    <definition value="Bloco de Parto"/>
+  </concept>
+</CodeSystem>

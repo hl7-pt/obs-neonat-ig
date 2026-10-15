@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="ObsRole"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: PractitionerRole ObsRole</b></p><a name="ObsRole"> </a><a name="hcObsRole"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">(no practitioner): Obstetrician</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Roles which this practitioner is authorized to perform for the organization">Role:</td><td colspan="3"><span title="Códigos:{http://snomed.info/sct 11935004}">Obstetrician</span></td></tr></table></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="11935004"/>
+      <display value="Obstetrician"/>
+    </coding>
+  </code>
+</PractitionerRole>

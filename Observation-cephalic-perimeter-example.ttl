@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Observation/cephalic-perimeter-example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cephalic-perimeter-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/BirthHeadCircumference" ;
+       fhir:index 0 ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/BirthHeadCircumference>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Observation cephalic-perimeter-example</b></p><a name=\"cephalic-perimeter-example\"> </a><a name=\"hccephalic-perimeter-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-BirthHeadCircumference.html\">Perfil de Perímetro cefálico ao nascer</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 8290-9}, {http://loinc.org 9843-4}\">Head Occipital-frontal circumference --at birth- by Tape measure</span></p><p><b>subject</b>: <a href=\"Patient-newBornNN.html\">Doente anónimo Female, DoB: 2024-08-01</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p><p><b>value</b>: 50.1 cm(s)<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM códigocm = 'cm')</span></p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:8290-9 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "8290-9" ] ;
+       fhir:Coding.display [ fhir:value "Head Occipital-frontal circumference --at birth- by Tape measure" ]
+     ], [
+       fhir:index 1 ;
+       a loinc:9843-4 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "9843-4" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://hl7.pt/fhir/NoticiaNascimento/Patient/newBornNN> ;
+     fhir:Reference.reference [ fhir:value "Patient/newBornNN" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2024-08-01T10:00:00.000Z"^^xsd:dateTime] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "50.1"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "cm(s)" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "cm" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Observation/cephalic-perimeter-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tipo-local-seguimento-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet tipo-local-seguimento-vs</b></p><a name="tipo-local-seguimento-vs"> </a><a name="hctipo-local-seguimento-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/45131006">45131006</a></td><td>Primary care hospital</td><td>Cuidados de saúde primários</td></tr><tr><td><a href="http://snomed.info/id/224885007">224885007</a></td><td>Hospital consulting room</td><td>Consulta hospitalar</td></tr><tr><td><a href="http://snomed.info/id/1367626006">1367626006</a></td><td>Follow-up abroad</td><td>Seguimento no estrangeiro</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-local-seguimento-vs"/>
+  <version value="1.0.0"/>
+  <name value="TipoLocalSeguimentoVS"/>
+  <title value="Tipo de local de seguimento ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-15T08:48:18+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Tipo de local de seguimento (revisão do puerpério e vigilância de saúde infantil). Mapeamento dos valores do formulário da norma: USF/UCSP → 45131006; No Hospital → 224885007 (consulta externa hospitalar). 'Privado' não tem correspondência adequada (o setor público/privado é uma característica do prestador e não um tipo de local); 'Outro' regista-se em type.text; 'Não sabe' representa ausência de informação e regista-se com a extensão data-absent-reason, não como código deste value set."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="45131006"/>
+        <display value="Primary care hospital"/>
+        <designation>
+          <language value="pt-PT"/>
+          <value value="Cuidados de saúde primários"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="224885007"/>
+        <display value="Hospital consulting room"/>
+        <designation>
+          <language value="pt-PT"/>
+          <value value="Consulta hospitalar"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1367626006"/>
+        <display value="Follow-up abroad"/>
+        <designation>
+          <language value="pt-PT"/>
+          <value value="Seguimento no estrangeiro"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="gestational-age-example"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/GestationalAge"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: Observation gestational-age-example</b></p><a name="gestational-age-example"> </a><a name="hcgestational-age-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-GestationalAge.html">Perfil de Idade gestacional</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Códigos:{http://loinc.org 11884-4}">Gestational age Estimated</span></p><p><b>subject</b>: <a href="Patient-newBornNN.html">Doente anónimo Female, DoB: 2024-08-01</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p><p><b>value</b>: 270 dias<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigod = 'd')</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11884-4"/>
+      <display value="Gestational age Estimated"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/newBornNN"/>
+  </subject>
+  <effectiveDateTime value="2024-08-01T10:00:00.000Z"/>
+  <valueQuantity>
+    <value value="270"/>
+    <unit value="dias"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="d"/>
+  </valueQuantity>
+</Observation>

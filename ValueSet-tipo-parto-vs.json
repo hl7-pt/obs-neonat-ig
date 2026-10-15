@@ -1,0 +1,72 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tipo-parto-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet tipo-parto-vs</b></p><a name=\"tipo-parto-vs\"> </a><a name=\"hctipo-parto-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href=\"http://snomed.info/id/48782003\">48782003</a></td><td>Delivery normal (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/271373005\">271373005</a></td><td>Deliveries by spontaneous breech delivery (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/309469004\">309469004</a></td><td>Spontaneous vertex delivery (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/200130005\">200130005</a></td><td>Forceps delivery - delivered (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/10761101000119105\">10761101000119105</a></td><td>Vacuum assisted vaginal delivery (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/271370008\">271370008</a></td><td>Deliveries by breech extraction (finding)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-parto-vs",
+  "version" : "1.0.0",
+  "name" : "TipoPartoVS",
+  "title" : "Tipos de parto ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-15T08:48:18+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Tipos de parto ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "48782003",
+        "display" : "Delivery normal (finding)"
+      },
+      {
+        "code" : "271373005",
+        "display" : "Deliveries by spontaneous breech delivery (finding)"
+      },
+      {
+        "code" : "309469004",
+        "display" : "Spontaneous vertex delivery (finding)"
+      },
+      {
+        "code" : "200130005",
+        "display" : "Forceps delivery - delivered (finding)"
+      },
+      {
+        "code" : "10761101000119105",
+        "display" : "Vacuum assisted vaginal delivery (finding)"
+      },
+      {
+        "code" : "271370008",
+        "display" : "Deliveries by breech extraction (finding)"
+      }]
+    }]
+  }
+}
