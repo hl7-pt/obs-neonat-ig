@@ -28,7 +28,7 @@ Description: "Perfil do recurso Composition que cria as secções da noticia nas
     followup 1..1 and
     destination 1..1
 
-* section[mother].code = $loinc#10160-0
+* section[mother].code = $loinc#92014-0 "Mother's administrative information"
 * section[mother].entry only Reference(Mother)
 * section[mother].entry MS
 * section[mother].entry ^slicing.discriminator[0].type = #profile
