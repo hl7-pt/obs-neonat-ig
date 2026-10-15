@@ -88,6 +88,16 @@ Usage: #example
 * subject = Reference(newBornNN)
 
 
+Instance: gestational-age-example
+InstanceOf: GestationalAge
+Description: "Exemplo idade gestacional (38 semanas e 4 dias)"
+Usage: #example
+
+* effectiveDateTime = "2024-08-01T10:00:00.000Z"
+* subject = Reference(newBornNN)
+* valueQuantity = 270 'd' "dias"
+
+
 Instance: newBornNN
 InstanceOf: Child
 Description: "Exemplo recém-nascido"
@@ -173,7 +183,8 @@ Usage: #example
 * encounter = Reference(episodio)
 * section[mother].entry = Reference(mother)
 
-* section[pregnancy].entry = Reference(pregnancyNN)
+* section[pregnancy].entry[pregnancyInfo] = Reference(pregnancyNN)
+* section[pregnancy].entry[gestationalAge] = Reference(gestational-age-example)
 
 * section[birth].entry[birthInfo]  = Reference(BirthNN)
 
@@ -281,6 +292,9 @@ Usage: #example
 
 * entry[+].fullUrl = "http://example.org/Observation/pregnancyNN"
 * entry[=].resource = pregnancyNN
+
+* entry[+].fullUrl = "http://example.org/Observation/gestational-age-example"
+* entry[=].resource = gestational-age-example
 
 * entry[+].fullUrl = "http://example.org/Patient/newBornNN"
 * entry[=].resource = newBornNN

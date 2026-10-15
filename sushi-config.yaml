@@ -121,6 +121,7 @@ groups:
     resources:
     - StructureDefinition/Mother
     - StructureDefinition/Pregnancy
+    - StructureDefinition/GestationalAge
     - StructureDefinition/Puerperium
   parto:
     name: "Parto e episódios"
@@ -196,6 +197,7 @@ groups:
     - ValueSet/tipo-parto-vs
     - ValueSet/tipo-gravidez-vs
     - ValueSet/risco-gravidez-vs
+    - ValueSet/idade-gestacional-unidades-vs
     - ValueSet/puerperium-vs
     - ValueSet/episode-type-vs
     - ValueSet/newborn-congenital-anomalies-vs

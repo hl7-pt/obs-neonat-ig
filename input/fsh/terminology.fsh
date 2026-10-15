@@ -433,3 +433,15 @@ Description:  "Tipo de local de seguimento (revisão do puerpério e vigilância
 * $sct#1367626006 "Follow-up abroad"
 * $sct#1367626006 ^designation[0].language = #pt-PT
 * $sct#1367626006 ^designation[0].value = "Seguimento no estrangeiro"
+ValueSet: IdadeGestacionalUnidadesVS
+Id: idade-gestacional-unidades-vs
+Title: "Unidades da idade gestacional"
+Description: "Unidades UCUM permitidas para a idade gestacional (semanas ou dias)"
+* ^status = #active
+* ^experimental = false
+* $ucum#wk "week"
+* $ucum#wk ^designation[0].language = #pt-PT
+* $ucum#wk ^designation[0].value = "semana"
+* $ucum#d "day"
+* $ucum#d ^designation[0].language = #pt-PT
+* $ucum#d ^designation[0].value = "dia"

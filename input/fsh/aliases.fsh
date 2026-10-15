@@ -33,3 +33,4 @@ Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $condition-severity = http://hl7.org/fhir/ValueSet/condition-severity
 Alias: $vital-signs-profile = http://hl7.org/fhir/StructureDefinition/vitalsigns
+Alias: $ucum = http://unitsofmeasure.org

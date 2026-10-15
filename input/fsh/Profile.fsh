@@ -37,11 +37,17 @@ Description: "Perfil do recurso Composition que cria as secções da noticia nas
 
 
 * section[pregnancy].code = $loinc#56833-7 "Pregnancy related history Narrative"
-* section[pregnancy].entry only Reference(Pregnancy)
+* section[pregnancy].entry only Reference(Pregnancy or GestationalAge)
 * section[pregnancy].entry MS
 * section[pregnancy].entry ^slicing.discriminator[0].type = #profile
 * section[pregnancy].entry ^slicing.discriminator[=].path = "resolve()"
 * section[pregnancy].entry ^slicing.rules = #open
+* section[pregnancy].entry contains
+    pregnancyInfo 1..1 and
+    gestationalAge 0..1
+
+* section[pregnancy].entry[pregnancyInfo] only Reference(Pregnancy)
+* section[pregnancy].entry[gestationalAge] only Reference(GestationalAge)
 
 * section[birth].code = $loinc#57074-7 "Labor and delivery process Narrative"
 * section[birth].entry MS
@@ -239,8 +245,6 @@ Description: "Perfil de Informação de gravidez"
 * component ^requirements = "Required if not(exists(Observation.valueString))"
 * component ^min = 0
 * component contains
-    days 0..1 and
-    weeks 0..1 and
     risk 0..1 and
     riskreason 0..1 and
    // immunoglobulinAdministration 0..1 and
@@ -256,13 +260,6 @@ Description: "Perfil de Informação de gravidez"
     pregancyType 0..1
    // twinNumber 0..1
 
-
-* component[days].value[x] only integer
-* component[days].code = $sct#258703001 "day (qualifier value)"
-
-
-* component[weeks].value[x] only integer
-* component[weeks].code = $sct#258705008 "week (qualifier value)"
 
 * component[risk].value[x] only CodeableConcept
 * component[risk].valueCodeableConcept from RiscoGravidezVS (required)
@@ -303,6 +300,22 @@ Description: "Perfil de Informação de gravidez"
 
 
 
+
+Profile: GestationalAge
+Parent: Observation
+Title: "Perfil de Idade gestacional"
+Description: "Idade gestacional estimada, registada como quantidade em UCUM. Uma idade gestacional em semanas e dias (ex.: 38 semanas e 4 dias) deve ser convertida para dias (270 d)."
+
+* status = #final
+* code = $loinc#11884-4 "Gestational age Estimated"
+* subject 1..1
+* value[x] 1..1 MS
+* value[x] only Quantity
+* valueQuantity.value 1..1
+* valueQuantity.system 1..1
+* valueQuantity.system = $ucum
+* valueQuantity.code 1..1
+* valueQuantity.code from IdadeGestacionalUnidadesVS (required)
 
 Profile: Birth
 Parent: Procedure

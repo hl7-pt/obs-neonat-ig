@@ -36,8 +36,8 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | birthNotice.motherDemographics.districtAddress                             | Patient.address |
 |  |  | birthNotice.motherDemographics.countyAddress                               | Patient.address |
 |  |  | birthNotice.motherDemographics.parishAddress                               | Patient.address |
-|  |  | birthNotice.pregnancy.days                                                 | Observation\[Pregancy\].component  |
-|  |  | birthNotice.pregnancy.weeks                                                | Observation\[Pregancy\].component  |
+|  |  | birthNotice.pregnancy.days                                                 | Observation\[GestationalAge\].valueQuantity (UCUM `d`)  |
+|  |  | birthNotice.pregnancy.weeks                                                | Observation\[GestationalAge\].valueQuantity (UCUM `wk`)  |
 |  |  | birthNotice.pregnancy.risk                                                 | Observation\[Pregancy\].component  |
 |  |  | birthNotice.pregnancy.riskReason                                           | Observation\[Pregancy\].component  |
 |  |  | birthNotice.pregnancy.immunoglobulinAdministration                         | Vaccination.status  |
