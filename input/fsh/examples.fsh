@@ -67,7 +67,7 @@ Usage: #example
 * code = $sct#11935004 "Obstetrician"
 
 Instance: cephalic-perimeter-example
-InstanceOf: http://hl7.org/fhir/StructureDefinition/headcircum
+InstanceOf: BirthHeadCircumference
 Description: "Exemplo perimetro cefálico"
 Usage: #example
 
@@ -143,7 +143,7 @@ Usage: #example
 * lotNumber = "xyz-123"
 
 Instance: length-example
-InstanceOf: http://hl7.org/fhir/StructureDefinition/bodyheight
+InstanceOf: BirthLength
 Description: "Exemplo altura recem-nascido"
 Usage: #example
 
@@ -156,7 +156,7 @@ Usage: #example
 
 
 Instance: body-weigth-example
-InstanceOf: http://hl7.org/fhir/StructureDefinition/bodyweight
+InstanceOf: BirthWeight
 Description: "Exemplo peso recem-nascido"
 Usage: #example
 

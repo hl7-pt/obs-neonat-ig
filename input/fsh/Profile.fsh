@@ -95,12 +95,12 @@ Description: "Perfil do recurso Composition que cria as secções da noticia nas
     newbornriskassessment 0..1 and
     screeningRequest 0..2
 
-* section[exams].entry[length] only Reference(http://hl7.org/fhir/StructureDefinition/bodyheight)
+* section[exams].entry[length] only Reference(BirthLength)
 * section[exams].entry[length] ^short = "Comprimento (cm)"
-* section[exams].entry[bodyweigth] only Reference(http://hl7.org/fhir/StructureDefinition/bodyweight)
+* section[exams].entry[bodyweigth] only Reference(BirthWeight)
 * section[exams].entry[bodyweigth] ^short = "Peso (gr)"
 
-* section[exams].entry[cephalicPerimeter] only Reference(http://hl7.org/fhir/StructureDefinition/headcircum)
+* section[exams].entry[cephalicPerimeter] only Reference(BirthHeadCircumference)
 * section[exams].entry[cephalicPerimeter] ^short = "Perímetro cefálico (cm)"
 
 * section[exams].entry[malformation] only Reference(Malformation)
@@ -316,6 +316,39 @@ Description: "Idade gestacional estimada, registada como quantidade em UCUM. Uma
 * valueQuantity.system = $ucum
 * valueQuantity.code 1..1
 * valueQuantity.code from IdadeGestacionalUnidadesVS (required)
+
+Profile: BirthWeight
+Parent: http://hl7.org/fhir/StructureDefinition/bodyweight
+Id: BirthWeight
+Title: "Perfil de Peso ao nascer"
+Description: "Peso do recém-nascido ao nascer, em gramas. Mantém o código LOINC 29463-7 do perfil de sinais vitais e acrescenta o código específico 8339-4 (Birth weight Measured)."
+
+* code.coding contains BirthWeightCode 1..1 MS
+* code.coding[BirthWeightCode] = $loinc#8339-4 "Birth weight Measured"
+* subject only Reference(Child)
+* valueQuantity.code = #g
+
+Profile: BirthLength
+Parent: http://hl7.org/fhir/StructureDefinition/bodyheight
+Id: BirthLength
+Title: "Perfil de Comprimento ao nascer"
+Description: "Comprimento do recém-nascido ao nascer, em centímetros. Mantém o código LOINC 8302-2 do perfil de sinais vitais e acrescenta o código específico 89269-5 (Body height Measured --at birth)."
+
+* code.coding contains BirthLengthCode 1..1 MS
+* code.coding[BirthLengthCode] = $loinc#89269-5 "Body height Measured --at birth"
+* subject only Reference(Child)
+* valueQuantity.code = #cm
+
+Profile: BirthHeadCircumference
+Parent: http://hl7.org/fhir/StructureDefinition/headcircum
+Id: BirthHeadCircumference
+Title: "Perfil de Perímetro cefálico ao nascer"
+Description: "Perímetro cefálico do recém-nascido ao nascer, em centímetros. Mantém o código LOINC 9843-4 do perfil de sinais vitais e acrescenta o código específico 8290-9 (Head Occipital-frontal circumference --at birth- by Tape measure)."
+
+* code.coding contains BirthHeadCircumCode 1..1 MS
+* code.coding[BirthHeadCircumCode] = $loinc#8290-9 "Head Occipital-frontal circumference --at birth- by Tape measure"
+* subject only Reference(Child)
+* valueQuantity.code = #cm
 
 Profile: Birth
 Parent: Procedure

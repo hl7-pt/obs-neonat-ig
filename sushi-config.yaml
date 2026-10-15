@@ -134,9 +134,9 @@ groups:
     description: Perfil do recém-nascido, medidas ao nascer, avaliações e rastreios neonatais.
     resources:
     - StructureDefinition/Child
-  #  - StructureDefinition/BirthWeight
-  #  - StructureDefinition/BirthLength
-  #  - StructureDefinition/BirthHeadCircumference
+    - StructureDefinition/BirthWeight
+    - StructureDefinition/BirthLength
+    - StructureDefinition/BirthHeadCircumference
     - StructureDefinition/ApgarScore
     - StructureDefinition/Malformation
     - StructureDefinition/Phototherapy

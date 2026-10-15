@@ -65,13 +65,13 @@ Aqui deixamos uma visão geral do modelo lógico e de como este se transforma na
 |  |  | birthNotice.puerperium.observations                                        | Observation\[puerperium\] |
 |  |  | birthNotice.newborn.liveBirth                                              | Patient\[Child\].deceased  |
 |  |  | birthNotice.newborn.gender                                                 | Patient\[Child\].gender |
-|  |  | birthNotice.newborn.length                                                 | Observation\[length\]   |
+|  |  | birthNotice.newborn.length                                                 | Observation\[BirthLength\]   |
 |  |  | birthNotice.newborn.deceased                                               | Patient\[Child\].deceased  |
 |  |  | birthNotice.newborn.deathBirth                                             | Patient\[Child\].deceased  |
 |  |  | birthNotice.newborn.deathBirthDate                                         | Patient\[Child\].deceased  |
 |  |  | birthNotice.newborn.reanimated                                             |  - |
-|  |  | birthNotice.newborn.cephalicPerimeter                                      | Observation\[cephalicPerimeter\]  |
-|  |  | birthNotice.newborn.weight                                                 | Observation\[weight\]  |
+|  |  | birthNotice.newborn.cephalicPerimeter                                      | Observation\[BirthHeadCircumference\]  |
+|  |  | birthNotice.newborn.weight                                                 | Observation\[BirthWeight\]  |
 |  |  | birthNotice.newborn.apgarIndexFirstMinute                                  | Observation\[apgarScore\] |
 |  |  | birthNotice.newborn.apgarIndexFifthMinute                                  | Observation\[apgarScore\]  |
 |  |  | birthNotice.newborn.apgarIndexTenthMinute                                  | Observation\[apgarScore\]  |
