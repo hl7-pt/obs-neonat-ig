@@ -10,6 +10,8 @@ Description: "Perfil do recurso Composition que cria as secções da noticia nas
 * date 1..1 MS
 * author 1..1 MS
 
+* section 8..*
+
 * section ^slicing.discriminator[0].type = #pattern
 * section ^slicing.discriminator[=].path = "code"
 * section ^slicing.ordered = false

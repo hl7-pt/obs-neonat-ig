@@ -13,3 +13,6 @@ INFORMATION: Patient/example: Patient.name[1]: This element does not match any k
 # If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...
 WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile
 WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile
+
+# The canonical R4 DocumentStructure artifact has two required Composition.section slices but omits the parent minimum; this is a confirmed upstream publisher defect.
+The slice definition for Composition.section has a minimum of 0 but the slices add up to a minimum of 2
