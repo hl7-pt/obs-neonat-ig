@@ -1,55 +1,13 @@
-name: Build IG and upload resources to FHIR server
-
+name: Build IG and upload
 on:
   workflow_dispatch:
   push:
     branches: [main, master]
-
-env:
-  # Repository variable / secret
-  FHIR_SERVER_URL: ${{ vars.FHIR_SERVER_URL }}      # e.g. https://hapi.example.org/fhir
-  FHIR_SERVER_TOKEN: ${{ secrets.FHIR_SERVER_TOKEN }} # optional
-  TX_SERVER: ${{ vars.TX_SERVER }}
-
 jobs:
-  upload:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '17'
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - run: npm install -g fsh-sushi
-      - run: |
-          sudo apt-get update && sudo apt-get install -y ruby-full build-essential jq
-          sudo gem install jekyll
-      - name: Download IG Publisher
-        run: |
-          mkdir -p input-cache
-          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o input-cache/publisher.jar
-      - name: Build IG
-        run: ./_genonce.sh
-      - name: Upload IG output and QA report as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ig-output
-          path: output
-      - uses: actions/setup-dotnet@v4
-        if: env.FHIR_SERVER_URL != ''
-        with:
-          dotnet-version: '8.0.x'
-      - name: Install UploadFIG
-        if: env.FHIR_SERVER_URL != ''
-        run: dotnet tool install -g UploadFIG
-      - name: Upload IG package (profiles, extensions, terminology and examples)
-        if: env.FHIR_SERVER_URL != ''
-        run: |
-          args=(-s output/package.tgz -d "$FHIR_SERVER_URL" -df json -r '*')
-          if [ -n "$FHIR_SERVER_TOKEN" ]; then
-            args+=(-dh "Authorization: Bearer $FHIR_SERVER_TOKEN")
-          fi
-          ~/.dotnet/tools/UploadFIG "${args[@]}"
+  build:
+    uses: hl7-pt/github-workflows/.github/workflows/build-ig-upload-fhir.yml@main
+    with:
+      fhir-server-url: ${{ vars.FHIR_SERVER_URL }}
+      tx-server: ${{ vars.TX_SERVER }}
+    secrets:
+      FHIR_SERVER_TOKEN: ${{ secrets.FHIR_SERVER_TOKEN }}
