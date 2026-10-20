@@ -7,6 +7,6 @@
     "author": "http://hl7.org",
       "base":  "hl7.fhir.affiliate.template",
     "dependencies": {
-      "hl7.fhir.affiliate.template": "current"
+      "hl7.fhir.affiliate.template": "1.0.0"
     }
   }
