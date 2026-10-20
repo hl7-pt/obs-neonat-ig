@@ -38,6 +38,18 @@ jobs:
         with:
           name: ig-output
           path: output
-      - name: Upload profiles, extensions, terminology and examples
+      - uses: actions/setup-dotnet@v4
         if: env.FHIR_SERVER_URL != ''
-        run: python3 scripts/upload_to_fhir_server.py output 50
+        with:
+          dotnet-version: '8.0.x'
+      - name: Install UploadFIG
+        if: env.FHIR_SERVER_URL != ''
+        run: dotnet tool install -g UploadFIG
+      - name: Upload IG package (profiles, extensions, terminology and examples)
+        if: env.FHIR_SERVER_URL != ''
+        run: |
+          args=(-s output/package.tgz -d "$FHIR_SERVER_URL" -df json -r '*')
+          if [ -n "$FHIR_SERVER_TOKEN" ]; then
+            args+=(-dh "Authorization: Bearer $FHIR_SERVER_TOKEN")
+          fi
+          ~/.dotnet/tools/UploadFIG "${args[@]}"
