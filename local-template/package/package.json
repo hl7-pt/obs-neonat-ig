@@ -1,12 +1,12 @@
 {
-    "name": "hl7.pt.fhir.template",
+    "name": "hl7.pt.fhir.custom.template",
     "version": "0.0.1",
     "type": "fhir.template",
     "license": "CC0-1.0",
     "description": "HL7 Portugal FHIR Template",
     "author": "http://hl7.pt",
-     "base": "hl7.fhir.template",
+      "base":  "hl7.fhir.affiliate.template",
     "dependencies": {
-      "hl7.fhir.template": "1.0.0"
+      "hl7.fhir.affiliate.template": "1.0.0"
     }
   }
