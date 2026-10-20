@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "InfosGravidezCS"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem InfosGravidezCS</b></p><a name=\"InfosGravidezCS\"> </a><a name=\"hcInfosGravidezCS\"> </a><p>Este case-insensitive sistema de código <code>https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">BIO1T<a name=\"InfosGravidezCS-BIO1T\"> </a></td><td>Analítico 1º Trimestre</td><td>Analítico 1º Trimestre</td></tr><tr><td style=\"white-space:nowrap\">BIO2T<a name=\"InfosGravidezCS-BIO2T\"> </a></td><td>Analítico 2º Trimestre</td><td>Analítico 2º Trimestre</td></tr><tr><td style=\"white-space:nowrap\">BIO3T<a name=\"InfosGravidezCS-BIO3T\"> </a></td><td>Analítico 3º Trimestre</td><td>Analítico 3º Trimestre</td></tr><tr><td style=\"white-space:nowrap\">PREGRISKREASON<a name=\"InfosGravidezCS-PREGRISKREASON\"> </a></td><td>Motivo do risco</td><td>Motivo do risco</td></tr><tr><td style=\"white-space:nowrap\">INTEROC<a name=\"InfosGravidezCS-INTEROC\"> </a></td><td>Intercorrências</td><td>Intercorrências</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "InfosGravidezCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Elementos adicionais de informação gravidez CodeSystem"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-20T10:47:32+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Portugal"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Portugal" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://hl7.pt" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "info@hl7.pt" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Portugal" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "geral@hl7.pt" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Elementos adicionais de informação gravidez CodeSystem - Criado por falta de um código internacional ideal"] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "PT" ] ;
+       fhir:Coding.display [ fhir:value "Portugal" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BIO1T" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Analítico 1º Trimestre" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Analítico 1º Trimestre" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BIO2T" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Analítico 2º Trimestre" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Analítico 2º Trimestre" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BIO3T" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Analítico 3º Trimestre" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Analítico 3º Trimestre" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PREGRISKREASON" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Motivo do risco" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Motivo do risco" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "INTEROC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intercorrências" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intercorrências" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/InfosGravidezCS.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

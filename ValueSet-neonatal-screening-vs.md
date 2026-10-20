@@ -1,0 +1,108 @@
+# Rastreios neonatais marcáveis ValueSet - HL7 PT FHIR Implementation Guide: Noticia de Nascimento v1.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Rastreios neonatais marcáveis ValueSet**
+
+## ValueSet: Rastreios neonatais marcáveis ValueSet 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://hl7.pt/fhir/NoticiaNascimento/ValueSet/neonatal-screening-vs | *Version*:1.0.0 |
+| Active as of 2026-10-20 | *Computable Name*:NeonatalScreeningVS |
+| **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
+
+ 
+Rastreios neonatais que podem ser marcados para data futura na notícia de nascimento (ServiceRequest.code). 
+
+ **References** 
+
+* [Perfil de informação clinicas - Marcação de rastreio neonatal](StructureDefinition-ScreeningRequest.md)
+
+### Definição lógica (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ Explanation of the columns that may appear on this page: 
+
+| | |
+| :--- | :--- |
+| Level | A few code lists that FHIR defines are hierarchical - each code is assigned a level. In this scheme, some codes are under other codes, and imply that the code they are under also applies |
+| System | The source of the definition of the code (when the value set draws in codes defined elsewhere) |
+| Code | The code (used as the code in the resource instance) |
+| Display | The display (used in the*display*element of a[Coding](http://hl7.org/fhir/R4/datatypes.html#Coding)). If there is no display, implementers should not simply display the code, but map the concept into their application |
+| Definition | An explanation of the meaning of the concept |
+| Comments | Additional notes about how to use the code |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "neonatal-screening-vs",
+  "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/neonatal-screening-vs",
+  "version" : "1.0.0",
+  "name" : "NeonatalScreeningVS",
+  "title" : "Rastreios neonatais marcáveis ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-20T10:47:32+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Rastreios neonatais que podem ser marcados para data futura na notícia de nascimento (ServiceRequest.code).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "417491009",
+        "display" : "Neonatal hearing test",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Rastreio auditivo neonatal universal"
+        }]
+      },
+      {
+        "code" : "275977009",
+        "display" : "Guthrie test",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Rastreio de doenças metabólicas (teste do pezinho)"
+        }]
+      }]
+    }]
+  }
+}
+
+```

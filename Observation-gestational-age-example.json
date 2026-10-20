@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Observation",
+  "id" : "gestational-age-example",
+  "meta" : {
+    "profile" : ["https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/GestationalAge"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Observation gestational-age-example</b></p><a name=\"gestational-age-example\"> </a><a name=\"hcgestational-age-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-GestationalAge.html\">Perfil de Idade gestacional</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 11884-4}\">Gestational age Estimated</span></p><p><b>subject</b>: <a href=\"Patient-newBornNN.html\">Doente anónimo Female, DoB: 2024-08-01</a></p><p><b>effective</b>: 2024-08-01 10:00:00+0000</p><p><b>value</b>: 270 dias<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM códigod = 'd')</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11884-4",
+      "display" : "Gestational age Estimated"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/newBornNN"
+  },
+  "effectiveDateTime" : "2024-08-01T10:00:00.000Z",
+  "valueQuantity" : {
+    "value" : 270,
+    "unit" : "dias",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "d"
+  }
+}

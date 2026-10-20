@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="neonatal-screening-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet neonatal-screening-vs</b></p><a name="neonatal-screening-vs"> </a><a name="hcneonatal-screening-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/417491009">417491009</a></td><td>Neonatal hearing test</td><td>Rastreio auditivo neonatal universal</td></tr><tr><td><a href="http://snomed.info/id/275977009">275977009</a></td><td>Guthrie test</td><td>Rastreio de doenças metabólicas (teste do pezinho)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/NoticiaNascimento/ValueSet/neonatal-screening-vs"/>
+  <version value="1.0.0"/>
+  <name value="NeonatalScreeningVS"/>
+  <title value="Rastreios neonatais marcáveis ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-20T10:47:32+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Rastreios neonatais que podem ser marcados para data futura na notícia de nascimento (ServiceRequest.code)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="417491009"/>
+        <display value="Neonatal hearing test"/>
+        <designation>
+          <language value="pt-PT"/>
+          <value value="Rastreio auditivo neonatal universal"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="275977009"/>
+        <display value="Guthrie test"/>
+        <designation>
+          <language value="pt-PT"/>
+          <value value="Rastreio de doenças metabólicas (teste do pezinho)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,281 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "immunization-status-reason-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet immunization-status-reason-vs</b></p><a name=\"immunization-status-reason-vs\"> </a><a name=\"hcimmunization-status-reason-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/62479008\">62479008</a></td><td>Acquired immune deficiency syndrome (disorder)</td><td>Síndrome de imunodeficiência adquirida</td></tr><tr><td><a href=\"http://snomed.info/id/427099000\">427099000</a></td><td>Active tuberculosis (disorder)</td><td>Tuberculose ativa</td></tr><tr><td><a href=\"http://snomed.info/id/699618001\">699618001</a></td><td>Administration of prophylactic antituberculosis agent (procedure)</td><td>Administração de agente antituberculoso profilático</td></tr><tr><td><a href=\"http://snomed.info/id/293104008\">293104008</a></td><td>Adverse reaction to component of vaccine product (disorder)</td><td>Reação adversa a componente de produto de vacinação</td></tr><tr><td><a href=\"http://snomed.info/id/131145007\">131145007</a></td><td>Altered immunity (finding)</td><td>Imunidade alterada</td></tr><tr><td><a href=\"http://snomed.info/id/1217476001\">1217476001</a></td><td>Anaphylaxis caused by component of vaccine product (disorder)</td><td>Anafilaxia causada por componente de produto de vacinação</td></tr><tr><td><a href=\"http://snomed.info/id/126764002\">126764002</a></td><td>Congenital anomaly of intestinal tract (disorder)</td><td>Anomalia congénita do trato intestinal</td></tr><tr><td><a href=\"http://snomed.info/id/36138009\">36138009</a></td><td>Congenital immunodeficiency disease (disorder)</td><td>Imunodeficiência congénita</td></tr><tr><td><a href=\"http://snomed.info/id/1340037004\">1340037004</a></td><td>Disorder of nervous system due to and following vaccination (disorder)</td><td>Patologia neurológica devido e após a vacinação</td></tr><tr><td><a href=\"http://snomed.info/id/271511000\">271511000</a></td><td>Hepatitis B immune (finding)</td><td>Imune a Hepatite B</td></tr><tr><td><a href=\"http://snomed.info/id/1340016007\">1340016007</a></td><td>History of intussusception of intestine (situation)</td><td>História de intussuscepção intestinal</td></tr><tr><td><a href=\"http://snomed.info/id/161421005\">161421005</a></td><td>History of rubella (situation)</td><td>História de rubéola</td></tr><tr><td><a href=\"http://snomed.info/id/1340019000\">1340019000</a></td><td>History of thrombosis with thrombocytopenia syndrome following vaccination with non-replicating adenovirus vector vaccine for severe acute respiratory syndrome coronavirus 2 (situation)</td><td>História de síndrome de trombose com trombocitopenia após vacinação com vacina de vetor de adenovírus não-replicante para coronavírus do síndrome respiratório agudo grave 2</td></tr><tr><td><a href=\"http://snomed.info/id/86406008\">86406008</a></td><td>Human immunodeficiency virus infection (disorder)</td><td>Infeção pelo vírus de imunodeficiência humana</td></tr><tr><td><a href=\"http://snomed.info/id/421961002\">421961002</a></td><td>Hypersensitivity reaction (disorder)</td><td>Reação de hipersensibilidade</td></tr><tr><td><a href=\"http://snomed.info/id/255386009\">255386009</a></td><td>Immune (qualifier value)</td><td>Imune</td></tr><tr><td><a href=\"http://snomed.info/id/310376006\">310376006</a></td><td>Immunization consent not given (finding)</td><td>Consentimento de imunização não dado</td></tr><tr><td><a href=\"http://snomed.info/id/86553008\">86553008</a></td><td>Immunosuppressive therapy (procedure)</td><td>Terapia imunosupressiva</td></tr><tr><td><a href=\"http://snomed.info/id/268376005\">268376005</a></td><td>Mantoux: positive (finding)</td><td>Prova de tuberculina: positiva</td></tr><tr><td><a href=\"http://snomed.info/id/1260078007\">1260078007</a></td><td>Maternal breastfeeding (finding)</td><td>Aleitamento materno</td></tr><tr><td><a href=\"http://snomed.info/id/42565008\">42565008</a></td><td>No reason for (contextual qualifier) (qualifier value)</td><td>Sem motivo para</td></tr><tr><td><a href=\"http://snomed.info/id/29740003\">29740003</a></td><td>Nutritional marasmus (disorder)</td><td>Marasmo nutricional</td></tr><tr><td><a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>Pregnancy (finding)</td><td>Gravidez</td></tr><tr><td><a href=\"http://snomed.info/id/183945002\">183945002</a></td><td>Procedure declined for religious reason (situation)</td><td>Procedimento recusado por motivo religioso</td></tr><tr><td><a href=\"http://snomed.info/id/278968001\">278968001</a></td><td>Rubella immune (finding)</td><td>Imune a rubéola</td></tr><tr><td><a href=\"http://snomed.info/id/1340080008\">1340080008</a></td><td>Scar of skin following first vaccination (disorder)</td><td>Cicatriz na pele após primeira vacinação</td></tr><tr><td><a href=\"http://snomed.info/id/31323000\">31323000</a></td><td>Severe combined immunodeficiency disease (disorder)</td><td>Imunodeficiência combinada grave</td></tr><tr><td><a href=\"http://snomed.info/id/1290619001\">1290619001</a></td><td>Vaccine product out of stock (finding)</td><td>Vacina fora de stock</td></tr><tr><td><a href=\"http://snomed.info/id/371113008\">371113008</a></td><td>Varicella immune (finding)</td><td>Imune a varicela</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/immunization-status-reason-vs",
+  "version" : "1.0.0",
+  "name" : "ImmunizationStatusReasonVS",
+  "title" : "Motivos de não vacinação ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-20T10:47:32+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Motivos para a não administração de uma vacina (Immunization.statusReason), de acordo com o Catálogo Português de Vacinas (CPV).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "62479008",
+        "display" : "Acquired immune deficiency syndrome (disorder)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Síndrome de imunodeficiência adquirida"
+        }]
+      },
+      {
+        "code" : "427099000",
+        "display" : "Active tuberculosis (disorder)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Tuberculose ativa"
+        }]
+      },
+      {
+        "code" : "699618001",
+        "display" : "Administration of prophylactic antituberculosis agent (procedure)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Administração de agente antituberculoso profilático"
+        }]
+      },
+      {
+        "code" : "293104008",
+        "display" : "Adverse reaction to component of vaccine product (disorder)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Reação adversa a componente de produto de vacinação"
+        }]
+      },
+      {
+        "code" : "131145007",
+        "display" : "Altered immunity (finding)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Imunidade alterada"
+        }]
+      },
+      {
+        "code" : "1217476001",
+        "display" : "Anaphylaxis caused by component of vaccine product (disorder)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Anafilaxia causada por componente de produto de vacinação"
+        }]
+      },
+      {
+        "code" : "126764002",
+        "display" : "Congenital anomaly of intestinal tract (disorder)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Anomalia congénita do trato intestinal"
+        }]
+      },
+      {
+        "code" : "36138009",
+        "display" : "Congenital immunodeficiency disease (disorder)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Imunodeficiência congénita"
+        }]
+      },
+      {
+        "code" : "1340037004",
+        "display" : "Disorder of nervous system due to and following vaccination (disorder)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Patologia neurológica devido e após a vacinação"
+        }]
+      },
+      {
+        "code" : "271511000",
+        "display" : "Hepatitis B immune (finding)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Imune a Hepatite B"
+        }]
+      },
+      {
+        "code" : "1340016007",
+        "display" : "History of intussusception of intestine (situation)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "História de intussuscepção intestinal"
+        }]
+      },
+      {
+        "code" : "161421005",
+        "display" : "History of rubella (situation)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "História de rubéola"
+        }]
+      },
+      {
+        "code" : "1340019000",
+        "display" : "History of thrombosis with thrombocytopenia syndrome following vaccination with non-replicating adenovirus vector vaccine for severe acute respiratory syndrome coronavirus 2 (situation)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "História de síndrome de trombose com trombocitopenia após vacinação com vacina de vetor de adenovírus não-replicante para coronavírus do síndrome respiratório agudo grave 2"
+        }]
+      },
+      {
+        "code" : "86406008",
+        "display" : "Human immunodeficiency virus infection (disorder)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Infeção pelo vírus de imunodeficiência humana"
+        }]
+      },
+      {
+        "code" : "421961002",
+        "display" : "Hypersensitivity reaction (disorder)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Reação de hipersensibilidade"
+        }]
+      },
+      {
+        "code" : "255386009",
+        "display" : "Immune (qualifier value)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Imune"
+        }]
+      },
+      {
+        "code" : "310376006",
+        "display" : "Immunization consent not given (finding)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Consentimento de imunização não dado"
+        }]
+      },
+      {
+        "code" : "86553008",
+        "display" : "Immunosuppressive therapy (procedure)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Terapia imunosupressiva"
+        }]
+      },
+      {
+        "code" : "268376005",
+        "display" : "Mantoux: positive (finding)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Prova de tuberculina: positiva"
+        }]
+      },
+      {
+        "code" : "1260078007",
+        "display" : "Maternal breastfeeding (finding)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Aleitamento materno"
+        }]
+      },
+      {
+        "code" : "42565008",
+        "display" : "No reason for (contextual qualifier) (qualifier value)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Sem motivo para"
+        }]
+      },
+      {
+        "code" : "29740003",
+        "display" : "Nutritional marasmus (disorder)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Marasmo nutricional"
+        }]
+      },
+      {
+        "code" : "77386006",
+        "display" : "Pregnancy (finding)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Gravidez"
+        }]
+      },
+      {
+        "code" : "183945002",
+        "display" : "Procedure declined for religious reason (situation)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Procedimento recusado por motivo religioso"
+        }]
+      },
+      {
+        "code" : "278968001",
+        "display" : "Rubella immune (finding)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Imune a rubéola"
+        }]
+      },
+      {
+        "code" : "1340080008",
+        "display" : "Scar of skin following first vaccination (disorder)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Cicatriz na pele após primeira vacinação"
+        }]
+      },
+      {
+        "code" : "31323000",
+        "display" : "Severe combined immunodeficiency disease (disorder)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Imunodeficiência combinada grave"
+        }]
+      },
+      {
+        "code" : "1290619001",
+        "display" : "Vaccine product out of stock (finding)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Vacina fora de stock"
+        }]
+      },
+      {
+        "code" : "371113008",
+        "display" : "Varicella immune (finding)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Imune a varicela"
+        }]
+      }]
+    }]
+  }
+}

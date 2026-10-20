@@ -1,0 +1,11 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"VaccineLM","VaccineLM","","","",0,*,"","","","null {[]} {[]}
+","Vacina (modelo)","Modelo Lógico - Vacina","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"VaccineLM.taken","VaccineLM.taken","","","",1,1,"","","","boolean {[]} {[]}
+","Confirmação de toma da vacina","Confirmação de toma da vacina","","","","","","","","","",,,,,"",,,,"VaccineLM.taken",1,1,"",""
+"VaccineLM.date","VaccineLM.date","","","",0,1,"","","","dateTime {[]} {[]}
+","Data da toma (YYYY-MM-DD)","Data da toma (YYYY-MM-DD)","","","","","","","","","",,,,,"",,,,"VaccineLM.date",0,1,"",""
+"VaccineLM.lot","VaccineLM.lot","","","",0,1,"","","","string {[]} {[]}
+","Lote da vacina","Lote da vacina","","","","","","","","","",,,,,"",,,,"VaccineLM.lot",0,1,"",""
+"VaccineLM.reason","VaccineLM.reason","","","",0,1,"","","","string {[]} {[]}
+","Motivo de não toma da vacina","Motivo de não toma da vacina","","","","","","","","","",,,,,"",,,,"VaccineLM.reason",0,1,"",""

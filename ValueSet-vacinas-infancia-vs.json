@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vacinas-infancia-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet vacinas-infancia-vs</b></p><a name=\"vacinas-infancia-vs\"> </a><a name=\"hcvacinas-infancia-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/836374004\">836374004</a></td><td>Vaccine product containing only Hepatitis B virus antigen (medicinal product)</td><td>Vacina contra a hepatite B</td></tr><tr><td><a href=\"http://snomed.info/id/836402002\">836402002</a></td><td>Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)</td><td>Vacina BCG</td></tr><tr><td><a href=\"http://snomed.info/id/786224004\">786224004</a></td><td>Product containing only human anti-D immunoglobulin (medicinal product)</td><td>Imunoglobulina anti-D humana</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/vacinas-infancia-vs",
+  "version" : "1.0.0",
+  "name" : "VacinasinfanciaVS",
+  "title" : "Vacinas e imunoglobulinas do recém-nascido ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-20T10:47:32+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Vacinas e imunoglobulinas registadas na notícia de nascimento (Immunization.vaccineCode).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "836374004",
+        "display" : "Vaccine product containing only Hepatitis B virus antigen (medicinal product)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Vacina contra a hepatite B"
+        }]
+      },
+      {
+        "code" : "836402002",
+        "display" : "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Vacina BCG"
+        }]
+      },
+      {
+        "code" : "786224004",
+        "display" : "Product containing only human anti-D immunoglobulin (medicinal product)",
+        "designation" : [{
+          "language" : "pt-PT",
+          "value" : "Imunoglobulina anti-D humana"
+        }]
+      }]
+    }]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "codeSystems" : [{
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/bulletin-delivery-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BulletindeliveryVS",
+    "title" : "Envio de boletim ValueSet",
+    "description" : "Envio de boletim ValueSet",
+    "systems" : ["https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/documentclassificationCS"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/document-type-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "DocumenttypeVS",
+    "title" : "Tipo de documento ValueSet",
+    "description" : "Tipo de documento ValueSet",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/episode-type-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TipoepisodioVS",
+    "title" : "Tipos de episódio ValueSet",
+    "description" : "Tipos de episódio ValueSet",
+    "systems" : ["https://hl7.pt/fhir/NoticiaNascimento/CodeSystem/tipo-episodio-cs"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/idade-gestacional-unidades-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "IdadeGestacionalUnidadesVS",
+    "title" : "Unidades da idade gestacional",
+    "description" : "Unidades UCUM permitidas para a idade gestacional (semanas ou dias)",
+    "systems" : ["http://unitsofmeasure.org"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/immunization-status-reason-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ImmunizationStatusReasonVS",
+    "title" : "Motivos de não vacinação ValueSet",
+    "description" : "Motivos para a não administração de uma vacina (Immunization.statusReason), de acordo com o Catálogo Português de Vacinas (CPV).",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/neonatal-screening-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "NeonatalScreeningVS",
+    "title" : "Rastreios neonatais marcáveis ValueSet",
+    "description" : "Rastreios neonatais que podem ser marcados para data futura na notícia de nascimento (ServiceRequest.code).",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newborn-congenital-anomalies-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "NewbornCongenitalAnomaliesVS",
+    "title" : "Tipos de doença congénita ValueSet",
+    "description" : "Tipos de doença congénita ValueSet",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newbornriskassessment-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "NewbornriskassessmentVS",
+    "title" : "Tipos de risco para avaliação de recém-nascidos ValueSet",
+    "description" : "Tipos de risco para avaliação de recém-nascidos ValueSet",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/professional-role-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ProfessionalRoleVS",
+    "title" : "Grupo funcional do profissional ValueSet",
+    "description" : "Grupo funcional do profissional de saúde envolvido na notícia de nascimento",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/puerperium-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "PuerperiumVS",
+    "title" : "Tipos de outcome de puerpério ValueSet",
+    "description" : "Tipos de outcome de puerpério ValueSet",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/risco-gravidez-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "RiscoGravidezVS",
+    "title" : "Risco de gravidez ValueSet",
+    "description" : "Risco de gravidez ValueSet",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-gravidez-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TipoGravidezVS",
+    "title" : "Tipo de gravidez ValueSet",
+    "description" : "Tipo de gravidez ValueSet",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-local-seguimento-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TipoLocalSeguimentoVS",
+    "title" : "Tipo de local de seguimento ValueSet",
+    "description" : "Tipo de local de seguimento (revisão do puerpério e vigilância de saúde infantil). Mapeamento dos valores do formulário da norma: USF/UCSP → 45131006; No Hospital → 224885007 (consulta externa hospitalar). 'Privado' não tem correspondência adequada (o setor público/privado é uma característica do prestador e não um tipo de local); 'Outro' regista-se em type.text; 'Não sabe' representa ausência de informação e regista-se com a extensão data-absent-reason, não como código deste value set.",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/tipo-parto-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TipoPartoVS",
+    "title" : "Tipos de parto ValueSet",
+    "description" : "Tipos de parto ValueSet",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/transport-type-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TransportTypeVS",
+    "title" : "Tipos de transporte de recém-nascido ValueSet",
+    "description" : "Tipos de transporte de recém-nascido ValueSet",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/vacinas-infancia-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "VacinasinfanciaVS",
+    "title" : "Vacinas e imunoglobulinas do recém-nascido ValueSet",
+    "description" : "Vacinas e imunoglobulinas registadas na notícia de nascimento (Immunization.vaccineCode).",
+    "systems" : ["http://snomed.info/sct"]
+  }]
+}

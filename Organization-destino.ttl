@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Organization/destino> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "destino"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Organization destino</b></p><a name=\"destino\"> </a><a name=\"hcdestino\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">USF ESCARIZ (2010491)</p><hr/></div>"
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.value [ fhir:value "2010491" ]
+  ] ;
+  fhir:Organization.name [ fhir:value "USF ESCARIZ"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Organization/destino.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

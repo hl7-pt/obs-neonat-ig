@@ -1,0 +1,121 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newborn-congenital-anomalies-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "newborn-congenital-anomalies-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet newborn-congenital-anomalies-vs</b></p><a name=\"newborn-congenital-anomalies-vs\"> </a><a name=\"hcnewborn-congenital-anomalies-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href=\"http://snomed.info/id/89369001\">89369001</a></td><td>Anencephalus</td></tr><tr><td><a href=\"http://snomed.info/id/67531005\">67531005</a></td><td>Meningomyelocele/Spina bifida</td></tr><tr><td><a href=\"http://snomed.info/id/12770006\">12770006</a></td><td>Cyanotic congenital heart disease</td></tr><tr><td><a href=\"http://snomed.info/id/17190001\">17190001</a></td><td>Congenital diaphragmatic hernia</td></tr><tr><td><a href=\"http://snomed.info/id/18735004\">18735004</a></td><td>Congenital omphalocele</td></tr><tr><td><a href=\"http://snomed.info/id/72951007\">72951007</a></td><td>Gastroschisis</td></tr><tr><td><a href=\"http://snomed.info/id/67341007\">67341007</a></td><td>Longitudinal deficiency of limb - Limb reduction defect (excluding congenital amputation and dwarfing syndromes)</td></tr><tr><td><a href=\"http://snomed.info/id/80281008\">80281008</a></td><td>Cleft Lip with or without Cleft Palate</td></tr><tr><td><a href=\"http://snomed.info/id/87979003\">87979003</a></td><td>Cleft palate</td></tr><tr><td><a href=\"http://snomed.info/id/70156005\">70156005</a></td><td>Anomaly of chromosome pair 21</td></tr><tr><td><a href=\"http://snomed.info/id/409709004\">409709004</a></td><td>Chromosomal disorder</td></tr><tr><td><a href=\"http://snomed.info/id/416010008\">416010008</a></td><td>Hypospadias</td></tr><tr><td><a href=\"http://snomed.info/id/282332003\">282332003</a></td><td>No abnormality detected - examination result</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newborn-congenital-anomalies-vs"] ;
+  fhir:ValueSet.version [ fhir:value "1.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "NewbornCongenitalAnomaliesVS"] ;
+  fhir:ValueSet.title [ fhir:value "Tipos de doença congénita ValueSet"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-20T10:47:32+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "HL7 Portugal"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Portugal" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://hl7.pt" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "info@hl7.pt" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Portugal" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "geral@hl7.pt" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Tipos de doença congénita ValueSet"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "PT" ] ;
+       fhir:Coding.display [ fhir:value "Portugal" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "89369001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anencephalus" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "67531005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Meningomyelocele/Spina bifida" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12770006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cyanotic congenital heart disease" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17190001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Congenital diaphragmatic hernia" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "18735004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Congenital omphalocele" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "72951007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastroschisis" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "67341007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Longitudinal deficiency of limb - Limb reduction defect (excluding congenital amputation and dwarfing syndromes)" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "80281008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cleft Lip with or without Cleft Palate" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "87979003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cleft palate" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70156005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomaly of chromosome pair 21" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "409709004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chromosomal disorder" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "416010008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypospadias" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "282332003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No abnormality detected - examination result" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/ValueSet/newborn-congenital-anomalies-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

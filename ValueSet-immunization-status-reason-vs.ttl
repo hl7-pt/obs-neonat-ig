@@ -1,0 +1,331 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/ValueSet/immunization-status-reason-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "immunization-status-reason-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet immunization-status-reason-vs</b></p><a name=\"immunization-status-reason-vs\"> </a><a name=\"hcimmunization-status-reason-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/62479008\">62479008</a></td><td>Acquired immune deficiency syndrome (disorder)</td><td>Síndrome de imunodeficiência adquirida</td></tr><tr><td><a href=\"http://snomed.info/id/427099000\">427099000</a></td><td>Active tuberculosis (disorder)</td><td>Tuberculose ativa</td></tr><tr><td><a href=\"http://snomed.info/id/699618001\">699618001</a></td><td>Administration of prophylactic antituberculosis agent (procedure)</td><td>Administração de agente antituberculoso profilático</td></tr><tr><td><a href=\"http://snomed.info/id/293104008\">293104008</a></td><td>Adverse reaction to component of vaccine product (disorder)</td><td>Reação adversa a componente de produto de vacinação</td></tr><tr><td><a href=\"http://snomed.info/id/131145007\">131145007</a></td><td>Altered immunity (finding)</td><td>Imunidade alterada</td></tr><tr><td><a href=\"http://snomed.info/id/1217476001\">1217476001</a></td><td>Anaphylaxis caused by component of vaccine product (disorder)</td><td>Anafilaxia causada por componente de produto de vacinação</td></tr><tr><td><a href=\"http://snomed.info/id/126764002\">126764002</a></td><td>Congenital anomaly of intestinal tract (disorder)</td><td>Anomalia congénita do trato intestinal</td></tr><tr><td><a href=\"http://snomed.info/id/36138009\">36138009</a></td><td>Congenital immunodeficiency disease (disorder)</td><td>Imunodeficiência congénita</td></tr><tr><td><a href=\"http://snomed.info/id/1340037004\">1340037004</a></td><td>Disorder of nervous system due to and following vaccination (disorder)</td><td>Patologia neurológica devido e após a vacinação</td></tr><tr><td><a href=\"http://snomed.info/id/271511000\">271511000</a></td><td>Hepatitis B immune (finding)</td><td>Imune a Hepatite B</td></tr><tr><td><a href=\"http://snomed.info/id/1340016007\">1340016007</a></td><td>History of intussusception of intestine (situation)</td><td>História de intussuscepção intestinal</td></tr><tr><td><a href=\"http://snomed.info/id/161421005\">161421005</a></td><td>History of rubella (situation)</td><td>História de rubéola</td></tr><tr><td><a href=\"http://snomed.info/id/1340019000\">1340019000</a></td><td>History of thrombosis with thrombocytopenia syndrome following vaccination with non-replicating adenovirus vector vaccine for severe acute respiratory syndrome coronavirus 2 (situation)</td><td>História de síndrome de trombose com trombocitopenia após vacinação com vacina de vetor de adenovírus não-replicante para coronavírus do síndrome respiratório agudo grave 2</td></tr><tr><td><a href=\"http://snomed.info/id/86406008\">86406008</a></td><td>Human immunodeficiency virus infection (disorder)</td><td>Infeção pelo vírus de imunodeficiência humana</td></tr><tr><td><a href=\"http://snomed.info/id/421961002\">421961002</a></td><td>Hypersensitivity reaction (disorder)</td><td>Reação de hipersensibilidade</td></tr><tr><td><a href=\"http://snomed.info/id/255386009\">255386009</a></td><td>Immune (qualifier value)</td><td>Imune</td></tr><tr><td><a href=\"http://snomed.info/id/310376006\">310376006</a></td><td>Immunization consent not given (finding)</td><td>Consentimento de imunização não dado</td></tr><tr><td><a href=\"http://snomed.info/id/86553008\">86553008</a></td><td>Immunosuppressive therapy (procedure)</td><td>Terapia imunosupressiva</td></tr><tr><td><a href=\"http://snomed.info/id/268376005\">268376005</a></td><td>Mantoux: positive (finding)</td><td>Prova de tuberculina: positiva</td></tr><tr><td><a href=\"http://snomed.info/id/1260078007\">1260078007</a></td><td>Maternal breastfeeding (finding)</td><td>Aleitamento materno</td></tr><tr><td><a href=\"http://snomed.info/id/42565008\">42565008</a></td><td>No reason for (contextual qualifier) (qualifier value)</td><td>Sem motivo para</td></tr><tr><td><a href=\"http://snomed.info/id/29740003\">29740003</a></td><td>Nutritional marasmus (disorder)</td><td>Marasmo nutricional</td></tr><tr><td><a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>Pregnancy (finding)</td><td>Gravidez</td></tr><tr><td><a href=\"http://snomed.info/id/183945002\">183945002</a></td><td>Procedure declined for religious reason (situation)</td><td>Procedimento recusado por motivo religioso</td></tr><tr><td><a href=\"http://snomed.info/id/278968001\">278968001</a></td><td>Rubella immune (finding)</td><td>Imune a rubéola</td></tr><tr><td><a href=\"http://snomed.info/id/1340080008\">1340080008</a></td><td>Scar of skin following first vaccination (disorder)</td><td>Cicatriz na pele após primeira vacinação</td></tr><tr><td><a href=\"http://snomed.info/id/31323000\">31323000</a></td><td>Severe combined immunodeficiency disease (disorder)</td><td>Imunodeficiência combinada grave</td></tr><tr><td><a href=\"http://snomed.info/id/1290619001\">1290619001</a></td><td>Vaccine product out of stock (finding)</td><td>Vacina fora de stock</td></tr><tr><td><a href=\"http://snomed.info/id/371113008\">371113008</a></td><td>Varicella immune (finding)</td><td>Imune a varicela</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://hl7.pt/fhir/NoticiaNascimento/ValueSet/immunization-status-reason-vs"] ;
+  fhir:ValueSet.version [ fhir:value "1.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "ImmunizationStatusReasonVS"] ;
+  fhir:ValueSet.title [ fhir:value "Motivos de não vacinação ValueSet"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-20T10:47:32+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "HL7 Portugal"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Portugal" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://hl7.pt" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "info@hl7.pt" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Portugal" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "geral@hl7.pt" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Motivos para a não administração de uma vacina (Immunization.statusReason), de acordo com o Catálogo Português de Vacinas (CPV)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "PT" ] ;
+       fhir:Coding.display [ fhir:value "Portugal" ]
+     ]
+  ] ;
+  fhir:ValueSet.copyright [ fhir:value "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "62479008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired immune deficiency syndrome (disorder)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Síndrome de imunodeficiência adquirida" ]
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "427099000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Active tuberculosis (disorder)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tuberculose ativa" ]
+         ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "699618001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Administration of prophylactic antituberculosis agent (procedure)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administração de agente antituberculoso profilático" ]
+         ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "293104008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Adverse reaction to component of vaccine product (disorder)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Reação adversa a componente de produto de vacinação" ]
+         ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "131145007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Altered immunity (finding)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Imunidade alterada" ]
+         ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1217476001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anaphylaxis caused by component of vaccine product (disorder)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anafilaxia causada por componente de produto de vacinação" ]
+         ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "126764002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Congenital anomaly of intestinal tract (disorder)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anomalia congénita do trato intestinal" ]
+         ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "36138009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Congenital immunodeficiency disease (disorder)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Imunodeficiência congénita" ]
+         ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1340037004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Disorder of nervous system due to and following vaccination (disorder)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Patologia neurológica devido e após a vacinação" ]
+         ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "271511000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hepatitis B immune (finding)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Imune a Hepatite B" ]
+         ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1340016007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "History of intussusception of intestine (situation)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "História de intussuscepção intestinal" ]
+         ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "161421005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "History of rubella (situation)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "História de rubéola" ]
+         ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1340019000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "History of thrombosis with thrombocytopenia syndrome following vaccination with non-replicating adenovirus vector vaccine for severe acute respiratory syndrome coronavirus 2 (situation)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "História de síndrome de trombose com trombocitopenia após vacinação com vacina de vetor de adenovírus não-replicante para coronavírus do síndrome respiratório agudo grave 2" ]
+         ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "86406008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human immunodeficiency virus infection (disorder)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Infeção pelo vírus de imunodeficiência humana" ]
+         ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "421961002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypersensitivity reaction (disorder)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Reação de hipersensibilidade" ]
+         ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255386009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immune (qualifier value)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Imune" ]
+         ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "310376006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunization consent not given (finding)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Consentimento de imunização não dado" ]
+         ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "86553008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunosuppressive therapy (procedure)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Terapia imunosupressiva" ]
+         ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "268376005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mantoux: positive (finding)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Prova de tuberculina: positiva" ]
+         ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1260078007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maternal breastfeeding (finding)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aleitamento materno" ]
+         ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42565008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No reason for (contextual qualifier) (qualifier value)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sem motivo para" ]
+         ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "29740003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nutritional marasmus (disorder)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Marasmo nutricional" ]
+         ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77386006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pregnancy (finding)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gravidez" ]
+         ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "183945002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Procedure declined for religious reason (situation)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Procedimento recusado por motivo religioso" ]
+         ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "278968001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rubella immune (finding)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Imune a rubéola" ]
+         ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1340080008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Scar of skin following first vaccination (disorder)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cicatriz na pele após primeira vacinação" ]
+         ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31323000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Severe combined immunodeficiency disease (disorder)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Imunodeficiência combinada grave" ]
+         ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1290619001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vaccine product out of stock (finding)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vacina fora de stock" ]
+         ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "371113008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Varicella immune (finding)" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt-PT" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Imune a varicela" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/ValueSet/immunization-status-reason-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

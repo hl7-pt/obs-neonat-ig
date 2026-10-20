@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Observation/apgar-example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "apgar-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ApgarScore" ;
+       fhir:index 0 ;
+       fhir:link <https://hl7.pt/fhir/NoticiaNascimento/StructureDefinition/ApgarScore>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Observation apgar-example</b></p><a name=\"apgar-example\"> </a><a name=\"hcapgar-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-ApgarScore.html\">Perfil de informação clinicas - apgarScore</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Códigos:{http://snomed.info/sct 1287344004}\">Apgar score (assessment scale)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Códigos:{http://snomed.info/sct 169895004}\">Apgar score at 1 minute (observable entity)</span></p><p><b>value</b>: 7</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Códigos:{http://snomed.info/sct 169909004}\">Apgar score at 5 minutes (observable entity)</span></p><p><b>value</b>: 9</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Códigos:{http://snomed.info/sct 169922007}\">Apgar score at 10 minutes (observable entity)</span></p><p><b>value</b>: 10</p></blockquote></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:1287344004 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "1287344004" ] ;
+       fhir:Coding.display [ fhir:value "Apgar score (assessment scale)" ]
+     ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:169895004 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "169895004" ] ;
+         fhir:Coding.display [ fhir:value "Apgar score at 1 minute (observable entity)" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueInteger [ fhir:value "7"^^xsd:integer ]
+  ], [
+     fhir:index 1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:169909004 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "169909004" ] ;
+         fhir:Coding.display [ fhir:value "Apgar score at 5 minutes (observable entity)" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueInteger [ fhir:value "9"^^xsd:integer ]
+  ], [
+     fhir:index 2 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:169922007 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "169922007" ] ;
+         fhir:Coding.display [ fhir:value "Apgar score at 10 minutes (observable entity)" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueInteger [ fhir:value "10"^^xsd:integer ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.pt/fhir/NoticiaNascimento/Observation/apgar-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
