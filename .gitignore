@@ -26,3 +26,5 @@ Thumbs.db
 
 .vscode/
 .history/
+*.index.db
+*.index.json
